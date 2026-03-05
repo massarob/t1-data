@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-05T22:03:13.676153",
+    "last_updated": "2026-03-05T23:29:25.701237",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -270,7 +270,7 @@
     "p_max": 1241,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-05T22:03:13.675313",
+    "calculation_timestamp": "2026-03-05T23:29:25.700412",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1262,6 +1262,17 @@
       "description": "Warmup\n- Hi massarob let's build into this one 13m ramp 40-70% 80rpm\n\nMain Set\n- Steady endurance 40m 65% 85rpm\n- Recovery 5m 50%\n- Steady endurance 20m 70% 90rpm\n- Recovery 5m 50%\n\nCooldown\n- Great session massarob bring it down 8m ramp 60-40%\n\n[Weekly Plan - Build]"
     },
     {
+      "id": 96757726,
+      "date": "2026-03-10",
+      "name": "IntervalCoach - Threshold",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.72,
+      "duration_formatted": "43m",
+      "workout_summary": null,
+      "description": "Main Set\n- Hi massarob let's build into it 9m 70% pace\n\nWarmup\n- 1 5m 95% pace\n\nMain Set\n- Recovery 1 2m 65% pace\n\nWarmup\n- 2 5m 95% pace\n\nMain Set\n- Recovery 2 2m 65% pace\n\nWarmup\n- 3 5m 95% pace\n\nMain Set\n- Recovery 3 2m 65% pace\n\nWarmup\n- 4 5m 95% pace\n\nMain Set\n- Recovery 4 2m 65% pace\n- Great job massarob bring it down 6m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 95477385,
       "date": "2026-03-12",
       "name": "IntervalCoach - 2x20 FTP",
@@ -1295,12 +1306,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 6,
     "success": 2,
     "patternA": 1,
     "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 25.53,
