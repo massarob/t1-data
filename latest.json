@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-06T23:02:37.462217",
+    "last_updated": "2026-03-06T23:43:15.105348",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -270,7 +270,7 @@
     "p_max": 1241,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-06T23:02:37.461317",
+    "calculation_timestamp": "2026-03-06T23:43:15.104512",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1229,14 +1229,48 @@
       "vo2max": 71.0
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 96941438,
+      "date": "2026-03-08",
+      "name": "IntervalCoach - Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 64,
+      "duration_hours": 1.53,
+      "duration_formatted": "1h32m",
+      "workout_summary": null,
+      "description": "Warmup\n- Hi massarob let's build into this one 13m ramp 40-70% 85rpm\n\nMain Set\n- Steady endurance 30m 65% 85rpm\n- Steady endurance 30m 70% 85rpm\n- Steady endurance 10m 65% 85rpm\n\nCooldown\n- Great session massarob bring it down 9m ramp 60-40%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 96941440,
+      "date": "2026-03-12",
+      "name": "IntervalCoach - Progressive Threshold",
+      "type": "WORKOUT",
+      "planned_tss": 50,
+      "duration_hours": 0.67,
+      "duration_formatted": "40m",
+      "workout_summary": null,
+      "description": "Main Set\n- Hi massarob let's build into this one 9m ramp 40-75%\n- 5m 88%\n- 5m 92%\n- 5m 95%\n- 5m 98%\n- 5m 102%\n- Great session massarob bring it down 6m ramp 65-40%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 96941444,
+      "date": "2026-03-14",
+      "name": "IntervalCoach - Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 60,
+      "duration_hours": 1.37,
+      "duration_formatted": "1h22m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Hi massarob let's build into this session 13m ramp 40-65% 85rpm\nMain Set"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
+    "attempted": 3,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 26.51,
