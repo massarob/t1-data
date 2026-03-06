@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-06T06:59:17.997013",
+    "last_updated": "2026-03-06T07:34:42.759044",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -90,21 +90,21 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 50,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 48,
+      "hrv": 55.0,
+      "sleep_quality": 2,
+      "sleep_hours": 7.6,
+      "sleep_formatted": "7h36m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
+    "recovery_index": 0.97,
     "hrv_baseline_7d": 55.0,
-    "rhr_baseline_7d": 46.9,
-    "hrv_baseline_28d": 60.2,
-    "rhr_baseline_28d": 45.7,
-    "latest_hrv": null,
-    "latest_rhr": 50,
+    "rhr_baseline_7d": 46.6,
+    "hrv_baseline_28d": 60.0,
+    "rhr_baseline_28d": 45.6,
+    "latest_hrv": 55.0,
+    "latest_rhr": 48,
     "acwr": 1.03,
     "acwr_interpretation": "optimal",
     "monotony": 1.72,
@@ -116,7 +116,7 @@
     "multi_sport_detected": false,
     "strain": 2525.0,
     "stress_tolerance": 14.7,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 15.1,
     "tss_7d_total": 1468.0,
     "tss_28d_total": 5680.0,
     "zone_distribution_7d": {
@@ -250,9 +250,9 @@
     "p_max": 1241,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-06T06:59:17.996206",
+    "calculation_timestamp": "2026-03-06T07:34:42.758223",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 12,
       "activities_28d": 71,
@@ -962,13 +962,13 @@
     {
       "date": "2026-03-06",
       "weight_kg": null,
-      "resting_hr": 50,
-      "hrv_rmssd": null,
+      "resting_hr": 48,
+      "hrv_rmssd": 55.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.6,
+      "sleep_formatted": "7h36m",
+      "sleep_quality": 2,
+      "sleep_score": 83.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -976,80 +976,14 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [
-    {
-      "id": 94971775,
-      "date": "2026-03-07",
-      "name": "IntervalCoach - IntervalCoach - Endurance",
-      "type": "WORKOUT",
-      "planned_tss": 61,
-      "duration_hours": 1.65,
-      "duration_formatted": "1h39m",
-      "workout_summary": "13m @173W | 45m @214W | 4\u00d730s @247W / 5m rec | 10m @214W | 9m @173W",
-      "description": "Warmup\n- Hi massarob let's build into this one 13m ramp 40-65% 80rpm\n\nMain Set\n- Steady endurance effort 45m 65% 85rpm\n- Tempo touch 30s 75% 90rpm\n- Recovery 5m 50%\n- Tempo touch 30s 75% 90rpm\n- Recovery 5m 50%\n- Tempo touch 30s 75% 90rpm\n- Recovery 5m 50%\n- Tempo touch 30s 75% 90rpm\n- Recovery 5m 50%\n- Steady endurance effort 10m 65% 85rpm\n\nCooldown\n- Great session massarob bring it down 9m ramp 65-40%\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 95123746,
-      "date": "2026-03-08",
-      "name": "IntervalCoach - IntervalCoach - Endurance",
-      "type": "WORKOUT",
-      "planned_tss": 60,
-      "duration_hours": 1.52,
-      "duration_formatted": "1h31m",
-      "workout_summary": null,
-      "description": "Warmup\n- Hi massarob let's build into this one 13m ramp 40-70% 80rpm\n\nMain Set\n- Steady endurance 40m 65% 85rpm\n- Recovery 5m 50%\n- Steady endurance 20m 70% 90rpm\n- Recovery 5m 50%\n\nCooldown\n- Great session massarob bring it down 8m ramp 60-40%\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 96757726,
-      "date": "2026-03-10",
-      "name": "IntervalCoach - Threshold",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 0.72,
-      "duration_formatted": "43m",
-      "workout_summary": null,
-      "description": "Main Set\n- Hi massarob let's build into it 9m 70% pace\n\nWarmup\n- 1 5m 95% pace\n\nMain Set\n- Recovery 1 2m 65% pace\n\nWarmup\n- 2 5m 95% pace\n\nMain Set\n- Recovery 2 2m 65% pace\n\nWarmup\n- 3 5m 95% pace\n\nMain Set\n- Recovery 3 2m 65% pace\n\nWarmup\n- 4 5m 95% pace\n\nMain Set\n- Recovery 4 2m 65% pace\n- Great job massarob bring it down 6m 65% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 95477385,
-      "date": "2026-03-12",
-      "name": "IntervalCoach - 2x20 FTP",
-      "type": "WORKOUT",
-      "planned_tss": 45,
-      "duration_hours": 0.67,
-      "duration_formatted": "40m",
-      "workout_summary": null,
-      "description": "Warmup\n- Hi massarob let's get ready 9m ramp 40-70%\n\nMain Set 2x20 FTP\n- 2x\n- 20m 95%\n- Recovery 5m 55%\n\nCooldown\n- Great work massarob bring it down 6m ramp 70-40%\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 95649313,
-      "date": "2026-03-14",
-      "name": "IntervalCoach - VO2max",
-      "type": "WORKOUT",
-      "planned_tss": 77,
-      "duration_hours": 0.95,
-      "duration_formatted": "57m",
-      "workout_summary": "13m @190W | 5\u00d74m @379W / 3m rec | 9m @173W"
-    },
-    {
-      "id": 95789846,
-      "date": "2026-03-15",
-      "name": "IntervalCoach - Endurance",
-      "type": "WORKOUT",
-      "planned_tss": 63,
-      "duration_hours": 1.53,
-      "duration_formatted": "1h32m",
-      "workout_summary": null,
-      "description_preview": "Warmup\n- Hi massarob let's build into this one 13m ramp 40-65% 80rpm\nMain Set"
-    }
-  ],
+  "planned_workouts": [],
   "workout_summary_stats": {
-    "attempted": 6,
-    "success": 2,
-    "patternA": 1,
-    "patternB": 1,
+    "attempted": 0,
+    "success": 0,
+    "patternA": 0,
+    "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 0
   },
   "weekly_summary": {
     "total_training_hours": 22.47,
@@ -1057,7 +991,7 @@
     "total_tss": 1468,
     "activities_count": 12,
     "avg_hrv": 55.0,
-    "avg_resting_hr": 46.9
+    "avg_resting_hr": 46.6
   },
   "race_calendar": {
     "next_race": null,
