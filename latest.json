@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-07T22:53:02.886858",
+    "last_updated": "2026-03-07T23:28:48.274147",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -278,7 +278,7 @@
     "p_max": 1241,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-07T22:53:02.885965",
+    "calculation_timestamp": "2026-03-07T23:28:48.273325",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1270,15 +1270,26 @@
       "duration_formatted": "1h22m",
       "workout_summary": null,
       "description": "Warmup\n- Hi massarob let's build into this session 13m ramp 40-65% 85rpm\n\nMain Set\n- Steady endurance effort 60m 70% 85rpm\n\nCooldown\n- Great job massarob bring it down 9m ramp 65-40%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 97082459,
+      "date": "2026-03-15",
+      "name": "IntervalCoach - Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 83,
+      "duration_hours": 1.84,
+      "duration_formatted": "1h50m30s",
+      "workout_summary": null,
+      "description_preview": "Main Set\n- Hi massarob let's ease in smoothly 13m ramp 50-72%\n- Steady endurance build 8m 68%"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 24.5,
