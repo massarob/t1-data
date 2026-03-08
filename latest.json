@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-08T22:58:56.095844",
+    "last_updated": "2026-03-08T23:34:47.272747",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -278,7 +278,7 @@
     "p_max": 1447,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-08T22:58:56.094953",
+    "calculation_timestamp": "2026-03-08T23:34:47.271848",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1229,6 +1229,17 @@
       "description": "Get those legs humming with some tempo work, but keep it sharp and focused. No junk miles here!\n\nWarmup\n- Progressive Warmup 20m 50% 85rpm\n- Progressive Warmup 20m ramp 50-75% 85rpm\n\nMain Set\n\n3x\n  - Tempo Effort 8m 82% 90rpm\n  - Active Recovery 2m 58% 80rpm\n\n\nCooldown\n- Cooldown Spin 10m ramp 75-50% 85rpm"
     },
     {
+      "id": 97284642,
+      "date": "2026-03-10",
+      "name": "IntervalCoach - Threshold",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "9m | 4\u00d710m / 4m rec | 10m",
+      "description": "Main Set\n- Ciao massarob, scaldiamoci bene 9m 70% pace\n\n4x\n- 10m 100% pace\n- 4m 70% pace\n\nRecovery\n- Bravo massarob, ottimo lavoro oggi 10m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 97273745,
       "date": "2026-03-11",
       "name": "Active Recovery Spin",
@@ -1285,9 +1296,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 8,
-    "success": 1,
-    "patternA": 1,
+    "attempted": 9,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 7
