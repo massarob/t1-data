@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-08T21:47:08.973764",
+    "last_updated": "2026-03-08T21:56:19.733828",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -278,7 +278,7 @@
     "p_max": 1447,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-08T21:47:08.972928",
+    "calculation_timestamp": "2026-03-08T21:56:19.732917",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1207,6 +1207,17 @@
       "description": "Warmup\n- Hi massarob let's build into this one 13m ramp 40-70% 85rpm\n\nMain Set\n- Steady endurance 30m 65% 85rpm\n- Steady endurance 30m 70% 85rpm\n- Steady endurance 10m 65% 85rpm\n\nCooldown\n- Great session massarob bring it down 9m ramp 60-40%\n\n[Weekly Plan - Build]"
     },
     {
+      "id": 97273585,
+      "date": "2026-03-09",
+      "name": "Easy Endurance Ride",
+      "type": "WORKOUT",
+      "planned_tss": 39,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "Build that aerobic engine, massarob! Keep it smooth and steady.\n\nWarmup\n- Progressive Warmup 20m ramp 50-70% 85rpm\n\nMain Set\n- Steady Endurance Block 1 15m ramp 65-70% 90rpm\n- Sustained Endurance Block 2 15m ramp 63-68% 90rpm\n\nCooldown\n- Easy Cooldown 10m ramp 60-40% 85rpm"
+    },
+    {
       "id": 96941440,
       "date": "2026-03-12",
       "name": "IntervalCoach - Progressive Threshold",
@@ -1241,12 +1252,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 23.79,
