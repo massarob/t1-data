@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-08T21:56:19.733828",
+    "last_updated": "2026-03-08T22:33:55.765632",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.5"
@@ -278,7 +278,7 @@
     "p_max": 1447,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-08T21:56:19.732917",
+    "calculation_timestamp": "2026-03-08T22:33:55.764715",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1218,6 +1218,39 @@
       "description": "Build that aerobic engine, massarob! Keep it smooth and steady.\n\nWarmup\n- Progressive Warmup 20m ramp 50-70% 85rpm\n\nMain Set\n- Steady Endurance Block 1 15m ramp 65-70% 90rpm\n- Sustained Endurance Block 2 15m ramp 63-68% 90rpm\n\nCooldown\n- Easy Cooldown 10m ramp 60-40% 85rpm"
     },
     {
+      "id": 97273719,
+      "date": "2026-03-10",
+      "name": "Tempo Builder",
+      "type": "WORKOUT",
+      "planned_tss": 63,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": "20m @165W | 20m @206W | 3\u00d78m @270W / 2m rec | 10m @206W",
+      "description": "Get those legs humming with some tempo work, but keep it sharp and focused. No junk miles here!\n\nWarmup\n- Progressive Warmup 20m 50% 85rpm\n- Progressive Warmup 20m ramp 50-75% 85rpm\n\nMain Set\n\n3x\n  - Tempo Effort 8m 82% 90rpm\n  - Active Recovery 2m 58% 80rpm\n\n\nCooldown\n- Cooldown Spin 10m ramp 75-50% 85rpm"
+    },
+    {
+      "id": 97273745,
+      "date": "2026-03-11",
+      "name": "Active Recovery Spin",
+      "type": "WORKOUT",
+      "planned_tss": 42,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "Active recovery to flush the legs and keep the blood flowing. Easy spins only, massarob!\n\nWarmup\n- Gradual Spin Warmup 20m 50% 85rpm\n\nMain Set\n- Easy Cadence Flush 15m 75% 90rpm\n- Steady Recovery Spin 15m 75% 90rpm\n\nCooldown\n- Gentle Cooldown 10m 40% 85rpm"
+    },
+    {
+      "id": 97273786,
+      "date": "2026-03-12",
+      "name": "Sweet Spot Maintainer",
+      "type": "WORKOUT",
+      "planned_tss": 69,
+      "duration_hours": 1.67,
+      "duration_formatted": "1h40m",
+      "workout_summary": null,
+      "description": "A solid session to maintain fitness and keep the legs responsive. Focus on consistent power output.\n\nWarmup\n- Easy Spin 10m 50% 85rpm\n- Gradual Power Ramp 10m 55% 85rpm\nWarmup\n- Easy Spin 10m 55% 85rpm\n- Gradual Power Ramp 10m 70% 85rpm\nWarmup\n- Easy Spin 10m 55% 85rpm\n- Gradual Power Ramp 10m 70% 85rpm\n\nMain Set\n- Sweet Spot Effort 1 14m 75% 90rpm\n- Recovery 2m 45% 80rpm\n- Sweet Spot Effort 2 14m 75% 90rpm\n\nCooldown\n- Cooldown 10m 40% 85rpm"
+    },
+    {
       "id": 96941440,
       "date": "2026-03-12",
       "name": "IntervalCoach - Progressive Threshold",
@@ -1252,12 +1285,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 8,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 5
+    "bail_no_match": 7
   },
   "weekly_summary": {
     "total_training_hours": 23.79,
