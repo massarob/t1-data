@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-09T22:48:10.957980",
+    "last_updated": "2026-03-09T23:34:02.110435",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -76,14 +76,14 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Deload",
+      "phase": "Build",
       "phase_week": 0,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 1 amber (threshold 2), 0 red.",
+    "reason": "P3 green light. 6 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -299,11 +299,9 @@
       ]
     },
     "phase_detection": {
-      "phase": "Deload",
-      "confidence": "medium",
-      "reason_codes": [
-        "PLAN_GAP_NEXT_WEEK"
-      ],
+      "phase": "Build",
+      "confidence": "high",
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 4.5,
@@ -312,12 +310,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 0.17,
+          "hard_sessions_planned": 3,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_current_week": 0.6,
+          "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -327,10 +325,8 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Deload",
-    "phase_triggers": [
-      "PLAN_GAP_NEXT_WEEK"
-    ],
+    "phase_detected": "Build",
+    "phase_triggers": [],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -352,7 +348,7 @@
     "p_max": 1447,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 70.0,
-    "calculation_timestamp": "2026-03-09T22:48:10.957196",
+    "calculation_timestamp": "2026-03-09T23:34:02.109641",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1318,14 +1314,58 @@
       "vo2max": 70.0
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 97550214,
+      "date": "2026-03-12",
+      "name": "IntervalCoach - Tempo Intervals",
+      "type": "WORKOUT",
+      "planned_tss": 46,
+      "duration_hours": 1.05,
+      "duration_formatted": "1h3m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob, scaldiamoci per l'endurance 9m ramp 45-70% 85rpm\n\nMain Set\n- Base Z2 8m 60% 75rpm\n- Tempo touch 30s 85% 90rpm\n- Base Z2 7m 30s 70% 90rpm\n\n4x\n- Base Z2 6m 70% 75rpm\n- Tempo touch 30s 85% 90rpm\n- Base Z2 1m 30s 60% 90rpm\n\nCooldown\n- Ottimo lavoro massarob, recupero attivo 6m ramp 65-45%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 97550221,
+      "date": "2026-03-14",
+      "name": "IntervalCoach - Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 102,
+      "duration_hours": 2.18,
+      "duration_formatted": "2h11m",
+      "workout_summary": null,
+      "description": "Main Set\n- Ciao massarob, scaldiamoci per l'endurance 8m ramp 50-70%\n- Steady Z2 5m 65%\n- Steady Z2 base 5m 70%\n\n8x\n- Steady Z2 8m 70%\n- Tempo touch 30s 80%\n- Easy float 30s 60%\n- Steady Z2 finish 4m 70%\n\nRecovery\n- Ottimo lavoro massarob, recupero attivo 9m ramp 65-50%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 97551271,
+      "date": "2026-03-15",
+      "name": "IntervalCoach - Tempo Intervals",
+      "type": "WORKOUT",
+      "planned_tss": 60,
+      "duration_hours": 1.43,
+      "duration_formatted": "1h26m",
+      "workout_summary": "8m @190W | 5m @231W | 8m @214W | 6\u00d730s @280W / 7m30s rec | 8m @214W | 9m @181W",
+      "description": "Warmup\n- Ciao massarob, scaldiamoci per l'endurance 8m ramp 45-70% 85rpm\n- Steady build 5m 70% 85rpm\n\nMain Set\n- Steady Z2 base 8m 65% 85rpm\n\n6x\n- Tempo touch 30s 85% 100rpm\n- Easy Z2 7m 30s 65% 85rpm\n\n- Steady Z2 base 8m 65% 85rpm\n\nCooldown\n- Ottimo lavoro massarob, recupero attivo 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 97551273,
+      "date": "2026-03-17",
+      "name": "IntervalCoach - Threshold Repeats",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.98,
+      "duration_formatted": "59m",
+      "workout_summary": "9m | 3\u00d710m / 4m rec | 2m | 6m"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 4,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 20.3,
