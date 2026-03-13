@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-13T22:37:33.773654",
+    "last_updated": "2026-03-13T23:02:27.213633",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -328,9 +328,9 @@
           "planned_tss_delta": 0.31,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.09,
+          "next_week_load": 0.14,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": false
@@ -363,7 +363,7 @@
     "p_max": 1441,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 70.0,
-    "calculation_timestamp": "2026-03-13T22:37:33.772816",
+    "calculation_timestamp": "2026-03-13T23:02:27.212808",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1532,15 +1532,26 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Preparati per la progressione. 9m ramp 40-75%\n\nMain Set\n- Build 1 13m 101-107%\n- Recovery 3m 55%\n- Build 2 13m 112-117%\n- Recovery 3m 55%\n- Build 3 13m 121%\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 6m ramp 56-40%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 98321289,
+      "date": "2026-03-21",
+      "name": "IntervalCoach - Endurance Build",
+      "type": "WORKOUT",
+      "planned_tss": 68,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Oggi resistenza pura 14m ramp 45-75%\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 19.05,
