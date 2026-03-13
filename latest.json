@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-13T08:53:46.997957",
+    "last_updated": "2026-03-13T09:47:54.817985",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.77"
@@ -48,9 +48,9 @@
         "delta_bpm": -0.3
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 9.47,
+        "quality": 2
       },
       "acwr": {
         "status": "amber",
@@ -70,10 +70,10 @@
       }
     },
     "signal_summary": {
-      "green": 5,
+      "green": 6,
       "amber": 1,
       "red": 0,
-      "unavailable": 1
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -83,7 +83,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -164,9 +164,9 @@
       "weight_kg": 65.0,
       "resting_hr": 44,
       "hrv": 58.0,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "sleep_quality": 2,
+      "sleep_hours": 9.47,
+      "sleep_formatted": "9h28m"
     }
   },
   "derived_metrics": {
@@ -353,7 +353,7 @@
     "p_max": 1441,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-13T08:53:46.997122",
+    "calculation_timestamp": "2026-03-13T09:47:54.817173",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1370,10 +1370,10 @@
       "resting_hr": 44,
       "hrv_rmssd": 58.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 9.47,
+      "sleep_formatted": "9h28m",
+      "sleep_quality": 2,
+      "sleep_score": 85.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
