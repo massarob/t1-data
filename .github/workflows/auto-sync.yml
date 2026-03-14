@@ -2,9 +2,8 @@ name: Auto-Sync Intervals.icu Data
 
 on:
   schedule:
-    # Run every 15 minutes (good balance of frequency and API limits)
+    # Run every 15 minutes
     - cron: '*/15 * * * *'
-    # For every 15 minutes, use: '*/15 * * * *'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:
@@ -57,6 +56,8 @@ jobs:
           INTERVALS_KEY: ${{ secrets.INTERVALS_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO: ${{ github.repository }}
+          WEEK_START: ${{ secrets.WEEK_START }}
+          ZONE_PREFERENCE: ${{ secrets.ZONE_PREFERENCE }}
         run: |
           echo "🔍 Debug info:"
           echo "  Python version: $(python --version)"
@@ -88,16 +89,17 @@ jobs:
       - name: Archive latest.json with timestamp
         if: success()
         run: |
-          # Create archive directory if it doesn't exist
-          mkdir -p archive
+          # Create archive directory with year-month subdirectory
+          YEAR_MONTH=$(date -u +"%Y-%m")
+          mkdir -p "archive/${YEAR_MONTH}"
           
           # Get timestamp
           TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
           
           # Copy latest.json to archive if it exists
           if [ -f latest.json ]; then
-            cp latest.json "archive/${TIMESTAMP}.json"
-            echo "✅ Archived to archive/${TIMESTAMP}.json"
+            cp latest.json "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
+            echo "✅ Archived to archive/${YEAR_MONTH}/${TIMESTAMP}.json"
             
             # Configure git
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -118,6 +120,10 @@ jobs:
               git add latest.json
               echo "✅ Staged latest.json"
             fi
+            if [ -f intervals.json ]; then
+              git add intervals.json
+              echo "✅ Staged intervals.json"
+            fi
             
             # Now pull - autostash will safely stash staged changes
             git pull --rebase --autostash origin main
@@ -137,6 +143,8 @@ jobs:
       - name: Update README with last sync time
         if: success()
         run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           SYNC_TIME=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
           
           if [ -f README.md ]; then
