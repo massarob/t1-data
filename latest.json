@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-14T22:39:21.871337",
+    "last_updated": "2026-03-14T23:02:06.821186",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -42,8 +42,8 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "modify",
-    "priority": 2,
+    "recommendation": "go",
+    "priority": 3,
     "signals": {
       "hrv": {
         "status": "green",
@@ -71,13 +71,13 @@
         "value": 1.03
       },
       "tsb": {
-        "status": "amber",
-        "value": -21.7
+        "status": "green",
+        "value": -10.6
       }
     },
     "signal_summary": {
-      "green": 4,
-      "amber": 2,
+      "green": 5,
+      "amber": 1,
       "red": 0,
       "unavailable": 0
     },
@@ -88,18 +88,8 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": {
-      "triggers": [
-        "sleep",
-        "tsb"
-      ],
-      "suggested_adjustments": {
-        "intensity": "reduce",
-        "volume": "reduce",
-        "cap_zone": null
-      }
-    },
-    "reason": "P2 signal count. 2 amber (sleep, tsb) >= threshold 2.",
+    "modification": null,
+    "reason": "P3 green light. 5 green, 1 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -135,17 +125,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 182.17,
-      "atl": 203.9,
-      "tsb": -21.73,
-      "ramp_rate": 1.88,
+      "ctl": 179.77,
+      "atl": 190.32,
+      "tsb": -10.55,
+      "ramp_rate": -0.52,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 335.7,
-      "w_prime": 29553,
-      "w_prime_kj": 29.6,
-      "p_max": 1441,
+      "eftp": 335.3,
+      "w_prime": 29524,
+      "w_prime_kj": 29.5,
+      "p_max": 1440,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -344,7 +334,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "poor",
         "stream_agreement": null
@@ -374,13 +364,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 335.7,
-    "w_prime": 29553,
-    "w_prime_kj": 29.6,
-    "p_max": 1441,
+    "eftp": 335.3,
+    "w_prime": 29524,
+    "w_prime_kj": 29.5,
+    "p_max": 1440,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-14T22:39:21.870591",
+    "calculation_timestamp": "2026-03-14T23:02:06.820602",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1526,15 +1516,26 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Oggi resistenza pura 14m ramp 45-75%\n\nMain Set\n- Settle In 17m 65-67%\n- Build 17m 67-70%\n- Upper Z2 17m 70-74%\n- Cruise 16m 74-70%\n\nCooldown\n- Ben fatto, recupera bene 9m ramp 65-45%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 98520531,
+      "date": "2026-03-22",
+      "name": "IntervalCoach - Endurance Build",
+      "type": "WORKOUT",
+      "planned_tss": 68,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Oggi endurance pura. 14m ramp 45-75% 85rpm\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 6,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 18.81,
