@@ -4,73 +4,53 @@ Intervals.icu → GitHub/Local JSON Export
 Exports training data for LLM access.
 Supports both automated GitHub sync and manual local export.
 
-Version 3.77 - Hash-based manifest for --update (all repo files tracked, no manual version bumps)
-  - --generate-manifest: maintainer command, walks repo, hashes all files, writes manifest.json
-  - --update: compares SHA256 hashes instead of version strings, detects new files automatically
-  - notify/GitHub Issues: hash-based change detection
-  - local_versions removed from .sync_config.json (local file hashes are the truth)
+Version 3.83 - Per-sport zone preference: ZONE_PREFERENCE config overrides power/HR priority per sport family.
+  Format: "run:hr,cycling:power". Config cascade: .sync_config.json → env var → default (power preferred).
+  _get_activity_zones() converted from @staticmethod to instance method with sport_family param.
+  _aggregate_seiler_zones() refactored to use _get_activity_zones() (eliminated duplicated zone extraction).
+  zone_basis field added to zone_distribution_7d and all seiler_tid blocks. zone_preference in READ_THIS_FIRST.
+  Input validation: rejects non-power/hr values with warning. --setup wizard updated.
+  Phase detection: HR_ONLY_MAJORITY suppressed when zone_preference includes HR (intentional, not missing data).
 
-Version 3.76 - Bug fixes: workout summary off-by-one, deload phase detection
-  - Workout summary parser: trailing solo work step (final rep, no paired rest) was silently dropped
-    in both _detect_alternating_in_nested (Pattern A) and _try_alternating_block (Pattern B).
-    e.g., 13×30s reported as 12×30s. Both paths now consume the orphaned trailing rep.
-  - Phase detection Path C: retrospective deload when plan coverage is 0%.
-    Existing paths required planned_tss_delta (Path A) or ctl_slope > 1.0 (Path B, unrealistic
-    during deload). Path C: completed-week TSS ≤ 80% of prior-3-week avg + prior build evidence.
-    Build evidence uses [-4:-1] slices to exclude the current deload week from averages.
-    No hard-day gate — deload weeks legitimately contain reduced-volume quality sessions.
-    Validated against 26 weeks: catches all confirmed deloads, zero false positives.
+Version 3.82 - Interval-level data: intervals.json with per-segment metrics for structured sessions.
+  Pre-filter via interval_summary + sport family whitelist (cycling, run, ski, rowing, swim).
+  Incremental cache (72h scan, 7-day retention, first-run backfill). has_intervals flag in latest.json.
 
-Version 3.75 - Working directory awareness + local setup
-  - Data files (history.json, ftp_history.json) now write to caller's working directory, not script's directory
-  - Enables running sync.py from a parent directory: python section11/examples/sync.py --output latest.json
-  - No change for users who run sync.py from its own directory
-  - Migration: if you run sync.py from a parent directory, move history.json and ftp_history.json to your working directory
-  - --init flag: download the full Section 11 repo to section11/ for local-only setups (no GitHub needed)
-  - --update flag: check for updates from official repo, show diff, pull changed files after confirmation
-  - Manifest check on sync runs: once per 24h, silent notification if updates available
-  - --lockfile flag: prevent overlapping runs for automated timers (stale detection via PID + 10-min age)
-  - Update notifications: manifest.json preferred, changelog.json fallback (backward compatible)
-  - Bootstrap flow: python sync.py --setup → python sync.py --init → use section11/examples/sync.py going forward
+Version 3.81 - Feel removed from readiness decision signal chain.
+  Feel is a retrospective activity-level field, not a morning readiness marker.
+  A feel value from days ago should not drive today's go/modify/skip recommendation.
+  - Removed _get_latest_feel() method
+  - Removed feel signal from readiness_decision.signals (7 → 6 signals: HRV, RHR, Sleep, ACWR, RI, TSB)
+  - Removed feel-only case from _build_modification()
+  - Feel remains in: activity data, weekly history tier, all report templates (retrospective/trend use)
 
-Version 3.73 - Phase detection: week-aligned prospective windows
-  - Stream 2 windows aligned to training week instead of rolling 7-day from today
-  - Fixes mid-week deload misclassification: rolling window leaked next week's build sessions
-  - Configurable week start: .sync_config.json "week_start", WEEK_START env var, or --week-start CLI
-  - Default Monday (ISO). Set once in config, never think about it again
-  - Current week window: today → week end. Next week: next full training week
-  - Planned TSS delta projected to full-week equivalent from remaining days
-  - Hard sessions and plan coverage scoped to current week remainder only
+Version 3.80 - --update orphan cleanup: detects and removes local files no longer in the upstream
+  manifest (e.g. files moved or deleted in a repo restructure), and standalone empty directories.
+  Runs after the pull step, shows orphaned items with [removed from repo] / [empty directory] tags,
+  prompts for confirmation. Empty parent directories cleaned up automatically.
+  Skips manifest.json, .tmp files, and hidden files/directories.
 
-Version 3.72 - Readiness Decision (AAS formalization)
-  - Pre-computed go/modify/skip via P0-P3 priority ladder (safety → overload → fatigue → green light)
-  - 7 signals evaluated: HRV, RHR, Sleep, TSB, ACWR, Feel, RI — green/amber/red/unavailable
-  - Phase modifiers: Build loosens (3 amber), Taper/Race week tighten (1 amber), others default (2)
-  - Structured modification output: triggers + adjustment directions (intensity/volume/cap_zone)
-  - Wires into existing tier-1 alerts (P0/P1) — no duplication
-  - Top-level readiness_decision object in output JSON, alongside alerts
+Version 3.79 - Feel/RPE fix: removed feel from daily history rows (activity-level field, not wellness),
+  added RPE to weekly history tier, correct activity-sourced aggregation with counts.
+  - _build_daily_rows: removed incorrect feel flattening to daily scalar
+  - _build_weekly_tier: added week_rpe collector, avg_rpe + rpe_count + feel_count in output
+  - Fixed null safety: feel collection uses `is not None` instead of truthy check
+  - Report templates updated: feel/RPE in post-workout, pre-workout, weekly, block reports
 
-Version 3.71 - HRRc (heart rate recovery) integration
-  - Added icu_hrr (HRRc) field to formatted activity output as "hrrc"
-  - Added _calculate_hrrc_trend(): 7d/28d aggregate HRRc in capability namespace
-  - Qualifying: icu_hrr not null, min 1 session/7d, min 3 sessions/28d
-  - Trend: >10% difference = improving/declining (conservative for field noise)
-  - Display only — not wired into readiness_decision signals
+Version 3.78 - Bug fix: weekly history aligned to configured week start (was hardcoded Monday)
+  - _build_weekly_tier respects week_start_day setting; fixes Sunday-start week misalignment
+  - Update checker: removed manifest.json fallback from _check_for_updates(), changelog.json only
+  - Log rotation: sync.log trimmed to 200 lines when over 1MB
 
-Version 3.7 - Phase detection v2: dual-stream architecture (retrospective + prospective)
-  - Stream 1: 4-week lookback from weekly_180d — CTL slope, ACWR trend, hard-day density, monotony
-  - Stream 2: planned workouts + race calendar — planned TSS delta, hard sessions, race proximity
-  - 8 phase states: Build/Base/Peak/Taper/Deload/Recovery/Overreached/null
-  - Confidence scoring (high/medium/low), reason codes, hysteresis from previous_phase
-  - weekly_180d enriched: per-week phase_detected, acwr, monotony, intensity_basis_breakdown
-  - Overreached false-positive fixes, Peak/Deload gate refinements
+Version 3.77 - Hash-based manifest (--generate-manifest, --update uses SHA256, no manual version bumps)
+Version 3.76 - Bug fixes: workout summary off-by-one trailing rep, deload phase detection Path C
+Version 3.75 - Working directory awareness, --init/--update/--lockfile flags, local sync pipeline
+Version 3.73 - Phase detection: Stream 2 windows aligned to training week, configurable week start (config/env/CLI)
+Version 3.72 - Readiness Decision: pre-computed go/modify/skip via P0-P3 priority ladder, 7 signals, phase modifiers
+Version 3.71 - HRRc integration: 7d/28d aggregate trend in capability namespace (display only)
+Version 3.7 - Phase detection v2: dual-stream (retrospective + prospective), 8 states, confidence scoring, hysteresis
 
-Version 3.6.5 - Real IDs + Coach Notes
-  - Activity/event IDs always real (opaque keys, not PII). Athlete ID still REDACTED when anonymized
-  - coach_notes array: NOTE: lines parsed from activity/event descriptions
-  - chat_notes array: fetches activity messages endpoint when has_messages is true
-  - Enables push.py v0.3 annotate round-trip (write via push.py, read via sync.py)
-
+Version 3.6.5 - Real activity/event IDs, coach_notes + chat_notes arrays, push.py annotate round-trip
 Version 3.6.4 - READ_THIS_FIRST display_formatting instruction, report template XhYm alignment
 Version 3.6.3 - Human-readable _formatted fields (duration, sleep, training hours), floored to minutes
 Version 3.6.2 - Workout summary parser (Pattern A/B), tiered planned workout detail (0-7d full, 8-42d skeleton)
@@ -113,7 +93,15 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.77"
+    VERSION = "3.83"
+    INTERVALS_FILE = "intervals.json"
+
+    # Sport families eligible for interval-level data extraction.
+    # Only structured sessions in these families are worth fetching
+    # per-interval detail for. Walk, strength, yoga, other excluded.
+    INTERVAL_SPORT_FAMILIES = {"cycling", "run", "ski", "rowing", "swim"}
+    INTERVAL_SCAN_HOURS = 72    # Only scan recent activities for new intervals
+    INTERVAL_RETENTION_DAYS = 7  # Keep cached intervals for 7 days
 
     # Sport family mapping for per-sport monotony calculation
     # Multi-sport athletes get inflated total monotony when cross-training
@@ -148,7 +136,8 @@ class IntervalsSync:
     WEEK_START_DAY = 0
     
     def __init__(self, athlete_id: str, intervals_api_key: str, github_token: str = None, 
-                 github_repo: str = None, debug: bool = False, week_start_day: int = None):
+                 github_repo: str = None, debug: bool = False, week_start_day: int = None,
+                 zone_preference: dict = None):
         self.athlete_id = athlete_id
         self.intervals_auth = base64.b64encode(f"API_KEY:{intervals_api_key}".encode()).decode()
         self.github_token = github_token
@@ -157,6 +146,7 @@ class IntervalsSync:
         self.script_dir = Path(__file__).parent
         self.data_dir = Path.cwd()  # Data files (history.json, ftp_history.json) write to caller's working directory
         self.week_start_day = week_start_day if week_start_day is not None else self.WEEK_START_DAY
+        self.zone_preference = zone_preference or {}  # {"run": "hr", "cycling": "power", ...}
     
     def _intervals_get(self, endpoint: str, params: Dict = None) -> Dict:
         """Fetch from Intervals.icu API"""
@@ -188,6 +178,139 @@ class IntervalsSync:
             return []
         except Exception:
             return []
+    
+    def _fetch_activity_intervals(self, activity_id: str) -> List[Dict]:
+        """Fetch interval segments for a single activity. Returns icu_intervals list or empty list on failure."""
+        url = f"{self.INTERVALS_BASE_URL}/activity/{activity_id}"
+        headers = {
+            "Authorization": f"Basic {self.intervals_auth}",
+            "Accept": "application/json"
+        }
+        try:
+            response = requests.get(url, headers=headers, params={"intervals": "true"})
+            response.raise_for_status()
+            data = response.json()
+            intervals = data.get("icu_intervals", [])
+            if isinstance(intervals, list):
+                return intervals
+            return []
+        except Exception as e:
+            if self.debug:
+                print(f"    ⚠️  Could not fetch intervals for {activity_id}: {e}")
+            return []
+    
+    def _generate_intervals(self, activities: List[Dict]) -> set:
+        """
+        Generate intervals.json with incremental caching.
+        
+        First run (no cache): scans full retention window (7 days) to backfill.
+        Subsequent runs: scans recent activities (72h) for new sessions only.
+        Fetches per-interval data for new qualifying activities, merges
+        with cached data, and purges entries older than 7 days.
+        
+        Returns set of activity IDs that have interval data (for has_intervals flag).
+        """
+        now = datetime.now()
+        retention_cutoff = (now - timedelta(days=self.INTERVAL_RETENTION_DAYS)).strftime("%Y-%m-%d")
+        
+        # Load existing cache
+        intervals_path = self.data_dir / self.INTERVALS_FILE
+        cached = {"activities": []}
+        first_run = not intervals_path.exists()
+        if not first_run:
+            try:
+                with open(intervals_path, 'r') as f:
+                    cached = json.load(f)
+            except Exception as e:
+                if self.debug:
+                    print(f"    ⚠️  Could not read intervals.json: {e}")
+                cached = {"activities": []}
+                first_run = True
+        
+        # First run: backfill full retention window (7 days). Subsequent: scan 72h only.
+        if first_run:
+            scan_cutoff = retention_cutoff
+            print("    First run — scanning 7 days for interval data...")
+        else:
+            scan_cutoff = (now - timedelta(hours=self.INTERVAL_SCAN_HOURS)).strftime("%Y-%m-%d")
+        
+        cached_ids = {a["activity_id"] for a in cached.get("activities", [])}
+        
+        # Filter activities to scan window + sport family whitelist + interval_summary non-null
+        candidates = []
+        for act in activities:
+            date_str = act.get("start_date_local", "")[:10]
+            if date_str < scan_cutoff:
+                continue
+            act_type = act.get("type", "")
+            family = self.SPORT_FAMILIES.get(act_type)
+            if family not in self.INTERVAL_SPORT_FAMILIES:
+                continue
+            if not act.get("interval_summary"):
+                continue
+            act_id = act.get("id")
+            if act_id in cached_ids:
+                continue
+            candidates.append(act)
+        
+        # Fetch intervals for new qualifying activities
+        new_entries = []
+        for act in candidates:
+            act_id = act.get("id")
+            print(f"    Fetching intervals for {act.get('name', act_id)}...")
+            raw_intervals = self._fetch_activity_intervals(act_id)
+            if not raw_intervals:
+                continue
+            
+            # Format interval segments
+            segments = []
+            for iv in raw_intervals:
+                segment = {
+                    "type": iv.get("type"),
+                    "label": iv.get("group_id"),
+                    "duration_secs": iv.get("elapsed_time"),
+                    "avg_power": iv.get("average_watts"),
+                    "max_power": iv.get("max_watts"),
+                    "avg_hr": iv.get("average_heartrate"),
+                    "max_hr": iv.get("max_heartrate"),
+                    "avg_cadence": iv.get("average_cadence"),
+                    "zone": iv.get("zone"),
+                    "w_bal": iv.get("w_bal"),
+                    "training_load": iv.get("training_load"),
+                    "decoupling": iv.get("decoupling"),
+                }
+                # Strip None values to keep output lean
+                segment = {k: v for k, v in segment.items() if v is not None}
+                segments.append(segment)
+            
+            if segments:
+                new_entries.append({
+                    "activity_id": act_id,
+                    "date": act.get("start_date_local", "")[:10],
+                    "type": act.get("type", "Unknown"),
+                    "name": act.get("name", ""),
+                    "interval_summary": act.get("interval_summary"),
+                    "intervals": segments
+                })
+        
+        if new_entries:
+            print(f"    ✅ Fetched intervals for {len(new_entries)} new activit{'y' if len(new_entries) == 1 else 'ies'}")
+        
+        # Merge: keep cached entries within retention window + new entries
+        retained = [a for a in cached.get("activities", []) if a.get("date", "") >= retention_cutoff]
+        all_entries = retained + new_entries
+        
+        # Build intervals.json
+        self._intervals_data = {
+            "generated_at": now.isoformat(),
+            "version": self.VERSION,
+            "scan_hours": self.INTERVAL_SCAN_HOURS,
+            "retention_days": self.INTERVAL_RETENTION_DAYS,
+            "activities": all_entries
+        }
+        
+        # Return all activity IDs that have interval data
+        return {a["activity_id"] for a in all_entries}
     
     def _fetch_today_wellness(self) -> Dict:
         """
@@ -585,6 +708,15 @@ class IntervalsSync:
         # History confidence (v3.3.0)
         history_info = self._get_history_confidence()
         
+        # Generate interval-level data (v3.82)
+        # Uses the already-fetched activity list — no extra listing API calls.
+        # Pre-filters by sport family whitelist + interval_summary non-null.
+        # Incremental: only fetches intervals for new qualifying activities.
+        print("Checking for interval data...")
+        interval_activity_ids = self._generate_intervals(activities_display)
+        if interval_activity_ids:
+            print(f"  📊 {len(interval_activity_ids)} activit{'y' if len(interval_activity_ids) == 1 else 'ies'} with interval data")
+        
         data = {
             "READ_THIS_FIRST": {
                 "instruction_for_ai": "DO NOT calculate totals from individual activities. Use the pre-calculated values in 'summary', 'weekly_summary', and 'derived_metrics' sections below. These are already computed accurately from the API data.",
@@ -593,6 +725,7 @@ class IntervalsSync:
                 "extended_data_note": f"ACWR and baselines calculated from {days_for_acwr} days of data",
                 "capability_metrics_note": "The 'capability' block in derived_metrics contains durability trend (aggregate decoupling 7d/28d), efficiency factor trend (aggregate EF 7d/28d), HRRc trend (heart rate recovery 7d/28d), and TID comparison (7d vs 28d distribution drift). These measure HOW the athlete expresses fitness, not just load. Use these for coaching context alongside traditional load metrics. Durability and EF trend direction matters more than absolute values. HRRc is display only — higher = better parasympathetic recovery.",
                 "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
+                "zone_preference": self.zone_preference if self.zone_preference else "default (power preferred, HR fallback)",
                 "quick_stats": {
                     "total_training_hours": round(sum(act.get("moving_time", 0) for act in activities_display) / 3600, 2),
                     "total_training_formatted": self._format_duration(int(sum(act.get("moving_time", 0) for act in activities_display)) // 60 * 60),
@@ -637,7 +770,7 @@ class IntervalsSync:
                 }
             },
             "derived_metrics": derived_metrics,
-            "recent_activities": self._format_activities(activities_display, anonymize),
+            "recent_activities": self._format_activities(activities_display, anonymize, interval_activity_ids),
             "wellness_data": self._format_wellness(wellness),
             "planned_workouts": formatted_planned_workouts,
             "workout_summary_stats": getattr(self, '_summary_stats', {}),
@@ -830,6 +963,7 @@ class IntervalsSync:
         z2_time = zone_totals["z2_time"]
         z3_time = zone_totals["z3_time"]
         z4_plus_time = zone_totals["z4_plus_time"]
+        zone_basis_7d = zone_totals["zone_basis"]
         
         # === GREY ZONE PERCENTAGE (Z3 - to be minimized in polarized training) ===
         # Reference: Seiler - "too much pain for too little gain"
@@ -910,7 +1044,8 @@ class IntervalsSync:
         for date_str, day_acts in activities_by_date_7d.items():
             day_zones_by_basis = {}
             for a in day_acts:
-                zones, basis = self._get_activity_zones(a)
+                sf = self.SPORT_FAMILIES.get(a.get("type", ""), None)
+                zones, basis = self._get_activity_zones(a, sport_family=sf)
                 if zones and basis:
                     if basis not in day_zones_by_basis:
                         day_zones_by_basis[basis] = {}
@@ -981,7 +1116,8 @@ class IntervalsSync:
                 "z2_hours": round(z2_time / 3600, 2),
                 "z3_hours": round(z3_time / 3600, 2),
                 "z4_plus_hours": round(z4_plus_time / 3600, 2),
-                "total_hours": round(total_zone_time / 3600, 2)
+                "total_hours": round(total_zone_time / 3600, 2),
+                "zone_basis": zone_basis_7d
             },
             "grey_zone_percentage": grey_zone_percentage,
             "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
@@ -1235,8 +1371,7 @@ class IntervalsSync:
     # HR and power zones are NOT interchangeable — different widths, lag characteristics,
     # and physiological meaning. They are kept in separate accumulators.
 
-    @staticmethod
-    def _get_activity_zones(activity: Dict) -> tuple:
+    def _get_activity_zones(self, activity: Dict, sport_family: str = None) -> tuple:
         """
         Extract zone times from a single activity.
         
@@ -1247,10 +1382,17 @@ class IntervalsSync:
         Power zones (icu_zone_times): list of {"id": "Z3", "secs": 600}
         HR zones (icu_hr_zone_times): flat array of seconds [0, 120, 300, 180, 60]
         
-        Power preferred. HR fallback only when power unavailable.
+        Default: power preferred, HR fallback.
+        When zone_preference is configured for the sport_family, respects that
+        preference (e.g. run:hr → HR preferred for running, power fallback).
         HR zones typically 5-zone (indices 0-4 → z1-z5), sometimes 7.
         """
-        # Try power zones first
+        # Determine preference for this sport family
+        prefer_hr = (sport_family and 
+                     self.zone_preference.get(sport_family) == "hr")
+        
+        # Extract both zone sets
+        power_zones = None
         icu_zone_times = activity.get("icu_zone_times", [])
         if icu_zone_times:
             pz = {}
@@ -1260,9 +1402,9 @@ class IntervalsSync:
                 if zone_id in ("z1", "z2", "z3", "z4", "z5", "z6", "z7"):
                     pz[zone_id] = secs
             if pz:
-                return (pz, "power")
+                power_zones = pz
         
-        # Fallback to HR zones
+        hr_zones = None
         icu_hr_zone_times = activity.get("icu_hr_zone_times", [])
         if icu_hr_zone_times:
             zone_labels = ("z1", "z2", "z3", "z4", "z5", "z6", "z7")
@@ -1271,7 +1413,19 @@ class IntervalsSync:
                 if idx < len(zone_labels) and secs:
                     hz[zone_labels[idx]] = secs
             if hz:
-                return (hz, "hr")
+                hr_zones = hz
+        
+        # Return based on preference
+        if prefer_hr:
+            if hr_zones:
+                return (hr_zones, "hr")
+            if power_zones:
+                return (power_zones, "power")
+        else:
+            if power_zones:
+                return (power_zones, "power")
+            if hr_zones:
+                return (hr_zones, "hr")
         
         return ({}, None)
 
@@ -1358,18 +1512,22 @@ class IntervalsSync:
         - Z3: Grey zone / Tempo (between LT1 and LT2) - to be minimized
         - Z4+: Hard / Quality (above LT2) - ~20% target
         
-        Uses _get_activity_zones() for consistent power/HR fallback.
+        Uses _get_activity_zones() for consistent zone preference support.
         """
         z1_time = 0
         z2_time = 0
         z3_time = 0
         z4_plus_time = 0
         total_time = 0
+        basis_set = set()
         
         for act in activities:
-            zones, _basis = self._get_activity_zones(act)
+            sf = self.SPORT_FAMILIES.get(act.get("type", ""), None)
+            zones, basis = self._get_activity_zones(act, sport_family=sf)
             
             if zones:
+                if basis:
+                    basis_set.add(basis)
                 z1_time += zones.get("z1", 0)
                 z2_time += zones.get("z2", 0)
                 z3_time += zones.get("z3", 0)
@@ -1377,12 +1535,21 @@ class IntervalsSync:
                                zones.get("z6", 0) + zones.get("z7", 0))
                 total_time += sum(zones.values())
         
+        # Determine aggregate zone basis
+        if len(basis_set) > 1:
+            zone_basis = "mixed"
+        elif len(basis_set) == 1:
+            zone_basis = next(iter(basis_set))
+        else:
+            zone_basis = None
+        
         return {
             "z1_time": z1_time,
             "z2_time": z2_time,
             "z3_time": z3_time,
             "z4_plus_time": z4_plus_time,
-            "total_time": total_time
+            "total_time": total_time,
+            "zone_basis": zone_basis
         }
     
     # === SEILER TID (Training Intensity Distribution) v3.4.0 ===
@@ -1397,64 +1564,58 @@ class IntervalsSync:
             Seiler Z2 = z3       (between LT1 and LT2)
             Seiler Z3 = z4 + z5 + z6 + z7  (above LT2)
 
-        Uses power zones when available, falls back to HR zones.
+        Uses _get_activity_zones() for consistent zone preference support.
 
         Args:
             activities: List of activity dicts with zone data
             sport_family_filter: If set, only include activities matching
-                                 this sport family (from SPORT_FAMILIES)
+                                 this sport family (from SPORT_FAMILIES).
+                                 Note: this controls which activities enter
+                                 the aggregation; zone preference uses each
+                                 activity's own sport family (separate lookup).
 
-        Returns dict with z1_seconds, z2_seconds, z3_seconds, total_seconds
+        Returns dict with z1_seconds, z2_seconds, z3_seconds, total_seconds, zone_basis
         """
         sz1 = 0
         sz2 = 0
         sz3 = 0
+        basis_set = set()
 
         for act in activities:
-            # Apply sport family filter if specified
+            # Apply sport family filter if specified (controls inclusion)
+            activity_type = act.get("type", "Unknown")
+            act_sport_family = self.SPORT_FAMILIES.get(activity_type, "other")
             if sport_family_filter:
-                activity_type = act.get("type", "Unknown")
-                if self.SPORT_FAMILIES.get(activity_type, "other") != sport_family_filter:
+                if act_sport_family != sport_family_filter:
                     continue
 
-            zones = None
-
-            # Power zones (preferred)
-            icu_zone_times = act.get("icu_zone_times", [])
-            if icu_zone_times:
-                pz = {}
-                for zone in icu_zone_times:
-                    zone_id = zone.get("id", "").lower()
-                    secs = zone.get("secs", 0)
-                    if zone_id in ["z1", "z2", "z3", "z4", "z5", "z6", "z7"]:
-                        pz[zone_id] = secs
-                if pz:
-                    zones = pz
-
-            # HR zones (fallback)
-            if not zones:
-                icu_hr_zone_times = act.get("icu_hr_zone_times", [])
-                if icu_hr_zone_times:
-                    zone_labels = ["z1", "z2", "z3", "z4", "z5", "z6", "z7"]
-                    hz = {}
-                    for idx, secs in enumerate(icu_hr_zone_times):
-                        if idx < len(zone_labels) and secs:
-                            hz[zone_labels[idx]] = secs
-                    if hz:
-                        zones = hz
+            # Zone preference uses each activity's own sport family
+            zones, basis = self._get_activity_zones(act, sport_family=act_sport_family)
 
             if zones:
+                if basis:
+                    basis_set.add(basis)
                 sz1 += zones.get("z1", 0) + zones.get("z2", 0)
                 sz2 += zones.get("z3", 0)
                 sz3 += (zones.get("z4", 0) + zones.get("z5", 0) +
                         zones.get("z6", 0) + zones.get("z7", 0))
 
         total = sz1 + sz2 + sz3
+        
+        # Determine aggregate zone basis
+        if len(basis_set) > 1:
+            zone_basis = "mixed"
+        elif len(basis_set) == 1:
+            zone_basis = next(iter(basis_set))
+        else:
+            zone_basis = None
+        
         return {
             "z1_seconds": sz1,
             "z2_seconds": sz2,
             "z3_seconds": sz3,
-            "total_seconds": total
+            "total_seconds": total,
+            "zone_basis": zone_basis
         }
 
     def _calculate_polarization_index(self, z1_frac: float, z2_frac: float,
@@ -1530,9 +1691,11 @@ class IntervalsSync:
             z1_pct, z2_pct, z3_pct
             polarization_index (float or null)
             classification (string)
+            zone_basis ("power" | "hr" | "mixed" | null)
         """
         zones = self._aggregate_seiler_zones(activities, sport_family_filter)
         total = zones["total_seconds"]
+        zone_basis = zones["zone_basis"]
 
         if total == 0:
             return {
@@ -1543,7 +1706,8 @@ class IntervalsSync:
                 "z2_pct": None,
                 "z3_pct": None,
                 "polarization_index": None,
-                "classification": None
+                "classification": None,
+                "zone_basis": None
             }
 
         z1_frac = zones["z1_seconds"] / total
@@ -1561,7 +1725,8 @@ class IntervalsSync:
             "z2_pct": round(z2_frac * 100, 1),
             "z3_pct": round(z3_frac * 100, 1),
             "polarization_index": pi,
-            "classification": classification
+            "classification": classification,
+            "zone_basis": zone_basis
         }
 
     def _calculate_durability(self, activities_7d: List[Dict],
@@ -2216,8 +2381,10 @@ class IntervalsSync:
                 if ibb and ibb.get("hr", 0) > 0 and ibb.get("power", 0) == 0:
                     hr_only_weeks += 1
             if hr_only_weeks > len(recent) / 2:
-                reason_codes.append("HR_ONLY_MAJORITY")
-                quality = "mixed" if quality == "good" else quality
+                has_hr_preference = any(b == "hr" for b in self.zone_preference.values())
+                if not has_hr_preference:
+                    reason_codes.append("HR_ONLY_MAJORITY")
+                    quality = "mixed" if quality == "good" else quality
         
         return quality
     
@@ -2844,15 +3011,6 @@ class IntervalsSync:
     
     # === READINESS DECISION (v3.72) ===
     
-    def _get_latest_feel(self, activities: List[Dict]) -> Optional[int]:
-        """Get most recent non-null feel value from activities.
-        Intervals.icu convention: 1=Strong(best), 5=Weak(worst)."""
-        for act in reversed(activities):
-            feel = act.get("feel")
-            if feel is not None:
-                return feel
-        return None
-    
     def _get_phase_modifiers(self, phase: Optional[str], race_week_active: bool) -> Dict:
         """Return threshold modifiers based on current phase and race proximity.
         
@@ -2908,9 +3066,6 @@ class IntervalsSync:
         sleep_secs = latest_wellness.get("sleepSecs")
         sleep_hours = round(sleep_secs / 3600, 2) if sleep_secs else None
         sleep_quality = latest_wellness.get("sleepQuality")
-        
-        # Feel from most recent activity (1=Strong/best, 5=Weak/worst)
-        feel = self._get_latest_feel(activities)
         
         # Phase modifiers
         modifiers = self._get_phase_modifiers(current_phase, race_week_active)
@@ -2973,18 +3128,6 @@ class IntervalsSync:
             signals["acwr"] = {"status": acwr_status, "value": acwr}
         else:
             signals["acwr"] = {"status": "unavailable", "value": None}
-        
-        # Feel signal (1=Strong/best, 5=Weak/worst — Intervals.icu convention)
-        if feel is not None:
-            if feel >= 5:
-                feel_status = "red"
-            elif feel >= 4:
-                feel_status = "amber"
-            else:
-                feel_status = "green"
-            signals["feel"] = {"status": feel_status, "value": feel}
-        else:
-            signals["feel"] = {"status": "unavailable", "value": None}
         
         # RI signal (Section 8: >= 0.8 good, 0.6-0.79 moderate fatigue, < 0.6 deload)
         if ri is not None:
@@ -3217,7 +3360,6 @@ class IntervalsSync:
         has_rhr = "rhr" in triggers
         has_acwr = "acwr" in triggers
         has_tsb = "tsb" in triggers
-        has_feel = "feel" in triggers
         has_ri = "ri" in triggers
         
         autonomic = has_hrv or has_rhr or has_ri
@@ -3243,10 +3385,6 @@ class IntervalsSync:
         # TSB-only: reduce volume
         if has_tsb and not autonomic and not has_sleep:
             return {"triggers": triggers, "suggested_adjustments": {"intensity": "preserve", "volume": "reduce", "cap_zone": None}}
-        
-        # Feel-only: reduce intensity
-        if has_feel:
-            return {"triggers": triggers, "suggested_adjustments": {"intensity": "reduce", "volume": "preserve", "cap_zone": None}}
         
         # Fallback: reduce both
         return {"triggers": triggers, "suggested_adjustments": {"intensity": "reduce", "volume": "reduce", "cap_zone": None}}
@@ -3513,7 +3651,8 @@ class IntervalsSync:
             # Hard day detection via shared classifier (power + HR fallback)
             day_zones_by_basis = {}
             for a in day_activities:
-                zones, basis = self._get_activity_zones(a)
+                sf = self.SPORT_FAMILIES.get(a.get("type", ""), None)
+                zones, basis = self._get_activity_zones(a, sport_family=sf)
                 if zones and basis:
                     if basis not in day_zones_by_basis:
                         day_zones_by_basis[basis] = {}
@@ -3536,18 +3675,10 @@ class IntervalsSync:
                 "sleep_hours": round(wellness.get("sleepSecs", 0) / 3600, 2) if wellness.get("sleepSecs") else None,
                 "sleep_formatted": self._format_duration(int(wellness.get("sleepSecs", 0)) // 60 * 60) if wellness.get("sleepSecs") else None,
                 "sleep_quality": wellness.get("sleepQuality"),
-                "feel": None,  # Not available in wellness, only in activities
                 "weight_kg": wellness.get("weight"),
                 "is_hard_day": is_hard,
                 "intensity_basis": intensity_basis
             })
-            
-            # Check feel from activities
-            for a in day_activities:
-                feel = a.get("feel")
-                if feel:
-                    rows[-1]["feel"] = feel
-                    break
         
         return rows
     
@@ -3559,10 +3690,11 @@ class IntervalsSync:
         
         # Calculate weeks
         start_date = now - timedelta(days=days)
-        # Align to Monday
-        start_monday = start_date - timedelta(days=start_date.weekday())
+        # Align to configured week start day
+        days_since_week_start = (start_date.weekday() - self.week_start_day) % 7
+        start_aligned = start_date - timedelta(days=days_since_week_start)
         
-        current = start_monday
+        current = start_aligned
         while current < now:
             week_end = current + timedelta(days=6)
             if week_end > now:
@@ -3575,6 +3707,7 @@ class IntervalsSync:
             week_rhr = []
             week_sleep = []
             week_feel = []
+            week_rpe = []
             week_weight = []
             hard_days = 0
             daily_tss_list = []
@@ -3626,7 +3759,8 @@ class IntervalsSync:
                     if ride_seconds > longest_ride:
                         longest_ride = ride_seconds
                     
-                    zones, basis = self._get_activity_zones(a)
+                    sf = self.SPORT_FAMILIES.get(a.get("type", ""), None)
+                    zones, basis = self._get_activity_zones(a, sport_family=sf)
                     if zones and basis:
                         # Accumulate for hard day classification (separate by basis)
                         if basis not in day_zones_by_basis:
@@ -3645,8 +3779,11 @@ class IntervalsSync:
                             total_zone_time += secs
                     
                     feel = a.get("feel")
-                    if feel:
+                    if feel is not None:
                         week_feel.append(feel)
+                    rpe = a.get("icu_rpe")
+                    if rpe is not None:
+                        week_rpe.append(rpe)
                 
                 is_hard, hard_basis = self._classify_hard_day(day_zones_by_basis)
                 if is_hard:
@@ -3688,6 +3825,9 @@ class IntervalsSync:
                 "hard_days": hard_days,
                 "longest_ride_hours": round(longest_ride / 3600, 2),
                 "avg_feel": round(statistics.mean(week_feel), 1) if week_feel else None,
+                "feel_count": len(week_feel) if week_feel else 0,
+                "avg_rpe": round(statistics.mean(week_rpe), 1) if week_rpe else None,
+                "rpe_count": len(week_rpe) if week_rpe else 0,
                 "weight_kg": round(week_weight[-1], 1) if week_weight else None,
                 "monotony": week_monotony,
                 "intensity_basis_breakdown": intensity_basis_counts if hard_days > 0 else None,
@@ -3780,7 +3920,8 @@ class IntervalsSync:
                     if ride_seconds > longest_ride:
                         longest_ride = ride_seconds
                     
-                    zones, basis = self._get_activity_zones(a)
+                    sf = self.SPORT_FAMILIES.get(a.get("type", ""), None)
+                    zones, basis = self._get_activity_zones(a, sport_family=sf)
                     if zones and basis:
                         # Accumulate for hard day classification (separate by basis)
                         if basis not in day_zones_by_basis:
@@ -4016,13 +4157,9 @@ class IntervalsSync:
             "Accept": "application/vnd.github+json"
         }
         
-        # Try manifest.json first, fall back to changelog.json
-        manifest = _fetch_upstream_manifest()
-        
-        if manifest and manifest.get("files"):
-            self._check_updates_via_manifest(manifest, headers)
-        else:
-            self._check_updates_via_changelog(headers)
+        # GitHub Issues use changelog.json for human-readable release notes
+        # (manifest.json is for local --update only)
+        self._check_updates_via_changelog(headers)
     
     def _check_updates_via_manifest(self, manifest, headers):
         """Create a GitHub Issue if manifest file hashes have changed."""
@@ -4138,8 +4275,9 @@ class IntervalsSync:
             if self.debug:
                 print(f"  Could not create update issue: {e}")
     
-    def _format_activities(self, activities: List[Dict], anonymize: bool = False) -> List[Dict]:
+    def _format_activities(self, activities: List[Dict], anonymize: bool = False, interval_activity_ids: set = None) -> List[Dict]:
         """Format activities for LLM analysis"""
+        interval_activity_ids = interval_activity_ids or set()
         formatted = []
         for i, act in enumerate(activities):
             avg_power = (act.get("average_watts") or act.get("avg_watts") or 
@@ -4246,7 +4384,8 @@ class IntervalsSync:
                 "elevation_m": act.get("total_elevation_gain"),
                 "feel": act.get("feel"),
                 "rpe": act.get("icu_rpe"),
-                "zone_distribution": zone_dist
+                "zone_distribution": zone_dist,
+                "has_intervals": act.get("id", f"unknown_{i+1}") in interval_activity_ids
             }
 
             # Parse NOTE: lines from activity description (v0.3 — coach annotations)
@@ -5396,6 +5535,65 @@ def _compare_files(upstream_files, section11_dir):
     return needs_update, current
 
 
+def _find_orphaned_files(upstream_files, section11_dir):
+    """Find local files inside section11/ that are no longer in the upstream manifest.
+    Returns a sorted list of relative path strings.
+    Excludes manifest.json (local-only), .tmp files, and hidden files/directories."""
+    manifest_paths = set(upstream_files.keys())
+    orphaned = []
+
+    for root, dirs, files in os.walk(section11_dir):
+        # Skip hidden directories (e.g. .git, .DS_Store folders)
+        dirs[:] = [d for d in dirs if not d.startswith('.')]
+
+        for fname in files:
+            # Skip hidden files, .tmp files, and manifest.json
+            if fname.startswith('.'):
+                continue
+            if fname.endswith('.tmp'):
+                continue
+
+            full_path = Path(root) / fname
+            rel_path = str(full_path.relative_to(section11_dir))
+
+            if rel_path == "manifest.json":
+                continue
+
+            if rel_path not in manifest_paths:
+                orphaned.append(rel_path)
+
+    return sorted(orphaned)
+
+
+def _find_empty_dirs(section11_dir):
+    """Find directories inside section11/ that contain no visible files or subdirectories.
+    Walks bottom-up so nested empty dirs are caught. Returns sorted list of relative path strings.
+    Skips hidden directories at the top level of the walk."""
+    empty_dirs = []
+
+    # Bottom-up walk so we catch nested empties
+    for root, dirs, files in os.walk(section11_dir, topdown=False):
+        rel_dir = Path(root).relative_to(section11_dir)
+
+        # Don't flag section11/ itself
+        if rel_dir == Path('.'):
+            continue
+
+        # Skip hidden directories
+        if any(part.startswith('.') for part in rel_dir.parts):
+            continue
+
+        # Visible files = non-hidden, non-.tmp
+        visible_files = [f for f in files if not f.startswith('.') and not f.endswith('.tmp')]
+        # Visible subdirs = non-hidden
+        visible_dirs = [d for d in dirs if not d.startswith('.')]
+
+        if not visible_files and not visible_dirs:
+            empty_dirs.append(str(rel_dir))
+
+    return sorted(empty_dirs)
+
+
 def do_generate_manifest():
     """
     Generate manifest.json from the current repo directory.
@@ -5561,7 +5759,7 @@ def do_update():
     # Guard: section11/ must exist
     if not target_dir.exists():
         print("Section 11: section11/ not found in this directory")
-        print("   Run --init first to set up the local workspace")
+        print("   Run --init first to set up the local data directory")
         return
     
     # Fetch manifest.json from upstream
@@ -5576,91 +5774,154 @@ def do_update():
     # Compare hashes against local files
     needs_update, current = _compare_files(upstream_files, target_dir)
     
-    # Nothing to update
+    # Show updates or all-current message
     if not needs_update:
         print(f"✅ All {len(current)} files are current")
-        return
-    
-    # Show diff table
-    print(f"\n   Updates available ({len(needs_update)} file{'s' if len(needs_update) != 1 else ''}):\n")
-    
-    # Calculate column widths for alignment
-    path_width = max(len(u["path"]) for u in needs_update)
-    
-    for u in needs_update:
-        path_padded = u["path"].ljust(path_width)
-        desc = f"   {u['description']}" if u.get('description') else ""
-        print(f"   {path_padded}  [{u['status']}]{desc}")
-    
-    if current:
-        print(f"\n   Already current ({len(current)}):\n")
-        for c in current[:10]:  # Show first 10 to avoid wall of text
-            print(f"   ✅ {c['path']}")
-        if len(current) > 10:
-            print(f"   ... and {len(current) - 10} more")
-    
-    # Ask for confirmation
-    print()
-    try:
-        answer = input(f"   Pull {len(needs_update)} update{'s' if len(needs_update) != 1 else ''}? [y/N] ").strip().lower()
-    except (EOFError, KeyboardInterrupt):
-        print("\n   Cancelled")
-        return
-    
-    if answer not in ("y", "yes"):
-        print("   Cancelled")
-        return
-    
-    # Download changed files
-    print()
-    updated = []
-    failed = []
-    
-    for u in needs_update:
-        file_url = f"{SECTION11_REPO_RAW}/{u['path']}"
-        target_path = target_dir / u["path"]
-        
+    else:
+        # Show diff table
+        print(f"\n   Updates available ({len(needs_update)} file{'s' if len(needs_update) != 1 else ''}):\n")
+
+        # Calculate column widths for alignment
+        path_width = max(len(u["path"]) for u in needs_update)
+
+        for u in needs_update:
+            path_padded = u["path"].ljust(path_width)
+            desc = f"   {u['description']}" if u.get('description') else ""
+            print(f"   {path_padded}  [{u['status']}]{desc}")
+
+        if current:
+            print(f"\n   Already current ({len(current)}):\n")
+            for c in current[:10]:  # Show first 10 to avoid wall of text
+                print(f"   ✅ {c['path']}")
+            if len(current) > 10:
+                print(f"   ... and {len(current) - 10} more")
+
+        # Ask for confirmation
+        print()
         try:
-            resp = requests.get(file_url, timeout=30)
-            resp.raise_for_status()
-            
-            # Ensure target directory exists (for new files in new directories)
-            target_path.parent.mkdir(parents=True, exist_ok=True)
-            
-            # Write to temp file, then atomic replace
-            tmp_path = target_path.with_suffix(target_path.suffix + ".tmp")
-            with open(tmp_path, 'wb') as f:
-                f.write(resp.content)
-            os.replace(str(tmp_path), str(target_path))
-            
-            updated.append(u)
-            print(f"   ✅ {u['path']}  [{u['status']}]")
+            answer = input(f"   Pull {len(needs_update)} update{'s' if len(needs_update) != 1 else ''}? [y/N] ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print("\n   Cancelled")
+            return
+
+        if answer not in ("y", "yes"):
+            print("   Cancelled")
+            return
+
+        # Download changed files
+        print()
+        updated = []
+        failed = []
+
+        for u in needs_update:
+            file_url = f"{SECTION11_REPO_RAW}/{u['path']}"
+            target_path = target_dir / u["path"]
+
+            try:
+                resp = requests.get(file_url, timeout=30)
+                resp.raise_for_status()
+
+                # Ensure target directory exists (for new files in new directories)
+                target_path.parent.mkdir(parents=True, exist_ok=True)
+
+                # Write to temp file, then atomic replace
+                tmp_path = target_path.with_suffix(target_path.suffix + ".tmp")
+                with open(tmp_path, 'wb') as f:
+                    f.write(resp.content)
+                os.replace(str(tmp_path), str(target_path))
+
+                updated.append(u)
+                print(f"   ✅ {u['path']}  [{u['status']}]")
+            except Exception as e:
+                failed.append(u)
+                print(f"   ❌ {u['path']}  failed: {e}")
+                # Clean up temp file if it exists
+                tmp_path = target_path.with_suffix(target_path.suffix + ".tmp")
+                if tmp_path.exists():
+                    try:
+                        tmp_path.unlink()
+                    except Exception:
+                        pass
+
+        # Save updated manifest.json to section11/
+        try:
+            manifest_target = target_dir / "manifest.json"
+            tmp_manifest = manifest_target.with_suffix(".json.tmp")
+            with open(tmp_manifest, 'w') as f:
+                json.dump(manifest, f, indent=2)
+            os.replace(str(tmp_manifest), str(manifest_target))
         except Exception as e:
-            failed.append(u)
-            print(f"   ❌ {u['path']}  failed: {e}")
-            # Clean up temp file if it exists
-            tmp_path = target_path.with_suffix(target_path.suffix + ".tmp")
-            if tmp_path.exists():
+            print(f"   ⚠️ Could not save manifest.json locally: {e}")
+
+        # Summary
+        if failed:
+            print(f"\n   Updated {len(updated)} file{'s' if len(updated) != 1 else ''}, {len(failed)} failed")
+        elif updated:
+            print(f"\n   ✅ {len(updated)} file{'s' if len(updated) != 1 else ''} updated")
+
+    # --- Orphan cleanup (runs regardless of whether files were updated) ---
+    orphaned_files = _find_orphaned_files(upstream_files, target_dir)
+    empty_dirs = _find_empty_dirs(target_dir)
+
+    if orphaned_files or empty_dirs:
+        total = len(orphaned_files) + len(empty_dirs)
+        print(f"\n   Orphaned items ({total} — not in repo):\n")
+
+        # Build display list with tags
+        all_items = [(p, "[removed from repo]") for p in orphaned_files]
+        all_items += [(d + "/", "[empty directory]") for d in empty_dirs]
+
+        path_width = max(len(item[0]) for item in all_items)
+        for name, tag in all_items:
+            print(f"   {name.ljust(path_width)}  {tag}")
+
+        print()
+        try:
+            answer = input(f"   Remove {total} orphaned item{'s' if total != 1 else ''}? [y/N] ").strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print("\n   Skipped")
+            return
+
+        if answer not in ("y", "yes"):
+            print("   Skipped")
+            return
+
+        removed = 0
+
+        # Delete orphaned files first
+        for p in orphaned_files:
+            full_path = target_dir / p
+            try:
+                full_path.unlink()
+                removed += 1
+                print(f"   🗑️  {p}")
+            except Exception as e:
+                print(f"   ❌ {p}  failed: {e}")
+
+        # Remove empty parent directories left behind by file deletions
+        for p in orphaned_files:
+            parent = (target_dir / p).parent
+            while parent != target_dir:
                 try:
-                    tmp_path.unlink()
-                except Exception:
-                    pass
-    
-    # Save updated manifest.json to section11/
-    try:
-        manifest_target = target_dir / "manifest.json"
-        tmp_manifest = manifest_target.with_suffix(".json.tmp")
-        with open(tmp_manifest, 'w') as f:
-            json.dump(manifest, f, indent=2)
-        os.replace(str(tmp_manifest), str(manifest_target))
-    except Exception as e:
-        print(f"   ⚠️ Could not save manifest.json locally: {e}")
-    
-    # Summary
-    if failed:
-        print(f"\n   Updated {len(updated)} file{'s' if len(updated) != 1 else ''}, {len(failed)} failed")
-    elif updated:
-        print(f"\n   ✅ {len(updated)} file{'s' if len(updated) != 1 else ''} updated")
+                    parent.rmdir()  # Only succeeds if empty
+                    print(f"   🗑️  {parent.relative_to(target_dir)}/  [empty directory]")
+                except OSError:
+                    break
+                parent = parent.parent
+
+        # Remove standalone empty directories (sorted deepest-first to handle nesting)
+        for d in sorted(empty_dirs, key=lambda x: x.count(os.sep), reverse=True):
+            dir_path = target_dir / d
+            try:
+                if dir_path.exists():
+                    dir_path.rmdir()
+                    removed += 1
+                    print(f"   🗑️  {d}/")
+            except OSError as e:
+                print(f"   ❌ {d}/  failed: {e}")
+
+        if removed:
+            print(f"\n   🗑️  {removed} orphaned item{'s' if removed != 1 else ''} removed")
 
 
 def notify_if_updates_available():
@@ -5868,6 +6129,10 @@ def main():
         week_input = input("Training week starts on (mon/tue/wed/thu/fri/sat/sun, default: mon): ").strip().lower()
         if week_input in ("mon", "tue", "wed", "thu", "fri", "sat", "sun"):
             config["week_start"] = week_input
+        
+        zone_pref_input = input("Zone preference overrides (e.g. run:hr,cycling:power, or press Enter for default): ").strip()
+        if zone_pref_input:
+            config["zone_preference"] = zone_pref_input
             
         with open(".sync_config.json", "w") as f:
             json.dump(config, f, indent=2)
@@ -5914,6 +6179,26 @@ def main():
     week_start_day = week_day_map.get(week_start_raw.lower(), 0)
     week_start_name = {v: k for k, v in week_day_map.items()}.get(week_start_day, "mon")
     
+    # Zone preference: config file → env var → default (power preferred)
+    # Format: "run:hr,cycling:power" → {"run": "hr", "cycling": "power"}
+    zone_pref_raw = config.get("zone_preference") or os.getenv("ZONE_PREFERENCE") or ""
+    zone_preference = {}
+    if zone_pref_raw:
+        for pair in zone_pref_raw.split(","):
+            pair = pair.strip()
+            if ":" in pair:
+                sport, basis = pair.split(":", 1)
+                sport = sport.strip().lower()
+                basis = basis.strip().lower()
+                if basis in ("power", "hr"):
+                    zone_preference[sport] = basis
+                else:
+                    print(f"   ⚠️  Ignoring invalid zone preference '{pair}' — basis must be 'power' or 'hr'")
+            elif pair:
+                print(f"   ⚠️  Ignoring invalid zone preference '{pair}' — expected format sport:basis")
+    
+    zone_pref_display = ", ".join(f"{s}:{b}" for s, b in zone_preference.items()) if zone_preference else "default (power preferred)"
+    
     print(f"📋 Configuration:")
     print(f"   Athlete ID: {athlete_id[:5] + '...' if athlete_id else 'NOT SET'}")
     print(f"   Intervals Key: {intervals_key[:5] + '...' if intervals_key else 'NOT SET'}")
@@ -5921,6 +6206,7 @@ def main():
     print(f"   GitHub Token: {'SET' if github_token else 'NOT SET'}")
     print(f"   Days: {args.days}")
     print(f"   Week start: {week_start_name}")
+    print(f"   Zone preference: {zone_pref_display}")
     print(f"   Version: {IntervalsSync.VERSION}")
     
     if not athlete_id or not intervals_key:
@@ -5929,7 +6215,8 @@ def main():
         return
     
     sync = IntervalsSync(athlete_id, intervals_key, github_token, github_repo, 
-                         debug=args.debug, week_start_day=week_start_day)
+                         debug=args.debug, week_start_day=week_start_day,
+                         zone_preference=zone_preference)
     
     # Manual history generation
     if args.generate_history:
@@ -6013,6 +6300,14 @@ def main():
         print_summary()
         print(f"\n💡 Tip: Paste contents to AI, or upload the file directly")
         
+        # === SAVE INTERVALS.JSON (local mode) ===
+        intervals_data = getattr(sync, '_intervals_data', None)
+        if intervals_data and intervals_data.get("activities"):
+            intervals_path = sync.data_dir / sync.INTERVALS_FILE
+            with open(intervals_path, 'w') as f:
+                json.dump(intervals_data, f, indent=2, default=str)
+            print(f"   📊 intervals.json saved ({len(intervals_data['activities'])} activities)")
+        
         # === AUTO HISTORY GENERATION (local mode) ===
         if sync.should_generate_history():
             try:
@@ -6035,6 +6330,20 @@ def main():
         print(f"   {raw_url}")
         print(f"\n💬 Example prompt:")
         print(f'   "Analyze my training data from {raw_url}"')
+        
+        # === PUBLISH INTERVALS.JSON (GitHub mode) ===
+        intervals_data = getattr(sync, '_intervals_data', None)
+        if intervals_data and intervals_data.get("activities"):
+            # Save locally for incremental cache on next run
+            intervals_path = sync.data_dir / sync.INTERVALS_FILE
+            with open(intervals_path, 'w') as f:
+                json.dump(intervals_data, f, indent=2, default=str)
+            try:
+                sync.publish_to_github(intervals_data, filepath="intervals.json",
+                                       commit_message=f"Update intervals.json - {datetime.now().strftime('%Y-%m-%d')}")
+                print(f"   📊 intervals.json pushed ({len(intervals_data['activities'])} activities)")
+            except Exception as e:
+                print(f"   ⚠️ intervals.json push failed (non-critical): {e}")
         
         # === AUTO HISTORY GENERATION (Sundays/Mondays, first two runs after midnight) ===
         if sync.should_generate_history():
