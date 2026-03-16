@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T10:40:11.347000",
+  "generated_at": "2026-03-16T11:34:24.606250",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -2314,6 +2314,25 @@
           "avg_cadence": 49.700836,
           "zone": 1,
           "training_load": 61.634815
+        }
+      ]
+    },
+    {
+      "activity_id": "i132404071",
+      "date": "2026-03-16",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "1x 22m27s 122bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1347s@122bpm",
+          "duration_secs": 1347,
+          "avg_hr": 122,
+          "max_hr": 152,
+          "zone": 1
         }
       ]
     }
