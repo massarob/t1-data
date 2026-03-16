@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T15:20:19.823468",
+  "generated_at": "2026-03-16T16:38:14.204427",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -2333,6 +2333,148 @@
           "avg_hr": 122,
           "max_hr": 152,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i132475533",
+      "date": "2026-03-16",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "1x 1m45s 322w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1268,
+          "avg_power": 209,
+          "max_power": 460,
+          "avg_hr": 128,
+          "max_hr": 161,
+          "avg_cadence": 78.09864,
+          "zone": 2,
+          "training_load": 17.4898,
+          "decoupling": -12.629543
+        },
+        {
+          "type": "WORK",
+          "label": "105s@322w79rpm",
+          "duration_secs": 105,
+          "avg_power": 322,
+          "max_power": 473,
+          "avg_hr": 162,
+          "max_hr": 167,
+          "avg_cadence": 78.666664,
+          "zone": 4,
+          "training_load": 2.6575413,
+          "decoupling": 1.0661346
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4042,
+          "avg_power": 126,
+          "max_power": 616,
+          "avg_hr": 119,
+          "max_hr": 169,
+          "avg_cadence": 50.771103,
+          "zone": 1,
+          "training_load": 41.88804,
+          "decoupling": 3.9449332
+        }
+      ]
+    },
+    {
+      "activity_id": "i132474569",
+      "date": "2026-03-16",
+      "type": "Ride",
+      "name": "scarico/LT1",
+      "interval_summary": [
+        "1x 21m4s 209w",
+        "1x 13m45s 239w",
+        "1x 6m39s 202w",
+        "1x 8m45s 98w",
+        "1x 2m25s 264w",
+        "1x 37m41s 78w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1264s@209w78rpm",
+          "duration_secs": 1264,
+          "avg_power": 209,
+          "max_power": 464,
+          "avg_hr": 129,
+          "max_hr": 162,
+          "avg_cadence": 78.09164,
+          "zone": 2,
+          "training_load": 17.35132,
+          "decoupling": -14.723864
+        },
+        {
+          "type": "WORK",
+          "label": "825s@239w74rpm",
+          "duration_secs": 825,
+          "avg_power": 239,
+          "max_power": 503,
+          "avg_hr": 154,
+          "max_hr": 170,
+          "avg_cadence": 73.50424,
+          "zone": 2,
+          "training_load": 14.88973,
+          "decoupling": 5.9999585
+        },
+        {
+          "type": "WORK",
+          "label": "399s@202w82rpm",
+          "duration_secs": 399,
+          "avg_power": 202,
+          "max_power": 487,
+          "avg_hr": 135,
+          "max_hr": 147,
+          "avg_cadence": 82.012535,
+          "zone": 2,
+          "training_load": 5.0158954,
+          "decoupling": 10.941741
+        },
+        {
+          "type": "WORK",
+          "label": "525s@98w49rpm",
+          "duration_secs": 525,
+          "avg_power": 98,
+          "max_power": 656,
+          "avg_hr": 127,
+          "max_hr": 167,
+          "avg_cadence": 49.04691,
+          "zone": 1,
+          "training_load": 4.4652524,
+          "decoupling": 14.065401
+        },
+        {
+          "type": "WORK",
+          "label": "145s@264w76rpm",
+          "duration_secs": 145,
+          "avg_power": 264,
+          "max_power": 616,
+          "avg_hr": 152,
+          "max_hr": 166,
+          "avg_cadence": 75.72414,
+          "zone": 3,
+          "training_load": 2.6366966,
+          "decoupling": 13.445817
+        },
+        {
+          "type": "WORK",
+          "label": "2261s@78w36rpm",
+          "duration_secs": 2261,
+          "avg_power": 78,
+          "max_power": 396,
+          "avg_hr": 102,
+          "max_hr": 160,
+          "avg_cadence": 36.188934,
+          "zone": 1,
+          "training_load": 13.549453,
+          "decoupling": -1.3948158
         }
       ]
     }
