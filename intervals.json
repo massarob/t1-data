@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T15:39:53.484413",
+  "generated_at": "2026-03-18T16:44:19.160193",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -2416,6 +2416,94 @@
           "zone": 1,
           "training_load": 24.701035,
           "decoupling": 1.4489005
+        }
+      ]
+    },
+    {
+      "activity_id": "i133020866",
+      "date": "2026-03-18",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 16m15s 142w",
+        "1x 24s 180w",
+        "1x 17m34s 126w",
+        "1x 20m50s 301w",
+        "1x 1h11m 101w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "975s@142w53rpm",
+          "duration_secs": 975,
+          "avg_power": 142,
+          "max_power": 440,
+          "avg_hr": 113,
+          "max_hr": 150,
+          "avg_cadence": 52.58154,
+          "zone": 1,
+          "training_load": 8.728007,
+          "decoupling": -7.513376
+        },
+        {
+          "type": "WORK",
+          "label": "24s@180w79rpm",
+          "duration_secs": 24,
+          "avg_power": 180,
+          "max_power": 205,
+          "avg_hr": 135,
+          "max_hr": 137,
+          "avg_cadence": 78.708336,
+          "zone": 1,
+          "training_load": 0.32666665,
+          "decoupling": -10.507819
+        },
+        {
+          "type": "WORK",
+          "label": "1054s@126w39rpm",
+          "duration_secs": 1054,
+          "avg_power": 126,
+          "max_power": 435,
+          "avg_hr": 118,
+          "max_hr": 157,
+          "avg_cadence": 39.150726,
+          "zone": 1,
+          "training_load": 10.314636,
+          "decoupling": 7.214339
+        },
+        {
+          "type": "WORK",
+          "label": "1250s@301w72rpm",
+          "duration_secs": 1250,
+          "avg_power": 301,
+          "max_power": 547,
+          "avg_hr": 161,
+          "max_hr": 176,
+          "avg_cadence": 72.3024,
+          "zone": 4,
+          "training_load": 32.12998,
+          "decoupling": 10.973674
+        },
+        {
+          "type": "WORK",
+          "label": "4290s@101w43rpm",
+          "duration_secs": 4290,
+          "avg_power": 101,
+          "max_power": 435,
+          "avg_hr": 103,
+          "max_hr": 169,
+          "avg_cadence": 43.125874,
+          "zone": 1,
+          "training_load": 27.0719,
+          "decoupling": -3.6604125
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 102,
+          "max_hr": 102,
+          "zone": 1,
+          "training_load": 0.00573921
         }
       ]
     }
