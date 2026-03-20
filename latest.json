@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-20T22:42:25.157669",
+    "last_updated": "2026-03-20T23:14:33.620511",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -325,12 +325,12 @@
           "planned_tss_delta": 0.27,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.05,
+          "next_week_load": 0.1,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.2
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
-        "stream_agreement": null
+        "stream_agreement": false
       },
       "previous_phase": "Deload",
       "phase_duration_weeks": 0,
@@ -362,7 +362,7 @@
     "p_max": 1444,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 70.0,
-    "calculation_timestamp": "2026-03-20T22:42:25.156440",
+    "calculation_timestamp": "2026-03-20T23:14:33.619245",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1610,15 +1610,26 @@
       "duration_formatted": "59m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Preparati per un allenamento Over-Under. 9m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 8m 65-75% 85rpm\n\n4x\n- Under 3m 91% 88rpm\n- Over 2m 100% 95rpm\n- Recovery 3m 55% 80rpm\n\nRecovery\n- Over 4 2m 100% 95rpm\n- Endurance 8m 65-75% 85rpm\n\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 99711602,
+      "date": "2026-03-28",
+      "name": "IntervalCoach - Endurance Cruise",
+      "type": "WORKOUT",
+      "planned_tss": 77,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Endurance session awaits. 14m ramp 45-75% 85rpm\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 24.29,
