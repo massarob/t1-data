@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-21T23:00:01.257797",
+    "last_updated": "2026-03-21T23:35:52.163872",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -44,9 +44,9 @@
       },
       "rhr": {
         "status": "green",
-        "value": 45,
-        "baseline_7d": 46.1,
-        "delta_bpm": -1.1
+        "value": 36,
+        "baseline_7d": 44.9,
+        "delta_bpm": -8.9
       },
       "sleep": {
         "status": "green",
@@ -59,7 +59,7 @@
       },
       "ri": {
         "status": "green",
-        "value": 1.17
+        "value": 1.42
       },
       "tsb": {
         "status": "green",
@@ -159,7 +159,7 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 45,
+      "resting_hr": 36,
       "hrv": 67.0,
       "sleep_quality": 2,
       "sleep_hours": 9.15,
@@ -167,13 +167,13 @@
     }
   },
   "derived_metrics": {
-    "recovery_index": 1.17,
+    "recovery_index": 1.42,
     "hrv_baseline_7d": 58.7,
-    "rhr_baseline_7d": 46.1,
+    "rhr_baseline_7d": 44.9,
     "hrv_baseline_28d": 57.9,
-    "rhr_baseline_28d": 45.6,
+    "rhr_baseline_28d": 45.2,
     "latest_hrv": 67.0,
-    "latest_rhr": 45,
+    "latest_rhr": 36,
     "acwr": 0.88,
     "acwr_interpretation": "optimal",
     "monotony": 2.05,
@@ -185,7 +185,7 @@
     "multi_sport_detected": false,
     "strain": 2560.0,
     "stress_tolerance": 12.5,
-    "load_recovery_ratio": 10.7,
+    "load_recovery_ratio": 8.8,
     "tss_7d_total": 1249.0,
     "tss_28d_total": 5674.0,
     "zone_distribution_7d": {
@@ -325,9 +325,9 @@
           "planned_tss_delta": 0.4,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.1,
+          "next_week_load": 0.16,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": false
@@ -362,7 +362,7 @@
     "p_max": 1443,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-21T23:00:01.256584",
+    "calculation_timestamp": "2026-03-21T23:35:52.162669",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1633,7 +1633,7 @@
     {
       "date": "2026-03-21",
       "weight_kg": null,
-      "resting_hr": 45,
+      "resting_hr": 36,
       "hrv_rmssd": 67.0,
       "hrv_sdnn": null,
       "sleep_hours": 9.15,
@@ -1691,15 +1691,26 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Endurance session awaits. 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 75% 85rpm\n- Build 17m 75% 88rpm\n- Upper Z2 17m 75% 90rpm\n- Cruise 16m 75% 88rpm\n\nCooldown\n- Ottimo lavoro, rilassati ora. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 99866218,
+      "date": "2026-03-29",
+      "name": "IntervalCoach - Endurance Build",
+      "type": "WORKOUT",
+      "planned_tss": 77,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Pronti per la lunga endurance? 14m ramp 45-75% 85rpm\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 23.36,
@@ -1707,7 +1718,7 @@
     "total_tss": 1249,
     "activities_count": 24,
     "avg_hrv": 58.7,
-    "avg_resting_hr": 46.1
+    "avg_resting_hr": 44.9
   },
   "race_calendar": {
     "next_race": null,
