@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T16:47:06.947488",
+  "generated_at": "2026-03-26T18:02:16.272999",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1272,6 +1272,54 @@
           "max_hr": 118,
           "zone": 1,
           "training_load": 0.003922049
+        }
+      ]
+    },
+    {
+      "activity_id": "i134999122",
+      "date": "2026-03-26",
+      "type": "VirtualRide",
+      "name": "Zwift - rr 600kJ",
+      "interval_summary": [
+        "1x 9m41s 311w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2173,
+          "avg_power": 170,
+          "max_power": 338,
+          "avg_hr": 114,
+          "max_hr": 128,
+          "avg_cadence": 90.63829,
+          "zone": 1,
+          "training_load": 17.169382,
+          "decoupling": 0.31815356
+        },
+        {
+          "type": "WORK",
+          "label": "581s@311w78rpm",
+          "duration_secs": 581,
+          "avg_power": 311,
+          "max_power": 438,
+          "avg_hr": 153,
+          "max_hr": 160,
+          "avg_cadence": 77.66953,
+          "zone": 4,
+          "training_load": 14.333971,
+          "decoupling": 6.248843
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 422,
+          "avg_power": 169,
+          "max_power": 275,
+          "avg_hr": 130,
+          "max_hr": 159,
+          "avg_cadence": 88.91943,
+          "zone": 1,
+          "training_load": 3.7641358,
+          "decoupling": 2.1466384
         }
       ]
     }
