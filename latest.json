@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-27T22:39:19.683644",
+    "last_updated": "2026-03-27T23:17:44.324805",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -315,9 +315,9 @@
           "planned_tss_delta": 0.27,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.03,
+          "next_week_load": 0.08,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": false
@@ -352,7 +352,7 @@
     "p_max": 1434,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-03-27T22:39:19.682470",
+    "calculation_timestamp": "2026-03-27T23:17:44.323648",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1403,15 +1403,26 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Oggi endurance, concentrati sul ritmo. 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, massarob! Goditi il defaticamento. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 101015253,
+      "date": "2026-04-04",
+      "name": "IntervalCoach - Endurance Cruise",
+      "type": "WORKOUT",
+      "planned_tss": 65,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Fat Max Ride ti aspetta. 14m ramp 45-75% 85rpm\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 19.89,
