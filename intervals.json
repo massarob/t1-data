@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T16:02:22.024560",
+  "generated_at": "2026-03-28T16:51:46.593027",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1485,6 +1485,73 @@
           "zone": 1,
           "training_load": 19.314777,
           "decoupling": -7.35343
+        }
+      ]
+    },
+    {
+      "activity_id": "i135448081",
+      "date": "2026-03-28",
+      "type": "Ride",
+      "name": "Arcugnano Ciclismo su strada",
+      "interval_summary": [
+        "2x 15m4s 304w",
+        "1x 1h18m 262w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "duration_secs": 37,
+          "avg_hr": 102,
+          "max_hr": 106,
+          "zone": 1,
+          "decoupling": "NaN"
+        },
+        {
+          "type": "WORK",
+          "label": "904s@304w85rpm",
+          "duration_secs": 910,
+          "avg_power": 305,
+          "max_power": 781,
+          "avg_hr": 169,
+          "max_hr": 178,
+          "avg_cadence": 86.35951,
+          "zone": 4,
+          "training_load": 23.987701,
+          "decoupling": 13.158452
+        },
+        {
+          "type": "WORK",
+          "label": "904s@304w85rpm",
+          "duration_secs": 898,
+          "avg_power": 302,
+          "max_power": 801,
+          "avg_hr": 175,
+          "max_hr": 182,
+          "avg_cadence": 84.38196,
+          "zone": 4,
+          "training_load": 23.017836,
+          "decoupling": 10.3127365
+        },
+        {
+          "type": "WORK",
+          "label": "4694s@262w82rpm",
+          "duration_secs": 4694,
+          "avg_power": 262,
+          "max_power": 819,
+          "avg_hr": 169,
+          "max_hr": 181,
+          "avg_cadence": 81.85279,
+          "zone": 3,
+          "training_load": 93.87042,
+          "decoupling": 8.229728
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 165,
+          "max_hr": 165,
+          "zone": 1,
+          "training_load": 0.01943067
         }
       ]
     }
