@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T16:16:23.185872",
+  "generated_at": "2026-03-31T17:32:46.661225",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1523,6 +1523,54 @@
           "zone": 1,
           "training_load": 5.4756846,
           "decoupling": -59.62436
+        }
+      ]
+    },
+    {
+      "activity_id": "i136233006",
+      "date": "2026-03-31",
+      "type": "VirtualRide",
+      "name": "Zwift - scarico",
+      "interval_summary": [
+        "1x 14m40s 307w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1542,
+          "avg_power": 169,
+          "max_power": 337,
+          "avg_hr": 107,
+          "max_hr": 118,
+          "avg_cadence": 88.420235,
+          "zone": 1,
+          "training_load": 11.77189,
+          "decoupling": 6.160349
+        },
+        {
+          "type": "WORK",
+          "label": "880s@307w73rpm",
+          "duration_secs": 880,
+          "avg_power": 307,
+          "max_power": 396,
+          "avg_hr": 143,
+          "max_hr": 150,
+          "avg_cadence": 73.431816,
+          "zone": 4,
+          "training_load": 21.15578,
+          "decoupling": 4.108013
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3256,
+          "avg_power": 167,
+          "max_power": 331,
+          "avg_hr": 110,
+          "max_hr": 143,
+          "avg_cadence": 73.76309,
+          "zone": 1,
+          "training_load": 29.667273,
+          "decoupling": -1.7049569
         }
       ]
     }
