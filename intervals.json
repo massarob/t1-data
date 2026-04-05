@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T15:48:25.742992",
+  "generated_at": "2026-04-05T16:43:31.008086",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -2820,6 +2820,153 @@
           "zone": 1,
           "training_load": 37.322784,
           "decoupling": 28.65533
+        }
+      ]
+    },
+    {
+      "activity_id": "i137434775",
+      "date": "2026-04-05",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "2x 18s 647w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 869,
+          "avg_power": 121,
+          "max_power": 463,
+          "avg_hr": 112,
+          "max_hr": 147,
+          "avg_cadence": 70.01724,
+          "zone": 1,
+          "training_load": 4.763294,
+          "decoupling": -12.795967
+        },
+        {
+          "type": "WORK",
+          "label": "18s@647w93rpm",
+          "duration_secs": 18,
+          "avg_power": 658,
+          "max_power": 766,
+          "avg_hr": 133,
+          "max_hr": 151,
+          "avg_cadence": 92.333336,
+          "zone": 7,
+          "training_load": 0.5,
+          "decoupling": 18.517845
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 169,
+          "avg_power": 134,
+          "max_power": 653,
+          "avg_hr": 129,
+          "max_hr": 166,
+          "avg_cadence": 41.076923,
+          "zone": 1,
+          "training_load": 5.494052,
+          "decoupling": 39.01671
+        },
+        {
+          "type": "WORK",
+          "label": "18s@647w93rpm",
+          "duration_secs": 17,
+          "avg_power": 635,
+          "max_power": 737,
+          "avg_hr": 121,
+          "max_hr": 140,
+          "avg_cadence": 93.0,
+          "zone": 7,
+          "training_load": 0.36720157,
+          "decoupling": 30.489412
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1783,
+          "avg_power": 125,
+          "max_power": 542,
+          "avg_hr": 116,
+          "max_hr": 165,
+          "avg_cadence": 62.522713,
+          "zone": 1,
+          "training_load": 19.112993,
+          "decoupling": 19.34777
+        }
+      ]
+    },
+    {
+      "activity_id": "i137434828",
+      "date": "2026-04-05",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo su strada",
+      "interval_summary": [
+        "1x 15s 658w",
+        "1x 19s 628w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 874,
+          "avg_power": 122,
+          "max_power": 789,
+          "avg_hr": 112,
+          "max_hr": 147,
+          "avg_cadence": 69.91187,
+          "zone": 1,
+          "training_load": 4.8501663,
+          "decoupling": -15.957508
+        },
+        {
+          "type": "WORK",
+          "label": "15s@658w94rpm",
+          "duration_secs": 15,
+          "avg_power": 658,
+          "max_power": 775,
+          "avg_hr": 135,
+          "max_hr": 150,
+          "avg_cadence": 93.6,
+          "zone": 7,
+          "training_load": 0.4016529,
+          "decoupling": 16.671776
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 168,
+          "avg_power": 133,
+          "max_power": 580,
+          "avg_hr": 129,
+          "max_hr": 166,
+          "avg_cadence": 40.916668,
+          "zone": 1,
+          "training_load": 5.4921823,
+          "decoupling": 58.50156
+        },
+        {
+          "type": "WORK",
+          "label": "19s@628w92rpm",
+          "duration_secs": 19,
+          "avg_power": 628,
+          "max_power": 733,
+          "avg_hr": 121,
+          "max_hr": 142,
+          "avg_cadence": 92.26316,
+          "zone": 7,
+          "training_load": 0.41890725,
+          "decoupling": 28.82534
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1779,
+          "avg_power": 125,
+          "max_power": 524,
+          "avg_hr": 116,
+          "max_hr": 165,
+          "avg_cadence": 62.401913,
+          "zone": 1,
+          "training_load": 19.256618,
+          "decoupling": 18.86008
         }
       ]
     }
