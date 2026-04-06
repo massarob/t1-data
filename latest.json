@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-06T21:52:27.511753",
+    "last_updated": "2026-04-06T22:42:31.422245",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -330,7 +330,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 0.8,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -365,7 +365,7 @@
     "p_max": 1433,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-04-06T21:52:27.510374",
+    "calculation_timestamp": "2026-04-06T22:42:31.420914",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1348,12 +1348,22 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Oggi lunga aerobica 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi lo scarico 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 102897212,
+      "date": "2026-04-14",
+      "name": "IntervalCoach - Resistenza con Variazioni",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.04,
+      "duration_formatted": "1h2m30s",
+      "workout_summary": "3 \u00d7 3m | 5\u00d79m / 30s rec | 2 \u00d7 3m"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
-    "success": 1,
-    "patternA": 1,
+    "attempted": 5,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 3
