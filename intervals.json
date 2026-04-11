@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T07:33:44.127302",
+  "generated_at": "2026-04-11T08:25:51.740158",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1356,6 +1356,54 @@
           "zone": 1,
           "training_load": 27.832655,
           "decoupling": 22.349312
+        }
+      ]
+    },
+    {
+      "activity_id": "i138828743",
+      "date": "2026-04-11",
+      "type": "VirtualRide",
+      "name": "Biketerra - pre",
+      "interval_summary": [
+        "1x 3m28s 280w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 192,
+          "avg_power": 152,
+          "max_power": 353,
+          "avg_hr": 102,
+          "max_hr": 120,
+          "avg_cadence": 90.44271,
+          "zone": 1,
+          "training_load": 1.4581264,
+          "decoupling": 49.205128
+        },
+        {
+          "type": "WORK",
+          "label": "208s@280w78rpm",
+          "duration_secs": 208,
+          "avg_power": 280,
+          "max_power": 331,
+          "avg_hr": 127,
+          "max_hr": 133,
+          "avg_cadence": 78.28846,
+          "zone": 3,
+          "training_load": 4.0709195,
+          "decoupling": 3.0959675
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1450,
+          "avg_power": 206,
+          "max_power": 410,
+          "avg_hr": 120,
+          "max_hr": 143,
+          "avg_cadence": 90.73655,
+          "zone": 2,
+          "training_load": 18.064342,
+          "decoupling": -10.386697
         }
       ]
     }
