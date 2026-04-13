@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-13T21:33:48.297315",
+    "last_updated": "2026-04-13T22:29:43.280539",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -317,7 +317,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -352,7 +352,7 @@
     "p_max": 1428,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 72.0,
-    "calculation_timestamp": "2026-04-13T21:33:48.296109",
+    "calculation_timestamp": "2026-04-13T22:29:43.279278",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1467,15 +1467,26 @@
       "duration_formatted": "1h5m",
       "workout_summary": "5m @214W | 3\u00d71m @340W / 1m rec | 3m @214W | 10\u00d730s @400W / 15s rec | 2 sets \u00d7 13\u00d730s @400W / 15s rec (7m set rec) | 10m @182W",
       "description": "- 5m ramp 60-70%\n\n3x\n- 1m 103.3%\n- 1m 65%\n\n-3m 65%\n\n10x\n- 30s 400w\n- 15s 50%\n\n2x\n- 7m 65%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n- 30s 400w\n- 15s 50%\n\n- 10m ramp 60-50%"
+    },
+    {
+      "id": 104227938,
+      "date": "2026-04-21",
+      "name": "IntervalCoach - Corsa Lenta",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Pronti per la Fat Max? 3m 60% pace\n- 3m 70% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 3,
     "patternA": 2,
     "patternB": 1,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 26.16,
