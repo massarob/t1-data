@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T08:23:09.231364",
+  "generated_at": "2026-04-13T10:15:51.195844",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1306,6 +1306,132 @@
           "zone": 1,
           "training_load": 24.730394,
           "decoupling": 19.186325
+        }
+      ]
+    },
+    {
+      "activity_id": "i139368824",
+      "date": "2026-04-13",
+      "type": "VirtualRide",
+      "name": "Biketerra - Prato to Bormio via Passo dello Stelvio | 6+(r+1)",
+      "interval_summary": [
+        "1x 3m38s 301w",
+        "1x 4m49s 292w",
+        "1x 12m6s 324w",
+        "1x 4m8s 287w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 861,
+          "avg_power": 189,
+          "max_power": 305,
+          "avg_hr": 115,
+          "max_hr": 131,
+          "avg_cadence": 83.36818,
+          "zone": 2,
+          "training_load": 8.171141,
+          "decoupling": -15.001272
+        },
+        {
+          "type": "WORK",
+          "label": "218s@301w73rpm",
+          "duration_secs": 218,
+          "avg_power": 301,
+          "max_power": 304,
+          "avg_hr": 143,
+          "max_hr": 148,
+          "avg_cadence": 73.34404,
+          "zone": 4,
+          "training_load": 4.971283,
+          "decoupling": 4.8704453
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 48,
+          "avg_power": 43,
+          "max_power": 302,
+          "avg_hr": 128,
+          "max_hr": 148,
+          "avg_cadence": 9.791667,
+          "zone": 1,
+          "training_load": 0.21491046,
+          "decoupling": -9.901786
+        },
+        {
+          "type": "WORK",
+          "label": "289s@292w69rpm",
+          "duration_secs": 289,
+          "avg_power": 292,
+          "max_power": 351,
+          "avg_hr": 144,
+          "max_hr": 152,
+          "avg_cadence": 69.47059,
+          "zone": 3,
+          "training_load": 6.1143804,
+          "decoupling": 8.043186
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5,
+          "avg_power": 219,
+          "max_power": 340,
+          "avg_hr": 142,
+          "max_hr": 142,
+          "avg_cadence": 69.4,
+          "zone": 2,
+          "training_load": 0.1147842,
+          "decoupling": -71.76981
+        },
+        {
+          "type": "WORK",
+          "label": "726s@324w73rpm",
+          "duration_secs": 726,
+          "avg_power": 324,
+          "max_power": 382,
+          "avg_hr": 154,
+          "max_hr": 162,
+          "avg_cadence": 73.242424,
+          "zone": 4,
+          "training_load": 19.44,
+          "decoupling": 3.2663863
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 171,
+          "avg_power": 243,
+          "max_power": 325,
+          "avg_hr": 142,
+          "max_hr": 175,
+          "avg_cadence": 77.52047,
+          "zone": 2,
+          "training_load": 2.8362603,
+          "decoupling": -17.432854
+        },
+        {
+          "type": "WORK",
+          "label": "248s@287w82rpm",
+          "duration_secs": 248,
+          "avg_power": 287,
+          "max_power": 359,
+          "avg_hr": 143,
+          "max_hr": 148,
+          "avg_cadence": 82.03629,
+          "zone": 3,
+          "training_load": 5.1382003,
+          "decoupling": 0.7756833
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1609,
+          "avg_power": 161,
+          "max_power": 363,
+          "avg_hr": 111,
+          "max_hr": 145,
+          "avg_cadence": 77.24736,
+          "zone": 1,
+          "training_load": 13.403898,
+          "decoupling": -21.845707
         }
       ]
     }
