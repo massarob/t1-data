@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-18T21:41:20.572811",
+    "last_updated": "2026-04-18T22:16:48.788738",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -330,9 +330,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": 0.08,
+          "next_week_load": 0.13,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -367,7 +367,7 @@
     "p_max": 1424,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 71.0,
-    "calculation_timestamp": "2026-04-18T21:41:20.571383",
+    "calculation_timestamp": "2026-04-18T22:16:48.787422",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1483,15 +1483,26 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao Massarob! Endurance ci aspetta oggi. 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 105132625,
+      "date": "2026-04-26",
+      "name": "IntervalCoach - Resistenza Progressiva",
+      "type": "WORKOUT",
+      "planned_tss": 67,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Oggi aerobica progressiva. 14m ramp 45-75% 85rpm\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
+    "attempted": 4,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 26.21,
