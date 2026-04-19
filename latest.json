@@ -16,21 +16,21 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-19T07:27:18.077173",
+    "last_updated": "2026-04-19T08:32:58.305491",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
   },
   "alerts": [],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 64.3,
-        "delta_pct": null
+        "status": "amber",
+        "value": 54.0,
+        "baseline_7d": 62.9,
+        "delta_pct": -14.1
       },
       "rhr": {
         "status": "green",
@@ -39,17 +39,17 @@
         "delta_bpm": 2.6
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "red",
+        "hours": 8.37,
+        "quality": 4
       },
       "acwr": {
         "status": "green",
         "value": 0.94
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.81
       },
       "tsb": {
         "status": "green",
@@ -57,10 +57,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 0,
-      "red": 0,
-      "unavailable": 3
+      "green": 4,
+      "amber": 1,
+      "red": 1,
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Deload",
@@ -69,8 +69,18 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 2), 0 red.",
+    "modification": {
+      "triggers": [
+        "sleep",
+        "hrv"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "reduce",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 red (sleep), 1 amber (hrv).",
     "alarm_refs": []
   },
   "history": {
@@ -144,19 +154,19 @@
     "current_metrics": {
       "weight_kg": 65.0,
       "resting_hr": 47,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 54.0,
+      "sleep_quality": 4,
+      "sleep_hours": 8.37,
+      "sleep_formatted": "8h22m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 64.3,
+    "recovery_index": 0.81,
+    "hrv_baseline_7d": 62.9,
     "rhr_baseline_7d": 44.4,
-    "hrv_baseline_28d": 57.9,
+    "hrv_baseline_28d": 57.8,
     "rhr_baseline_28d": 46.0,
-    "latest_hrv": null,
+    "latest_hrv": 54.0,
     "latest_rhr": 47,
     "acwr": 0.94,
     "acwr_interpretation": "optimal",
@@ -169,7 +179,7 @@
     "multi_sport_detected": false,
     "strain": 1858.0,
     "stress_tolerance": 12.6,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 15.6,
     "tss_7d_total": 1264.0,
     "tss_28d_total": 5395.0,
     "zone_distribution_7d": {
@@ -344,9 +354,9 @@
     "p_max": 1423,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-19T07:27:18.075910",
+    "calculation_timestamp": "2026-04-19T08:32:58.304268",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 15,
       "activities_28d": 66,
@@ -1252,12 +1262,12 @@
       "date": "2026-04-19",
       "weight_kg": null,
       "resting_hr": 47,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 54.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.37,
+      "sleep_formatted": "8h22m",
+      "sleep_quality": 4,
+      "sleep_score": 59.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -1324,7 +1334,7 @@
     "total_training_formatted": "20h50m",
     "total_tss": 1264,
     "activities_count": 15,
-    "avg_hrv": 64.3,
+    "avg_hrv": 62.9,
     "avg_resting_hr": 44.4
   },
   "race_calendar": {
