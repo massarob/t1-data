@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-19T11:08:56.114947",
+    "last_updated": "2026-04-19T11:51:34.487245",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -63,10 +63,10 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Deload",
-      "phase_week": 1,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 0,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": {
@@ -115,8 +115,8 @@
       "ctl": 188.95,
       "atl": 180.75,
       "tsb": 8.2,
-      "ramp_rate": -1.78,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ramp_rate": 5.12,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 332.0,
@@ -281,15 +281,16 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 1.0,
+    "consistency_index": 0.75,
     "consistency_details": {
-      "planned_days": 3,
+      "planned_days": 4,
       "completed_days": 6,
       "matched_days": 3,
       "planned_dates": [
         "2026-04-13",
         "2026-04-15",
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-19"
       ],
       "completed_dates": [
         "2026-04-13",
@@ -301,10 +302,10 @@
       ]
     },
     "phase_detection": {
-      "phase": "Deload",
-      "confidence": "medium",
+      "phase": "Build",
+      "confidence": "low",
       "reason_codes": [
-        "BUILD_HISTORY_REDUCED_LOAD"
+        "BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"
       ],
       "basis": {
         "stream_1": {
@@ -314,24 +315,24 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 0.15,
+          "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.13,
-          "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.8
+          "next_week_load": 0.34,
+          "plan_coverage_current_week": 0.2,
+          "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
-        "stream_agreement": null
+        "stream_agreement": false
       },
       "previous_phase": "Deload",
-      "phase_duration_weeks": 1,
+      "phase_duration_weeks": 0,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Deload",
+    "phase_detected": "Build",
     "phase_triggers": [
-      "BUILD_HISTORY_REDUCED_LOAD"
+      "BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
@@ -354,13 +355,13 @@
     "p_max": 1423,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-19T11:08:56.113654",
+    "calculation_timestamp": "2026-04-19T11:51:34.486035",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 15,
       "activities_28d": 66,
-      "planned_workouts_7d": 3,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1277,57 +1278,112 @@
   ],
   "planned_workouts": [
     {
-      "id": 104227938,
+      "id": 105217188,
+      "date": "2026-04-19",
+      "name": "Opener rulli \u2014 pre-taper",
+      "type": "WORKOUT",
+      "planned_tss": 29,
+      "duration_hours": 0.71,
+      "duration_formatted": "42m30s",
+      "workout_summary": "15m @198W | 5\u00d730s @379W / 2m rec | 15m @181W",
+      "description": "Sessione leggera di mantenimento neuromuscolare. Gambe fresche, niente stress. Poi pesi dopo.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 5x\n- 30s 115% intensity=interval\n- 2m 55% intensity=recovery\n\nCooldown\n- 15m 55% intensity=cooldown"
+    },
+    {
+      "id": 105217705,
+      "date": "2026-04-20",
+      "name": "Riposo attivo",
+      "type": "WORKOUT",
+      "planned_tss": 23,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "description": "Recupero dopo domenica pesante. Pedalata sciolta, nessuna pressione.\n\nMain Set 1x\n- 45m 55% intensity=recovery"
+    },
+    {
+      "id": 105217707,
       "date": "2026-04-21",
-      "name": "IntervalCoach - Corsa Lenta",
+      "name": "Qualit\u00e0 \u2014 2\u00d715 min sweet spot",
       "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Pronti per la Fat Max? 3m 60% pace\n- 3m 70% pace\n- 3m 80% pace\n\nMain Set\n- Settle In 15m 68% pace\n- Fat Max 15m 68% pace\n- Cruise 15m 68% pace\n\nCooldown\n- 3m 70% pace\n- Ottimo lavoro, massarob! Recupera ora. 3m 60% pace\n\n[Weekly Plan - Build]"
+      "planned_tss": 65,
+      "duration_hours": 1.08,
+      "duration_formatted": "1h5m",
+      "workout_summary": "15m @198W | 2\u00d715m @297W / 5m rec | 10m @181W",
+      "description": "Stimolo aerobico alto senza distruggerti. Mantieni la potenza stabile sui 15 min.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 2x\n- 15m 90% intensity=interval\n- 5m 55% intensity=recovery\n\nCooldown\n- 10m 55% intensity=cooldown"
     },
     {
-      "id": 104628974,
+      "id": 105217708,
+      "date": "2026-04-22",
+      "name": "Endurance LT1",
+      "type": "WORKOUT",
+      "planned_tss": 155,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description": "3 ore sotto LT1. Ritmo controllato, non andare mai sopra Z2.\n\nMain Set 1x\n- 180m 72% intensity=warmup"
+    },
+    {
+      "id": 105217709,
       "date": "2026-04-23",
-      "name": "IntervalCoach - Corsa di Resistenza",
+      "name": "Scarico Z1",
       "type": "WORKOUT",
-      "planned_tss": 45,
+      "planned_tss": 30,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Pronti per endurance e cadenza? 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, massarob! Scarica dolcemente. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Gambe libere. Cadenza alta, niente sforzo.\n\nMain Set 1x\n- 60m 55% intensity=recovery"
     },
     {
-      "id": 104995953,
+      "id": 105217710,
+      "date": "2026-04-24",
+      "name": "Forza specifica salita \u2014 4\u00d77 min",
+      "type": "WORKOUT",
+      "planned_tss": 74,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m",
+      "workout_summary": "15m @198W | 4\u00d77m @320W / 4m rec | 10m @181W",
+      "description": "Lavoro specifico pre-gara. Esegui i 7 min su salita reale se possibile. Potenza stabile, non partire troppo forte.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 4x\n- 7m 97% intensity=interval\n- 4m 55% intensity=recovery\n\nCooldown\n- 10m 55% intensity=cooldown"
+    },
+    {
+      "id": 105217711,
       "date": "2026-04-25",
-      "name": "IntervalCoach - Corsa di Resistenza",
+      "name": "Endurance Z2",
       "type": "WORKOUT",
-      "planned_tss": 67,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 90,
+      "duration_hours": 1.75,
+      "duration_formatted": "1h45m",
       "workout_summary": null,
-      "description": "Warmup\n- Ciao Massarob! Endurance ci aspetta oggi. 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper Z2 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description": "Ultima seduta con volume prima del taper. Ritmo confortevole.\n\nMain Set 1x\n- 105m 72% intensity=warmup"
     },
     {
-      "id": 105132625,
+      "id": 105217712,
       "date": "2026-04-26",
-      "name": "IntervalCoach - Resistenza Progressiva",
+      "name": "Taper \u2014 opener breve",
       "type": "WORKOUT",
-      "planned_tss": 67,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
+      "planned_tss": 20,
+      "duration_hours": 0.53,
+      "duration_formatted": "32m",
+      "workout_summary": "15m @198W | 3\u00d720s @396W / 2m rec | 10m @181W",
+      "description": "Inizio taper. Gambe sciolte + qualche allungo per restare reattivo.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 3x\n- 20s 120% intensity=interval\n- 2m 55% intensity=recovery\n\nCooldown\n- 10m 55% intensity=cooldown"
+    },
+    {
+      "id": 105217713,
+      "date": "2026-04-27",
+      "name": "Taper \u2014 Z1 attivo",
+      "type": "WORKOUT",
+      "planned_tss": 23,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
       "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Oggi aerobica progressiva. 14m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 22m 65% 85rpm\n- Z2 Mid 22m 69% 88rpm\n- Z2 Upper 23m 73% 90rpm\n\nCooldown\n- Ottimo lavoro, pedala piano ora. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+      "description_preview": "Recupero attivo. Niente pressione.\nMain Set 1x\n- 45m 55% intensity=recovery"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 9,
+    "success": 4,
+    "patternA": 4,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 5
   },
   "weekly_summary": {
     "total_training_hours": 20.83,
