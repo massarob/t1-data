@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-19T11:51:34.487245",
+    "last_updated": "2026-04-19T13:14:24.029670",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -318,7 +318,7 @@
           "planned_tss_delta": 0.15,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.34,
+          "next_week_load": 0.38,
           "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 1.4
         },
@@ -355,7 +355,7 @@
     "p_max": 1423,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-19T11:51:34.486035",
+    "calculation_timestamp": "2026-04-19T13:14:24.028332",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1293,66 +1293,66 @@
       "date": "2026-04-20",
       "name": "Riposo attivo",
       "type": "WORKOUT",
-      "planned_tss": 23,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "planned_tss": 45,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "Recupero dopo domenica pesante. Pedalata sciolta, nessuna pressione.\n\nMain Set 1x\n- 45m 55% intensity=recovery"
+      "description": "Recupero dopo domenica pesante. Pedalata sciolta, nessuna pressione.\n\nMain Set 1x\n- 90m 55% intensity=recovery"
     },
     {
       "id": 105217707,
       "date": "2026-04-21",
       "name": "Qualit\u00e0 \u2014 2\u00d715 min sweet spot",
       "type": "WORKOUT",
-      "planned_tss": 65,
-      "duration_hours": 1.08,
-      "duration_formatted": "1h5m",
-      "workout_summary": "15m @198W | 2\u00d715m @297W / 5m rec | 10m @181W",
-      "description": "Stimolo aerobico alto senza distruggerti. Mantieni la potenza stabile sui 15 min.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 2x\n- 15m 90% intensity=interval\n- 5m 55% intensity=recovery\n\nCooldown\n- 10m 55% intensity=cooldown"
+      "planned_tss": 93,
+      "duration_hours": 1.67,
+      "duration_formatted": "1h40m",
+      "workout_summary": "20m @198W | 2\u00d715m @297W / 5m rec | 15m @181W",
+      "description": "Stimolo aerobico alto. Dopo i 2x15 min aggiungi volume a Z2 per arrivare a 90-100 min totali.\n\nWarmup\n- 20m 60% intensity=warmup\n\nMain Set 2x\n- 15m 90% intensity=interval\n- 5m 55% intensity=recovery\n\nMain Set 1x\n- 25m 72% intensity=interval\n\nCooldown\n- 15m 55% intensity=cooldown"
     },
     {
       "id": 105217708,
       "date": "2026-04-22",
       "name": "Endurance LT1",
       "type": "WORKOUT",
-      "planned_tss": 155,
-      "duration_hours": 3.0,
-      "duration_formatted": "3h",
+      "planned_tss": 103,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
       "workout_summary": null,
-      "description": "3 ore sotto LT1. Ritmo controllato, non andare mai sopra Z2.\n\nMain Set 1x\n- 180m 72% intensity=warmup"
+      "description": "2 ore sotto LT1. Ritmo controllato, non andare mai sopra Z2.\n\nMain Set 1x\n- 120m 72% intensity=warmup"
     },
     {
       "id": 105217709,
       "date": "2026-04-23",
       "name": "Scarico Z1",
       "type": "WORKOUT",
-      "planned_tss": 30,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
+      "planned_tss": 45,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "Gambe libere. Cadenza alta, niente sforzo.\n\nMain Set 1x\n- 60m 55% intensity=recovery"
+      "description": "Gambe libere. Cadenza alta, niente sforzo.\n\nMain Set 1x\n- 90m 55% intensity=recovery"
     },
     {
       "id": 105217710,
       "date": "2026-04-24",
       "name": "Forza specifica salita \u2014 4\u00d77 min",
       "type": "WORKOUT",
-      "planned_tss": 74,
-      "duration_hours": 1.15,
-      "duration_formatted": "1h9m",
-      "workout_summary": "15m @198W | 4\u00d77m @320W / 4m rec | 10m @181W",
-      "description": "Lavoro specifico pre-gara. Esegui i 7 min su salita reale se possibile. Potenza stabile, non partire troppo forte.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 4x\n- 7m 97% intensity=interval\n- 4m 55% intensity=recovery\n\nCooldown\n- 10m 55% intensity=cooldown"
+      "planned_tss": 99,
+      "duration_hours": 1.65,
+      "duration_formatted": "1h39m",
+      "workout_summary": "20m @198W | 4\u00d77m @320W / 4m rec | 15m @181W",
+      "description": "Lavoro specifico pre-gara. Esegui i 7 min su salita reale se possibile. Dopo gli intervalli aggiungi 20 min Z2 per portare la sessione a ~100 min.\n\nWarmup\n- 20m 60% intensity=warmup\n\nMain Set 4x\n- 7m 97% intensity=interval\n- 4m 55% intensity=recovery\n\nMain Set 1x\n- 20m 72% intensity=interval\n\nCooldown\n- 15m 55% intensity=cooldown"
     },
     {
       "id": 105217711,
       "date": "2026-04-25",
       "name": "Endurance Z2",
       "type": "WORKOUT",
-      "planned_tss": 90,
-      "duration_hours": 1.75,
-      "duration_formatted": "1h45m",
+      "planned_tss": 103,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
       "workout_summary": null,
-      "description": "Ultima seduta con volume prima del taper. Ritmo confortevole.\n\nMain Set 1x\n- 105m 72% intensity=warmup"
+      "description": "Ultima seduta con volume prima del taper. Ritmo confortevole.\n\nMain Set 1x\n- 120m 72% intensity=warmup"
     },
     {
       "id": 105217712,
@@ -1375,15 +1375,153 @@
       "duration_formatted": "45m",
       "workout_summary": null,
       "description_preview": "Recupero attivo. Niente pressione.\nMain Set 1x\n- 45m 55% intensity=recovery"
+    },
+    {
+      "id": 105217714,
+      "date": "2026-04-28",
+      "name": "Taper \u2014 2\u00d75 min soglia",
+      "type": "WORKOUT",
+      "planned_tss": 38,
+      "duration_hours": 0.72,
+      "duration_formatted": "43m",
+      "workout_summary": "15m @198W | 2\u00d75m @320W / 4m rec | 10m @181W"
+    },
+    {
+      "id": 105217716,
+      "date": "2026-04-29",
+      "name": "Riposo",
+      "type": "WORKOUT",
+      "planned_tss": 13,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description_preview": "Riposo quasi totale. Al massimo 30 min di gambe sciolte.\nMain Set 1x\n- 30m 50% intensity=recovery"
+    },
+    {
+      "id": 105217719,
+      "date": "2026-04-30",
+      "name": "Riposo",
+      "type": "WORKOUT",
+      "planned_tss": 13,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description_preview": "Riposo. Gambe fresche per sabato.\nMain Set 1x\n- 30m 50% intensity=recovery"
+    },
+    {
+      "id": 105217720,
+      "date": "2026-05-01",
+      "name": "Pre-gara opener",
+      "type": "WORKOUT",
+      "planned_tss": 39,
+      "duration_hours": 0.76,
+      "duration_formatted": "45m30s",
+      "workout_summary": "15m @198W | 2\u00d75m @313W / 3m rec | 2\u00d715s @396W / 2m rec | 10m @181W"
+    },
+    {
+      "id": 105217722,
+      "date": "2026-05-02",
+      "name": "GARA \u2014 salita 26-27 min",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Gara in salita. Target: potenza stabile nei primi 2/3, ultimo terzo tutto fuori. Non partire sopra le righe nei primi 5 min."
+    },
+    {
+      "id": 105217723,
+      "date": "2026-05-03",
+      "name": "Recupero post-gara",
+      "type": "WORKOUT",
+      "planned_tss": 19,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "description_preview": "Gambe sciolte dopo la gara. Solo se ti senti ok.\nMain Set 1x\n- 45m 50% intensity=recovery"
+    },
+    {
+      "id": 105217724,
+      "date": "2026-05-04",
+      "name": "Riposo",
+      "type": "WORKOUT",
+      "planned_tss": 13,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description_preview": "Riposo completo o passeggiatina.\nMain Set 1x\n- 30m 50% intensity=recovery"
+    },
+    {
+      "id": 105217725,
+      "date": "2026-05-05",
+      "name": "Riattivazione \u2014 qualit\u00e0 breve",
+      "type": "WORKOUT",
+      "planned_tss": 81,
+      "duration_hours": 1.52,
+      "duration_formatted": "1h31m",
+      "workout_summary": "20m @198W | 3\u00d78m @297W / 4m rec | 15m @181W"
+    },
+    {
+      "id": 105217726,
+      "date": "2026-05-06",
+      "name": "Endurance Z2 \u2014 simulazione granfondo",
+      "type": "WORKOUT",
+      "planned_tss": 112,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description_preview": "2 ore a ritmo granfondo. Includi una salita da 15-20 min a 75-80% FTP per simulare il profilo del 10 maggio.\nMain Set 1x\n- 120m 75% intensity=warmup"
+    },
+    {
+      "id": 105217727,
+      "date": "2026-05-07",
+      "name": "Scarico Z1",
+      "type": "WORKOUT",
+      "planned_tss": 45,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Gambe libere. Cadenza alta.\nMain Set 1x\n- 90m 55% intensity=recovery"
+    },
+    {
+      "id": 105217729,
+      "date": "2026-05-08",
+      "name": "Taper granfondo \u2014 2\u00d710 min soglia",
+      "type": "WORKOUT",
+      "planned_tss": 74,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "20m @198W | 2\u00d710m @297W / 5m rec | 15m @181W"
+    },
+    {
+      "id": 105217731,
+      "date": "2026-05-09",
+      "name": "Pre-granfondo opener",
+      "type": "WORKOUT",
+      "planned_tss": 20,
+      "duration_hours": 0.48,
+      "duration_formatted": "29m",
+      "workout_summary": "10m @198W | 3\u00d71m @313W / 2m rec | 10m @181W"
+    },
+    {
+      "id": 105217732,
+      "date": "2026-05-10",
+      "name": "GARA \u2014 Granfondo 90 km",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 4.0,
+      "duration_formatted": "4h",
+      "workout_summary": null,
+      "description_preview": "Granfondo 90 km con 2 salite (16 e 27 min). Strategia: gestisci la prima salita a 85-88% FTP, non svuotarti. Tieniti qualcosa per la seconda salita \u2014 quella \u00e8 quella che decide il risultato."
     }
   ],
   "workout_summary_stats": {
-    "attempted": 9,
-    "success": 4,
-    "patternA": 4,
+    "attempted": 20,
+    "success": 9,
+    "patternA": 9,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 5
+    "bail_no_workout_doc": 2,
+    "bail_no_match": 11
   },
   "weekly_summary": {
     "total_training_hours": 20.83,
