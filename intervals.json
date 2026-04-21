@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T15:43:56.482093",
+  "generated_at": "2026-04-21T16:43:09.065320",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1938,6 +1938,55 @@
           "avg_cadence": 30.0,
           "zone": 1,
           "training_load": 0.00012345679
+        }
+      ]
+    },
+    {
+      "activity_id": "i141777005",
+      "date": "2026-04-21",
+      "type": "Ride",
+      "name": "Qualit\u00e0 \u2014 2\u00d715 min sweet spot",
+      "interval_summary": [
+        "1x 2h15m 171w",
+        "1x 10m30s 145w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "8117s@171w65rpm",
+          "duration_secs": 8117,
+          "avg_power": 171,
+          "max_power": 666,
+          "avg_hr": 120,
+          "max_hr": 173,
+          "avg_cadence": 65.061424,
+          "zone": 1,
+          "training_load": 124.125,
+          "decoupling": -4.2168064
+        },
+        {
+          "type": "WORK",
+          "label": "630s@145w70rpm",
+          "duration_secs": 630,
+          "avg_power": 145,
+          "max_power": 369,
+          "avg_hr": 102,
+          "max_hr": 116,
+          "avg_cadence": 70.46642,
+          "zone": 1,
+          "training_load": 4.3935313,
+          "decoupling": 3.9506395
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_power": 187,
+          "max_power": 187,
+          "avg_hr": 112,
+          "max_hr": 112,
+          "avg_cadence": 64.0,
+          "zone": 2,
+          "training_load": 0.0061282013
         }
       ]
     }
