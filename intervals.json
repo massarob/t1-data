@@ -1,58 +1,9 @@
 {
-  "generated_at": "2026-04-29T23:38:03.670482",
+  "generated_at": "2026-04-30T01:24:18.095216",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i142008370",
-      "date": "2026-04-22",
-      "type": "Ride",
-      "name": "MTB incastri con i minuti contati",
-      "interval_summary": [
-        "1x 16m23s 242w",
-        "1x 46m2s 201w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "983s@242w57rpm",
-          "duration_secs": 983,
-          "avg_power": 242,
-          "max_power": 579,
-          "avg_hr": 144,
-          "max_hr": 175,
-          "avg_cadence": 57.13428,
-          "zone": 2,
-          "training_load": 22.868465,
-          "decoupling": -2.0553815
-        },
-        {
-          "type": "WORK",
-          "label": "2762s@201w61rpm",
-          "duration_secs": 2762,
-          "avg_power": 201,
-          "max_power": 674,
-          "avg_hr": 140,
-          "max_hr": 174,
-          "avg_cadence": 60.986332,
-          "zone": 2,
-          "training_load": 49.978542,
-          "decoupling": 7.450825
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_power": 183,
-          "max_power": 183,
-          "avg_hr": 127,
-          "max_hr": 127,
-          "avg_cadence": 64.0,
-          "zone": 2,
-          "training_load": 0.012345679
-        }
-      ]
-    },
     {
       "activity_id": "i142312515",
       "date": "2026-04-23",
