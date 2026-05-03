@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T10:57:55.473428",
+  "generated_at": "2026-05-03T11:53:20.643722",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1580,6 +1580,54 @@
           "avg_cadence": 29.0,
           "zone": 1,
           "training_load": 0.00094913784
+        }
+      ]
+    },
+    {
+      "activity_id": "i145034695",
+      "date": "2026-05-03",
+      "type": "Ride",
+      "name": "Cevo Ciclismo su strada",
+      "interval_summary": [
+        "1x 1m56s 344w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 431,
+          "avg_power": 34,
+          "max_power": 350,
+          "avg_hr": 92,
+          "max_hr": 131,
+          "avg_cadence": 14.146172,
+          "zone": 1,
+          "training_load": 1.1149268,
+          "decoupling": -207.1102
+        },
+        {
+          "type": "WORK",
+          "label": "116s@344w47rpm",
+          "duration_secs": 116,
+          "avg_power": 344,
+          "max_power": 412,
+          "avg_hr": 154,
+          "max_hr": 162,
+          "avg_cadence": 47.37931,
+          "zone": 4,
+          "training_load": 3.4608264,
+          "decoupling": 16.233446
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 42,
+          "avg_power": 176,
+          "max_power": 335,
+          "avg_hr": 160,
+          "max_hr": 163,
+          "avg_cadence": 33.57143,
+          "zone": 1,
+          "training_load": 0.7399745,
+          "decoupling": 29.674732
         }
       ]
     }
