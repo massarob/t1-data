@@ -1,61 +1,9 @@
 {
-  "generated_at": "2026-05-08T23:40:09.489459",
+  "generated_at": "2026-05-09T01:23:55.048982",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i144636802",
-      "date": "2026-05-01",
-      "type": "Ride",
-      "name": "Pre-gara opener",
-      "interval_summary": [
-        "1x 12m42s 171w",
-        "1x 5m49s 365w",
-        "1x 40m56s 120w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "762s@171w73rpm",
-          "duration_secs": 762,
-          "avg_power": 171,
-          "max_power": 481,
-          "avg_cadence": 73.11958,
-          "zone": 1,
-          "training_load": 6.4599447
-        },
-        {
-          "type": "WORK",
-          "label": "349s@365w80rpm",
-          "duration_secs": 349,
-          "avg_power": 365,
-          "max_power": 610,
-          "avg_cadence": 80.34097,
-          "zone": 5,
-          "training_load": 12.055652
-        },
-        {
-          "type": "WORK",
-          "label": "2456s@120w51rpm",
-          "duration_secs": 2456,
-          "avg_power": 120,
-          "max_power": 470,
-          "avg_cadence": 51.40106,
-          "zone": 1,
-          "training_load": 17.07698
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2,
-          "avg_power": 89,
-          "max_power": 178,
-          "avg_cadence": 29.0,
-          "zone": 1,
-          "training_load": 0.00094913784
-        }
-      ]
-    },
     {
       "activity_id": "i145034695",
       "date": "2026-05-03",
