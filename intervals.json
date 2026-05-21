@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T08:36:42.146762",
+  "generated_at": "2026-05-21T11:54:08.180237",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1311,6 +1311,44 @@
           "avg_cadence": 5.077844,
           "zone": 1,
           "training_load": 0.43649882
+        }
+      ]
+    },
+    {
+      "activity_id": "i150238261",
+      "date": "2026-05-21",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": [
+        "1x 22m42s 191w",
+        "1x 33m43s 1w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1362s@191w74rpm",
+          "duration_secs": 1362,
+          "avg_power": 191,
+          "max_power": 524,
+          "avg_cadence": 73.731224,
+          "zone": 2,
+          "training_load": 16.368692
+        },
+        {
+          "type": "WORK",
+          "label": "2023s@1w1rpm",
+          "duration_secs": 2023,
+          "avg_power": 1,
+          "max_power": 211,
+          "avg_cadence": 0.8235294,
+          "zone": 1,
+          "training_load": 1.2522222
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "zone": 1,
+          "training_load": 0.00034919905
         }
       ]
     }
