@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-23T20:59:51.929508",
+    "last_updated": "2026-05-23T22:03:00.782985",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -315,9 +315,9 @@
           "planned_tss_delta": 0.41,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.09,
+          "next_week_load": 0.14,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": false
@@ -352,7 +352,7 @@
     "p_max": 1393,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-05-23T20:59:51.928378",
+    "calculation_timestamp": "2026-05-23T22:03:00.781920",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1795,15 +1795,26 @@
       "duration_formatted": "1h35m",
       "workout_summary": "14m @198W | 4\u00d713m @230W / 5m rec | 9m @181W",
       "description": "Warmup\n- Ciao massarob! Endurance e tempo in arrivo. 14m ramp 45-75% 85rpm\n\nMain Set\n4x\n- Endurance 13m 65-75% 88rpm\n- Tempo 5m 76-82% 90rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 111906620,
+      "date": "2026-05-31",
+      "name": "IntervalCoach - Resistenza Lunga",
+      "type": "WORKOUT",
+      "planned_tss": 67,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Oggi resistenza e spin-up. 14m ramp 45-75% 85rpm\nMain Set"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 6,
     "success": 3,
     "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 23.82,
