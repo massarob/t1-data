@@ -1,47 +1,9 @@
 {
-  "generated_at": "2026-05-24T23:17:25.037628",
+  "generated_at": "2026-05-25T01:32:41.622254",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i149079722",
-      "date": "2026-05-17",
-      "type": "Ride",
-      "name": "IntervalCoach - Sprint Neuromuscolari",
-      "interval_summary": [
-        "1x 2h48m 125bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "10088s@125bpm",
-          "duration_secs": 10088,
-          "avg_hr": 125,
-          "max_hr": 174,
-          "zone": 1
-        }
-      ]
-    },
-    {
-      "activity_id": "i149080064",
-      "date": "2026-05-17",
-      "type": "Ride",
-      "name": "Piancogno Ciclismo su strada",
-      "interval_summary": [
-        "1x 2h48m 125bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "10090s@125bpm",
-          "duration_secs": 10090,
-          "avg_hr": 125,
-          "max_hr": 174,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i149423456",
       "date": "2026-05-18",
