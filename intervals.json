@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T12:16:35.027867",
+  "generated_at": "2026-05-30T14:14:41.735870",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -995,6 +995,105 @@
           "max_hr": 100,
           "zone": 1,
           "training_load": 0.002302061
+        }
+      ]
+    },
+    {
+      "activity_id": "i152725219",
+      "date": "2026-05-30",
+      "type": "Ride",
+      "name": "Gara  crono Gandosso",
+      "interval_summary": [
+        "1x 24s 111w",
+        "1x 12m23s 342w",
+        "1x 23m42s 59w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "24s@111w14rpm",
+          "duration_secs": 24,
+          "avg_power": 111,
+          "max_power": 706,
+          "avg_hr": 119,
+          "max_hr": 124,
+          "avg_cadence": 14.166667,
+          "zone": 1,
+          "decoupling": "-Infinity"
+        },
+        {
+          "type": "WORK",
+          "label": "743s@342w85rpm",
+          "duration_secs": 743,
+          "avg_power": 342,
+          "max_power": 669,
+          "avg_hr": 175,
+          "max_hr": 185,
+          "avg_cadence": 84.76851,
+          "zone": 4,
+          "training_load": 23.216381,
+          "decoupling": 1.79422
+        },
+        {
+          "type": "WORK",
+          "label": "1422s@59w23rpm",
+          "duration_secs": 1422,
+          "avg_power": 59,
+          "max_power": 352,
+          "avg_hr": 121,
+          "max_hr": 186,
+          "avg_cadence": 22.870605,
+          "zone": 1,
+          "training_load": 10.110652,
+          "decoupling": 72.114
+        }
+      ]
+    },
+    {
+      "activity_id": "i152725182",
+      "date": "2026-05-30",
+      "type": "Ride",
+      "name": "Grumello del Monte Ciclismo su strada",
+      "interval_summary": [
+        "1x 2m28s 304w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 648,
+          "avg_power": 242,
+          "max_power": 494,
+          "avg_hr": 135,
+          "max_hr": 166,
+          "avg_cadence": 71.862656,
+          "zone": 2,
+          "training_load": 13.144463,
+          "decoupling": 1.9855582
+        },
+        {
+          "type": "WORK",
+          "label": "148s@304w82rpm",
+          "duration_secs": 148,
+          "avg_power": 304,
+          "max_power": 360,
+          "avg_hr": 162,
+          "max_hr": 167,
+          "avg_cadence": 82.1554,
+          "zone": 4,
+          "training_load": 3.627895,
+          "decoupling": -2.8687208
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4140,
+          "avg_power": 67,
+          "max_power": 558,
+          "avg_hr": 106,
+          "max_hr": 161,
+          "avg_cadence": 27.442348,
+          "zone": 1,
+          "training_load": 27.96103,
+          "decoupling": -12.059862
         }
       ]
     }
