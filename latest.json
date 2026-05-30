@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-30T21:43:35.656576",
+    "last_updated": "2026-05-30T22:41:31.769452",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -331,7 +331,7 @@
           "race_proximity": null,
           "next_week_load": 0.07,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -366,7 +366,7 @@
     "p_max": 1383,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 75.0,
-    "calculation_timestamp": "2026-05-30T21:43:35.655439",
+    "calculation_timestamp": "2026-05-30T22:41:31.768383",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -1716,12 +1716,22 @@
       "duration_formatted": "1h30m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Tempo sul campo in arrivo. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Ultra 67m 65-77% pace\n\nCooldown\n- 5m 77% pace\n- Ottimo lavoro, goditi il defaticamento. 4m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 113203622,
+      "date": "2026-06-07",
+      "name": "IntervalCoach - Fartlek Aerobico",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "2 \u00d7 5m | 4m | 4\u00d713m / 5m rec | 5m | 4m"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 1,
-    "patternA": 1,
+    "attempted": 6,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 4
