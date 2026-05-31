@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-31T17:38:34.282083",
+    "last_updated": "2026-05-31T18:52:51.757589",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -330,9 +330,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.07,
+          "next_week_load": null,
           "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.8
+          "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -367,7 +367,7 @@
     "p_max": 1382,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 75.0,
-    "calculation_timestamp": "2026-05-31T17:38:34.280941",
+    "calculation_timestamp": "2026-05-31T18:52:51.756696",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -1711,59 +1711,15 @@
       "duration_formatted": "1h30m",
       "workout_summary": "2 \u00d7 5m | 4m | 6\u00d711m / 10s rec | 5m | 4m",
       "description": "Warmup\n- Ciao massarob! Oggi endurance e sprint! 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n6x\n- Aerobic 11m 78-87% pace\n- Sprint 10s 130% pace\n\nCooldown\n- 5m 78% pace\n- Ottimo lavoro, recupera bene! 4m 65% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 112335375,
-      "date": "2026-06-02",
-      "name": "IntervalCoach - Resistenza Aerobica",
-      "type": "WORKOUT",
-      "planned_tss": 45,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Oggi lunga aerobica. 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper Z2 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi lo scarico. 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 112740377,
-      "date": "2026-06-04",
-      "name": "IntervalCoach - Aerobica Progressiva",
-      "type": "WORKOUT",
-      "planned_tss": 45,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Pronti per l'aerobica progressiva? 9m ramp 45-75% 85rpm\n\nMain Set\n- Z2 Low 15m 65% 85rpm\n- Z2 Mid 15m 69% 88rpm\n- Z2 Upper 15m 73% 90rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento! 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 113073214,
-      "date": "2026-06-06",
-      "name": "IntervalCoach - Lunga Aerobica",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Tempo sul campo in arrivo. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n- Ultra 67m 65-77% pace\n\nCooldown\n- 5m 77% pace\n- Ottimo lavoro, goditi il defaticamento. 4m 65% pace\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 113203622,
-      "date": "2026-06-07",
-      "name": "IntervalCoach - Fartlek Aerobico",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "2 \u00d7 5m | 4m | 4\u00d713m / 5m rec | 5m | 4m",
-      "description": "Warmup\n- Ciao massarob! Giornata di endurance e tempo. 5m 65% pace\n- 5m 76% pace\n- 4m 87% pace\n\nMain Set\n4x\n- Aerobic 13m 78-87% pace\n- Tempo 5m 88-94% pace\n\nCooldown\n- 5m 78% pace\n- Ottimo lavoro, rilassati adesso. 4m 65% pace\n\n[Weekly Plan - Build]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 1,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 0
   },
   "weekly_summary": {
     "total_training_hours": 17.66,
