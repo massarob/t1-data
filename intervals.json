@@ -1,69 +1,9 @@
 {
-  "generated_at": "2026-05-30T23:44:06.137660",
+  "generated_at": "2026-05-31T01:54:54.130127",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i150765279",
-      "date": "2026-05-23",
-      "type": "Ride",
-      "name": "IntervalCoach - Endurance Forza",
-      "interval_summary": [
-        "1x 29m22s 145w",
-        "1x 6m18s 341w",
-        "1x 26m56s 95w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1762s@145w67rpm",
-          "duration_secs": 1762,
-          "avg_power": 145,
-          "max_power": 375,
-          "avg_hr": 117,
-          "max_hr": 144,
-          "avg_cadence": 66.59818,
-          "zone": 1,
-          "training_load": 14.272727,
-          "decoupling": -10.540508
-        },
-        {
-          "type": "WORK",
-          "label": "378s@341w81rpm",
-          "duration_secs": 378,
-          "avg_power": 341,
-          "max_power": 572,
-          "avg_hr": 162,
-          "max_hr": 179,
-          "avg_cadence": 81.01588,
-          "zone": 4,
-          "training_load": 11.476239,
-          "decoupling": 0.3455217
-        },
-        {
-          "type": "WORK",
-          "label": "1616s@95w51rpm",
-          "duration_secs": 1616,
-          "avg_power": 95,
-          "max_power": 388,
-          "avg_hr": 111,
-          "max_hr": 179,
-          "avg_cadence": 51.04208,
-          "zone": 1,
-          "training_load": 7.8557477,
-          "decoupling": -0.20394745
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 105,
-          "max_hr": 105,
-          "zone": 1,
-          "training_load": 0.00244975
-        }
-      ]
-    },
     {
       "activity_id": "i151592131",
       "date": "2026-05-26",
