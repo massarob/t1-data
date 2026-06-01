@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T04:50:34.801569",
+  "generated_at": "2026-06-01T10:25:36.132952",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1134,6 +1134,90 @@
           "zone": 1,
           "training_load": 11.906861,
           "decoupling": 3.8057747
+        }
+      ]
+    },
+    {
+      "activity_id": "i153097301",
+      "date": "2026-06-01",
+      "type": "Ride",
+      "name": "Morning Ride",
+      "interval_summary": [
+        "1x 47m35s 244w",
+        "1x 16m38s 261w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2855s@244w84rpm",
+          "duration_secs": 2855,
+          "avg_power": 244,
+          "max_power": 520,
+          "avg_hr": 130,
+          "max_hr": 152,
+          "avg_cadence": 83.88531,
+          "zone": 2,
+          "training_load": 39.814236,
+          "decoupling": 7.428606
+        },
+        {
+          "type": "WORK",
+          "label": "998s@261w70rpm",
+          "duration_secs": 998,
+          "avg_power": 261,
+          "max_power": 502,
+          "avg_hr": 153,
+          "max_hr": 170,
+          "avg_cadence": 69.96793,
+          "zone": 3,
+          "training_load": 22.087,
+          "decoupling": 14.517245
+        }
+      ]
+    },
+    {
+      "activity_id": "i153105556",
+      "date": "2026-06-01",
+      "type": "Ride",
+      "name": "Esplorativo gravel",
+      "interval_summary": [
+        "1x 51m34s 239w",
+        "1x 1h18m 123w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "3094s@239w83rpm",
+          "duration_secs": 3094,
+          "avg_power": 239,
+          "max_power": 520,
+          "avg_hr": 129,
+          "max_hr": 152,
+          "avg_cadence": 83.443535,
+          "zone": 2,
+          "training_load": 42.901424,
+          "decoupling": 9.078381
+        },
+        {
+          "type": "WORK",
+          "label": "4698s@123w58rpm",
+          "duration_secs": 4698,
+          "avg_power": 123,
+          "max_power": 627,
+          "avg_hr": 113,
+          "max_hr": 170,
+          "avg_cadence": 58.47951,
+          "zone": 1,
+          "training_load": 53.393864,
+          "decoupling": 22.130522
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 100,
+          "max_hr": 100,
+          "zone": 1,
+          "training_load": 0.00063769
         }
       ]
     }
