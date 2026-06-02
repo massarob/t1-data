@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T09:18:33.374554",
+  "generated_at": "2026-06-02T12:56:13.975445",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1200,6 +1200,80 @@
           "max_hr": 112,
           "zone": 1,
           "training_load": 0.0018429242
+        }
+      ]
+    },
+    {
+      "activity_id": "i153378768",
+      "date": "2026-06-02",
+      "type": "VirtualRide",
+      "name": "Biketerra - Targa Florio",
+      "interval_summary": [
+        "1x 3m34s 273w",
+        "1x 4m25s 271w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 356,
+          "avg_power": 195,
+          "max_power": 325,
+          "avg_hr": 100,
+          "max_hr": 103,
+          "avg_cadence": 84.74719,
+          "zone": 2,
+          "training_load": 3.7315567,
+          "decoupling": -32.16561
+        },
+        {
+          "type": "WORK",
+          "label": "214s@273w73rpm",
+          "duration_secs": 214,
+          "avg_power": 273,
+          "max_power": 304,
+          "avg_hr": 103,
+          "max_hr": 103,
+          "avg_cadence": 72.56542,
+          "zone": 3,
+          "training_load": 4.00887,
+          "decoupling": 1.5196228
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2054,
+          "avg_power": 201,
+          "max_power": 309,
+          "avg_hr": 108,
+          "max_hr": 119,
+          "avg_cadence": 86.72201,
+          "zone": 2,
+          "training_load": 23.770004,
+          "decoupling": 15.185497
+        },
+        {
+          "type": "WORK",
+          "label": "265s@271w71rpm",
+          "duration_secs": 265,
+          "avg_power": 271,
+          "max_power": 340,
+          "avg_hr": 120,
+          "max_hr": 126,
+          "avg_cadence": 71.04528,
+          "zone": 3,
+          "training_load": 4.746869,
+          "decoupling": 1.6375848
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1655,
+          "avg_power": 190,
+          "max_power": 308,
+          "avg_hr": 110,
+          "max_hr": 126,
+          "avg_cadence": 81.49547,
+          "zone": 2,
+          "training_load": 17.243279,
+          "decoupling": 5.3522906
         }
       ]
     }
