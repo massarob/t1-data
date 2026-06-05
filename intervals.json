@@ -1,89 +1,9 @@
 {
-  "generated_at": "2026-06-04T22:46:14.615352",
+  "generated_at": "2026-06-05T00:14:25.885735",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i152322931",
-      "date": "2026-05-28",
-      "type": "Ride",
-      "name": "Piancogno Ciclismo su strada",
-      "interval_summary": [
-        "1x 23m38s 146w",
-        "1x 4m20s 394w",
-        "1x 61s 213w",
-        "1x 6m12s 363w",
-        "1x 59m19s 129w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1418s@146w75rpm",
-          "duration_secs": 1418,
-          "avg_power": 146,
-          "max_power": 519,
-          "avg_hr": 115,
-          "max_hr": 147,
-          "avg_cadence": 75.15768,
-          "zone": 1,
-          "training_load": 13.07461,
-          "decoupling": -11.786565
-        },
-        {
-          "type": "WORK",
-          "label": "260s@394w82rpm",
-          "duration_secs": 260,
-          "avg_power": 394,
-          "max_power": 646,
-          "avg_hr": 164,
-          "max_hr": 172,
-          "avg_cadence": 81.934616,
-          "zone": 5,
-          "training_load": 10.878099,
-          "decoupling": 15.220053
-        },
-        {
-          "type": "WORK",
-          "label": "61s@213w84rpm",
-          "duration_secs": 61,
-          "avg_power": 213,
-          "max_power": 313,
-          "avg_hr": 158,
-          "max_hr": 170,
-          "avg_cadence": 84.03278,
-          "zone": 2,
-          "training_load": 0.8519835,
-          "decoupling": -86.13669
-        },
-        {
-          "type": "WORK",
-          "label": "372s@363w81rpm",
-          "duration_secs": 372,
-          "avg_power": 363,
-          "max_power": 555,
-          "avg_hr": 171,
-          "max_hr": 176,
-          "avg_cadence": 80.86828,
-          "zone": 5,
-          "training_load": 12.572317,
-          "decoupling": 7.9359045
-        },
-        {
-          "type": "WORK",
-          "label": "3559s@129w63rpm",
-          "duration_secs": 3559,
-          "avg_power": 129,
-          "max_power": 507,
-          "avg_hr": 112,
-          "max_hr": 175,
-          "avg_cadence": 63.12318,
-          "zone": 1,
-          "training_load": 25.680227,
-          "decoupling": 3.4090726
-        }
-      ]
-    },
     {
       "activity_id": "i152503079",
       "date": "2026-05-29",
