@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-07T21:45:02.520708",
+    "last_updated": "2026-06-07T22:48:42.328017",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -308,7 +308,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -343,7 +343,7 @@
     "p_max": 1372,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 76.0,
-    "calculation_timestamp": "2026-06-07T21:45:02.519607",
+    "calculation_timestamp": "2026-06-07T22:48:42.326892",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1408,14 +1408,26 @@
       "vo2max": 76.0
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 114746564,
+      "date": "2026-06-09",
+      "name": "IntervalCoach - Fat Max",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Fat Max Ride oggi! 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n- Settle In 15m 65% pace\n- Fat Max 15m 65-72% pace\n- Cruise 15m 72-65% pace\n\nCooldown\n- 3m 72% pace\n- Ottimo lavoro, recupera bene! 3m 65% pace\n\n[Weekly Plan - Build]"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
+    "attempted": 1,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 18.46,
