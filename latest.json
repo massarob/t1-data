@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-08T21:54:15.637849",
+    "last_updated": "2026-06-08T23:15:14.348984",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -306,7 +306,7 @@
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -339,7 +339,7 @@
     "p_max": 1371,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-06-08T21:54:15.636646",
+    "calculation_timestamp": "2026-06-08T23:15:14.347824",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1361,15 +1361,26 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Fat Max Ride oggi! 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n- Settle In 15m 65% pace\n- Fat Max 15m 65-72% pace\n- Cruise 15m 72-65% pace\n\nCooldown\n- 3m 72% pace\n- Ottimo lavoro, recupera bene! 3m 65% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 115026921,
+      "date": "2026-06-16",
+      "name": "IntervalCoach - Aerobica Progressiva",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Pronti per l'aerobica progressiva? 3m 65% pace\n- 3m 76% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
+    "attempted": 2,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 17.36,
