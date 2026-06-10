@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-10T06:36:30.527769",
+    "last_updated": "2026-06-10T10:44:00.234597",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -115,8 +115,8 @@
       "ctl": 161.44,
       "atl": 125.74,
       "tsb": 35.7,
-      "ramp_rate": -8.2,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ramp_rate": -3.26,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 319.3,
@@ -281,14 +281,15 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 1.0,
+    "consistency_index": 0.67,
     "consistency_details": {
-      "planned_days": 2,
+      "planned_days": 3,
       "completed_days": 6,
       "matched_days": 2,
       "planned_dates": [
         "2026-06-04",
-        "2026-06-09"
+        "2026-06-09",
+        "2026-06-10"
       ],
       "completed_dates": [
         "2026-06-04",
@@ -311,11 +312,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 0.26,
+          "hard_sessions_planned": 2,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 0.8,
           "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
@@ -349,13 +350,13 @@
     "p_max": 1368,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-10T06:36:30.526549",
+    "calculation_timestamp": "2026-06-10T10:44:00.233297",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 81,
-      "planned_workouts_7d": 2,
+      "planned_workouts_7d": 3,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1146,6 +1147,50 @@
   ],
   "planned_workouts": [
     {
+      "id": 115319125,
+      "date": "2026-06-10",
+      "name": "Indoor \u2014 Attivazione Sprint + Sweet Spot",
+      "type": "WORKOUT",
+      "planned_tss": 69,
+      "duration_hours": 1.27,
+      "duration_formatted": "1h16m",
+      "workout_summary": "10m @181W | 4\u00d730s @429W / 4m30s rec | 3\u00d78m @297W / 4m rec | 10m @165W",
+      "description": "Stimolo neuromuscolare + qualit\u00e0 soglia. Gambe attivate senza svuotarle in vista della MTB di domani e della gara di sabato.\n\nWarmup\n- 10m 55% intensity=warmup\n\nMain Set 4x\n- 30s 130% intensity=interval\n- 4m30s 50% intensity=recovery\n\nMain Set 3x\n- 8m 90% intensity=interval\n- 4m 55% intensity=recovery\n\nCooldown\n- 10m 50% intensity=cooldown"
+    },
+    {
+      "id": 115319130,
+      "date": "2026-06-11",
+      "name": "MTB \u2014 Salita Lunga Aerobica (>60')",
+      "type": "WORKOUT",
+      "planned_tss": 76,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "Salita lunga in Z2/Z3, ritmo sostenuto ma controllato. Niente picchi oltre soglia \u2014 arrivare in cima con ancora qualcosa in serbatoio. Porta carboidrati sufficienti (almeno 60g/h). Ultimo giorno di carico prima dello scarico pre-gara.\n\nWarmup\n- 15m 60% intensity=warmup\n\nMain Set 1x\n- 65m 75% intensity=interval\n\nCooldown\n- 10m 50% intensity=cooldown"
+    },
+    {
+      "id": 115319134,
+      "date": "2026-06-12",
+      "name": "Scarico Pre-Gara \u2014 Gambe Leggere",
+      "type": "WORKOUT",
+      "planned_tss": 27,
+      "duration_hours": 0.74,
+      "duration_formatted": "44m20s",
+      "workout_summary": "4\u00d720s @363W / 2m rec | 5m @148W",
+      "description": "Scarico vero. Niente sforzi, solo sciogliere le gambe e fare 3-4 allunghi brevi a ritmo gara per mantenere reattivit\u00e0 neuromuscolare. Non aggiungere volume.\n\nMain Set 1x\n- 30m 60% intensity=warmup\n\nMain Set 4x\n- 20s 110% intensity=interval\n- 2m 50% intensity=recovery\n\nCooldown\n- 5m 45% intensity=cooldown"
+    },
+    {
+      "id": 115319141,
+      "date": "2026-06-13",
+      "name": "\ud83c\udfc1 GARA \u2014 Crono Salita",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description": "Crono salita ~17-18 min, pedalabile con finale veloce.\n\n\ud83d\udccb Strategia:\n\u2022 Primi 2/3 (\u224811-12'): gestisci, mantieni un ritmo alto ma sostenibile. Non partire a tutta.\n\u2022 Ultimo 1/3 (\u22485-6'): alza il ritmo progressivamente.\n\u2022 Ultimi 2-3': tutto quello che hai, finale veloce.\n\nTSB previsto venerd\u00ec sera: ~+48. Arrivi fresco \u2014 fidati delle gambe."
+    },
+    {
       "id": 115026921,
       "date": "2026-06-16",
       "name": "IntervalCoach - Aerobica Progressiva",
@@ -1158,12 +1203,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 4,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 15.34,
