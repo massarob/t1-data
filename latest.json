@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-14T13:14:38.377583",
+    "last_updated": "2026-06-14T15:21:02.637475",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -294,8 +294,10 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "high",
-      "reason_codes": [],
+      "confidence": "medium",
+      "reason_codes": [
+        "NO_PLANNED_WORKOUTS"
+      ],
       "basis": {
         "stream_1": {
           "ctl_slope": -4.6,
@@ -307,9 +309,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": 0.07,
+          "next_week_load": null,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.2
+          "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -320,7 +322,9 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [],
+    "phase_triggers": [
+      "NO_PLANNED_WORKOUTS"
+    ],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -342,7 +346,7 @@
     "p_max": 1367,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-14T13:14:38.376423",
+    "calculation_timestamp": "2026-06-14T15:21:02.636390",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -1292,17 +1296,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 115904897,
-      "date": "2026-06-21",
-      "name": "IntervalCoach - Resistenza Progressiva",
-      "type": "WORKOUT",
-      "planned_tss": 67,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Endurance awaits today. 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, massarob! Rilassati ora. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 115904147,
       "date": "2026-06-22",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S1",
@@ -1312,6 +1305,17 @@
       "duration_formatted": "1h15m",
       "workout_summary": null,
       "description_preview": "Forza massimale con bilanciere. Settimana 1: trova i pesi giusti, tecnica prioritaria.\nRiscaldamento: 10 min mobilit\u00e0 articolare + 2 serie leggere squat\nSquat: 5x3 @85% 1RM \u2013 recupero 3-4 min tra serie"
+    },
+    {
+      "id": 115998970,
+      "date": "2026-06-22",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance Base S1",
+      "type": "WORKOUT",
+      "planned_tss": 120,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description_preview": "Uscita endurance pura. Z2 costante (~215W), cadenza 88-92 rpm. Ideale su salita lunga o fondo regolare. Alimentati ogni 45 min. Totale ~3h.\nWarmup\n- 15m 55% intensity=warmup"
     },
     {
       "id": 115904149,
@@ -1325,6 +1329,16 @@
       "description_preview": "Corsa in salita aerobica. Pendenza costante 6-10%, FC in Z2 per tutta la parte centrale. Ritmo conversazionale. Scarpe da trail se disponibili.\nWarmup\n- 10m Z1 Pace intensity=warmup"
     },
     {
+      "id": 115998971,
+      "date": "2026-06-23",
+      "name": "\ud83d\udeb4 Bici \u2013 Soglia + \ud83d\udcaa Pesi Gambe S1",
+      "type": "WORKOUT",
+      "planned_tss": 73,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "20m @181W | 3\u00d710m @290W / 5m rec | 20m @181W"
+    },
+    {
       "id": 115904150,
       "date": "2026-06-24",
       "name": "\ud83d\udeb4 Bici \u2013 Endurance + Blocchi Soglia S1",
@@ -1333,6 +1347,16 @@
       "duration_hours": 1.67,
       "duration_formatted": "1h40m",
       "workout_summary": "20m @181W | 3\u00d715m @273W / 5m rec | 20m @181W"
+    },
+    {
+      "id": 115998972,
+      "date": "2026-06-24",
+      "name": "\ud83d\udeb4 Bici \u2013 Sweet Spot S1",
+      "type": "WORKOUT",
+      "planned_tss": 124,
+      "duration_hours": 2.17,
+      "duration_formatted": "2h10m",
+      "workout_summary": "20m @181W | 3\u00d720m @290W / 10m rec | 20m @181W"
     },
     {
       "id": 115904151,
@@ -1346,6 +1370,17 @@
       "description_preview": "Seconda sessione pesi della settimana.\nSquat: 5x3 @85% 1RM \u2013 recupero 3-4 min\nStacco rumeno: 4x4 @80% 1RM \u2013 recupero 3 min"
     },
     {
+      "id": 115998973,
+      "date": "2026-06-25",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance + \ud83d\udcaa Pesi Gambe S1",
+      "type": "WORKOUT",
+      "planned_tss": 79,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici endurance ~2h a Z2 (~215W). Gambe che girano dopo i pesi di marted\u00ec.\nPOMERIGGIO \u2013 Pesi gambe (~75 min):\nSquat bilanciere: 5x3 @85% 1RM \u2013 recupero 3-4 min"
+    },
+    {
       "id": 115904153,
       "date": "2026-06-26",
       "name": "\u26a1 Scarico Pre-Gara S1",
@@ -1356,9 +1391,30 @@
       "workout_summary": "10m @181W | 3\u00d710s @396W / 5m rec | 10m @165W"
     },
     {
+      "id": 115998974,
+      "date": "2026-06-26",
+      "name": "\u26a1 Recupero Attivo + \ud83c\udfc3 Corsa Salita Z1 S1",
+      "type": "WORKOUT",
+      "planned_tss": 25,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici recupero attivo: 60 min Z1 (~165W), pedalata sciolta, nessuna pressione.\nPOMERIGGIO \u2013 Corsa salita aerobica: 30-40 min totali, pendenza 6-10%, FC in Z1-Z2. Ritmo conversazionale. Scarpe da trail. Serve a introdurre lo stimolo di corsa senza caricare.\nMain Set 1x"
+    },
+    {
       "id": 115904154,
       "date": "2026-06-27",
       "name": "\ud83c\udfc3 Corsa Salita \u2013 Ripetute S1",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.83,
+      "duration_formatted": "50m",
+      "workout_summary": "15m | 5\u00d73m / 2m rec | 10m"
+    },
+    {
+      "id": 115998976,
+      "date": "2026-06-27",
+      "name": "\ud83c\udfc1 Gara / \ud83c\udfc3 Corsa Salita Qualit\u00e0 S1",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 0.83,
@@ -1377,6 +1433,17 @@
       "description_preview": "GARA o sessione libera a piacere.\nSe gara: protocollo riscaldamento abituale.\nSe sessione libera: MTB o strada in Z2, max 3h, nessuna pressione."
     },
     {
+      "id": 115998977,
+      "date": "2026-06-28",
+      "name": "\ud83c\udfc1 Gara / \ud83d\udeb4 Endurance Libera S1",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": "Se c'\u00e8 GARA: esegui il protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h senza struttura. Goditi l'uscita."
+    },
+    {
       "id": 115904159,
       "date": "2026-06-29",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S2",
@@ -1386,6 +1453,16 @@
       "duration_formatted": "1h15m",
       "workout_summary": null,
       "description_preview": "Settimana 2: aumenta i carichi del 3-5% rispetto alla S1.\nSquat: 5x3 @87-88% 1RM \u2013 recupero 3-4 min\nStacco rumeno: 4x4 @82% 1RM \u2013 recupero 3 min"
+    },
+    {
+      "id": 115999028,
+      "date": "2026-06-29",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance + Fartlek S2",
+      "type": "WORKOUT",
+      "planned_tss": 104,
+      "duration_hours": 2.58,
+      "duration_formatted": "2h35m",
+      "workout_summary": "15m @181W | 1\u00d71m @313W / 4m rec | 15m @165W"
     },
     {
       "id": 115904160,
@@ -1399,6 +1476,16 @@
       "description_preview": "Corsa aerobica in salita, +15 min rispetto alla S1. Mantieni Z2 HR costante. Se la FC tende a salire in Z3, rallenta.\nWarmup\n- 10m Z1 Pace intensity=warmup"
     },
     {
+      "id": 115999030,
+      "date": "2026-06-30",
+      "name": "\ud83d\udeb4 Bici \u2013 Soglia + \ud83d\udcaa Pesi Gambe S2",
+      "type": "WORKOUT",
+      "planned_tss": 87,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "20m @181W | 4\u00d710m @290W / 5m rec | 15m @181W"
+    },
+    {
       "id": 115904161,
       "date": "2026-07-01",
       "name": "\ud83d\udeb4 Bici \u2013 Soglia Estesa S2",
@@ -1407,6 +1494,16 @@
       "duration_hours": 2.0,
       "duration_formatted": "2h",
       "workout_summary": "20m @181W | 4\u00d715m @280W / 5m rec | 20m @181W"
+    },
+    {
+      "id": 115999032,
+      "date": "2026-07-01",
+      "name": "\ud83d\udeb4 Bici \u2013 Sweet Spot Lungo S2",
+      "type": "WORKOUT",
+      "planned_tss": 118,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": "20m @181W | 2\u00d730m @290W / 10m rec | 20m @181W"
     },
     {
       "id": 115904162,
@@ -1420,6 +1517,17 @@
       "description_preview": "Seconda sessione pesi S2. Stessi carichi di luned\u00ec.\nSquat: 5x3 @87-88% 1RM\nStacco rumeno: 4x4 @82% 1RM"
     },
     {
+      "id": 115999033,
+      "date": "2026-07-02",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance + \ud83d\udcaa Pesi Gambe S2",
+      "type": "WORKOUT",
+      "planned_tss": 79,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici Z2 ~2h.\nPOMERIGGIO \u2013 Pesi gambe S2:\nSquat: 5x3 @87% 1RM"
+    },
+    {
       "id": 115904163,
       "date": "2026-07-03",
       "name": "\u26a1 Scarico Pre-Gara S2",
@@ -1430,9 +1538,30 @@
       "workout_summary": "10m @181W | 3\u00d710s @396W / 5m rec | 10m @165W"
     },
     {
+      "id": 115999034,
+      "date": "2026-07-03",
+      "name": "\u26a1 Recupero Attivo + \ud83c\udfc3 Corsa Salita Z2 S2",
+      "type": "WORKOUT",
+      "planned_tss": 25,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici recupero 60 min Z1.\nPOMERIGGIO \u2013 Corsa salita 40-50 min, FC Z2. Pendenza 6-10%. Volume leggermente superiore a S1.\nMain Set 1x"
+    },
+    {
       "id": 115904164,
       "date": "2026-07-04",
       "name": "\ud83c\udfc3 Corsa Salita \u2013 Ripetute Lunghe S2",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.92,
+      "duration_formatted": "55m",
+      "workout_summary": "15m | 5\u00d74m / 2m rec | 10m"
+    },
+    {
+      "id": 115999035,
+      "date": "2026-07-04",
+      "name": "\ud83c\udfc1 Gara / \ud83c\udfc3 Corsa Salita Qualit\u00e0 S2",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 0.92,
@@ -1451,6 +1580,17 @@
       "description_preview": "GARA o sessione libera a piacere.\nSe sessione libera: MTB o strada in Z2, max 3h."
     },
     {
+      "id": 115999037,
+      "date": "2026-07-05",
+      "name": "\ud83c\udfc1 Gara / \ud83d\udeb4 Endurance Libera S2",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": "Se GARA: protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h."
+    },
+    {
       "id": 115904182,
       "date": "2026-07-06",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S3",
@@ -1460,6 +1600,16 @@
       "duration_formatted": "1h15m",
       "workout_summary": null,
       "description_preview": "Settimana 3: picco di carico pesi. Porta i carichi al massimo settimanale.\nSquat: 5x2 @90% 1RM \u2013 recupero 4-5 min (meno reps, pi\u00f9 pesante)\nStacco rumeno: 4x3 @85% 1RM \u2013 recupero 3-4 min"
+    },
+    {
+      "id": 115999061,
+      "date": "2026-07-06",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance + Over-Soglia S3",
+      "type": "WORKOUT",
+      "planned_tss": 104,
+      "duration_hours": 2.58,
+      "duration_formatted": "2h35m",
+      "workout_summary": "15m @181W | 1\u00d71m @346W / 4m rec | 15m @165W"
     },
     {
       "id": 115904183,
@@ -1473,6 +1623,16 @@
       "description_preview": "Uscita aerobica in salita, la pi\u00f9 lunga del blocco. Z2 HR per tutta la durata. Se la FC sfora, cammina brevemente e riprendi.\nWarmup\n- 10m Z1 Pace intensity=warmup"
     },
     {
+      "id": 115999062,
+      "date": "2026-07-07",
+      "name": "\ud83d\udeb4 Bici \u2013 Soglia Picco + \ud83d\udcaa Pesi Gambe S3",
+      "type": "WORKOUT",
+      "planned_tss": 102,
+      "duration_hours": 1.72,
+      "duration_formatted": "1h43m",
+      "workout_summary": "20m @181W | 4\u00d712m @297W / 5m rec | 15m @181W"
+    },
+    {
       "id": 115904184,
       "date": "2026-07-08",
       "name": "\ud83d\udeb4 Bici \u2013 Picco Carico S3",
@@ -1481,6 +1641,16 @@
       "duration_hours": 2.33,
       "duration_formatted": "2h20m",
       "workout_summary": "20m @181W | 5\u00d715m @280W / 5m rec | 20m @181W"
+    },
+    {
+      "id": 115999063,
+      "date": "2026-07-08",
+      "name": "\ud83d\udeb4 Bici \u2013 Sweet Spot Picco S3",
+      "type": "WORKOUT",
+      "planned_tss": 151,
+      "duration_hours": 2.42,
+      "duration_formatted": "2h25m",
+      "workout_summary": "20m @181W | 3\u00d725m @297W / 10m rec | 20m @181W"
     },
     {
       "id": 115904185,
@@ -1494,6 +1664,17 @@
       "description_preview": "Seconda sessione pesi S3. Stessi carichi di luned\u00ec.\nSquat: 5x2 @90% 1RM\nStacco rumeno: 4x3 @85% 1RM"
     },
     {
+      "id": 115999064,
+      "date": "2026-07-09",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance + \ud83d\udcaa Pesi Gambe S3",
+      "type": "WORKOUT",
+      "planned_tss": 79,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici Z2 ~2h. Gambe pesanti dopo il mercoled\u00ec duro: mantieni Z2 rigoroso.\nPOMERIGGIO \u2013 Pesi gambe S3:\nSquat: 5x2 @90% 1RM"
+    },
+    {
       "id": 115904186,
       "date": "2026-07-10",
       "name": "\u26a1 Scarico Pre-Gara S3",
@@ -1504,9 +1685,30 @@
       "workout_summary": "10m @181W | 3\u00d710s @396W / 5m rec | 10m @165W"
     },
     {
+      "id": 115999065,
+      "date": "2026-07-10",
+      "name": "\u26a1 Recupero Attivo + \ud83c\udfc3 Corsa Salita Z2 S3",
+      "type": "WORKOUT",
+      "planned_tss": 25,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici recupero 60 min Z1. Dopo la settimana pi\u00f9 dura del blocco questo venerd\u00ec \u00e8 fondamentale. Non forzare.\nPOMERIGGIO \u2013 Corsa salita 45-50 min Z2. Il massimo volume di corsa del blocco.\nMain Set 1x"
+    },
+    {
       "id": 115904187,
       "date": "2026-07-11",
       "name": "\ud83c\udfc3 Corsa Salita \u2013 Ripetute Intense S3",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 1.02,
+      "duration_formatted": "1h1m",
+      "workout_summary": "15m | 6\u00d74m / 2m rec | 10m"
+    },
+    {
+      "id": 115999066,
+      "date": "2026-07-11",
+      "name": "\ud83c\udfc1 Gara / \ud83c\udfc3 Corsa Salita Qualit\u00e0 S3",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 1.02,
@@ -1525,6 +1727,17 @@
       "description_preview": "GARA o sessione libera a piacere.\nSe sessione libera: MTB o strada in Z2, max 3h."
     },
     {
+      "id": 115999067,
+      "date": "2026-07-12",
+      "name": "\ud83c\udfc1 Gara / \ud83d\udeb4 Endurance Libera S3",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": "Se GARA: protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h. Fine settimana picco."
+    },
+    {
       "id": 115904246,
       "date": "2026-07-13",
       "name": "\ud83d\udcaa Pesi \u2013 Scarico Attivo S4",
@@ -1534,6 +1747,17 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "description_preview": "Settimana 4: deload. Volume dimezzato, carichi mantenuti al 80-85% delle S precedenti.\nSquat: 3x3 @82% 1RM \u2013 recupero 3 min\nStacco rumeno: 3x3 @78% 1RM \u2013 recupero 3 min"
+    },
+    {
+      "id": 115999101,
+      "date": "2026-07-13",
+      "name": "\ud83d\udeb4 Bici \u2013 Endurance Leggera S4",
+      "type": "WORKOUT",
+      "planned_tss": 72,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description_preview": "Deload: uscita endurance ridotta, ~2h a Z2 bassa (~205W). Niente fartlek, niente stimoli aggiuntivi. Gambe che girano e basta.\nWarmup\n- 15m 55% intensity=warmup"
     },
     {
       "id": 115904247,
@@ -1547,6 +1771,16 @@
       "description_preview": "Uscita rigenerativa in salita. Z1 HR, passo libero, nessun obbligo di intensit\u00e0. Goditi il movimento.\nMain Set 1x\n- 50m Z1 HR intensity=recovery"
     },
     {
+      "id": 115999102,
+      "date": "2026-07-14",
+      "name": "\ud83d\udeb4 Bici \u2013 Soglia Ridotta + \ud83d\udcaa Pesi Deload S4",
+      "type": "WORKOUT",
+      "planned_tss": 51,
+      "duration_hours": 1.08,
+      "duration_formatted": "1h5m",
+      "workout_summary": "20m @181W | 2\u00d710m @280W / 5m rec | 15m @181W"
+    },
+    {
       "id": 115904248,
       "date": "2026-07-15",
       "name": "\ud83d\udeb4 Bici \u2013 Endurance Leggera S4",
@@ -1555,6 +1789,16 @@
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": "15m @181W | 2\u00d720m @247W / 10m rec | 15m @181W"
+    },
+    {
+      "id": 115999104,
+      "date": "2026-07-15",
+      "name": "\ud83d\udeb4 Bici \u2013 Sweet Spot Deload S4",
+      "type": "WORKOUT",
+      "planned_tss": 87,
+      "duration_hours": 1.67,
+      "duration_formatted": "1h40m",
+      "workout_summary": "20m @181W | 2\u00d720m @280W / 10m rec | 20m @181W"
     },
     {
       "id": 115904250,
@@ -1568,6 +1812,17 @@
       "description_preview": "Seconda sessione deload pesi.\nSquat: 3x3 @82% 1RM\nStacco rumeno: 3x3 @78% 1RM"
     },
     {
+      "id": 115999105,
+      "date": "2026-07-16",
+      "name": "\ud83d\udeb4 Bici \u2013 Z2 + \ud83d\udcaa Pesi Deload S4",
+      "type": "WORKOUT",
+      "planned_tss": 53,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici Z2 ~1h30, leggera.\nPOMERIGGIO \u2013 Pesi gambe deload S4:\nSquat: 3x3 @80% 1RM"
+    },
+    {
       "id": 115904251,
       "date": "2026-07-17",
       "name": "\u26a1 Scarico Pre-Gara S4",
@@ -1578,9 +1833,30 @@
       "workout_summary": "10m @181W | 3\u00d710s @396W / 5m rec | 10m @165W"
     },
     {
+      "id": 115999106,
+      "date": "2026-07-17",
+      "name": "\u26a1 Recupero Attivo + \ud83c\udfc3 Corsa Rigenerativa S4",
+      "type": "WORKOUT",
+      "planned_tss": 17,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": null,
+      "description_preview": "MATTINA \u2013 Bici recupero 45 min Z1. Il pi\u00f9 leggero del blocco.\nPOMERIGGIO \u2013 Corsa salita 25-30 min Z1, ritmo libero. Goditi il movimento senza alcuna struttura.\nMain Set 1x"
+    },
+    {
       "id": 115904252,
       "date": "2026-07-18",
       "name": "\ud83c\udfc3 Corsa Salita \u2013 Mantenimento S4",
+      "type": "WORKOUT",
+      "planned_tss": null,
+      "duration_hours": 0.75,
+      "duration_formatted": "45m",
+      "workout_summary": "15m | 4\u00d73m / 2m rec | 10m"
+    },
+    {
+      "id": 115999107,
+      "date": "2026-07-18",
+      "name": "\ud83c\udfc1 Gara / \ud83c\udfc3 Corsa Salita Mantenimento S4",
       "type": "WORKOUT",
       "planned_tss": null,
       "duration_hours": 0.75,
@@ -1597,15 +1873,26 @@
       "duration_formatted": "0s",
       "workout_summary": null,
       "description_preview": "GARA o sessione libera a piacere.\nFine blocco 4 settimane. Valuta i progressi: confronta i carichi ai pesi con S1, la sensazione sulle salite a piedi e in bici. Pianifica il prossimo blocco di conseguenza."
+    },
+    {
+      "id": 115999108,
+      "date": "2026-07-19",
+      "name": "\ud83c\udfc1 Gara / \ud83d\udeb4 Endurance Libera S4",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": "Se GARA: protocollo abituale. Fine blocco 4 settimane.\nSe sessione libera: MTB o strada Z2, 2h max.\nValuta i progressi: confronta i carichi ai pesi con S1 e la sensazione sulle salite in bici e a piedi. Pianifica il prossimo blocco."
     }
   ],
   "workout_summary_stats": {
-    "attempted": 17,
-    "success": 12,
-    "patternA": 12,
+    "attempted": 40,
+    "success": 26,
+    "patternA": 26,
     "patternB": 0,
-    "bail_no_workout_doc": 12,
-    "bail_no_match": 5
+    "bail_no_workout_doc": 16,
+    "bail_no_match": 14
   },
   "weekly_summary": {
     "total_training_hours": 20.2,
