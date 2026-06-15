@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-15T20:16:16.845223",
+    "last_updated": "2026-06-15T22:34:19.318328",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -311,11 +311,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.07,
-          "hard_sessions_planned": 1,
+          "planned_tss_delta": 0.12,
+          "hard_sessions_planned": 2,
           "race_proximity": null,
           "next_week_load": 0.57,
-          "plan_coverage_current_week": 0.2,
+          "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 2.8
         },
         "data_quality": "good",
@@ -349,7 +349,7 @@
     "p_max": 1368,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 76.0,
-    "calculation_timestamp": "2026-06-15T20:16:16.338287",
+    "calculation_timestamp": "2026-06-15T22:34:19.317146",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1488,6 +1488,17 @@
       "description": "Warmup\n- Ciao massarob! Pronti per un lungo aerobico? 3m 65% pace\n- 3m 76% pace\n- 3m 87% pace\n\nMain Set\n- Settle In 15m 77% pace\n- Aerobic 15m 78-87% pace\n- Cruise 15m 87-78% pace\n\nCooldown\n- 3m 78% pace\n- Ben fatto, massarob! Goditi il defaticamento 3m 65% pace\n\n[Weekly Plan - Build]"
     },
     {
+      "id": 116379964,
+      "date": "2026-06-18",
+      "name": "IntervalCoach - Resistenza Graduale",
+      "type": "WORKOUT",
+      "planned_tss": 45,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Resistenza, pronto? 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, rilassa le gambe 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 115904147,
       "date": "2026-06-22",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S1",
@@ -2079,12 +2090,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 41,
+    "attempted": 42,
     "success": 26,
     "patternA": 26,
     "patternB": 0,
     "bail_no_workout_doc": 16,
-    "bail_no_match": 15
+    "bail_no_match": 16
   },
   "weekly_summary": {
     "total_training_hours": 23.58,
