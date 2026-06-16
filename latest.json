@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-16T19:51:39.113160",
+    "last_updated": "2026-06-16T22:18:14.837667",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -123,10 +123,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 174.16,
-      "atl": 196.4,
-      "tsb": -22.24,
-      "ramp_rate": 6.43,
+      "ctl": 172.68,
+      "atl": 188.01,
+      "tsb": -15.33,
+      "ramp_rate": 4.94,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -326,11 +326,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.14,
-          "hard_sessions_planned": 2,
+          "planned_tss_delta": 0.28,
+          "hard_sessions_planned": 3,
           "race_proximity": null,
           "next_week_load": 0.57,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 2.8
         },
         "data_quality": "good",
@@ -364,7 +364,7 @@
     "p_max": 1368,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 76.0,
-    "calculation_timestamp": "2026-06-16T19:51:39.111959",
+    "calculation_timestamp": "2026-06-16T22:18:14.836464",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1603,6 +1603,17 @@
       "description": "Warmup\n- Ciao massarob! Resistenza, pronto? 9m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 11m 65% 85rpm\n- Build 11m 67% 88rpm\n- Upper 11m 70-74% 90rpm\n- Cruise 12m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, rilassa le gambe 6m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
     },
     {
+      "id": 116575236,
+      "date": "2026-06-20",
+      "name": "IntervalCoach - Resistenza Tempo",
+      "type": "WORKOUT",
+      "planned_tss": 113,
+      "duration_hours": 1.58,
+      "duration_formatted": "1h35m",
+      "workout_summary": "2 \u00d7 5m | 4m | 4\u00d713m / 5m rec | 5m | 4m",
+      "description": "Warmup\n- Ciao Massarob! Resistenza + Tempo oggi. 5m Z2 HR\n- 5m Z3 HR\n- 4m Z3 HR\n\nMain Set\n4x\n- Aerobic 13m Z3 HR\n- Tempo 5m Z3-Z4 HR\n\nCooldown\n- 5m Z3 HR\n- Ottimo lavoro, recupera bene. 4m Z2 HR\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 115904147,
       "date": "2026-06-22",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S1",
@@ -2195,9 +2206,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 42,
-    "success": 26,
-    "patternA": 26,
+    "attempted": 43,
+    "success": 27,
+    "patternA": 27,
     "patternB": 0,
     "bail_no_workout_doc": 16,
     "bail_no_match": 16
