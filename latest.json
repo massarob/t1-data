@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-17T21:45:42.862222",
+    "last_updated": "2026-06-17T23:43:08.727066",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -319,11 +319,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.24,
-          "hard_sessions_planned": 2,
+          "planned_tss_delta": 0.35,
+          "hard_sessions_planned": 3,
           "race_proximity": null,
           "next_week_load": 0.57,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 2.8
         },
         "data_quality": "good",
@@ -357,7 +357,7 @@
     "p_max": 1368,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 72.0,
-    "calculation_timestamp": "2026-06-17T21:45:42.860940",
+    "calculation_timestamp": "2026-06-17T23:43:08.725827",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1704,6 +1704,17 @@
       "description": "Warmup\n- Ciao Massarob! Resistenza + Tempo oggi. 5m Z2 HR\n- 5m Z3 HR\n- 4m Z3 HR\n\nMain Set\n4x\n- Aerobic 13m Z3 HR\n- Tempo 5m Z3-Z4 HR\n\nCooldown\n- 5m Z3 HR\n- Ottimo lavoro, recupera bene. 4m Z2 HR\n\n[Weekly Plan - Build]"
     },
     {
+      "id": 116751706,
+      "date": "2026-06-21",
+      "name": "IntervalCoach - Sprint Resistenza",
+      "type": "WORKOUT",
+      "planned_tss": 72,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "14m @198W | 6\u00d711m @230W / 10s rec | 9m @181W",
+      "description": "Warmup\n- Ciao massarob! Pronti per resistenza e sprint! 14m ramp 45-75% 85rpm\n\nMain Set\n6x\n- Endurance 11m 65-75% 88rpm\n- Sprint 10s 150% 110rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 115904147,
       "date": "2026-06-22",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S1",
@@ -2298,9 +2309,9 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 42,
-    "success": 27,
-    "patternA": 27,
+    "attempted": 43,
+    "success": 28,
+    "patternA": 28,
     "patternB": 0,
     "bail_no_workout_doc": 16,
     "bail_no_match": 15
