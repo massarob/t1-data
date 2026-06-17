@@ -1,47 +1,9 @@
 {
-  "generated_at": "2026-06-16T23:57:03.546971",
+  "generated_at": "2026-06-17T05:03:24.475411",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i155765251",
-      "date": "2026-06-09",
-      "type": "Ride",
-      "name": "Anche oggi \ud83c\udf27\ufe0f\ud83d\ude15",
-      "interval_summary": [
-        "1x 1h16m 186w",
-        "1x 2h10m 157w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "4597s@186w82rpm",
-          "duration_secs": 4597,
-          "avg_power": 186,
-          "max_power": 409,
-          "avg_hr": 127,
-          "max_hr": 158,
-          "avg_cadence": 81.588974,
-          "zone": 2,
-          "training_load": 56.79441,
-          "decoupling": 3.1556551
-        },
-        {
-          "type": "WORK",
-          "label": "7831s@157w61rpm",
-          "duration_secs": 7831,
-          "avg_power": 157,
-          "max_power": 633,
-          "avg_hr": 127,
-          "max_hr": 182,
-          "avg_cadence": 61.485687,
-          "zone": 1,
-          "training_load": 108.84016,
-          "decoupling": 19.809399
-        }
-      ]
-    },
     {
       "activity_id": "i156133725",
       "date": "2026-06-10",
