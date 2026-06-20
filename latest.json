@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-20T21:48:22.907515",
+    "last_updated": "2026-06-20T23:14:40.323323",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -53,7 +53,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -9.4
+        "value": 2.9
       }
     },
     "signal_summary": {
@@ -102,10 +102,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 173.43,
-      "atl": 182.88,
-      "tsb": -9.45,
-      "ramp_rate": 4.79,
+      "ctl": 170.77,
+      "atl": 167.84,
+      "tsb": 2.93,
+      "ramp_rate": 2.14,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -305,9 +305,9 @@
           "planned_tss_delta": 0.7,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.57,
+          "next_week_load": 0.65,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 2.8
+          "plan_coverage_next_week": 3.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -340,7 +340,7 @@
     "p_max": 1368,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-20T21:48:22.906409",
+    "calculation_timestamp": "2026-06-20T23:14:40.322111",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1461,6 +1461,17 @@
       "description_preview": "Se c'\u00e8 GARA: esegui il protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h senza struttura. Goditi l'uscita."
     },
     {
+      "id": 117460316,
+      "date": "2026-06-28",
+      "name": "IntervalCoach - Resistenza Aerobica",
+      "type": "WORKOUT",
+      "planned_tss": 73,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Oggi lavoro sul tuo FatMax. 5m Z2 HR\n- 5m Z3 HR"
+    },
+    {
       "id": 115904159,
       "date": "2026-06-29",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S2",
@@ -1904,12 +1915,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 42,
+    "attempted": 43,
     "success": 28,
     "patternA": 28,
     "patternB": 0,
     "bail_no_workout_doc": 16,
-    "bail_no_match": 14
+    "bail_no_match": 15
   },
   "weekly_summary": {
     "total_training_hours": 21.74,
