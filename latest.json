@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-23T21:58:10.362424",
+    "last_updated": "2026-06-23T23:16:07.192341",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -53,7 +53,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -18.7
+        "value": -10.7
       }
     },
     "signal_summary": {
@@ -102,10 +102,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 174.91,
-      "atl": 193.64,
-      "tsb": -18.73,
-      "ramp_rate": 1.97,
+      "ctl": 173.19,
+      "atl": 183.93,
+      "tsb": -10.74,
+      "ramp_rate": 0.25,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -304,7 +304,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.6,
+          "planned_tss_delta": 0.65,
           "hard_sessions_planned": 7,
           "race_proximity": null,
           "next_week_load": 0.59,
@@ -342,7 +342,7 @@
     "p_max": 1365,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-06-23T21:58:10.361160",
+    "calculation_timestamp": "2026-06-23T23:16:07.191053",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1260,15 +1260,15 @@
       "description": "Se c'\u00e8 GARA: esegui il protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h senza struttura. Goditi l'uscita."
     },
     {
-      "id": 117460316,
+      "id": 118116183,
       "date": "2026-06-28",
-      "name": "IntervalCoach - Resistenza Aerobica",
+      "name": "IntervalCoach - Soglia Progressiva",
       "type": "WORKOUT",
-      "planned_tss": 73,
+      "planned_tss": 114,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Oggi lavoro sul tuo FatMax. 5m Z2 HR\n- 5m Z3 HR\n- 4m Z3 HR\n\nMain Set\n- Settle In 22m Z2 HR\n- Fat Max 22m Z2 HR\n- Cruise 23m Z2 HR\n\nCooldown\n- 5m Z2 HR\n- Ottimo lavoro, goditi il defaticamento. 4m Z2 HR\n\n[Weekly Plan - Build]"
+      "description": "Warmup\n- Ciao massarob! Giornata di soglia in arrivo. 5m Z2 HR\n- 5m Z3 HR\n- 4m Z3 HR\n\nMain Set\n- Endurance 10m Z3 HR\n- Threshold 1 10m Z4 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 2 8m Z4 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 3 6m Z4 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 4 5m Z4-Z5 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 5 5m Z4 HR\n- Endurance 11m Z3 HR\n\nCooldown\n- 5m Z3 HR\n- Ottimo lavoro, goditi il defaticamento. 4m Z2 HR\n\n[Weekly Plan - Build]"
     },
     {
       "id": 115904159,
