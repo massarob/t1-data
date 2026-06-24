@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T11:48:25.138130",
+  "generated_at": "2026-06-24T14:43:01.721595",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1785,6 +1785,52 @@
           "zone": 1,
           "training_load": 35.574654,
           "decoupling": 21.895819
+        }
+      ]
+    },
+    {
+      "activity_id": "i159978270",
+      "date": "2026-06-24",
+      "type": "Ride",
+      "name": "Morning Ride",
+      "interval_summary": [
+        "1x 38m16s 128bpm",
+        "1x 11m58s 129bpm",
+        "1x 11m15s 165bpm",
+        "1x 1h 97bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2296s@128bpm",
+          "duration_secs": 2296,
+          "avg_hr": 128,
+          "max_hr": 145,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "718s@129bpm",
+          "duration_secs": 718,
+          "avg_hr": 129,
+          "max_hr": 167,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "675s@165bpm",
+          "duration_secs": 675,
+          "avg_hr": 165,
+          "max_hr": 175,
+          "zone": 4
+        },
+        {
+          "type": "WORK",
+          "label": "3657s@97bpm",
+          "duration_secs": 3657,
+          "avg_hr": 97,
+          "max_hr": 165,
+          "zone": 1
         }
       ]
     }
