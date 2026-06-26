@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T16:21:01.660619",
+  "generated_at": "2026-06-26T18:10:38.819740",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1564,6 +1564,39 @@
           "zone": 1,
           "training_load": 13.381588,
           "decoupling": -41.69732
+        }
+      ]
+    },
+    {
+      "activity_id": "i160555463",
+      "date": "2026-06-26",
+      "type": "VirtualRide",
+      "name": "60m Recovery Ride FC",
+      "interval_summary": [
+        "1x 10m1s 2w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "601s@2w80rpm",
+          "duration_secs": 601,
+          "avg_power": 2,
+          "max_power": 183,
+          "avg_hr": 116,
+          "max_hr": 123,
+          "avg_cadence": 79.96506,
+          "zone": 1,
+          "training_load": 0.034492653,
+          "decoupling": 100.0
+        },
+        {
+          "type": "WORK",
+          "duration_secs": 808,
+          "avg_hr": 125,
+          "max_hr": 132,
+          "avg_cadence": 80.0,
+          "zone": 1,
+          "decoupling": "NaN"
         }
       ]
     }
