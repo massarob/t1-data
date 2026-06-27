@@ -1,91 +1,9 @@
 {
-  "generated_at": "2026-06-26T22:53:12.434671",
+  "generated_at": "2026-06-27T00:13:31.913000",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i158669357",
-      "date": "2026-06-19",
-      "type": "Ride",
-      "name": "Pre+prova nuovo BSC500",
-      "interval_summary": [
-        "1x 50s 354w",
-        "1x 13m10s 289w",
-        "1x 60s 511w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 834,
-          "avg_power": 193,
-          "max_power": 432,
-          "avg_cadence": 77.54796,
-          "zone": 2,
-          "training_load": 10.579019
-        },
-        {
-          "type": "WORK",
-          "label": "50s@354w84rpm",
-          "duration_secs": 50,
-          "avg_power": 354,
-          "max_power": 418,
-          "avg_cadence": 83.94,
-          "zone": 5,
-          "training_load": 1.3888888
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 199,
-          "avg_power": 218,
-          "max_power": 416,
-          "avg_cadence": 66.733665,
-          "zone": 2,
-          "training_load": 3.511027
-        },
-        {
-          "type": "WORK",
-          "label": "790s@289w88rpm",
-          "duration_secs": 790,
-          "avg_power": 289,
-          "max_power": 387,
-          "avg_cadence": 88.03165,
-          "zone": 3,
-          "training_load": 17.181553
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 462,
-          "avg_power": 215,
-          "max_power": 507,
-          "avg_cadence": 83.78571,
-          "zone": 2,
-          "training_load": 7.2282095
-        },
-        {
-          "type": "WORK",
-          "label": "60s@511w93rpm",
-          "duration_secs": 60,
-          "avg_power": 511,
-          "max_power": 721,
-          "avg_cadence": 93.23333,
-          "zone": 7,
-          "training_load": 3.5703857
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 4548,
-          "avg_power": 114,
-          "max_power": 532,
-          "avg_hr": 119,
-          "max_hr": 149,
-          "avg_cadence": 56.433228,
-          "zone": 1,
-          "training_load": 36.70082,
-          "decoupling": -3.4018552
-        }
-      ]
-    },
     {
       "activity_id": "i159180262",
       "date": "2026-06-21",
