@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-27T21:31:11.315663",
+    "last_updated": "2026-06-27T22:44:03.010608",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -310,9 +310,9 @@
           "planned_tss_delta": 0.43,
           "hard_sessions_planned": 3,
           "race_proximity": null,
-          "next_week_load": 0.59,
+          "next_week_load": 0.71,
           "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 2.8
+          "plan_coverage_next_week": 3.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -345,7 +345,7 @@
     "p_max": 1361,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 77.0,
-    "calculation_timestamp": "2026-06-27T21:31:11.314568",
+    "calculation_timestamp": "2026-06-27T22:44:03.009422",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1432,6 +1432,17 @@
       "description_preview": "Se GARA: protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h."
     },
     {
+      "id": 118989911,
+      "date": "2026-07-05",
+      "name": "IntervalCoach - Soglia Progressiva",
+      "type": "WORKOUT",
+      "planned_tss": 114,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao Massarob! Giornata di soglia ti aspetta. 5m Z2 HR\n- 5m Z3 HR"
+    },
+    {
       "id": 115904182,
       "date": "2026-07-06",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S3",
@@ -1728,12 +1739,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 33,
+    "attempted": 34,
     "success": 22,
     "patternA": 22,
     "patternB": 0,
     "bail_no_workout_doc": 14,
-    "bail_no_match": 11
+    "bail_no_match": 12
   },
   "weekly_summary": {
     "total_training_hours": 23.05,
