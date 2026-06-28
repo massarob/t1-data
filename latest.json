@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-28T16:48:42.445893",
+    "last_updated": "2026-06-28T18:08:16.719946",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -315,9 +315,9 @@
           "planned_tss_delta": 0.87,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.71,
+          "next_week_load": 0.59,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 3.0
+          "plan_coverage_next_week": 2.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -350,7 +350,7 @@
     "p_max": 1361,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-28T16:48:42.444730",
+    "calculation_timestamp": "2026-06-28T18:08:16.718761",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1396,17 +1396,6 @@
       "description": "Se GARA: protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h."
     },
     {
-      "id": 118989911,
-      "date": "2026-07-05",
-      "name": "IntervalCoach - Soglia Progressiva",
-      "type": "WORKOUT",
-      "planned_tss": 114,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao Massarob! Giornata di soglia ti aspetta. 5m Z2 HR\n- 5m Z3 HR\n- 4m Z3 HR\n\nMain Set\n- Endurance 10m Z3 HR\n- Threshold 1 10m Z4 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 2 8m Z4 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 3 6m Z4 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 4 5m Z4-Z5 HR\n- Jog Recovery 3m Z2-Z3 HR\n- Threshold 5 5m Z4 HR\n- Endurance 11m Z3 HR\n\nCooldown\n- 5m Z3 HR\n- Ottimo lavoro, rilassati ora. 4m Z2 HR\n\n[Weekly Plan - Build]"
-    },
-    {
       "id": 115904182,
       "date": "2026-07-06",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S3",
@@ -1703,12 +1692,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 32,
+    "attempted": 31,
     "success": 20,
     "patternA": 20,
     "patternB": 0,
     "bail_no_workout_doc": 14,
-    "bail_no_match": 12
+    "bail_no_match": 11
   },
   "weekly_summary": {
     "total_training_hours": 21.17,
