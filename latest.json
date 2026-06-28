@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-28T21:08:39.645154",
+    "last_updated": "2026-06-28T22:15:11.051950",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -53,7 +53,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 6.5
+        "value": 19.0
       }
     },
     "signal_summary": {
@@ -108,17 +108,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 170.14,
-      "atl": 163.65,
-      "tsb": 6.49,
-      "ramp_rate": 1.22,
+      "ctl": 167.45,
+      "atl": 148.47,
+      "tsb": 18.98,
+      "ramp_rate": -1.46,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 317.7,
-      "w_prime": 27971,
-      "w_prime_kj": 28.0,
-      "p_max": 1361,
+      "eftp": 317.4,
+      "w_prime": 27943,
+      "w_prime_kj": 27.9,
+      "p_max": 1360,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -315,9 +315,9 @@
           "planned_tss_delta": 0.87,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.59,
+          "next_week_load": 0.66,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 2.8
+          "plan_coverage_next_week": 3.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -344,13 +344,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 317.7,
-    "w_prime": 27971,
-    "w_prime_kj": 28.0,
-    "p_max": 1361,
+    "eftp": 317.4,
+    "w_prime": 27943,
+    "w_prime_kj": 27.9,
+    "p_max": 1360,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-28T21:08:39.644006",
+    "calculation_timestamp": "2026-06-28T22:15:11.050826",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1396,6 +1396,17 @@
       "description": "Se GARA: protocollo abituale.\nSe sessione libera: MTB o strada Z2, 2-3h."
     },
     {
+      "id": 119208880,
+      "date": "2026-07-05",
+      "name": "IntervalCoach - Crescendo Aerobico",
+      "type": "WORKOUT",
+      "planned_tss": 67,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Endurance e spin-up ti aspettano. 14m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 17m 65% 85rpm\n- Build 17m 67% 88rpm\n- Upper 17m 70-74% 90rpm\n- Cruise 16m 74-70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
+    },
+    {
       "id": 115904182,
       "date": "2026-07-06",
       "name": "\ud83d\udcaa Pesi \u2013 Forza Massimale S3",
@@ -1692,12 +1703,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 31,
+    "attempted": 32,
     "success": 20,
     "patternA": 20,
     "patternB": 0,
     "bail_no_workout_doc": 14,
-    "bail_no_match": 11
+    "bail_no_match": 12
   },
   "weekly_summary": {
     "total_training_hours": 21.17,
