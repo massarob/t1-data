@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T14:45:16.663904",
+  "generated_at": "2026-06-30T17:08:26.839434",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1556,6 +1556,80 @@
           "zone": 1,
           "training_load": 51.70755,
           "decoupling": 11.856128
+        }
+      ]
+    },
+    {
+      "activity_id": "i161548786",
+      "date": "2026-06-30",
+      "type": "VirtualRide",
+      "name": "Biketerra - GF Lombardia 2026",
+      "interval_summary": [
+        "1x 13m37s 258w",
+        "1x 3m55s 262w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 490,
+          "avg_power": 237,
+          "max_power": 379,
+          "avg_hr": 116,
+          "max_hr": 127,
+          "avg_cadence": 81.72449,
+          "zone": 2,
+          "training_load": 7.304815,
+          "decoupling": 1.6046349
+        },
+        {
+          "type": "WORK",
+          "label": "817s@258w81rpm",
+          "duration_secs": 817,
+          "avg_power": 258,
+          "max_power": 346,
+          "avg_hr": 123,
+          "max_hr": 128,
+          "avg_cadence": 80.84578,
+          "zone": 3,
+          "training_load": 13.979486,
+          "decoupling": 3.68149
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 412,
+          "avg_power": 226,
+          "max_power": 291,
+          "avg_hr": 119,
+          "max_hr": 126,
+          "avg_cadence": 83.442825,
+          "zone": 2,
+          "training_load": 5.5593305,
+          "decoupling": 1.9705683
+        },
+        {
+          "type": "WORK",
+          "label": "235s@262w78rpm",
+          "duration_secs": 235,
+          "avg_power": 262,
+          "max_power": 351,
+          "avg_hr": 123,
+          "max_hr": 129,
+          "avg_cadence": 77.94042,
+          "zone": 3,
+          "training_load": 4.146188,
+          "decoupling": 2.053782
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1656,
+          "avg_power": 214,
+          "max_power": 360,
+          "avg_hr": 119,
+          "max_hr": 141,
+          "avg_cadence": 84.61692,
+          "zone": 2,
+          "training_load": 21.005821,
+          "decoupling": 5.905818
         }
       ]
     }
