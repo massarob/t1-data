@@ -8,15 +8,15 @@
     "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
     "zone_preference": "default (power preferred, HR fallback)",
     "quick_stats": {
-      "total_training_hours": 19.54,
-      "total_training_formatted": "19h32m",
+      "total_training_hours": 21.29,
+      "total_training_formatted": "21h17m",
       "total_activities": 14,
-      "total_tss": 985
+      "total_tss": 1067
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-06-30T21:05:51.164052",
+    "last_updated": "2026-06-30T22:41:23.200108",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -45,7 +45,7 @@
       },
       "acwr": {
         "status": "green",
-        "value": 0.89
+        "value": 0.94
       },
       "ri": {
         "status": "green",
@@ -83,20 +83,14 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 19.54,
+    "total_duration_decimal_hours": 21.29,
     "total_activities": 14,
     "by_activity_type": {
       "Ride": {
-        "duration_decimal_hours": 18.14,
-        "count": 11,
-        "tss": 933,
-        "distance_km": 452.7
-      },
-      "Unknown": {
-        "duration_decimal_hours": 0.0,
-        "count": 1,
-        "tss": 0,
-        "distance_km": 0.0
+        "duration_decimal_hours": 19.9,
+        "count": 12,
+        "tss": 1015,
+        "distance_km": 498.3
       },
       "VirtualRide": {
         "duration_decimal_hours": 1.39,
@@ -164,64 +158,64 @@
     "rhr_baseline_28d": 44.0,
     "latest_hrv": 63.0,
     "latest_rhr": 43,
-    "acwr": 0.89,
+    "acwr": 0.94,
     "acwr_interpretation": "optimal",
-    "monotony": 1.17,
+    "monotony": 1.42,
     "monotony_interpretation": "normal",
     "primary_sport": "cycling",
-    "primary_sport_monotony": 1.17,
-    "primary_sport_tss_7d": 985.0,
-    "effective_monotony": 1.17,
+    "primary_sport_monotony": 1.42,
+    "primary_sport_tss_7d": 1067.0,
+    "effective_monotony": 1.42,
     "multi_sport_detected": false,
-    "strain": 1152.0,
-    "stress_tolerance": 9.8,
-    "load_recovery_ratio": 10.2,
-    "tss_7d_total": 985.0,
-    "tss_28d_total": 4450.0,
+    "strain": 1515.0,
+    "stress_tolerance": 10.7,
+    "load_recovery_ratio": 11.0,
+    "tss_7d_total": 1067.0,
+    "tss_28d_total": 4532.0,
     "zone_distribution_7d": {
-      "z1_hours": 9.51,
-      "z2_hours": 3.22,
-      "z3_hours": 3.12,
-      "z4_plus_hours": 3.68,
-      "total_hours": 19.54,
+      "z1_hours": 10.37,
+      "z2_hours": 3.59,
+      "z3_hours": 3.41,
+      "z4_plus_hours": 3.92,
+      "total_hours": 21.29,
       "zone_basis": "mixed"
     },
     "grey_zone_percentage": 16.0,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 18.8,
+    "quality_intensity_percentage": 18.4,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "polarisation_index": 0.65,
+    "polarisation_index": 0.66,
     "polarisation_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
-    "hard_days_this_week": 5,
+    "hard_days_this_week": 6,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 45834,
-      "z2_seconds": 11241,
-      "z3_seconds": 13257,
-      "z1_pct": 65.2,
+      "z1_seconds": 50254,
+      "z2_seconds": 12274,
+      "z3_seconds": 14123,
+      "z1_pct": 65.6,
       "z2_pct": 16.0,
-      "z3_pct": 18.8,
-      "polarization_index": 1.89,
+      "z3_pct": 18.4,
+      "polarization_index": 1.88,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
     },
     "seiler_tid_7d_primary": {
-      "z1_seconds": 45834,
-      "z2_seconds": 11241,
-      "z3_seconds": 13257,
-      "z1_pct": 65.2,
+      "z1_seconds": 50254,
+      "z2_seconds": 12274,
+      "z3_seconds": 14123,
+      "z1_pct": 65.6,
       "z2_pct": 16.0,
-      "z3_pct": 18.8,
-      "polarization_index": 1.89,
+      "z3_pct": 18.4,
+      "polarization_index": 1.88,
       "classification": "Pyramidal",
       "zone_basis": "mixed",
       "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 200067,
-      "z2_seconds": 52088,
-      "z3_seconds": 52860,
-      "z1_pct": 65.6,
+      "z1_seconds": 204487,
+      "z2_seconds": 53121,
+      "z3_seconds": 53726,
+      "z1_pct": 65.7,
       "z2_pct": 17.1,
       "z3_pct": 17.3,
       "polarization_index": 1.82,
@@ -229,10 +223,10 @@
       "zone_basis": "mixed"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 200067,
-      "z2_seconds": 52088,
-      "z3_seconds": 52860,
-      "z1_pct": 65.6,
+      "z1_seconds": 204487,
+      "z2_seconds": 53121,
+      "z3_seconds": 53726,
+      "z1_pct": 65.7,
       "z2_pct": 17.1,
       "z3_pct": 17.3,
       "polarization_index": 1.82,
@@ -270,17 +264,17 @@
       "tid_comparison": {
         "classification_7d": "Pyramidal",
         "classification_28d": "Pyramidal",
-        "pi_7d": 1.89,
+        "pi_7d": 1.88,
         "pi_28d": 1.82,
-        "pi_delta": 0.07,
+        "pi_delta": 0.06,
         "drift": "consistent",
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.86,
+    "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 7,
-      "completed_days": 6,
+      "planned_days": 6,
+      "completed_days": 7,
       "matched_days": 6,
       "planned_dates": [
         "2026-06-24",
@@ -288,14 +282,14 @@
         "2026-06-26",
         "2026-06-27",
         "2026-06-28",
-        "2026-06-29",
-        "2026-06-30"
+        "2026-06-29"
       ],
       "completed_dates": [
         "2026-06-24",
         "2026-06-25",
         "2026-06-26",
         "2026-06-27",
+        "2026-06-28",
         "2026-06-29",
         "2026-06-30"
       ]
@@ -312,11 +306,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.64,
-          "hard_sessions_planned": 7,
+          "planned_tss_delta": 0.53,
+          "hard_sessions_planned": 4,
           "race_proximity": null,
           "next_week_load": 0.73,
-          "plan_coverage_current_week": 2.6,
+          "plan_coverage_current_week": 1.8,
           "plan_coverage_next_week": 3.0
         },
         "data_quality": "good",
@@ -350,13 +344,13 @@
     "p_max": 1359,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-06-30T21:05:51.162902",
+    "calculation_timestamp": "2026-06-30T22:41:22.581814",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 14,
       "activities_28d": 65,
-      "planned_workouts_7d": 15,
+      "planned_workouts_7d": 13,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -581,39 +575,58 @@
       "has_intervals": true
     },
     {
-      "id": "19095683962",
+      "id": "i161628222",
       "date": "2026-06-28T09:41:51",
-      "type": "Unknown",
-      "name": "",
-      "duration_hours": 0.0,
-      "distance_km": 0.0,
-      "tss": null,
-      "intensity_factor": null,
-      "avg_power": null,
-      "normalized_power": null,
-      "avg_hr": null,
-      "max_hr": null,
-      "avg_cadence": null,
-      "avg_speed": null,
-      "max_speed": null,
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 1.76,
+      "distance_km": 45.66,
+      "tss": 82,
+      "intensity_factor": 68.181816,
+      "avg_power": 167,
+      "normalized_power": 225,
+      "avg_hr": 111,
+      "max_hr": 159,
+      "avg_cadence": 81.91163,
+      "avg_speed": 25.3,
+      "max_speed": 58.7,
       "avg_pace": null,
-      "avg_temp": null,
+      "avg_temp": 30.058252,
       "weather": null,
       "humidity": null,
-      "wind_speed": null,
-      "work_kj": null,
-      "calories": null,
-      "carbs_used": null,
+      "wind_speed": 0.80485094,
+      "work_kj": 1085.0,
+      "calories": 1183,
+      "carbs_used": 294,
       "carbs_ingested": null,
-      "variability_index": null,
-      "decoupling": null,
-      "efficiency_factor": null,
+      "variability_index": 1.3473054,
+      "decoupling": 13.911432,
+      "efficiency_factor": 2.0270271,
       "hrrc": null,
-      "elevation_m": null,
+      "elevation_m": 734.0,
       "feel": null,
       "rpe": null,
-      "zone_distribution": null,
-      "has_intervals": false
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 5021,
+          "z2_time": 1280,
+          "z3_time": 19,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 3109,
+          "z2_time": 1311,
+          "z3_time": 1033,
+          "z4_time": 785,
+          "z5_time": 78,
+          "z6_time": 3,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": true
     },
     {
       "id": "i160750005",
@@ -1209,28 +1222,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 115904160,
-      "date": "2026-06-30",
-      "name": "\ud83c\udfc3 Corsa Salita \u2013 Volume S2",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 1.25,
-      "duration_formatted": "1h15m",
-      "workout_summary": null,
-      "description": "Corsa aerobica in salita, +15 min rispetto alla S1. Mantieni Z2 HR costante. Se la FC tende a salire in Z3, rallenta.\n\nWarmup\n- 10m Z1 Pace intensity=warmup\n\nMain Set 1x\n- 55m Z2 HR intensity=interval\n\nCooldown\n- 10m Z1 Pace intensity=cooldown"
-    },
-    {
-      "id": 115999030,
-      "date": "2026-06-30",
-      "name": "\ud83d\udeb4 Bici \u2013 Soglia + \ud83d\udcaa Pesi Gambe S2",
-      "type": "WORKOUT",
-      "planned_tss": 87,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "20m @181W | 4\u00d710m @290W / 5m rec | 15m @181W",
-      "description": "MATTINA \u2013 Bici ~2h: 4x10 min a 88% FTP (~290W), un blocco in pi\u00f9 rispetto a S1.\n\nPOMERIGGIO \u2013 Pesi gambe (~75 min):\nSquat: 5x3 @87% 1RM\nStacco rumeno: 4x4 @82% 1RM\nAffondi: 3x5 per gamba\nHip thrust: 3x5 @78% 1RM\nCore: plank 3x60s\nAumenta 2-3% rispetto a S1.\n\nWarmup\n- 20m 55% intensity=warmup\n\nMain Set 4x\n- 10m 88% intensity=interval\n- 5m 55% intensity=recovery\n\nCooldown\n- 15m 55% intensity=cooldown"
-    },
-    {
       "id": 115904161,
       "date": "2026-07-01",
       "name": "\ud83d\udeb4 Bici \u2013 Soglia Estesa S2",
@@ -1295,28 +1286,6 @@
       "duration_formatted": "1h",
       "workout_summary": null,
       "description": "MATTINA \u2013 Bici recupero 60 min Z1.\n\nPOMERIGGIO \u2013 Corsa salita 40-50 min, FC Z2. Pendenza 6-10%. Volume leggermente superiore a S1.\n\nMain Set 1x\n- 60m 50% intensity=recovery"
-    },
-    {
-      "id": 115904164,
-      "date": "2026-07-04",
-      "name": "\ud83c\udfc3 Corsa Salita \u2013 Ripetute Lunghe S2",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 0.92,
-      "duration_formatted": "55m",
-      "workout_summary": "15m | 5\u00d74m / 2m rec | 10m",
-      "description": "Ripetute pi\u00f9 lunghe: 5x4 min (era 5x3 in S1). Stessa salita, stesso sforzo Z4 HR. Recupero in discesa attiva.\n\nWarmup\n- 15m Z1 Pace intensity=warmup\n\nMain Set 5x\n- 4m Z4 HR intensity=interval\n- 2m Z1 Pace intensity=recovery\n\nCooldown\n- 10m Z1 Pace intensity=cooldown"
-    },
-    {
-      "id": 115999035,
-      "date": "2026-07-04",
-      "name": "\ud83c\udfc1 Gara / \ud83c\udfc3 Corsa Salita Qualit\u00e0 S2",
-      "type": "WORKOUT",
-      "planned_tss": null,
-      "duration_hours": 0.92,
-      "duration_formatted": "55m",
-      "workout_summary": "15m | 5\u00d74m / 2m rec | 10m",
-      "description": "Se GARA: protocollo abituale.\nSe sessione libera: 5x4 min a Z4 HR in salita (era 5x3 in S1). Recupero in discesa. Totale ~80 min.\n\nWarmup\n- 15m Z1 Pace intensity=warmup\n\nMain Set 5x\n- 4m Z4 HR intensity=interval\n- 2m Z1 Pace intensity=recovery\n\nCooldown\n- 10m Z1 Pace intensity=cooldown"
     },
     {
       "id": 115904165,
@@ -1714,17 +1683,17 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 36,
-    "success": 21,
-    "patternA": 21,
+    "attempted": 32,
+    "success": 18,
+    "patternA": 18,
     "patternB": 0,
     "bail_no_workout_doc": 11,
-    "bail_no_match": 15
+    "bail_no_match": 14
   },
   "weekly_summary": {
-    "total_training_hours": 19.54,
-    "total_training_formatted": "19h32m",
-    "total_tss": 985,
+    "total_training_hours": 21.29,
+    "total_training_formatted": "21h17m",
+    "total_tss": 1067,
     "activities_count": 14,
     "avg_hrv": 66.1,
     "avg_resting_hr": 43.9
