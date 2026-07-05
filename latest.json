@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-05T01:16:18.614507",
+    "last_updated": "2026-07-05T05:41:54.586581",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -33,10 +33,10 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
+        "status": "green",
+        "value": 43,
         "baseline_7d": 43,
-        "delta_bpm": null
+        "delta_bpm": 0
       },
       "sleep": {
         "status": "unavailable",
@@ -57,10 +57,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Recovery",
@@ -70,7 +70,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -149,7 +149,7 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 42,
+      "resting_hr": 43,
       "hrv": null,
       "sleep_quality": null,
       "sleep_hours": null,
@@ -161,9 +161,9 @@
     "hrv_baseline_7d": 70.3,
     "rhr_baseline_7d": 43,
     "hrv_baseline_28d": 65.2,
-    "rhr_baseline_28d": 44.1,
+    "rhr_baseline_28d": 44.0,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 43,
     "acwr": 0.98,
     "acwr_interpretation": "optimal",
     "monotony": 1.06,
@@ -352,10 +352,10 @@
     "p_max": 1359,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-05T01:16:18.613279",
+    "calculation_timestamp": "2026-07-05T05:41:54.585428",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 62,
       "planned_workouts_7d": 11,
@@ -1122,7 +1122,7 @@
     {
       "date": "2026-07-05",
       "weight_kg": null,
-      "resting_hr": null,
+      "resting_hr": 43,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": null,
