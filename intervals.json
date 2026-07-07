@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T07:46:49.688971",
+  "generated_at": "2026-07-07T11:13:20.438407",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1649,6 +1649,54 @@
           "avg_hr": 104,
           "max_hr": 104,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i163474115",
+      "date": "2026-07-07",
+      "type": "Ride",
+      "name": "Pedalata mattutina",
+      "interval_summary": [
+        "1x 2m2s 319w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1095,
+          "avg_power": 188,
+          "max_power": 448,
+          "avg_hr": 112,
+          "max_hr": 146,
+          "avg_cadence": 74.139725,
+          "zone": 2,
+          "training_load": 14.775406,
+          "decoupling": -18.101753
+        },
+        {
+          "type": "WORK",
+          "label": "122s@319w68rpm",
+          "duration_secs": 122,
+          "avg_power": 319,
+          "max_power": 386,
+          "avg_hr": 134,
+          "max_hr": 149,
+          "avg_cadence": 67.72951,
+          "zone": 4,
+          "training_load": 2.8948705,
+          "decoupling": 21.43737
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4040,
+          "avg_power": 132,
+          "max_power": 454,
+          "avg_hr": 102,
+          "max_hr": 146,
+          "avg_cadence": 63.564075,
+          "zone": 1,
+          "training_load": 31.38936,
+          "decoupling": 14.437004
         }
       ]
     }
