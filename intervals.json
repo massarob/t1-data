@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T08:51:25.638129",
+  "generated_at": "2026-07-10T11:56:57.429484",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1006,6 +1006,170 @@
           "zone": 1,
           "training_load": 27.067541,
           "decoupling": 6.128177
+        }
+      ]
+    },
+    {
+      "activity_id": "i164400800",
+      "date": "2026-07-10",
+      "type": "Ride",
+      "name": "Berzo Demo Ciclismo",
+      "interval_summary": [
+        "1x 4m12s 306w",
+        "1x 4m53s 278w",
+        "1x 15m27s 297w",
+        "1x 68s 383w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1296,
+          "avg_power": 241,
+          "max_power": 450,
+          "avg_hr": 135,
+          "max_hr": 155,
+          "avg_cadence": 73.61034,
+          "zone": 2,
+          "training_load": 21.94593,
+          "decoupling": 1.3698164
+        },
+        {
+          "type": "WORK",
+          "label": "252s@306w73rpm",
+          "duration_secs": 252,
+          "avg_power": 306,
+          "max_power": 370,
+          "avg_hr": 152,
+          "max_hr": 158,
+          "avg_cadence": 73.35714,
+          "zone": 4,
+          "training_load": 5.901405,
+          "decoupling": 4.577777
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 724,
+          "avg_power": 266,
+          "max_power": 371,
+          "avg_hr": 153,
+          "max_hr": 161,
+          "avg_cadence": 75.33149,
+          "zone": 3,
+          "training_load": 14.16993,
+          "decoupling": -4.074979
+        },
+        {
+          "type": "WORK",
+          "label": "293s@278w74rpm",
+          "duration_secs": 293,
+          "avg_power": 278,
+          "max_power": 363,
+          "avg_hr": 158,
+          "max_hr": 161,
+          "avg_cadence": 74.27304,
+          "zone": 3,
+          "training_load": 5.817624,
+          "decoupling": 4.0114017
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 717,
+          "avg_power": 232,
+          "max_power": 453,
+          "avg_hr": 151,
+          "max_hr": 160,
+          "avg_cadence": 72.56067,
+          "zone": 2,
+          "training_load": 11.614215,
+          "decoupling": -0.9914358
+        },
+        {
+          "type": "WORK",
+          "label": "927s@297w76rpm",
+          "duration_secs": 927,
+          "avg_power": 297,
+          "max_power": 515,
+          "avg_hr": 166,
+          "max_hr": 170,
+          "avg_cadence": 75.84142,
+          "zone": 3,
+          "training_load": 20.717281,
+          "decoupling": 5.1103015
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1410,
+          "avg_power": 49,
+          "max_power": 554,
+          "avg_hr": 114,
+          "max_hr": 171,
+          "avg_cadence": 14.648936,
+          "zone": 1,
+          "training_load": 11.085269,
+          "decoupling": 21.933105
+        },
+        {
+          "type": "WORK",
+          "label": "68s@383w71rpm",
+          "duration_secs": 68,
+          "avg_power": 383,
+          "max_power": 515,
+          "avg_hr": 133,
+          "max_hr": 154,
+          "avg_cadence": 70.76471,
+          "zone": 5,
+          "training_load": 2.1491358,
+          "decoupling": 25.35972
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1106,
+          "avg_power": 86,
+          "max_power": 518,
+          "avg_hr": 111,
+          "max_hr": 164,
+          "avg_cadence": 27.852623,
+          "zone": 1,
+          "training_load": 13.506173,
+          "decoupling": 15.200288
+        }
+      ]
+    },
+    {
+      "activity_id": "i164401002",
+      "date": "2026-07-10",
+      "type": "Ride",
+      "name": "Berzo Demo Ciclismo su strada",
+      "interval_summary": [
+        "1x 54m47s 253w",
+        "1x 58m24s 132w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "3287s@253w74rpm",
+          "duration_secs": 3287,
+          "avg_power": 253,
+          "max_power": 532,
+          "avg_hr": 145,
+          "max_hr": 161,
+          "avg_cadence": 73.79921,
+          "zone": 3,
+          "training_load": 59.578526,
+          "decoupling": 11.745061
+        },
+        {
+          "type": "WORK",
+          "label": "3504s@132w36rpm",
+          "duration_secs": 3504,
+          "avg_power": 132,
+          "max_power": 554,
+          "avg_hr": 127,
+          "max_hr": 171,
+          "avg_cadence": 36.06564,
+          "zone": 1,
+          "training_load": 51.628483,
+          "decoupling": -20.857225
         }
       ]
     }
