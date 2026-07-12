@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-12T03:59:04.223604",
+    "last_updated": "2026-07-12T06:42:45.755986",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -311,7 +311,7 @@
           "planned_tss_delta": 0.4,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.38,
+          "next_week_load": 0.35,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 3.0
         },
@@ -348,7 +348,7 @@
     "p_max": 1357,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-12T03:59:04.222534",
+    "calculation_timestamp": "2026-07-12T06:42:45.754846",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -1187,47 +1187,15 @@
       "description": "Se GARA: protocollo abituale. Fine blocco 4 settimane.\nSe sessione libera: MTB o strada Z2, 2h max.\n\nValuta i progressi: confronta i carichi ai pesi con S1 e la sensazione sulle salite in bici e a piedi. Pianifica il prossimo blocco."
     },
     {
-      "id": 119597133,
+      "id": 122172669,
       "date": "2026-07-19",
-      "name": "IntervalCoach - Endurance + Tempo Pushes",
+      "name": "IntervalCoach - Lungo Aerobico",
       "type": "WORKOUT",
-      "planned_tss": 78,
-      "duration_hours": 1.58,
-      "duration_formatted": "1h35m",
-      "workout_summary": "14m @198W | 4\u00d713m @230W / 5m rec | 9m @181W",
-      "description": "Warmup\n- Ciao massarob! Endurance e tempo ti aspettano. 14m ramp 45-75% 85rpm\n\nMain Set\n4x\n- Endurance 13m 65-75% 88rpm\n- Tempo 5m 76-82% 90rpm\n\nCooldown\n- Ottimo lavoro, rilassati ora. 9m ramp 65-45% 85rpm\n\n[Weekly Plan - Build]"
-    },
-    {
-      "id": 119597162,
-      "date": "2026-07-21",
-      "name": "IntervalCoach - Corsa Lenta",
-      "type": "WORKOUT",
-      "planned_tss": 46,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "description_preview": "Warmup\n- Ciao massarob! Recupero attivo oggi. 3m Z2 HR\n- 3m Z2 HR"
-    },
-    {
-      "id": 119597180,
-      "date": "2026-07-23",
-      "name": "IntervalCoach - Recupero Attivo",
-      "type": "WORKOUT",
-      "planned_tss": 25,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
-      "workout_summary": null,
-      "description_preview": "Warmup\n- Ciao massarob! Recupero attivo oggi. 9m ramp 45-55% 85rpm\nMain Set"
-    },
-    {
-      "id": 119597202,
-      "date": "2026-07-25",
-      "name": "IntervalCoach - Sprint Resistenza",
-      "type": "WORKOUT",
-      "planned_tss": 72,
+      "planned_tss": 45,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
-      "workout_summary": "14m @198W | 6\u00d711m @230W / 10s rec | 9m @181W"
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Pronti per il lungo? 5m Z1 HR\n- 9m Z1 HR\n\nMain Set\n- Ultra 67m Z1 HR\n\nCooldown\n- 5m Z1 HR\n- Ottimo lavoro massarob, recupera bene! 4m Z1 HR\n\n[Weekly Plan - Build]"
     },
     {
       "id": 119597219,
@@ -1242,12 +1210,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 16,
-    "success": 8,
-    "patternA": 8,
+    "attempted": 13,
+    "success": 6,
+    "patternA": 6,
     "patternB": 0,
     "bail_no_workout_doc": 6,
-    "bail_no_match": 8
+    "bail_no_match": 7
   },
   "weekly_summary": {
     "total_training_hours": 20.33,
