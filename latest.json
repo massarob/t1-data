@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-12T00:03:26.030815",
+    "last_updated": "2026-07-12T03:59:04.223604",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -63,7 +63,7 @@
       "unavailable": 4
     },
     "phase_context": {
-      "phase": "Recovery",
+      "phase": "Deload",
       "phase_week": 0,
       "amber_threshold": 2,
       "modifier_applied": "default"
@@ -75,8 +75,8 @@
   },
   "history": {
     "available": true,
-    "last_generated": "2026-06-08",
-    "age_days": 33,
+    "last_generated": "2026-07-12",
+    "age_days": 0,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -295,23 +295,23 @@
       ]
     },
     "phase_detection": {
-      "phase": "Recovery",
+      "phase": "Deload",
       "confidence": "medium",
       "reason_codes": [
-        "NO_BUILD_HISTORY_LOW_LOAD"
+        "BUILD_HISTORY_REDUCED_LOAD"
       ],
       "basis": {
         "stream_1": {
-          "ctl_slope": -4.6,
-          "acwr_trend": "rising",
-          "hard_day_pattern": 5,
+          "ctl_slope": 0.57,
+          "acwr_trend": "stable",
+          "hard_day_pattern": 5.2,
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.51,
+          "planned_tss_delta": 0.4,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.48,
+          "next_week_load": 0.38,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 3.0
         },
@@ -323,9 +323,9 @@
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Recovery",
+    "phase_detected": "Deload",
     "phase_triggers": [
-      "NO_BUILD_HISTORY_LOW_LOAD"
+      "BUILD_HISTORY_REDUCED_LOAD"
     ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
@@ -348,7 +348,7 @@
     "p_max": 1357,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-12T00:03:26.029709",
+    "calculation_timestamp": "2026-07-12T03:59:04.222534",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
