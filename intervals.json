@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T15:58:06.487976",
+  "generated_at": "2026-07-13T18:02:05.164406",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1234,6 +1234,154 @@
           "max_hr": 143,
           "zone": 1,
           "training_load": 0.0012498725
+        }
+      ]
+    },
+    {
+      "activity_id": "i165350652",
+      "date": "2026-07-13",
+      "type": "VirtualRide",
+      "name": "Zwift - Montmartre Mixer in Paris",
+      "interval_summary": [
+        "1x 71s 353w",
+        "1x 1m57s 364w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1335,
+          "avg_power": 217,
+          "max_power": 377,
+          "avg_hr": 119,
+          "max_hr": 142,
+          "avg_cadence": 86.36779,
+          "zone": 2,
+          "training_load": 16.782507,
+          "decoupling": -3.300622
+        },
+        {
+          "type": "WORK",
+          "label": "71s@353w81rpm",
+          "duration_secs": 71,
+          "avg_power": 353,
+          "max_power": 421,
+          "avg_hr": 151,
+          "max_hr": 158,
+          "avg_cadence": 81.33803,
+          "zone": 5,
+          "training_load": 2.1806548,
+          "decoupling": 5.7706523
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 201,
+          "avg_power": 176,
+          "max_power": 344,
+          "avg_hr": 125,
+          "max_hr": 158,
+          "avg_cadence": 85.72139,
+          "zone": 1,
+          "training_load": 2.414266,
+          "decoupling": -30.056156
+        },
+        {
+          "type": "WORK",
+          "label": "117s@364w91rpm",
+          "duration_secs": 117,
+          "avg_power": 364,
+          "max_power": 454,
+          "avg_hr": 153,
+          "max_hr": 165,
+          "avg_cadence": 90.55556,
+          "zone": 5,
+          "training_load": 3.7822957,
+          "decoupling": 5.8897657
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2030,
+          "avg_power": 164,
+          "max_power": 351,
+          "avg_hr": 115,
+          "max_hr": 164,
+          "avg_cadence": 80.7797,
+          "zone": 1,
+          "training_load": 17.913958,
+          "decoupling": 7.136707
+        }
+      ]
+    },
+    {
+      "activity_id": "i165365188",
+      "date": "2026-07-12",
+      "type": "Ride",
+      "name": "IntervalCoach - Salita Graduale",
+      "interval_summary": [
+        "1x 2m52s 267w",
+        "1x 3m29s 283w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 70,
+          "avg_power": 138,
+          "max_power": 236,
+          "avg_hr": 97,
+          "max_hr": 109,
+          "avg_cadence": 67.057144,
+          "zone": 1,
+          "training_load": 0.30641517,
+          "decoupling": 36.82644
+        },
+        {
+          "type": "WORK",
+          "label": "172s@267w73rpm",
+          "duration_secs": 172,
+          "avg_power": 267,
+          "max_power": 321,
+          "avg_hr": 128,
+          "max_hr": 136,
+          "avg_cadence": 73.476746,
+          "zone": 3,
+          "training_load": 2.9886777,
+          "decoupling": 5.894241
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 639,
+          "avg_power": 255,
+          "max_power": 350,
+          "avg_hr": 136,
+          "max_hr": 150,
+          "avg_cadence": 82.521126,
+          "zone": 3,
+          "training_load": 11.532773,
+          "decoupling": -7.9453673
+        },
+        {
+          "type": "WORK",
+          "label": "209s@283w78rpm",
+          "duration_secs": 209,
+          "avg_power": 283,
+          "max_power": 326,
+          "avg_hr": 145,
+          "max_hr": 152,
+          "avg_cadence": 78.138756,
+          "zone": 3,
+          "training_load": 4.209481,
+          "decoupling": 4.8129
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3517,
+          "avg_power": 53,
+          "max_power": 482,
+          "avg_hr": 88,
+          "max_hr": 147,
+          "avg_cadence": 24.080612,
+          "zone": 1,
+          "training_load": 17.924433,
+          "decoupling": -16.54032
         }
       ]
     }
