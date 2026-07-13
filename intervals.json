@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-07-12T22:59:35.787055",
+  "generated_at": "2026-07-13T00:04:51.326192",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i162969339",
-      "date": "2026-07-05",
-      "type": "VirtualRide",
-      "name": "Biketerra - Villa Romana -> Puerto San Jos\u00e9",
-      "interval_summary": [
-        "1x 6m2s 258w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3071,
-          "avg_power": 192,
-          "max_power": 331,
-          "avg_hr": 116,
-          "max_hr": 130,
-          "avg_cadence": 86.51156,
-          "zone": 2,
-          "training_load": 31.010883,
-          "decoupling": -2.0319023
-        },
-        {
-          "type": "WORK",
-          "label": "362s@258w76rpm",
-          "duration_secs": 362,
-          "avg_power": 258,
-          "max_power": 296,
-          "avg_hr": 128,
-          "max_hr": 134,
-          "avg_cadence": 76.441986,
-          "zone": 3,
-          "training_load": 6.0988007,
-          "decoupling": 0.47855288
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3211,
-          "avg_power": 191,
-          "max_power": 277,
-          "avg_hr": 117,
-          "max_hr": 130,
-          "avg_cadence": 84.051384,
-          "zone": 2,
-          "training_load": 31.46459,
-          "decoupling": 10.883641
-        }
-      ]
-    },
     {
       "activity_id": "i163254342",
       "date": "2026-07-06",
