@@ -1,61 +1,9 @@
 {
-  "generated_at": "2026-07-16T23:39:35.988455",
+  "generated_at": "2026-07-17T01:12:47.774837",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i164128995",
-      "date": "2026-07-09",
-      "type": "Ride",
-      "name": "\ud83d\udeb4 Bici \u2013 Endurance + \ud83d\udcaa Pesi Gambe S3",
-      "interval_summary": [
-        "1x 42m37s 212w",
-        "1x 14m9s 329w",
-        "1x 1h4m 101w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2557s@212w75rpm",
-          "duration_secs": 2557,
-          "avg_power": 212,
-          "max_power": 501,
-          "avg_hr": 124,
-          "max_hr": 154,
-          "avg_cadence": 75.205956,
-          "zone": 2,
-          "training_load": 37.489277,
-          "decoupling": -6.4076433
-        },
-        {
-          "type": "WORK",
-          "label": "849s@329w72rpm",
-          "duration_secs": 849,
-          "avg_power": 329,
-          "max_power": 548,
-          "avg_hr": 164,
-          "max_hr": 172,
-          "avg_cadence": 71.84805,
-          "zone": 4,
-          "training_load": 24.158516,
-          "decoupling": 15.037676
-        },
-        {
-          "type": "WORK",
-          "label": "3898s@101w57rpm",
-          "duration_secs": 3898,
-          "avg_power": 101,
-          "max_power": 559,
-          "avg_hr": 105,
-          "max_hr": 172,
-          "avg_cadence": 56.649513,
-          "zone": 1,
-          "training_load": 27.067541,
-          "decoupling": 6.128177
-        }
-      ]
-    },
     {
       "activity_id": "i164400800",
       "date": "2026-07-10",
