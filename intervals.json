@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T06:58:47.166113",
+  "generated_at": "2026-07-17T09:16:55.007027",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1299,6 +1299,54 @@
           "zone": 1,
           "training_load": 21.815771,
           "decoupling": 7.9917617
+        }
+      ]
+    },
+    {
+      "activity_id": "i166520833",
+      "date": "2026-07-17",
+      "type": "Ride",
+      "name": "\u26a1 Scarico Pre-Gara S4",
+      "interval_summary": [
+        "1x 44s 613w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1039,
+          "avg_power": 150,
+          "max_power": 764,
+          "avg_hr": 105,
+          "max_hr": 159,
+          "avg_cadence": 79.75313,
+          "zone": 1,
+          "training_load": 10.095878,
+          "decoupling": -8.211669
+        },
+        {
+          "type": "WORK",
+          "label": "44s@613w78rpm",
+          "duration_secs": 44,
+          "avg_power": 613,
+          "max_power": 706,
+          "avg_hr": 165,
+          "max_hr": 171,
+          "avg_cadence": 77.59091,
+          "zone": 7,
+          "training_load": 3.2848597,
+          "decoupling": 6.8428226
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 178,
+          "avg_power": 103,
+          "max_power": 550,
+          "avg_hr": 134,
+          "max_hr": 172,
+          "avg_cadence": 47.80899,
+          "zone": 1,
+          "training_load": 3.5596368,
+          "decoupling": -13.369554
         }
       ]
     }
