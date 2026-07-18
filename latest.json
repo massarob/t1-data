@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-18T00:10:37.053260",
+    "last_updated": "2026-07-18T03:34:06.384825",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -33,10 +33,10 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
+        "status": "green",
+        "value": 42,
         "baseline_7d": 42.3,
-        "delta_bpm": null
+        "delta_bpm": -0.3
       },
       "sleep": {
         "status": "unavailable",
@@ -57,10 +57,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -70,7 +70,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -161,9 +161,9 @@
     "hrv_baseline_7d": 71.7,
     "rhr_baseline_7d": 42.3,
     "hrv_baseline_28d": 68.5,
-    "rhr_baseline_28d": 43.1,
+    "rhr_baseline_28d": 43.0,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 42,
     "acwr": 0.91,
     "acwr_interpretation": "optimal",
     "monotony": 1.31,
@@ -350,10 +350,10 @@
     "p_max": 1355,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-18T00:10:37.052120",
+    "calculation_timestamp": "2026-07-18T03:34:06.383668",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 12,
       "activities_28d": 52,
       "planned_workouts_7d": 15,
@@ -1094,7 +1094,7 @@
     {
       "date": "2026-07-18",
       "weight_kg": null,
-      "resting_hr": null,
+      "resting_hr": 42,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": null,
