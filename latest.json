@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-19T01:05:55.357256",
+    "last_updated": "2026-07-19T04:36:51.737052",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -295,9 +295,7 @@
     "phase_detection": {
       "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.57,
@@ -309,9 +307,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.18,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -322,9 +320,7 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -346,7 +342,7 @@
     "p_max": 1353,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-19T01:05:55.356080",
+    "calculation_timestamp": "2026-07-19T04:36:51.735919",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 6,
@@ -1069,14 +1065,59 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 123700688,
+      "date": "2026-07-21",
+      "name": "IntervalCoach - Corsa Lenta",
+      "type": "WORKOUT",
+      "planned_tss": 35,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Corsa leggera in arrivo 11m Z1 HR\n\nMain Set\n- Easy 52m Z1 HR intensity=recovery\n\nCooldown\n- 7m Z1 HR\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 123700754,
+      "date": "2026-07-23",
+      "name": "IntervalCoach - Sprint Neuromuscolari",
+      "type": "WORKOUT",
+      "planned_tss": 56,
+      "duration_hours": 1.16,
+      "duration_formatted": "1h9m50s",
+      "workout_summary": "11m @198W | 5\u00d710m @230W / 10s rec | 1m @214W | 7m @181W",
+      "description": "Warmup\n- Ciao massarob! Endurance e sprint oggi. 11m ramp 45-75% 85rpm\n\nMain Set\n5x\n- Endurance 10m 65-75% 88rpm\n- Sprint 10s 150% 110rpm\n\nRecovery\n- Endurance 1m 60-70%\n\nCooldown\n- Ottimo lavoro, rilassati ora. 7m ramp 65-45%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 123700772,
+      "date": "2026-07-25",
+      "name": "IntervalCoach - Corsa Lunga",
+      "type": "WORKOUT",
+      "planned_tss": 46,
+      "duration_hours": 1.53,
+      "duration_formatted": "1h32m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Oggi corsa lunga 14m Z1 HR\n\nMain Set\n- Ultra 69m Z1 HR\n\nCooldown\n- 9m Z1 HR\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 123700780,
+      "date": "2026-07-26",
+      "name": "IntervalCoach - Resistenza Aerobica",
+      "type": "WORKOUT",
+      "planned_tss": 78,
+      "duration_hours": 1.72,
+      "duration_formatted": "1h43m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Lunga sessione aerobica oggi. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 12m 65-70% 85rpm\n- Steady 66m 70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 10m ramp 65-45%\n\n[Weekly Plan - Build]"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 4,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 19.33,
