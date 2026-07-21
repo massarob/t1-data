@@ -1,83 +1,9 @@
 {
-  "generated_at": "2026-07-20T23:03:55.785973",
+  "generated_at": "2026-07-21T00:10:28.552792",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i165350652",
-      "date": "2026-07-13",
-      "type": "VirtualRide",
-      "name": "Zwift - Montmartre Mixer in Paris",
-      "interval_summary": [
-        "1x 71s 353w",
-        "1x 1m57s 364w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1335,
-          "avg_power": 217,
-          "max_power": 377,
-          "avg_hr": 119,
-          "max_hr": 142,
-          "avg_cadence": 86.36779,
-          "zone": 2,
-          "training_load": 16.782507,
-          "decoupling": -3.300622
-        },
-        {
-          "type": "WORK",
-          "label": "71s@353w81rpm",
-          "duration_secs": 71,
-          "avg_power": 353,
-          "max_power": 421,
-          "avg_hr": 151,
-          "max_hr": 158,
-          "avg_cadence": 81.33803,
-          "zone": 5,
-          "training_load": 2.1806548,
-          "decoupling": 5.7706523
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 201,
-          "avg_power": 176,
-          "max_power": 344,
-          "avg_hr": 125,
-          "max_hr": 158,
-          "avg_cadence": 85.72139,
-          "zone": 1,
-          "training_load": 2.414266,
-          "decoupling": -30.056156
-        },
-        {
-          "type": "WORK",
-          "label": "117s@364w91rpm",
-          "duration_secs": 117,
-          "avg_power": 364,
-          "max_power": 454,
-          "avg_hr": 153,
-          "max_hr": 165,
-          "avg_cadence": 90.55556,
-          "zone": 5,
-          "training_load": 3.7822957,
-          "decoupling": 5.8897657
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2030,
-          "avg_power": 164,
-          "max_power": 351,
-          "avg_hr": 115,
-          "max_hr": 164,
-          "avg_cadence": 80.7797,
-          "zone": 1,
-          "training_load": 17.913958,
-          "decoupling": 7.136707
-        }
-      ]
-    },
     {
       "activity_id": "i165557019",
       "date": "2026-07-14",
