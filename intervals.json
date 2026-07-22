@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T14:23:00.660905",
+  "generated_at": "2026-07-22T16:01:14.760928",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1710,6 +1710,58 @@
           "zone": 1,
           "training_load": 49.336666,
           "decoupling": 15.44428
+        }
+      ]
+    },
+    {
+      "activity_id": "i168103930",
+      "date": "2026-07-22",
+      "type": "Ride",
+      "name": "2di2 Afternoon Ride",
+      "interval_summary": [
+        "1x 1h15m 233w",
+        "1x 1h6m 278w",
+        "1x 1h13m 77w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "4544s@233w79rpm",
+          "duration_secs": 4544,
+          "avg_power": 233,
+          "max_power": 412,
+          "avg_hr": 127,
+          "max_hr": 150,
+          "avg_cadence": 78.81426,
+          "zone": 2,
+          "training_load": 67.080025,
+          "decoupling": 1.8064369
+        },
+        {
+          "type": "WORK",
+          "label": "4006s@278w77rpm",
+          "duration_secs": 4006,
+          "avg_power": 278,
+          "max_power": 530,
+          "avg_hr": 154,
+          "max_hr": 170,
+          "avg_cadence": 76.67548,
+          "zone": 3,
+          "training_load": 92.57923,
+          "decoupling": 8.947437
+        },
+        {
+          "type": "WORK",
+          "label": "4417s@77w37rpm",
+          "duration_secs": 4417,
+          "avg_power": 77,
+          "max_power": 360,
+          "avg_hr": 99,
+          "max_hr": 166,
+          "avg_cadence": 36.874577,
+          "zone": 1,
+          "training_load": 21.887274,
+          "decoupling": -10.451288
         }
       ]
     }
