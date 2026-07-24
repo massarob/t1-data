@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T07:19:11.027026",
+  "generated_at": "2026-07-24T09:56:44.317683",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1335,6 +1335,54 @@
           "zone": 2,
           "training_load": 1.317914,
           "decoupling": 45.94258
+        }
+      ]
+    },
+    {
+      "activity_id": "i168729779",
+      "date": "2026-07-24",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "1x 5m20s 296w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1180,
+          "avg_power": 175,
+          "max_power": 433,
+          "avg_hr": 111,
+          "max_hr": 150,
+          "avg_cadence": 71.77239,
+          "zone": 1,
+          "training_load": 15.475372,
+          "decoupling": -9.565226
+        },
+        {
+          "type": "WORK",
+          "label": "320s@296w72rpm",
+          "duration_secs": 320,
+          "avg_power": 296,
+          "max_power": 353,
+          "avg_hr": 140,
+          "max_hr": 150,
+          "avg_cadence": 71.65938,
+          "zone": 3,
+          "training_load": 7.0073667,
+          "decoupling": 7.8937864
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3024,
+          "avg_power": 115,
+          "max_power": 406,
+          "avg_hr": 98,
+          "max_hr": 142,
+          "avg_cadence": 60.51933,
+          "zone": 1,
+          "training_load": 20.777779,
+          "decoupling": 8.34687
         }
       ]
     }
