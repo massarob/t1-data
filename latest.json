@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-24T01:11:32.317071",
+    "last_updated": "2026-07-24T04:34:55.059193",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -301,7 +301,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.25,
+          "planned_tss_delta": 0.16,
           "hard_sessions_planned": 2,
           "race_proximity": null,
           "next_week_load": 0.06,
@@ -339,7 +339,7 @@
     "p_max": 1348,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-24T01:11:32.316021",
+    "calculation_timestamp": "2026-07-24T04:34:55.058370",
     "data_quality": {
       "hrv_data_points": 5,
       "rhr_data_points": 7,
@@ -1075,15 +1075,15 @@
       "description": "Warmup\n- Ciao massarob! Oggi corsa lunga 14m Z1 HR\n\nMain Set\n- Ultra 69m Z1 HR\n\nCooldown\n- 9m Z1 HR\n\n[Weekly Plan - Build]"
     },
     {
-      "id": 123700780,
+      "id": 124816531,
       "date": "2026-07-26",
-      "name": "IntervalCoach - Resistenza Aerobica",
+      "name": "IntervalCoach - Ripetute VO2max",
       "type": "WORKOUT",
-      "planned_tss": 78,
-      "duration_hours": 1.72,
-      "duration_formatted": "1h43m",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Lunga sessione aerobica oggi. 15m ramp 45-75% 85rpm\n\nMain Set\n- Settle In 12m 65-70% 85rpm\n- Steady 66m 70% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 10m ramp 65-45%\n\n[Weekly Plan - Build]"
+      "planned_tss": 36,
+      "duration_hours": 0.47,
+      "duration_formatted": "28m",
+      "workout_summary": "4m @198W | 5\u00d72m @372W / 2m rec | 1m @214W | 3m @181W",
+      "description": "Main Set\n- Ciao massarob! Oggi si alza la soglia. 4m 45-75%\n\n5x\n- VO2max 2m 106-120%\n- Recovery 2m 55%\n\nRecovery\n- Endurance 1m 60-70%\n- Ben fatto massarob! Ottimo lavoro 3m 65-45%"
     },
     {
       "id": 124348421,
@@ -1110,11 +1110,11 @@
   ],
   "workout_summary_stats": {
     "attempted": 4,
-    "success": 1,
-    "patternA": 1,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 19.22,
