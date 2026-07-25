@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-25T03:16:07.828116",
+    "last_updated": "2026-07-25T06:01:50.195214",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -43,10 +43,10 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 42.2,
-        "delta_bpm": null
+        "status": "green",
+        "value": 42,
+        "baseline_7d": 42.1,
+        "delta_bpm": -0.1
       },
       "sleep": {
         "status": "unavailable",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 1,
+      "green": 2,
       "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 1 green, 1 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -159,7 +159,7 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 40,
+      "resting_hr": 42,
       "hrv": null,
       "sleep_quality": null,
       "sleep_hours": null,
@@ -169,11 +169,11 @@
   "derived_metrics": {
     "recovery_index": null,
     "hrv_baseline_7d": 70.2,
-    "rhr_baseline_7d": 42.2,
+    "rhr_baseline_7d": 42.1,
     "hrv_baseline_28d": 69.8,
     "rhr_baseline_28d": 42.6,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 42,
     "acwr": 0.78,
     "acwr_interpretation": "undertraining",
     "monotony": 1.2,
@@ -321,9 +321,9 @@
           "planned_tss_delta": 0.25,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.06,
+          "next_week_load": 0.13,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -356,10 +356,10 @@
     "p_max": 1346,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-25T03:16:07.827038",
+    "calculation_timestamp": "2026-07-25T06:01:50.194117",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 52,
       "planned_workouts_7d": 3,
@@ -1154,7 +1154,7 @@
     {
       "date": "2026-07-25",
       "weight_kg": null,
-      "resting_hr": null,
+      "resting_hr": 42,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": null,
@@ -1212,15 +1212,26 @@
       "duration_formatted": "39m",
       "workout_summary": "6m @198W | 4\u00d74m @230W / 2m rec | 6m @230W | 3m @181W",
       "description": "Main Set\n- Ciao massarob! Recupero attivo con qualche allungo. 6m 45-75%\n\n4x\n- Endurance 4m 65-75%\n- Pickup 2m 76-82%\n\nRecovery\n- Endurance 5 6m 65-75%\n- Bel lavoro, massarob! Goditi il defaticamento. 3m 65-45%"
+    },
+    {
+      "id": 124981433,
+      "date": "2026-08-01",
+      "name": "IntervalCoach - Resistenza e Forza",
+      "type": "WORKOUT",
+      "planned_tss": 85,
+      "duration_hours": 1.63,
+      "duration_formatted": "1h38m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Pronto per resistenza e forza. 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 21m 65-75% 88rpm\n\n4x\n- Strength 1 (low cadence) 3m 82% 60rpm\n- Threshold 2m 95-100% 92rpm\n- Recovery 3m 55%\n\nRecovery\n- Cruise 21m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, rilassati ora. 10m ramp 65-45%\n\n[Weekly Plan - Build]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 18.84,
@@ -1228,7 +1239,7 @@
     "total_tss": 896,
     "activities_count": 13,
     "avg_hrv": 70.2,
-    "avg_resting_hr": 42.2
+    "avg_resting_hr": 42.1
   },
   "race_calendar": {
     "next_race": null,
