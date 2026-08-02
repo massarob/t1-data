@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-02T03:59:21.513869",
+    "last_updated": "2026-08-02T06:41:17.760987",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -292,9 +292,7 @@
     "phase_detection": {
       "phase": "Build",
       "confidence": "medium",
-      "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
-      ],
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.57,
@@ -306,9 +304,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.23,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -319,9 +317,7 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
       "current_ftp": null,
@@ -343,7 +339,7 @@
     "p_max": 1342,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-02T03:59:21.512799",
+    "calculation_timestamp": "2026-08-02T06:41:17.759997",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -920,14 +916,59 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 126666471,
+      "date": "2026-08-04",
+      "name": "IntervalCoach - Passo Aerobico",
+      "type": "WORKOUT",
+      "planned_tss": 54,
+      "duration_hours": 1.07,
+      "duration_formatted": "1h4m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Preparati per la corsa 3m 63-67% pace\n- 7m 73-77% pace\n\nMain Set\n- Easy Aerobic 48m 65-77% pace\n\nCooldown\n- 3m 73-77% pace\n- Ottimo lavoro, concludi con calma 3m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 126666512,
+      "date": "2026-08-06",
+      "name": "IntervalCoach - 3x14 Resistenza e Spinte",
+      "type": "WORKOUT",
+      "planned_tss": 55,
+      "duration_hours": 1.15,
+      "duration_formatted": "1h9m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Giornata di resistenza e spinte 10m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 1 14m 65-75% 88rpm\n- Tempo 1 5m 76-82% 90rpm\n- Endurance 2 14m 65-75% 88rpm\n- Tempo 2 5m 76-82% 90rpm\n- Endurance 3 14m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento 7m ramp 65-45%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 126666546,
+      "date": "2026-08-08",
+      "name": "IntervalCoach - 4x9 Resistenza con Tempo",
+      "type": "WORKOUT",
+      "planned_tss": 79,
+      "duration_hours": 1.13,
+      "duration_formatted": "1h8m",
+      "workout_summary": "3 \u00d7 3m | 4\u00d79m / 4m rec | 4m | 3m",
+      "description": "Main Set\n- Ciao massarob! Oggi resistenza con allunghi. 3m 63-67% pace\n\nWarmup\n- 3m ramp 74-78% pace\n- 3m ramp 83-87% pace\n\nMain Set\n4x\n- Aerobic 9m 78-87% pace\n- Tempo 4m 88-94% pace\n\nCooldown\n- 4m ramp 80-76% pace\n\nMain Set\n- Ottimo lavoro, ora recupero attivo. 3m 63-67% pace"
+    },
+    {
+      "id": 126666587,
+      "date": "2026-08-09",
+      "name": "IntervalCoach - Resistenza Aerobica",
+      "type": "WORKOUT",
+      "planned_tss": 80,
+      "duration_hours": 1.98,
+      "duration_formatted": "1h59m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Oggi si pedala per la massima efficienza. 15m ramp 45-75% 85rpm\n\nMain Set\n- Low 31m 63% 85rpm\n- Settle In 31m 63-68% 85rpm\n- Cruise 32m 68-63% 88rpm\n\nCooldown\n- Bravo massarob! Ottimo lavoro, rilassati ora. 10m ramp 65-45%\n\n[Weekly Plan - Build]"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 4,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 16.43,
