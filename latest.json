@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-07T21:50:26.023333",
+    "last_updated": "2026-08-07T22:41:30.444862",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -314,9 +314,9 @@
           "planned_tss_delta": 0.32,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.1,
+          "next_week_load": 0.16,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -349,7 +349,7 @@
     "p_max": 1342,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-07T21:50:26.022275",
+    "calculation_timestamp": "2026-08-07T22:41:30.443686",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1202,15 +1202,26 @@
       "duration_formatted": "1h11m50s",
       "workout_summary": "11m @198W | 5\u00d710m @230W / 10s rec | 3m @214W | 7m @181W",
       "description": "Warmup\n- Ciao massarob! Pronti per endurance e sprint? 11m ramp 45-75% 85rpm\n\nMain Set\n5x\n- Endurance 10m 65-75% 88rpm\n- Sprint 10s 150% 110rpm\n\nRecovery\n- Endurance 3m 60-70%\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento! 7m ramp 65-45%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 127847202,
+      "date": "2026-08-15",
+      "name": "IntervalCoach - Lungo Aerobico",
+      "type": "WORKOUT",
+      "planned_tss": 79,
+      "duration_hours": 1.22,
+      "duration_formatted": "1h13m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Lungo aerobico in arrivo. 4m 63-67% pace\n- 4m 74-78% pace"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 21.44,
