@@ -1,82 +1,9 @@
 {
-  "generated_at": "2026-08-08T23:45:47.981370",
+  "generated_at": "2026-08-09T02:05:40.610957",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i171367310",
-      "date": "2026-08-01",
-      "type": "Ride",
-      "name": "IntervalCoach - Resistenza e Forza",
-      "interval_summary": [
-        "2x 80s 365w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 780,
-          "avg_power": 143,
-          "max_power": 474,
-          "avg_hr": 104,
-          "max_hr": 155,
-          "avg_cadence": 72.14103,
-          "zone": 1,
-          "training_load": 7.0523415,
-          "decoupling": -13.648902
-        },
-        {
-          "type": "WORK",
-          "label": "80s@365w79rpm",
-          "duration_secs": 79,
-          "avg_power": 349,
-          "max_power": 406,
-          "avg_hr": 160,
-          "max_hr": 164,
-          "avg_cadence": 82.01266,
-          "zone": 5,
-          "training_load": 2.5109966,
-          "decoupling": 6.034611
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 44,
-          "avg_power": 302,
-          "max_power": 414,
-          "avg_hr": 162,
-          "max_hr": 164,
-          "avg_cadence": 87.65909,
-          "zone": 4,
-          "training_load": 1.1278226,
-          "decoupling": -4.807186
-        },
-        {
-          "type": "WORK",
-          "label": "80s@365w79rpm",
-          "duration_secs": 81,
-          "avg_power": 381,
-          "max_power": 479,
-          "avg_hr": 166,
-          "max_hr": 171,
-          "avg_cadence": 76.91358,
-          "zone": 5,
-          "training_load": 2.8132439,
-          "decoupling": -1.9609841
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3210,
-          "avg_power": 103,
-          "max_power": 460,
-          "avg_hr": 108,
-          "max_hr": 175,
-          "avg_cadence": 49.764175,
-          "zone": 1,
-          "training_load": 26.749949,
-          "decoupling": 8.400874
-        }
-      ]
-    },
     {
       "activity_id": "i171977274",
       "date": "2026-08-03",
