@@ -1,61 +1,9 @@
 {
-  "generated_at": "2026-08-12T23:58:59.913127",
+  "generated_at": "2026-08-13T02:38:23.646348",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i172662465",
-      "date": "2026-08-05",
-      "type": "Ride",
-      "name": "MTB",
-      "interval_summary": [
-        "1x 17m24s 201w",
-        "1x 31m27s 282w",
-        "1x 1h9m 104w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1044s@201w65rpm",
-          "duration_secs": 1044,
-          "avg_power": 201,
-          "max_power": 478,
-          "avg_hr": 129,
-          "max_hr": 156,
-          "avg_cadence": 65.24138,
-          "zone": 2,
-          "training_load": 15.378285,
-          "decoupling": 4.8084774
-        },
-        {
-          "type": "WORK",
-          "label": "1887s@282w70rpm",
-          "duration_secs": 1887,
-          "avg_power": 282,
-          "max_power": 469,
-          "avg_hr": 172,
-          "max_hr": 180,
-          "avg_cadence": 69.94012,
-          "zone": 3,
-          "training_load": 43.31956,
-          "decoupling": 12.944305
-        },
-        {
-          "type": "WORK",
-          "label": "4183s@104w35rpm",
-          "duration_secs": 4183,
-          "avg_power": 104,
-          "max_power": 579,
-          "avg_hr": 127,
-          "max_hr": 173,
-          "avg_cadence": 35.43868,
-          "zone": 1,
-          "training_load": 40.201843,
-          "decoupling": 22.378954
-        }
-      ]
-    },
     {
       "activity_id": "i173160413",
       "date": "2026-08-06",
