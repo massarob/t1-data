@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T10:27:34.139936",
+  "generated_at": "2026-08-15T10:50:58.032155",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1297,6 +1297,72 @@
           "zone": 1,
           "training_load": 5.194336,
           "decoupling": 34.785645
+        }
+      ]
+    },
+    {
+      "activity_id": "i176047047",
+      "date": "2026-08-15",
+      "type": "Ride",
+      "name": "Ceto Valpaghera. 2\u00b0. No categorie.",
+      "interval_summary": [
+        "1x 31s 40w",
+        "1x 32s 167w",
+        "1x 31m45s 327w",
+        "1x 5m55s 1w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "31s@40w5rpm",
+          "duration_secs": 31,
+          "avg_power": 40,
+          "max_power": 407,
+          "avg_hr": 101,
+          "max_hr": 107,
+          "avg_cadence": 5.193548,
+          "zone": 1,
+          "training_load": 0.0011998776,
+          "decoupling": "-Infinity"
+        },
+        {
+          "type": "WORK",
+          "label": "32s@167w43rpm",
+          "duration_secs": 32,
+          "avg_power": 167,
+          "max_power": 491,
+          "avg_hr": 128,
+          "max_hr": 142,
+          "avg_cadence": 43.40625,
+          "zone": 1,
+          "training_load": 0.2615325,
+          "decoupling": 29.08999
+        },
+        {
+          "type": "WORK",
+          "label": "1905s@327w80rpm",
+          "duration_secs": 1905,
+          "avg_power": 327,
+          "max_power": 730,
+          "avg_hr": 176,
+          "max_hr": 185,
+          "avg_cadence": 80.47926,
+          "zone": 4,
+          "training_load": 54.207268,
+          "decoupling": 11.3631735
+        },
+        {
+          "type": "WORK",
+          "label": "355s@1w1rpm",
+          "duration_secs": 355,
+          "avg_power": 1,
+          "max_power": 213,
+          "avg_hr": 132,
+          "max_hr": 176,
+          "avg_cadence": 1.297546,
+          "zone": 1,
+          "training_load": 0.64133763,
+          "decoupling": 100.0
         }
       ]
     }
