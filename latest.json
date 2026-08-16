@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-16T03:51:42.383137",
+    "last_updated": "2026-08-16T04:40:22.409332",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -53,7 +53,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 10.7
+        "value": 18.0
       }
     },
     "signal_summary": {
@@ -96,10 +96,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 171.41,
-      "atl": 160.69,
-      "tsb": 10.72,
-      "ramp_rate": 2.32,
+      "ctl": 169.6,
+      "atl": 151.57,
+      "tsb": 18.03,
+      "ramp_rate": 0.51,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -300,9 +300,9 @@
           "planned_tss_delta": 0.52,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.13,
           "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -335,7 +335,7 @@
     "p_max": 1334,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-16T03:51:42.382000",
+    "calculation_timestamp": "2026-08-16T04:40:22.408220",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1060,15 +1060,59 @@
       "duration_formatted": "1h39m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Pronti per resistenza e forza! 14m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 22m 65-75% 88rpm\n\n4x\n- Strength 1 (low cadence) 3m 82% 60rpm\n- Threshold 2m 95-100% 92rpm\n- Recovery 3m 55%\n\nRecovery\n- Cruise 21m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro massarob, respira e recupera. 10m ramp 65-45%\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 129440316,
+      "date": "2026-08-18",
+      "name": "IntervalCoach - 5x4 Scatto Neuromuscolare",
+      "type": "WORKOUT",
+      "planned_tss": 35,
+      "duration_hours": 0.54,
+      "duration_formatted": "32m40s",
+      "workout_summary": "3 \u00d7 2m | 5\u00d74m / 8s rec | 2 \u00d7 3m",
+      "description": "Warmup\n- Ciao massarob! Corsa di resistenza e sprint ti aspettano. 2m ramp 63-67% pace\n- 2m ramp 74-78% pace\n- 2m ramp 83-87% pace\n\nMain Set\n5x\n- Aerobic 4m 78-87% pace\n- Sprint 8s 128-132% pace\n\nRecovery\n- Endurance 3m 60-70% pace\n\nCooldown\n- 3m ramp 69-65% pace"
+    },
+    {
+      "id": 129440379,
+      "date": "2026-08-20",
+      "name": "IntervalCoach - 4x4 Resistenza e Cadenza",
+      "type": "WORKOUT",
+      "planned_tss": 29,
+      "duration_hours": 0.63,
+      "duration_formatted": "37m32s",
+      "workout_summary": "6m @198W | 4\u00d74m @230W / 53s rec | 8m @230W | 4m @181W",
+      "description": "Main Set\n- Ciao massarob! Oggi resistenza con spin-up. 6m 45-75%\n\n4x\n- Endurance 4m 65-75%\n- Spin-Up 53s 75%\n\nRecovery\n- Endurance 5 8m 65-75%\n- Ottimo lavoro massarob, goditi il defaticamento. 4m 65-45%"
+    },
+    {
+      "id": 129440485,
+      "date": "2026-08-22",
+      "name": "IntervalCoach - Endurance + Tempo Pushes",
+      "type": "WORKOUT",
+      "planned_tss": 46,
+      "duration_hours": 0.97,
+      "duration_formatted": "58m",
+      "workout_summary": null,
+      "description": "Main Set\n- Ciao massarob! Oggi resistenza e sprint. 9m 45-75%\n- Endurance 1 12m 65-75%\n- Tempo 1 4m 76-82%\n- Endurance 2 11m 65-75%\n- Tempo 2 4m 76-82%\n- Endurance 3 12m 65-75%\n- Ottimo lavoro, goditi il defaticamento. 6m 65-45%"
+    },
+    {
+      "id": 129440653,
+      "date": "2026-08-23",
+      "name": "IntervalCoach - Potenziamento Aerobico",
+      "type": "WORKOUT",
+      "planned_tss": 47,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Pronti per la Fat Max? 11m ramp 45-75% 85rpm\n\nMain Set\n- Low 17m 63% 85rpm\n- Settle In 17m 63-68% 85rpm\n- Cruise 18m 63-68% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento 7m ramp 65-45%\n\n[Weekly Plan - Recovery]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 5,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 20.33,
