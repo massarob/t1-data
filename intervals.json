@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T23:47:09.905903",
+  "generated_at": "2026-08-16T01:41:02.733625",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -44,58 +44,6 @@
           "avg_cadence": 24.54834,
           "zone": 1,
           "training_load": 10.917025
-        }
-      ]
-    },
-    {
-      "activity_id": "i174389570",
-      "date": "2026-08-08",
-      "type": "Ride",
-      "name": "Morning Ride",
-      "interval_summary": [
-        "1x 36m31s 178w",
-        "1x 60s 458w",
-        "1x 45m52s 155w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2191s@178w76rpm",
-          "duration_secs": 2191,
-          "avg_power": 178,
-          "max_power": 480,
-          "avg_hr": 116,
-          "max_hr": 152,
-          "avg_cadence": 75.662094,
-          "zone": 1,
-          "training_load": 22.471134,
-          "decoupling": -5.7303886
-        },
-        {
-          "type": "WORK",
-          "label": "60s@458w81rpm",
-          "duration_secs": 60,
-          "avg_power": 458,
-          "max_power": 660,
-          "avg_hr": 154,
-          "max_hr": 167,
-          "avg_cadence": 80.833336,
-          "zone": 6,
-          "training_load": 2.9899602,
-          "decoupling": 31.109877
-        },
-        {
-          "type": "WORK",
-          "label": "2752s@155w64rpm",
-          "duration_secs": 2752,
-          "avg_power": 155,
-          "max_power": 449,
-          "avg_hr": 114,
-          "max_hr": 168,
-          "avg_cadence": 64.35102,
-          "zone": 1,
-          "training_load": 26.304111,
-          "decoupling": 13.232301
         }
       ]
     },
