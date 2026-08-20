@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T14:55:49.528809",
+  "generated_at": "2026-08-20T15:39:21.997195",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1791,6 +1791,54 @@
           "zone": 2,
           "training_load": 19.83883,
           "decoupling": 13.59686
+        }
+      ]
+    },
+    {
+      "activity_id": "i177979137",
+      "date": "2026-08-20",
+      "type": "VirtualRide",
+      "name": "Zwift - Road to Sky in Watopia",
+      "interval_summary": [
+        "1x 20m16s 341w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 505,
+          "avg_power": 241,
+          "max_power": 348,
+          "avg_hr": 122,
+          "max_hr": 133,
+          "avg_cadence": 86.83564,
+          "zone": 2,
+          "training_load": 7.3579493,
+          "decoupling": 5.0550957
+        },
+        {
+          "type": "WORK",
+          "label": "1216s@341w64rpm",
+          "duration_secs": 1216,
+          "avg_power": 341,
+          "max_power": 425,
+          "avg_hr": 158,
+          "max_hr": 165,
+          "avg_cadence": 64.3824,
+          "zone": 4,
+          "training_load": 36.279007,
+          "decoupling": 7.529701
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3118,
+          "avg_power": 163,
+          "max_power": 362,
+          "avg_hr": 117,
+          "max_hr": 164,
+          "avg_cadence": 73.9897,
+          "zone": 1,
+          "training_load": 26.634706,
+          "decoupling": -8.391656
         }
       ]
     }
