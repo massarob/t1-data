@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-22T21:58:24.360619",
+    "last_updated": "2026-08-22T22:31:41.096868",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -320,9 +320,9 @@
           "planned_tss_delta": 0.28,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.16,
+          "next_week_load": 0.22,
           "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.6
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -355,7 +355,7 @@
     "p_max": 1332,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-22T21:58:24.359782",
+    "calculation_timestamp": "2026-08-22T22:31:41.095721",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1146,12 +1146,22 @@
       "duration_formatted": "1h5m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Pronto per ripetute? 3m ramp 63-67% pace\n- 7m ramp 75-79% pace\n\nMain Set\n- Endurance 6m 76-80% pace\n- Threshold 1 8m 95-99% pace\n- Jog Recovery 2m 65-77% pace\n- Threshold 2 6m 95-99% pace\n- Jog Recovery 2m 65-77% pace\n- Threshold 3 5m 96-100% pace\n- Jog Recovery 2m 65-77% pace\n- Threshold 4 4m 96-100% pace\n- Jog Recovery 2m 65-77% pace\n- Threshold 5 4m 97-101% pace\n- Endurance 7m 76-80% pace\n\nCooldown\n- 4m ramp 80-76% pace\n- Ottima corsa, ora defaticamento leggero 3m ramp 67-63% pace"
+    },
+    {
+      "id": 130964502,
+      "date": "2026-08-30",
+      "name": "IntervalCoach - 6x10 Resistenza e Sprint",
+      "type": "WORKOUT",
+      "planned_tss": 68,
+      "duration_hours": 1.42,
+      "duration_formatted": "1h25m",
+      "workout_summary": "13m @198W | 6\u00d710m @230W / 10s rec | 2m @214W | 9m @181W"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
     "bail_no_match": 5
