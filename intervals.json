@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T10:01:09.189919",
+  "generated_at": "2026-08-23T10:42:36.971853",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1240,6 +1240,154 @@
           "zone": 2,
           "training_load": 5.310638,
           "decoupling": -7.6367235
+        }
+      ]
+    },
+    {
+      "activity_id": "i178849711",
+      "date": "2026-08-23",
+      "type": "Ride",
+      "name": "Morning Ride",
+      "interval_summary": [
+        "1x 5m20s 272w",
+        "1x 60s 386w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3156,
+          "avg_power": 212,
+          "max_power": 582,
+          "avg_hr": 124,
+          "max_hr": 154,
+          "avg_cadence": 74.3403,
+          "zone": 2,
+          "training_load": 46.56259,
+          "decoupling": -3.6484776
+        },
+        {
+          "type": "WORK",
+          "label": "320s@272w84rpm",
+          "duration_secs": 320,
+          "avg_power": 272,
+          "max_power": 337,
+          "avg_hr": 143,
+          "max_hr": 148,
+          "avg_cadence": 83.5,
+          "zone": 3,
+          "training_load": 6.0833793,
+          "decoupling": 3.2292116
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1085,
+          "avg_power": 132,
+          "max_power": 611,
+          "avg_hr": 117,
+          "max_hr": 148,
+          "avg_cadence": 45.18794,
+          "zone": 1,
+          "training_load": 13.007155,
+          "decoupling": 9.480574
+        },
+        {
+          "type": "WORK",
+          "label": "60s@386w71rpm",
+          "duration_secs": 60,
+          "avg_power": 386,
+          "max_power": 499,
+          "avg_hr": 146,
+          "max_hr": 164,
+          "avg_cadence": 71.2,
+          "zone": 5,
+          "training_load": 1.9179063,
+          "decoupling": 5.5790515
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5201,
+          "avg_power": 92,
+          "max_power": 522,
+          "avg_hr": 103,
+          "max_hr": 168,
+          "avg_cadence": 64.35278,
+          "zone": 1,
+          "training_load": 35.1169,
+          "decoupling": -6.450641
+        }
+      ]
+    },
+    {
+      "activity_id": "i178849081",
+      "date": "2026-08-23",
+      "type": "Ride",
+      "name": "Morning Ride",
+      "interval_summary": [
+        "1x 5m20s 272w",
+        "1x 60s 386w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3162,
+          "avg_power": 212,
+          "max_power": 582,
+          "avg_hr": 124,
+          "max_hr": 154,
+          "avg_cadence": 74.14959,
+          "zone": 2,
+          "training_load": 46.75679,
+          "decoupling": -3.9105878
+        },
+        {
+          "type": "WORK",
+          "label": "320s@272w84rpm",
+          "duration_secs": 320,
+          "avg_power": 272,
+          "max_power": 337,
+          "avg_hr": 143,
+          "max_hr": 148,
+          "avg_cadence": 83.5125,
+          "zone": 3,
+          "training_load": 6.0833793,
+          "decoupling": 3.1993768
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1085,
+          "avg_power": 132,
+          "max_power": 611,
+          "avg_hr": 117,
+          "max_hr": 148,
+          "avg_cadence": 45.194164,
+          "zone": 1,
+          "training_load": 12.982911,
+          "decoupling": 9.548135
+        },
+        {
+          "type": "WORK",
+          "label": "60s@386w71rpm",
+          "duration_secs": 60,
+          "avg_power": 386,
+          "max_power": 499,
+          "avg_hr": 146,
+          "max_hr": 164,
+          "avg_cadence": 71.2,
+          "zone": 5,
+          "training_load": 1.9179063,
+          "decoupling": 5.48545
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 5199,
+          "avg_power": 92,
+          "max_power": 522,
+          "avg_hr": 103,
+          "max_hr": 168,
+          "avg_cadence": 64.03718,
+          "zone": 1,
+          "training_load": 33.42975,
+          "decoupling": -6.7176976
         }
       ]
     }
