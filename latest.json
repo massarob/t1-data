@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-23T03:53:41.433418",
+    "last_updated": "2026-08-23T04:41:42.130424",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -330,7 +330,7 @@
           "planned_tss_delta": 0.28,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.22,
+          "next_week_load": 0.21,
           "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 0.8
         },
@@ -365,7 +365,7 @@
     "p_max": 1330,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-23T03:53:41.432657",
+    "calculation_timestamp": "2026-08-23T04:41:42.129300",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -1090,15 +1090,15 @@
       "description": "Warmup\n- Ciao massarob! Pronto per la corsa? 3m 63-67% pace\n- 5m 75-79% pace\n\nMain Set\n- Low Aerobic 13m 76-80% pace\n- Mid Aerobic 13m 78-87% pace\n- Upper Aerobic 12m 86-90% pace\n\nCooldown\n- 3m 76-80% pace\n- Ben fatto, recupera con calma. 2m 63-67% pace\n\n[Weekly Plan - Build]"
     },
     {
-      "id": 130796770,
+      "id": 130998836,
       "date": "2026-08-27",
-      "name": "IntervalCoach - 2x10 Soglia Potenza",
+      "name": "IntervalCoach - Ramp Test",
       "type": "WORKOUT",
-      "planned_tss": 53,
-      "duration_hours": 0.75,
-      "duration_formatted": "45m",
+      "planned_tss": 48,
+      "duration_hours": 0.38,
+      "duration_formatted": "23m",
       "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Allenamento FTP oggi! 7m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 4m 65-75% 85rpm\n- Threshold 1 10m 95% 90rpm\n- Recovery 5m 55%\n- Threshold 2 10m 98-105% 95rpm\n- Endurance 4m 65-75% 85rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento 5m ramp 65-45%\n\n[Weekly Plan - Build]"
+      "description": "Main Set\n- Ciao massarob! Pronto per il tuo Ramp Test? 3m 45-75%\n- Step 52% 40s 52%\n- Step 58% 40s 58%\n- Step 64% 40s 64%\n- Step 70% 40s 70%\n- Step 76% 40s 76%\n- Step 82% 40s 82%\n- Step 88% 40s 88%\n- Step 94% 40s 94%\n- Step 100% 40s 100%\n- Step 106% 40s 106%\n- Step 112% 40s 112%\n- Step 118% 40s 118%\n- Step 124% 40s 124%\n- Step 130% 40s 130%\n- Step 136% 40s 136%\n- Step 142% 40s 142%\n- Step 148% 40s 148%\n- Step 154% 40s 154%\n- Step 160% 40s 160%\n- Step 166% 40s 166%\n- Step 172% 40s 172%\n- Endurance 3m 60-70%\n- Ben fatto massarob, recupera bene! 3m 65-45%"
     },
     {
       "id": 130796780,
