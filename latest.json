@@ -10,13 +10,13 @@
     "quick_stats": {
       "total_training_hours": 17.26,
       "total_training_formatted": "17h15m",
-      "total_activities": 15,
+      "total_activities": 16,
       "total_tss": 904
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-25T16:01:32.095169",
+    "last_updated": "2026-08-25T16:56:48.811399",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -53,7 +53,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 0.3
+        "value": -8.3
       }
     },
     "signal_summary": {
@@ -84,7 +84,7 @@
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
     "total_duration_decimal_hours": 17.26,
-    "total_activities": 15,
+    "total_activities": 16,
     "by_activity_type": {
       "Ride": {
         "duration_decimal_hours": 13.24,
@@ -94,7 +94,7 @@
       },
       "Unknown": {
         "duration_decimal_hours": 0.0,
-        "count": 3,
+        "count": 4,
         "tss": 0,
         "distance_km": 0.0
       },
@@ -108,17 +108,17 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 174.63,
-      "atl": 174.36,
-      "tsb": 0.27,
-      "ramp_rate": -1.75,
+      "ctl": 176.47,
+      "atl": 184.75,
+      "tsb": -8.28,
+      "ramp_rate": 0.09,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
-      "eftp": 320.1,
-      "w_prime": 26527,
-      "w_prime_kj": 26.5,
-      "p_max": 1328,
+      "eftp": 320.4,
+      "w_prime": 26554,
+      "w_prime_kj": 26.6,
+      "p_max": 1329,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -341,18 +341,18 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 320.1,
-    "w_prime": 26527,
-    "w_prime_kj": 26.5,
-    "p_max": 1328,
+    "eftp": 320.4,
+    "w_prime": 26554,
+    "w_prime_kj": 26.6,
+    "p_max": 1329,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-25T16:01:32.094138",
+    "calculation_timestamp": "2026-08-25T16:56:48.810359",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
-      "activities_7d": 15,
-      "activities_28d": 53,
+      "activities_7d": 16,
+      "activities_28d": 54,
       "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
@@ -362,10 +362,45 @@
   },
   "recent_activities": [
     {
+      "id": "19895418839",
+      "date": "2026-08-25T17:08:16",
+      "type": "Unknown",
+      "name": "",
+      "duration_hours": 0.0,
+      "distance_km": 0.0,
+      "tss": null,
+      "intensity_factor": null,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": null,
+      "max_hr": null,
+      "avg_cadence": null,
+      "avg_speed": null,
+      "max_speed": null,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": null,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": null,
+      "has_intervals": false
+    },
+    {
       "id": "i179548292",
       "date": "2026-08-25T10:39:22",
       "type": "VirtualRide",
-      "name": "Biketerra - Giro di Lombardia Passo di Ganda and Selvino Hairpins",
+      "name": "1di2 keto",
       "duration_hours": 1.0,
       "distance_km": 36.37,
       "tss": 49,
@@ -1260,7 +1295,7 @@
     "total_training_hours": 17.26,
     "total_training_formatted": "17h15m",
     "total_tss": 904,
-    "activities_count": 15,
+    "activities_count": 16,
     "avg_hrv": 72.4,
     "avg_resting_hr": 41.9
   },
