@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-26T05:38:22.536405",
+    "last_updated": "2026-08-26T06:18:41.009510",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -37,10 +37,10 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 71.5,
-        "delta_pct": null
+        "status": "green",
+        "value": 71.0,
+        "baseline_7d": 71.4,
+        "delta_pct": -0.6
       },
       "rhr": {
         "status": "green",
@@ -49,17 +49,17 @@
         "delta_bpm": 0
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 6.47,
+        "quality": 2
       },
       "acwr": {
         "status": "amber",
         "value": 0.65
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.99
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 1,
+      "green": 4,
+      "amber": 2,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 4 green, 2 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -129,7 +129,7 @@
       "w_prime": 26527,
       "w_prime_kj": 26.5,
       "p_max": 1328,
-      "vo2max": null,
+      "vo2max": 74.0,
       "sports": {
         "cycling": {
           "lthr": 175,
@@ -160,19 +160,19 @@
     "current_metrics": {
       "weight_kg": 65.0,
       "resting_hr": 42,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 71.0,
+      "sleep_quality": 2,
+      "sleep_hours": 6.47,
+      "sleep_formatted": "6h28m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 71.5,
+    "recovery_index": 0.99,
+    "hrv_baseline_7d": 71.4,
     "rhr_baseline_7d": 42,
-    "hrv_baseline_28d": 69.5,
+    "hrv_baseline_28d": 69.6,
     "rhr_baseline_28d": 42.3,
-    "latest_hrv": null,
+    "latest_hrv": 71.0,
     "latest_rhr": 42,
     "acwr": 0.65,
     "acwr_interpretation": "undertraining",
@@ -185,7 +185,7 @@
     "multi_sport_detected": false,
     "strain": 668.0,
     "stress_tolerance": 6.7,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.8,
     "tss_7d_total": 675.0,
     "tss_28d_total": 4186.0,
     "zone_distribution_7d": {
@@ -355,10 +355,10 @@
     "w_prime_kj": 26.5,
     "p_max": 1328,
     "power_model_source": "wellness.sportInfo",
-    "vo2max": null,
-    "calculation_timestamp": "2026-08-26T05:38:22.535284",
+    "vo2max": 74.0,
+    "calculation_timestamp": "2026-08-26T06:18:41.008406",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 14,
       "activities_28d": 51,
@@ -1114,17 +1114,17 @@
       "date": "2026-08-26",
       "weight_kg": null,
       "resting_hr": 42,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 71.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 6.47,
+      "sleep_formatted": "6h28m",
+      "sleep_quality": 2,
+      "sleep_score": 82.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
       "avg_sleeping_hr": null,
-      "vo2max": null
+      "vo2max": 74.0
     }
   ],
   "planned_workouts": [
@@ -1186,7 +1186,7 @@
     "total_training_formatted": "13h1m",
     "total_tss": 675,
     "activities_count": 14,
-    "avg_hrv": 71.5,
+    "avg_hrv": 71.4,
     "avg_resting_hr": 42.0
   },
   "race_calendar": {
