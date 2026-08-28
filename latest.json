@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-28T11:26:20.606308",
+    "last_updated": "2026-08-28T21:29:07.652197",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -347,7 +347,7 @@
     "p_max": 1328,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-28T11:26:20.605288",
+    "calculation_timestamp": "2026-08-28T21:29:07.651156",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -365,7 +365,7 @@
       "id": "i180637139",
       "date": "2026-08-28T10:56:12",
       "type": "VirtualRide",
-      "name": "Biketerra - Gran Fondo Il Lombardia - 2026 Route",
+      "name": "Biketerra - keto",
       "duration_hours": 1.05,
       "distance_km": 42.57,
       "tss": 51,
