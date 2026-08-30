@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T07:29:45.657724",
+  "generated_at": "2026-08-30T13:14:12.735252",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1206,6 +1206,51 @@
           "zone": 1,
           "training_load": 12.774631,
           "decoupling": 4.950743
+        }
+      ]
+    },
+    {
+      "activity_id": "i181233322",
+      "date": "2026-08-30",
+      "type": "Ride",
+      "name": "Gara Parzanica: 8\u00b0 assoluto, 1\u00b0 categoria",
+      "interval_summary": [
+        "1x 14m1s 117w",
+        "1x 30m28s 279w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "841s@117w71rpm",
+          "duration_secs": 841,
+          "avg_power": 117,
+          "max_power": 576,
+          "avg_hr": 113,
+          "max_hr": 139,
+          "avg_cadence": 70.95055,
+          "zone": 1,
+          "training_load": 3.7294793,
+          "decoupling": 14.502791
+        },
+        {
+          "type": "WORK",
+          "label": "1828s@279w74rpm",
+          "duration_secs": 1828,
+          "avg_power": 279,
+          "max_power": 699,
+          "avg_hr": 170,
+          "max_hr": 186,
+          "avg_cadence": 73.78829,
+          "zone": 3,
+          "training_load": 46.458866,
+          "decoupling": 14.409696
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 116,
+          "max_hr": 116,
+          "zone": 1
         }
       ]
     }
