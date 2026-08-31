@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T07:27:16.566025",
+  "generated_at": "2026-08-31T15:19:46.964565",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1103,6 +1103,207 @@
           "avg_hr": 116,
           "max_hr": 116,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i181725199",
+      "date": "2026-08-31",
+      "type": "Ride",
+      "name": "Marone Ciclismo",
+      "interval_summary": [
+        "4x 93s 368w",
+        "1x 4m55s 326w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2700,
+          "avg_power": 174,
+          "max_power": 521,
+          "avg_hr": 126,
+          "max_hr": 155,
+          "avg_cadence": 72.88481,
+          "zone": 1,
+          "training_load": 29.01079,
+          "decoupling": 6.2144165
+        },
+        {
+          "type": "WORK",
+          "label": "93s@368w79rpm",
+          "duration_secs": 101,
+          "avg_power": 398,
+          "max_power": 509,
+          "avg_hr": 163,
+          "max_hr": 175,
+          "avg_cadence": 85.08911,
+          "zone": 6,
+          "training_load": 3.7791014,
+          "decoupling": 12.271149
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 55,
+          "avg_power": 377,
+          "max_power": 490,
+          "avg_hr": 175,
+          "max_hr": 178,
+          "avg_cadence": 73.29091,
+          "zone": 5,
+          "training_load": 2.1338384,
+          "decoupling": -2.847927
+        },
+        {
+          "type": "WORK",
+          "label": "93s@368w79rpm",
+          "duration_secs": 82,
+          "avg_power": 353,
+          "max_power": 418,
+          "avg_hr": 178,
+          "max_hr": 179,
+          "avg_cadence": 77.79269,
+          "zone": 5,
+          "training_load": 2.6508398,
+          "decoupling": -17.615398
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 62,
+          "avg_power": 278,
+          "max_power": 377,
+          "avg_hr": 177,
+          "max_hr": 179,
+          "avg_cadence": 86.8871,
+          "zone": 3,
+          "training_load": 1.4328288,
+          "decoupling": -29.45711
+        },
+        {
+          "type": "WORK",
+          "label": "93s@368w79rpm",
+          "duration_secs": 99,
+          "avg_power": 365,
+          "max_power": 455,
+          "avg_hr": 178,
+          "max_hr": 182,
+          "avg_cadence": 71.58586,
+          "zone": 5,
+          "training_load": 3.3458586,
+          "decoupling": 3.8233116
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 29,
+          "avg_power": 240,
+          "max_power": 313,
+          "avg_hr": 180,
+          "max_hr": 182,
+          "avg_cadence": 92.72414,
+          "zone": 2,
+          "training_load": 0.6093003,
+          "decoupling": -21.695688
+        },
+        {
+          "type": "WORK",
+          "label": "295s@326w79rpm",
+          "duration_secs": 295,
+          "avg_power": 326,
+          "max_power": 408,
+          "avg_hr": 181,
+          "max_hr": 185,
+          "avg_cadence": 78.88814,
+          "zone": 4,
+          "training_load": 7.8991737,
+          "decoupling": -1.2708389
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 292,
+          "avg_power": 266,
+          "max_power": 489,
+          "avg_hr": 178,
+          "max_hr": 186,
+          "avg_cadence": 88.87671,
+          "zone": 3,
+          "training_load": 6.0923457,
+          "decoupling": -10.043809
+        },
+        {
+          "type": "WORK",
+          "label": "93s@368w79rpm",
+          "duration_secs": 90,
+          "avg_power": 355,
+          "max_power": 435,
+          "avg_hr": 178,
+          "max_hr": 183,
+          "avg_cadence": 79.78889,
+          "zone": 5,
+          "training_load": 2.685124,
+          "decoupling": 0.6506861
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 190,
+          "avg_power": 188,
+          "max_power": 585,
+          "avg_hr": 173,
+          "max_hr": 185,
+          "avg_cadence": 77.84737,
+          "zone": 2,
+          "training_load": 2.8617768,
+          "decoupling": 2.1617963
+        }
+      ]
+    },
+    {
+      "activity_id": "i181742414",
+      "date": "2026-08-31",
+      "type": "Ride",
+      "name": "Marone Ciclismo su strada",
+      "interval_summary": [
+        "1x 34m26s 177w",
+        "1x 10m53s 173w",
+        "1x 1h27m 168w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2066s@177w71rpm",
+          "duration_secs": 2066,
+          "avg_power": 177,
+          "max_power": 518,
+          "avg_hr": 126,
+          "max_hr": 155,
+          "avg_cadence": 71.433205,
+          "zone": 1,
+          "training_load": 22.930708,
+          "decoupling": 2.4426732
+        },
+        {
+          "type": "WORK",
+          "label": "653s@173w78rpm",
+          "duration_secs": 653,
+          "avg_power": 173,
+          "max_power": 514,
+          "avg_hr": 126,
+          "max_hr": 149,
+          "avg_cadence": 77.89127,
+          "zone": 1,
+          "training_load": 6.3769,
+          "decoupling": -21.199339
+        },
+        {
+          "type": "WORK",
+          "label": "5246s@168w55rpm",
+          "duration_secs": 5246,
+          "avg_power": 168,
+          "max_power": 619,
+          "avg_hr": 139,
+          "max_hr": 185,
+          "avg_cadence": 55.063095,
+          "zone": 1,
+          "training_load": 82.36299,
+          "decoupling": 8.974146
         }
       ]
     }
