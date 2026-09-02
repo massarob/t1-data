@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-02T21:39:20.297314",
+    "last_updated": "2026-09-02T23:34:12.798194",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -307,9 +307,9 @@
           "planned_tss_delta": 0.28,
           "hard_sessions_planned": 3,
           "race_proximity": null,
-          "next_week_load": 0.05,
+          "next_week_load": 0.1,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 0.2
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -342,7 +342,7 @@
     "p_max": 1322,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 66.0,
-    "calculation_timestamp": "2026-09-02T21:39:20.296441",
+    "calculation_timestamp": "2026-09-02T23:34:12.797146",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1325,15 +1325,26 @@
       "duration_formatted": "50m",
       "workout_summary": null,
       "description": "Warmup\n- Ciao massarob! Pronti per la corsa? 3m 63-67% pace\n- 3m 74-78% pace\n- 2m 85-89% pace\n\nMain Set\n- Drop 1 10m 98-102% pace\n- Recovery 3m 65-77% pace\n- Drop 2 10m 93-97% pace\n- Recovery 3m 65-77% pace\n- Drop 3 10m 87-91% pace\n\nCooldown\n- 4m 76-80% pace\n- Ottimo lavoro, riprendi fiato gradualmente 2m 63-67% pace\n\n[Weekly Plan - Build]"
+    },
+    {
+      "id": 133493308,
+      "date": "2026-09-10",
+      "name": "IntervalCoach - 3x2 Resistenza e Forza",
+      "type": "WORKOUT",
+      "planned_tss": 49,
+      "duration_hours": 0.9,
+      "duration_formatted": "54m",
+      "workout_summary": null,
+      "description_preview": "Main Set\n- Ciao massarob! Blocchi endurance e strength in arrivo 8m 45-75% 85rpm\n- Endurance 10m 65-75% 88rpm"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 5,
     "success": 2,
     "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 19.19,
