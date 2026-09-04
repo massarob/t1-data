@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T06:24:19.544664",
+  "generated_at": "2026-09-04T11:36:59.516356",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1407,6 +1407,58 @@
           "zone": 1,
           "training_load": 0.2733517,
           "decoupling": 100.0
+        }
+      ]
+    },
+    {
+      "activity_id": "i183167737",
+      "date": "2026-09-04",
+      "type": "Ride",
+      "name": "Esine Ciclismo su strada",
+      "interval_summary": [
+        "1x 26m36s 169w",
+        "1x 46s 382w",
+        "1x 35m32s 102w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1596s@169w71rpm",
+          "duration_secs": 1596,
+          "avg_power": 169,
+          "max_power": 416,
+          "avg_hr": 116,
+          "max_hr": 155,
+          "avg_cadence": 70.97619,
+          "zone": 1,
+          "training_load": 18.874125,
+          "decoupling": -33.13997
+        },
+        {
+          "type": "WORK",
+          "label": "46s@382w93rpm",
+          "duration_secs": 46,
+          "avg_power": 382,
+          "max_power": 498,
+          "avg_hr": 159,
+          "max_hr": 166,
+          "avg_cadence": 93.28261,
+          "zone": 5,
+          "training_load": 1.6765289,
+          "decoupling": 21.32818
+        },
+        {
+          "type": "WORK",
+          "label": "2132s@102w62rpm",
+          "duration_secs": 2132,
+          "avg_power": 102,
+          "max_power": 348,
+          "avg_hr": 103,
+          "max_hr": 166,
+          "avg_cadence": 61.810974,
+          "zone": 1,
+          "training_load": 9.657513,
+          "decoupling": 7.290832
         }
       ]
     }
