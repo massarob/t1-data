@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T12:57:31.523649",
+  "generated_at": "2026-09-05T15:56:37.402324",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1459,6 +1459,65 @@
           "zone": 1,
           "training_load": 9.657513,
           "decoupling": 7.290832
+        }
+      ]
+    },
+    {
+      "activity_id": "i183593612",
+      "date": "2026-09-05",
+      "type": "Ride",
+      "name": "campionato italiano ACSI, 1\u00b0 categoria \ud83c\uddee\ud83c\uddf9 (45-49 anni) e 7\u00b0 assoluto",
+      "interval_summary": [
+        "1x 10m49s 109w",
+        "1x 27m12s 320w",
+        "1x 4m52s 20w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "649s@109w47rpm",
+          "duration_secs": 649,
+          "avg_power": 109,
+          "max_power": 517,
+          "avg_hr": 123,
+          "max_hr": 168,
+          "avg_cadence": 47.214176,
+          "zone": 1,
+          "training_load": 5.477641,
+          "decoupling": -75.85904
+        },
+        {
+          "type": "WORK",
+          "label": "1632s@320w83rpm",
+          "duration_secs": 1632,
+          "avg_power": 320,
+          "max_power": 569,
+          "avg_hr": 181,
+          "max_hr": 189,
+          "avg_cadence": 82.789215,
+          "zone": 4,
+          "training_load": 43.97,
+          "decoupling": 10.349244
+        },
+        {
+          "type": "WORK",
+          "label": "292s@20w16rpm",
+          "duration_secs": 292,
+          "avg_power": 20,
+          "max_power": 210,
+          "avg_hr": 144,
+          "max_hr": 189,
+          "avg_cadence": 16.32646,
+          "zone": 1,
+          "training_load": 1.38,
+          "decoupling": 100.0
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 133,
+          "max_hr": 133,
+          "zone": 1
         }
       ]
     }
