@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T06:29:15.621233",
+  "generated_at": "2026-09-08T11:41:56.269025",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1463,6 +1463,140 @@
           "avg_cadence": 53.0,
           "zone": 1,
           "training_load": 0.0010447913
+        }
+      ]
+    },
+    {
+      "activity_id": "i184505995",
+      "date": "2026-09-08",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "1x 52s 425w",
+        "1x 2m36s 390w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4629,
+          "avg_power": 194,
+          "max_power": 443,
+          "avg_hr": 125,
+          "max_hr": 153,
+          "avg_cadence": 75.50507,
+          "zone": 2,
+          "training_load": 56.06705,
+          "decoupling": -6.9950156
+        },
+        {
+          "type": "WORK",
+          "label": "52s@425w88rpm",
+          "duration_secs": 52,
+          "avg_power": 425,
+          "max_power": 538,
+          "avg_hr": 164,
+          "max_hr": 174,
+          "avg_cadence": 88.07692,
+          "zone": 6,
+          "training_load": 1.9762759,
+          "decoupling": 1.6256986
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 33,
+          "avg_power": 259,
+          "max_power": 389,
+          "avg_hr": 174,
+          "max_hr": 175,
+          "avg_cadence": 79.393936,
+          "zone": 3,
+          "training_load": 1.1091666,
+          "decoupling": 27.113714
+        },
+        {
+          "type": "WORK",
+          "label": "156s@390w83rpm",
+          "duration_secs": 156,
+          "avg_power": 390,
+          "max_power": 568,
+          "avg_hr": 177,
+          "max_hr": 181,
+          "avg_cadence": 83.20513,
+          "zone": 5,
+          "training_load": 5.6256137,
+          "decoupling": 2.3090854
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3822,
+          "avg_power": 128,
+          "max_power": 528,
+          "avg_hr": 119,
+          "max_hr": 182,
+          "avg_cadence": 60.542385,
+          "zone": 1,
+          "training_load": 31.903944,
+          "decoupling": -1.1701263
+        }
+      ]
+    },
+    {
+      "activity_id": "i184516207",
+      "date": "2026-09-08",
+      "type": "Ride",
+      "name": "backup F965",
+      "interval_summary": [
+        "1x 1h17m 195w",
+        "1x 4m13s 374w",
+        "1x 1h3m 127w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "4653s@195w76rpm",
+          "duration_secs": 4653,
+          "avg_power": 195,
+          "max_power": 557,
+          "avg_hr": 125,
+          "max_hr": 162,
+          "avg_cadence": 75.60778,
+          "zone": 2,
+          "training_load": 56.76543,
+          "decoupling": -7.1108475
+        },
+        {
+          "type": "WORK",
+          "label": "253s@374w83rpm",
+          "duration_secs": 253,
+          "avg_power": 374,
+          "max_power": 568,
+          "avg_hr": 176,
+          "max_hr": 182,
+          "avg_cadence": 83.134384,
+          "zone": 5,
+          "training_load": 9.367853,
+          "decoupling": 1.3323205
+        },
+        {
+          "type": "WORK",
+          "label": "3787s@127w60rpm",
+          "duration_secs": 3787,
+          "avg_power": 127,
+          "max_power": 441,
+          "avg_hr": 118,
+          "max_hr": 182,
+          "avg_cadence": 60.370743,
+          "zone": 1,
+          "training_load": 29.455803,
+          "decoupling": -2.9985046
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 105,
+          "max_hr": 105,
+          "zone": 1,
+          "training_load": 0.0024000101
         }
       ]
     }
