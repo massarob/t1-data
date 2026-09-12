@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T05:08:42.094815",
+  "generated_at": "2026-09-12T09:23:55.779251",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1139,6 +1139,46 @@
           "zone": 1,
           "training_load": 16.961033,
           "decoupling": 2.8609712
+        }
+      ]
+    },
+    {
+      "activity_id": "i185811127",
+      "date": "2026-09-12",
+      "type": "Ride",
+      "name": "BigRingVR - Alto de Velefique descent",
+      "interval_summary": [
+        "1x 6s 159w",
+        "1x 27m37s 227w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "6s@159w24rpm",
+          "duration_secs": 6,
+          "avg_power": 159,
+          "max_power": 222,
+          "avg_cadence": 23.833334,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1657s@227w87rpm",
+          "duration_secs": 1657,
+          "avg_power": 227,
+          "max_power": 443,
+          "avg_cadence": 87.13837,
+          "zone": 2,
+          "training_load": 27.054106
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_power": 221,
+          "max_power": 221,
+          "avg_cadence": 90.0,
+          "zone": 2,
+          "training_load": 0.007285226
         }
       ]
     }
