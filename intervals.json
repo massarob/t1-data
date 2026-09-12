@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T09:23:55.779251",
+  "generated_at": "2026-09-12T13:02:37.387478",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1179,6 +1179,106 @@
           "avg_cadence": 90.0,
           "zone": 2,
           "training_load": 0.007285226
+        }
+      ]
+    },
+    {
+      "activity_id": "i185885327",
+      "date": "2026-09-12",
+      "type": "Ride",
+      "name": "Almenno San Bartolomeo Ciclismo su strada",
+      "interval_summary": [
+        "1x 3m32s 276w",
+        "1x 6m25s 271w",
+        "1x 2m52s 296w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 714,
+          "avg_power": 217,
+          "max_power": 586,
+          "avg_hr": 132,
+          "max_hr": 153,
+          "avg_cadence": 80.0098,
+          "zone": 2,
+          "training_load": 10.143594,
+          "decoupling": -11.323989
+        },
+        {
+          "type": "WORK",
+          "label": "212s@276w83rpm",
+          "duration_secs": 212,
+          "avg_power": 276,
+          "max_power": 333,
+          "avg_hr": 155,
+          "max_hr": 159,
+          "avg_cadence": 82.60849,
+          "zone": 3,
+          "training_load": 4.1193023,
+          "decoupling": -2.8762097
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 17,
+          "avg_power": 229,
+          "max_power": 268,
+          "avg_hr": 154,
+          "max_hr": 156,
+          "avg_cadence": 90.17647,
+          "zone": 2,
+          "training_load": 0.32081625,
+          "decoupling": 14.565152
+        },
+        {
+          "type": "WORK",
+          "label": "385s@271w80rpm",
+          "duration_secs": 385,
+          "avg_power": 271,
+          "max_power": 355,
+          "avg_hr": 152,
+          "max_hr": 158,
+          "avg_cadence": 80.04416,
+          "zone": 3,
+          "training_load": 7.212219,
+          "decoupling": 1.2468154
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 372,
+          "avg_power": 274,
+          "max_power": 341,
+          "avg_hr": 156,
+          "max_hr": 163,
+          "avg_cadence": 78.08064,
+          "zone": 3,
+          "training_load": 7.3333454,
+          "decoupling": 1.3285921
+        },
+        {
+          "type": "WORK",
+          "label": "172s@296w75rpm",
+          "duration_secs": 172,
+          "avg_power": 296,
+          "max_power": 362,
+          "avg_hr": 159,
+          "max_hr": 164,
+          "avg_cadence": 74.808136,
+          "zone": 3,
+          "training_load": 3.7152157,
+          "decoupling": 0.9091382
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1143,
+          "avg_power": 16,
+          "max_power": 274,
+          "avg_hr": 92,
+          "max_hr": 167,
+          "avg_cadence": 12.673666,
+          "zone": 1,
+          "training_load": 2.606534,
+          "decoupling": -20.87217
         }
       ]
     }
