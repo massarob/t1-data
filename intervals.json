@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T13:02:37.387478",
+  "generated_at": "2026-09-12T16:20:26.498218",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1279,6 +1279,51 @@
           "zone": 1,
           "training_load": 2.606534,
           "decoupling": -20.87217
+        }
+      ]
+    },
+    {
+      "activity_id": "i185908240",
+      "date": "2026-09-12",
+      "type": "Ride",
+      "name": "Gara Roncola (da voliera): 9\u00b0 assoluto e 1\u00b0 categoria",
+      "interval_summary": [
+        "1x 29m6s 266w",
+        "1x 24m51s 16w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1746s@266w70rpm",
+          "duration_secs": 1746,
+          "avg_power": 266,
+          "max_power": 710,
+          "avg_hr": 163,
+          "max_hr": 190,
+          "avg_cadence": 69.816154,
+          "zone": 3,
+          "training_load": 43.244217,
+          "decoupling": 4.2240343
+        },
+        {
+          "type": "WORK",
+          "label": "1491s@16w14rpm",
+          "duration_secs": 1491,
+          "avg_power": 16,
+          "max_power": 322,
+          "avg_hr": 113,
+          "max_hr": 190,
+          "avg_cadence": 13.732119,
+          "zone": 1,
+          "training_load": 3.9567745,
+          "decoupling": -44.093704
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 103,
+          "max_hr": 103,
+          "zone": 1
         }
       ]
     }
