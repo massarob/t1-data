@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:13:43.813226",
+  "generated_at": "2026-09-14T18:41:26.284694",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1299,6 +1299,114 @@
           "zone": 1,
           "training_load": 0.86859274,
           "decoupling": -2.766994
+        }
+      ]
+    },
+    {
+      "activity_id": "i186653248",
+      "date": "2026-09-14",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "1x 68s 354w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1873,
+          "avg_power": 217,
+          "max_power": 506,
+          "avg_hr": 135,
+          "max_hr": 165,
+          "avg_cadence": 70.96821,
+          "zone": 2,
+          "training_load": 29.00465,
+          "decoupling": -5.7541666
+        },
+        {
+          "type": "WORK",
+          "label": "68s@354w86rpm",
+          "duration_secs": 68,
+          "avg_power": 354,
+          "max_power": 448,
+          "avg_hr": 169,
+          "max_hr": 171,
+          "avg_cadence": 86.367645,
+          "zone": 5,
+          "training_load": 2.3234894,
+          "decoupling": 6.5835443
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4166,
+          "avg_power": 127,
+          "max_power": 483,
+          "avg_hr": 112,
+          "max_hr": 171,
+          "avg_cadence": 51.49374,
+          "zone": 1,
+          "training_load": 46.294907,
+          "decoupling": -20.193556
+        }
+      ]
+    },
+    {
+      "activity_id": "i186654122",
+      "date": "2026-09-14",
+      "type": "Ride",
+      "name": "scarico attivo",
+      "interval_summary": [
+        "1x 30m49s 213w",
+        "1x 1m46s 361w",
+        "1x 1h9m 127w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1849s@213w71rpm",
+          "duration_secs": 1849,
+          "avg_power": 213,
+          "max_power": 470,
+          "avg_hr": 134,
+          "max_hr": 152,
+          "avg_cadence": 70.76464,
+          "zone": 2,
+          "training_load": 26.879583,
+          "decoupling": -3.8738089
+        },
+        {
+          "type": "WORK",
+          "label": "106s@361w84rpm",
+          "duration_secs": 106,
+          "avg_power": 361,
+          "max_power": 506,
+          "avg_hr": 163,
+          "max_hr": 171,
+          "avg_cadence": 84.30189,
+          "zone": 5,
+          "training_load": 3.70151,
+          "decoupling": 16.921207
+        },
+        {
+          "type": "WORK",
+          "label": "4158s@127w51rpm",
+          "duration_secs": 4158,
+          "avg_power": 127,
+          "max_power": 483,
+          "avg_hr": 112,
+          "max_hr": 169,
+          "avg_cadence": 51.453136,
+          "zone": 1,
+          "training_load": 46.150063,
+          "decoupling": -19.560963
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 90,
+          "max_hr": 90,
+          "zone": 1,
+          "training_load": 0.001322314
         }
       ]
     }
