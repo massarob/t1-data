@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T06:20:16.815490",
+  "generated_at": "2026-09-14T13:13:43.813226",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1251,6 +1251,54 @@
           "zone": 1,
           "training_load": 12.302418,
           "decoupling": 11.27807
+        }
+      ]
+    },
+    {
+      "activity_id": "i186568479",
+      "date": "2026-09-14",
+      "type": "Ride",
+      "name": "Breno Ciclismo",
+      "interval_summary": [
+        "1x 3m20s 263w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 834,
+          "avg_power": 161,
+          "max_power": 456,
+          "avg_hr": 103,
+          "max_hr": 133,
+          "avg_cadence": 64.55276,
+          "zone": 1,
+          "training_load": 8.897661,
+          "decoupling": 6.5865
+        },
+        {
+          "type": "WORK",
+          "label": "200s@263w81rpm",
+          "duration_secs": 200,
+          "avg_power": 263,
+          "max_power": 335,
+          "avg_hr": 122,
+          "max_hr": 129,
+          "avg_cadence": 81.095,
+          "zone": 3,
+          "training_load": 3.4221509,
+          "decoupling": 7.672204
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 71,
+          "avg_power": 177,
+          "max_power": 304,
+          "avg_hr": 117,
+          "max_hr": 126,
+          "avg_cadence": 68.07042,
+          "zone": 1,
+          "training_load": 0.86859274,
+          "decoupling": -2.766994
         }
       ]
     }
