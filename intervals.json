@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T10:20:59.735470",
+  "generated_at": "2026-09-15T15:11:59.422346",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -939,6 +939,298 @@
           "max_hr": 90,
           "zone": 1,
           "training_load": 0.001322314
+        }
+      ]
+    },
+    {
+      "activity_id": "i186977152",
+      "date": "2026-09-15",
+      "type": "Ride",
+      "name": "Sellero Ciclismo",
+      "interval_summary": [
+        "2x 95s 309w",
+        "1x 11m51s 277w",
+        "1x 1m55s 301w",
+        "1x 12s 555w",
+        "2x 57s 384w",
+        "1x 2m18s 305w",
+        "1x 4m20s 270w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 444,
+          "avg_power": 198,
+          "max_power": 398,
+          "avg_hr": 123,
+          "max_hr": 143,
+          "avg_cadence": 87.3125,
+          "zone": 2,
+          "training_load": 5.055684,
+          "decoupling": 0.51207435
+        },
+        {
+          "type": "WORK",
+          "label": "95s@309w76rpm",
+          "duration_secs": 95,
+          "avg_power": 303,
+          "max_power": 401,
+          "avg_hr": 147,
+          "max_hr": 155,
+          "avg_cadence": 78.67368,
+          "zone": 4,
+          "training_load": 2.1519182,
+          "decoupling": 6.1098123
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 164,
+          "avg_power": 131,
+          "max_power": 387,
+          "avg_hr": 134,
+          "max_hr": 155,
+          "avg_cadence": 75.264366,
+          "zone": 1,
+          "training_load": 1.5510802,
+          "decoupling": -35.760098
+        },
+        {
+          "type": "WORK",
+          "label": "711s@277w84rpm",
+          "duration_secs": 711,
+          "avg_power": 277,
+          "max_power": 367,
+          "avg_hr": 152,
+          "max_hr": 160,
+          "avg_cadence": 84.30521,
+          "zone": 3,
+          "training_load": 14.016152,
+          "decoupling": 4.944746
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 423,
+          "avg_power": 202,
+          "max_power": 344,
+          "avg_hr": 140,
+          "max_hr": 158,
+          "avg_cadence": 83.61039,
+          "zone": 2,
+          "training_load": 5.688987,
+          "decoupling": -21.787415
+        },
+        {
+          "type": "WORK",
+          "label": "95s@309w76rpm",
+          "duration_secs": 94,
+          "avg_power": 315,
+          "max_power": 431,
+          "avg_hr": 157,
+          "max_hr": 163,
+          "avg_cadence": 72.35107,
+          "zone": 4,
+          "training_load": 2.2893617,
+          "decoupling": 9.905082
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 155,
+          "avg_power": 278,
+          "max_power": 470,
+          "avg_hr": 160,
+          "max_hr": 165,
+          "avg_cadence": 79.0129,
+          "zone": 3,
+          "training_load": 3.6298325,
+          "decoupling": 16.700174
+        },
+        {
+          "type": "WORK",
+          "label": "115s@301w76rpm",
+          "duration_secs": 115,
+          "avg_power": 301,
+          "max_power": 376,
+          "avg_hr": 159,
+          "max_hr": 163,
+          "avg_cadence": 75.54783,
+          "zone": 4,
+          "training_load": 2.570105,
+          "decoupling": 0.07337579
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 856,
+          "avg_power": 173,
+          "max_power": 526,
+          "avg_hr": 132,
+          "max_hr": 162,
+          "avg_cadence": 78.312805,
+          "zone": 1,
+          "training_load": 9.347796,
+          "decoupling": -2.0657988
+        },
+        {
+          "type": "WORK",
+          "label": "12s@555w77rpm",
+          "duration_secs": 12,
+          "avg_power": 555,
+          "max_power": 700,
+          "avg_hr": 149,
+          "max_hr": 155,
+          "avg_cadence": 76.5,
+          "zone": 7,
+          "training_load": 0.33942148,
+          "decoupling": 29.42019
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 100,
+          "avg_power": 361,
+          "max_power": 506,
+          "avg_hr": 170,
+          "max_hr": 178,
+          "avg_cadence": 78.21,
+          "zone": 5,
+          "training_load": 3.8797061,
+          "decoupling": 12.09905
+        },
+        {
+          "type": "WORK",
+          "label": "57s@384w64rpm",
+          "duration_secs": 56,
+          "avg_power": 394,
+          "max_power": 479,
+          "avg_hr": 175,
+          "max_hr": 179,
+          "avg_cadence": 67.01786,
+          "zone": 5,
+          "training_load": 1.9344312,
+          "decoupling": 3.9263167
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 80,
+          "avg_power": 312,
+          "max_power": 510,
+          "avg_hr": 170,
+          "max_hr": 174,
+          "avg_cadence": 74.25,
+          "zone": 4,
+          "training_load": 2.2764208,
+          "decoupling": 8.521953
+        },
+        {
+          "type": "WORK",
+          "label": "57s@384w64rpm",
+          "duration_secs": 58,
+          "avg_power": 373,
+          "max_power": 496,
+          "avg_hr": 172,
+          "max_hr": 175,
+          "avg_cadence": 60.62069,
+          "zone": 5,
+          "training_load": 1.8961107,
+          "decoupling": 8.733924
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2407,
+          "avg_power": 150,
+          "max_power": 494,
+          "avg_hr": 134,
+          "max_hr": 188,
+          "avg_cadence": 54.855,
+          "zone": 1,
+          "training_load": 34.8006,
+          "decoupling": 19.940573
+        },
+        {
+          "type": "WORK",
+          "label": "138s@305w71rpm",
+          "duration_secs": 138,
+          "avg_power": 305,
+          "max_power": 413,
+          "avg_hr": 143,
+          "max_hr": 155,
+          "avg_cadence": 70.71739,
+          "zone": 4,
+          "training_load": 2.9603612,
+          "decoupling": 9.531396
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 151,
+          "avg_power": 262,
+          "max_power": 377,
+          "avg_hr": 152,
+          "max_hr": 157,
+          "avg_cadence": 78.59602,
+          "zone": 3,
+          "training_load": 2.9340312,
+          "decoupling": 1.4693929
+        },
+        {
+          "type": "WORK",
+          "label": "260s@270w77rpm",
+          "duration_secs": 260,
+          "avg_power": 270,
+          "max_power": 349,
+          "avg_hr": 148,
+          "max_hr": 157,
+          "avg_cadence": 77.43846,
+          "zone": 3,
+          "training_load": 4.9066014,
+          "decoupling": 6.3481956
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1409,
+          "avg_power": 90,
+          "max_power": 470,
+          "avg_hr": 105,
+          "max_hr": 174,
+          "avg_cadence": 41.23838,
+          "zone": 1,
+          "training_load": 12.150646,
+          "decoupling": 23.985106
+        }
+      ]
+    },
+    {
+      "activity_id": "i186977747",
+      "date": "2026-09-15",
+      "type": "Ride",
+      "name": "Sellero Ciclismo su strada",
+      "interval_summary": [
+        "1x 1h8m 244w",
+        "1x 1h 118w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "4107s@244w79rpm",
+          "duration_secs": 4107,
+          "avg_power": 244,
+          "max_power": 726,
+          "avg_hr": 145,
+          "max_hr": 184,
+          "avg_cadence": 79.39467,
+          "zone": 2,
+          "training_load": 79.11193,
+          "decoupling": -11.751807
+        },
+        {
+          "type": "WORK",
+          "label": "3619s@118w50rpm",
+          "duration_secs": 3619,
+          "avg_power": 118,
+          "max_power": 470,
+          "avg_hr": 115,
+          "max_hr": 163,
+          "avg_cadence": 49.51192,
+          "zone": 1,
+          "training_load": 38.000874,
+          "decoupling": -12.845392
         }
       ]
     }
