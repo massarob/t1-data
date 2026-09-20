@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-20T01:29:56.441833",
+    "last_updated": "2026-09-20T06:54:06.584070",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -33,10 +33,10 @@
         "delta_pct": null
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 42.8,
-        "delta_bpm": null
+        "status": "green",
+        "value": 46,
+        "baseline_7d": 43.3,
+        "delta_bpm": 2.7
       },
       "sleep": {
         "status": "unavailable",
@@ -57,10 +57,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
+      "green": 3,
       "amber": 0,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 3
     },
     "phase_context": {
       "phase": "Build",
@@ -70,7 +70,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -143,7 +143,7 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 44,
+      "resting_hr": 46,
       "hrv": null,
       "sleep_quality": null,
       "sleep_hours": null,
@@ -153,11 +153,11 @@
   "derived_metrics": {
     "recovery_index": null,
     "hrv_baseline_7d": 69.2,
-    "rhr_baseline_7d": 42.8,
+    "rhr_baseline_7d": 43.3,
     "hrv_baseline_28d": 72.8,
-    "rhr_baseline_28d": 41.8,
+    "rhr_baseline_28d": 41.9,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 46,
     "acwr": 0.85,
     "acwr_interpretation": "optimal",
     "monotony": 1.4,
@@ -306,9 +306,9 @@
           "planned_tss_delta": 0.29,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.23,
           "plan_coverage_current_week": 0.2,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -341,10 +341,10 @@
     "p_max": 1299,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-20T01:29:56.440720",
+    "calculation_timestamp": "2026-09-20T06:54:06.583079",
     "data_quality": {
       "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 57,
       "planned_workouts_7d": 4,
@@ -1130,7 +1130,7 @@
     {
       "date": "2026-09-20",
       "weight_kg": null,
-      "resting_hr": null,
+      "resting_hr": 46,
       "hrv_rmssd": null,
       "hrv_sdnn": null,
       "sleep_hours": null,
@@ -1155,15 +1155,59 @@
       "duration_formatted": "1h4m35s",
       "workout_summary": null,
       "description": "Main Set\n- Ciao massarob! Giornata di resistenza ti aspetta. 10m 45-75% 85rpm\n- Settle In 12m 65% 85rpm\n- Build 12m 67% 88rpm\n- Upper 12m 70-74% 90rpm\n- Cruise 12m 70-74% 88rpm\n- Ottimo lavoro, goditi il defaticamento. 395s 65-45%"
+    },
+    {
+      "id": 137338346,
+      "date": "2026-09-22",
+      "name": "IntervalCoach - 2x15 Soglia Sostenuta",
+      "type": "WORKOUT",
+      "planned_tss": 60,
+      "duration_hours": 0.95,
+      "duration_formatted": "57m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Corsa a ritmo soglia oggi 9m Z1 HR\n\nMain Set\n- Endurance 4m Z1 HR\n- Sustained Threshold 1 15m Z4 HR\n- Float Recovery 4m Z1 HR\n- Sustained Threshold 2 15m Z4 HR\n- Endurance 4m Z1 HR\n\nCooldown\n- 3m Z2 HR\n- Ottimo lavoro, rallenta dolcemente ora 3m Z1 HR\n\n[Weekly Plan - Build \u00b7 type:thresholdTempoRun]"
+    },
+    {
+      "id": 137338421,
+      "date": "2026-09-24",
+      "name": "IntervalCoach - 4x7 Resistenza e Accelerazioni",
+      "type": "WORKOUT",
+      "planned_tss": 45,
+      "duration_hours": 0.95,
+      "duration_formatted": "57m",
+      "workout_summary": "9m @198W | 4\u00d77m @230W / 1m30s rec | 8m @230W | 6m @181W",
+      "description": "Warmup\n- Ciao massarob! Pronto per resistenza e sprint? 9m ramp 45-75% 85rpm\n\nMain Set\n4x\n- Endurance 7m 65-75% 88rpm\n- Pickup 90s 76-82% 92rpm\n\nRecovery\n- Endurance 5 8m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, massarob! Goditi il defaticamento 6m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:enduranceWithPickups]"
+    },
+    {
+      "id": 137338490,
+      "date": "2026-09-26",
+      "name": "IntervalCoach - Scatti VO2",
+      "type": "WORKOUT",
+      "planned_tss": 89,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "11m @198W | 8m @230W | 12\u00d730s @399W / 15s rec | 30s @399W | 5m @181W | 12\u00d730s @399W / 15s rec | 30s @399W | 5m @181W | 12\u00d730s @399W / 15s rec | 30s @399W | 9m30s @230W | 8m @181W",
+      "description": "Warmup\n- Ciao massarob! Oggi R\u00f8nnestad 30/15s. 11m ramp 45-75% 85rpm\n\nMain Set\n- Endurance 8m 65-75% 85rpm\n\n12x\n- On 30s 121% 100rpm\n- Off 15s 55% 80rpm\n\nMain Set\n- On 13 30s 121% 100rpm\n- Set Recovery 5m 55% 80rpm\n\n12x\n- On 30s 121% 100rpm\n- Off 15s 55% 80rpm\n\nMain Set\n- On 13 30s 121% 100rpm\n- Set Recovery 5m 55% 80rpm\n\n12x\n- On 30s 121% 100rpm\n- Off 15s 55% 80rpm\n\nMain Set\n- On 13 30s 121% 100rpm\n- Endurance 570s 65-75% 85rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 8m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:ronnestadIntervals]"
+    },
+    {
+      "id": 137338532,
+      "date": "2026-09-27",
+      "name": "IntervalCoach - 3x13 Resistenza con spinte",
+      "type": "WORKOUT",
+      "planned_tss": 72,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "14m @198W | 3\u00d713m @230W / 5m rec | 13m @230W | 9m @181W",
+      "description": "Warmup\n- Ciao massarob! Oggi resistenza con spinte. 14m ramp 45-75% 85rpm\n\nMain Set\n3x\n- Endurance 13m 65-75% 88rpm\n- Tempo 5m 76-82% 90rpm\n\nRecovery\n- Endurance 4 13m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:enduranceWithTempo]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 1,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 5,
+    "success": 3,
+    "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 15.91,
@@ -1171,7 +1215,7 @@
     "total_tss": 870,
     "activities_count": 13,
     "avg_hrv": 69.2,
-    "avg_resting_hr": 42.8
+    "avg_resting_hr": 43.3
   },
   "race_calendar": {
     "next_race": null,
