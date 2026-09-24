@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-24T17:28:28.152595",
+    "last_updated": "2026-09-24T20:42:33.982221",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -322,9 +322,9 @@
           "planned_tss_delta": 0.31,
           "hard_sessions_planned": 3,
           "race_proximity": null,
-          "next_week_load": null,
-          "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 0.0
+          "next_week_load": 0.07,
+          "plan_coverage_current_week": 0.8,
+          "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -357,13 +357,13 @@
     "p_max": 1294,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-09-24T17:28:28.001775",
+    "calculation_timestamp": "2026-09-24T20:42:33.981413",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 55,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1134,6 +1134,17 @@
   ],
   "planned_workouts": [
     {
+      "id": 138562677,
+      "date": "2026-09-24",
+      "name": "AutoMate - action needed",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
+    },
+    {
       "id": 137338421,
       "date": "2026-09-24",
       "name": "IntervalCoach - 4x7 Resistenza e Accelerazioni",
@@ -1165,15 +1176,37 @@
       "duration_formatted": "1h30m",
       "workout_summary": "14m @198W | 3\u00d713m @230W / 5m rec | 13m @230W | 9m @181W",
       "description": "Warmup\n- Ciao massarob! Oggi resistenza con spinte. 14m ramp 45-75% 85rpm\n\nMain Set\n3x\n- Endurance 13m 65-75% 88rpm\n- Tempo 5m 76-82% 90rpm\n\nRecovery\n- Endurance 4 13m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:enduranceWithTempo]"
+    },
+    {
+      "id": 138562696,
+      "date": "2026-09-29",
+      "name": "IntervalCoach - Recupero Attivo",
+      "type": "WORKOUT",
+      "planned_tss": 30,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Riposo attivo in arrivo. 9m Z1 HR\n\nMain Set\n- Easy 45m Z1 HR intensity=recovery\n\nCooldown\n- 6m Z1 HR\n\n[Weekly Plan - Recovery \u00b7 type:activeRecovery]"
+    },
+    {
+      "id": 138562701,
+      "date": "2026-10-01",
+      "name": "IntervalCoach - 3x6 Resistenza e Cadenza",
+      "type": "WORKOUT",
+      "planned_tss": 46,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": "9m @198W | 3\u00d76m @231W / 6m rec | 9m @231W | 6m @181W",
+      "description": "Warmup\n- Ciao massarob! Oggi endurance e cadenza. 9m ramp 45-75% 85rpm\n\nMain Set\n3x\n- High Cadence 100rpm 6m 70% 100rpm\n- Low Cadence 70rpm 6m 70% 70rpm\n\nMain Set\n- High Cadence 4 100rpm 9m 70% 100rpm\n\nCooldown\n- Bel lavoro massarob, goditi lo scarico. 6m ramp 65-45%\n\n\n[Weekly Plan - Recovery \u00b7 type:enduranceCadence]"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 3,
-    "success": 3,
-    "patternA": 3,
+    "attempted": 5,
+    "success": 4,
+    "patternA": 4,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 11.93,
