@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-26T20:53:10.902167",
+    "last_updated": "2026-09-26T23:26:50.100768",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -309,7 +309,7 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "high",
+      "confidence": "medium",
       "reason_codes": [],
       "basis": {
         "stream_1": {
@@ -322,9 +322,9 @@
           "planned_tss_delta": 0.48,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.12,
-          "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 0.6
+          "next_week_load": 0.16,
+          "plan_coverage_current_week": 0.4,
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -357,13 +357,13 @@
     "p_max": 1291,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-09-26T20:53:10.901204",
+    "calculation_timestamp": "2026-09-26T23:26:50.099665",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 17,
       "activities_28d": 59,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1341,17 +1341,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 138856724,
-      "date": "2026-09-26",
-      "name": "AutoMate - action needed",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
-    },
-    {
       "id": 137338490,
       "date": "2026-09-26",
       "name": "IntervalCoach - Scatti VO2",
@@ -1405,15 +1394,26 @@
       "duration_formatted": "1h25m",
       "workout_summary": "13m @198W | 5\u00d79m @230W / 1m rec | 13m @230W | 9m @181W",
       "description": "Warmup\n- Ciao massarob! Resistenza e spin-up ti aspettano. 13m ramp 45-75% 85rpm\n\nMain Set\n5x\n- Endurance 88rpm 9m 65-75% 88rpm\n- Spin-Up 110rpm 1m 75% 110rpm\n\nRecovery\n- Endurance 6 88rpm 13m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, massarob! Goditi il defaticamento. 9m ramp 65-45%\n\n\n[Weekly Plan - Recovery \u00b7 type:enduranceSpinUps]"
+    },
+    {
+      "id": 139067620,
+      "date": "2026-10-04",
+      "name": "IntervalCoach - Corsa Lunga Aerobica",
+      "type": "WORKOUT",
+      "planned_tss": 51,
+      "duration_hours": 1.2,
+      "duration_formatted": "1h12m",
+      "workout_summary": null,
+      "description_preview": "Warmup\n- Ciao massarob! Preparati per la corsa. 8m Z1 HR\n- 3m Z2 HR"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 6,
     "success": 4,
     "patternA": 4,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
-    "bail_no_match": 1
+    "bail_no_workout_doc": 0,
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 14.05,
