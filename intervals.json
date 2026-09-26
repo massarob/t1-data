@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T14:15:58.720816",
+  "generated_at": "2026-09-26T17:54:56.889554",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -869,6 +869,44 @@
           "max_hr": 107,
           "zone": 1,
           "training_load": 0.003314968
+        }
+      ]
+    },
+    {
+      "activity_id": "i190571449",
+      "date": "2026-09-26",
+      "type": "Ride",
+      "name": "Gara Madda: 8\u00b0 assoluto e 1\u00b0 categoria (45-49 anni) \ud83d\udc4d",
+      "interval_summary": [
+        "1x 12m37s 76w",
+        "1x 40m 249w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "757s@76w50rpm",
+          "duration_secs": 757,
+          "avg_power": 76,
+          "max_power": 700,
+          "avg_hr": 111,
+          "max_hr": 145,
+          "avg_cadence": 49.965652,
+          "zone": 1,
+          "training_load": 2.1170926,
+          "decoupling": -0.09265027
+        },
+        {
+          "type": "WORK",
+          "label": "2400s@249w68rpm",
+          "duration_secs": 2400,
+          "avg_power": 249,
+          "max_power": 641,
+          "avg_hr": 164,
+          "max_hr": 189,
+          "avg_cadence": 67.788414,
+          "zone": 3,
+          "training_load": 54.746964,
+          "decoupling": 5.223254
         }
       ]
     }
