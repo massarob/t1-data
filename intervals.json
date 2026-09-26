@@ -1,67 +1,9 @@
 {
-  "generated_at": "2026-09-25T21:21:04.368790",
+  "generated_at": "2026-09-26T00:03:44.668052",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i187997597",
-      "date": "2026-09-18",
-      "type": "Ride",
-      "name": "BigRingVR - Alto de Velefique (South side)",
-      "interval_summary": [
-        "1x 14s 181w",
-        "1x 10s 241w",
-        "1x 1h9m 263w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "14s@181w61rpm",
-          "duration_secs": 14,
-          "avg_power": 181,
-          "max_power": 286,
-          "avg_hr": 70,
-          "max_hr": 86,
-          "avg_cadence": 60.714287,
-          "zone": 1,
-          "decoupling": 0.26643902
-        },
-        {
-          "type": "WORK",
-          "label": "10s@241w78rpm",
-          "duration_secs": 10,
-          "avg_power": 241,
-          "max_power": 286,
-          "avg_hr": 93,
-          "max_hr": 97,
-          "avg_cadence": 77.5,
-          "zone": 2,
-          "decoupling": -26.546814
-        },
-        {
-          "type": "WORK",
-          "label": "4194s@263w80rpm",
-          "duration_secs": 4194,
-          "avg_power": 263,
-          "max_power": 506,
-          "avg_hr": 142,
-          "max_hr": 158,
-          "avg_cadence": 79.832535,
-          "zone": 3,
-          "training_load": 76.264175,
-          "decoupling": 9.838275
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 127,
-          "max_hr": 127,
-          "zone": 1,
-          "training_load": 0.0028660342
-        }
-      ]
-    },
     {
       "activity_id": "i188242012",
       "date": "2026-09-19",
