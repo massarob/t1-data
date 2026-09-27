@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-27T21:09:37.842827",
+    "last_updated": "2026-09-27T23:49:16.512070",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -324,7 +324,7 @@
           "hard_sessions_planned": 1,
           "race_proximity": null,
           "next_week_load": 0.15,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.2,
           "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
@@ -358,13 +358,13 @@
     "p_max": 1290,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-09-27T21:09:37.841866",
+    "calculation_timestamp": "2026-09-27T23:49:16.511082",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 18,
       "activities_28d": 59,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1396,17 +1396,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 139133567,
-      "date": "2026-09-27",
-      "name": "AutoMate - action needed",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
-    },
-    {
       "id": 137338532,
       "date": "2026-09-27",
       "name": "IntervalCoach - 3x13 Resistenza con spinte",
@@ -1467,7 +1456,7 @@
     "success": 3,
     "patternA": 3,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
+    "bail_no_workout_doc": 0,
     "bail_no_match": 2
   },
   "weekly_summary": {
