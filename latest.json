@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-27T01:42:04.853182",
+    "last_updated": "2026-09-27T07:08:18.051862",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -37,29 +37,29 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 68.2,
-        "delta_pct": null
+        "status": "green",
+        "value": 72.0,
+        "baseline_7d": 68.7,
+        "delta_pct": 4.8
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 43.8,
-        "delta_bpm": null
+        "status": "green",
+        "value": 43,
+        "baseline_7d": 43.7,
+        "delta_bpm": -0.7
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 7.82,
+        "quality": 3
       },
       "acwr": {
         "status": "amber",
         "value": 0.77
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 1.07
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 1,
-      "amber": 1,
+      "green": 4,
+      "amber": 2,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 1 green, 1 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 4 green, 2 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -159,21 +159,21 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 47,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 43,
+      "hrv": 72.0,
+      "sleep_quality": 3,
+      "sleep_hours": 7.82,
+      "sleep_formatted": "7h49m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 68.2,
-    "rhr_baseline_7d": 43.8,
+    "recovery_index": 1.07,
+    "hrv_baseline_7d": 68.7,
+    "rhr_baseline_7d": 43.7,
     "hrv_baseline_28d": 70.1,
     "rhr_baseline_28d": 42.6,
-    "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_hrv": 72.0,
+    "latest_rhr": 43,
     "acwr": 0.77,
     "acwr_interpretation": "undertraining",
     "monotony": 1.21,
@@ -185,7 +185,7 @@
     "multi_sport_detected": false,
     "strain": 841.0,
     "stress_tolerance": 7.0,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.5,
     "tss_7d_total": 695.0,
     "tss_28d_total": 3593.0,
     "zone_distribution_7d": {
@@ -322,8 +322,8 @@
           "planned_tss_delta": 0.43,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.16,
-          "plan_coverage_current_week": 0.2,
+          "next_week_load": 0.15,
+          "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
@@ -357,13 +357,13 @@
     "p_max": 1290,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-27T01:42:04.852099",
+    "calculation_timestamp": "2026-09-27T07:08:18.050774",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "hrv_data_points": 7,
+      "rhr_data_points": 7,
       "activities_7d": 16,
       "activities_28d": 57,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1290,13 +1290,13 @@
     {
       "date": "2026-09-27",
       "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
+      "resting_hr": 43,
+      "hrv_rmssd": 72.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.82,
+      "sleep_formatted": "7h49m",
+      "sleep_quality": 3,
+      "sleep_score": 75.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -1305,6 +1305,17 @@
     }
   ],
   "planned_workouts": [
+    {
+      "id": 139133567,
+      "date": "2026-09-27",
+      "name": "AutoMate - action needed",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
+    },
     {
       "id": 137338532,
       "date": "2026-09-27",
@@ -1317,15 +1328,15 @@
       "description": "Warmup\n- Ciao massarob! Oggi resistenza con spinte. 14m ramp 45-75% 85rpm\n\nMain Set\n3x\n- Endurance 13m 65-75% 88rpm\n- Tempo 5m 76-82% 90rpm\n\nRecovery\n- Endurance 4 13m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, goditi il defaticamento. 9m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:enduranceWithTempo]"
     },
     {
-      "id": 138562696,
+      "id": 139113403,
       "date": "2026-09-29",
       "name": "IntervalCoach - Recupero Attivo",
       "type": "WORKOUT",
-      "planned_tss": 30,
+      "planned_tss": 28,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
-      "workout_summary": null,
-      "description": "Warmup\n- Ciao massarob! Riposo attivo in arrivo. 9m Z1 HR\n\nMain Set\n- Easy 45m Z1 HR intensity=recovery\n\nCooldown\n- 6m Z1 HR\n\n[Weekly Plan - Recovery \u00b7 type:activeRecovery]"
+      "workout_summary": "9m @164W | 5\u00d74m @178W / 4m rec | 5m @178W | 6m @164W",
+      "description": "Warmup\n- Ciao massarob! Oggi recupero e tecnica. 9m ramp 45-55% 85rpm\n\nMain Set\n5x\n- Fast Pedal Drill 100rpm 4m 54% 100rpm intensity=recovery\n- Smooth Pedal Drill 80rpm 4m 54% 80rpm intensity=recovery\n\nMain Set\n- Fast Pedal Drill 6 100rpm 5m 54% 100rpm intensity=recovery\n\nCooldown\n- Ottimo lavoro, rilassati e recupera. 6m ramp 55-45%\n\n[Weekly Plan - Recovery \u00b7 type:recoveryDrills]"
     },
     {
       "id": 138562701,
@@ -1339,15 +1350,15 @@
       "description": "Warmup\n- Ciao massarob! Oggi endurance e cadenza. 9m ramp 45-75% 85rpm\n\nMain Set\n3x\n- High Cadence 100rpm 6m 70% 100rpm\n- Low Cadence 70rpm 6m 70% 70rpm\n\nMain Set\n- High Cadence 4 100rpm 9m 70% 100rpm\n\nCooldown\n- Bel lavoro massarob, goditi lo scarico. 6m ramp 65-45%\n\n\n[Weekly Plan - Recovery \u00b7 type:enduranceCadence]"
     },
     {
-      "id": 138808773,
+      "id": 139113469,
       "date": "2026-10-03",
-      "name": "IntervalCoach - 5x9 Resistenza e Pedalata",
+      "name": "IntervalCoach - Corsa Aerobica Lunga",
       "type": "WORKOUT",
-      "planned_tss": 65,
-      "duration_hours": 1.42,
-      "duration_formatted": "1h25m",
-      "workout_summary": "13m @198W | 5\u00d79m @230W / 1m rec | 13m @230W | 9m @181W",
-      "description": "Warmup\n- Ciao massarob! Resistenza e spin-up ti aspettano. 13m ramp 45-75% 85rpm\n\nMain Set\n5x\n- Endurance 88rpm 9m 65-75% 88rpm\n- Spin-Up 110rpm 1m 75% 110rpm\n\nRecovery\n- Endurance 6 88rpm 13m 65-75% 88rpm\n\nCooldown\n- Ottimo lavoro, massarob! Goditi il defaticamento. 9m ramp 65-45%\n\n\n[Weekly Plan - Recovery \u00b7 type:enduranceSpinUps]"
+      "planned_tss": 51,
+      "duration_hours": 1.32,
+      "duration_formatted": "1h19m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Corsa di recupero in arrivo. 12m Z1 HR\n\nMain Set\n- Settle In 20m Z1 HR\n- Aerobic 39m Z2 HR\n\nCooldown\n- 4m Z2 HR\n- Ottima corsa, rilassati e recupera. 4m Z1 HR\n\n[Weekly Plan - Recovery \u00b7 type:endurance]"
     },
     {
       "id": 139067620,
@@ -1366,7 +1377,7 @@
     "success": 3,
     "patternA": 3,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
+    "bail_no_workout_doc": 1,
     "bail_no_match": 2
   },
   "weekly_summary": {
@@ -1374,8 +1385,8 @@
     "total_training_formatted": "14h2m",
     "total_tss": 695,
     "activities_count": 16,
-    "avg_hrv": 68.2,
-    "avg_resting_hr": 43.8
+    "avg_hrv": 68.7,
+    "avg_resting_hr": 43.7
   },
   "race_calendar": {
     "next_race": null,
