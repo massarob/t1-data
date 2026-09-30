@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-30T05:40:23.468282",
+    "last_updated": "2026-09-30T11:22:45.267479",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -105,8 +105,8 @@
       "ctl": 153.14,
       "atl": 123.43,
       "tsb": 29.71,
-      "ramp_rate": -5.1,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ramp_rate": -4.11,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 312.7,
@@ -307,7 +307,7 @@
           "hard_sessions_planned": 3,
           "race_proximity": null,
           "next_week_load": 0.05,
-          "plan_coverage_current_week": 0.6,
+          "plan_coverage_current_week": 0.8,
           "plan_coverage_next_week": 0.2
         },
         "data_quality": "good",
@@ -341,13 +341,13 @@
     "p_max": 1286,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-30T05:40:23.467188",
+    "calculation_timestamp": "2026-09-30T11:22:45.266393",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 19,
       "activities_28d": 62,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1489,6 +1489,17 @@
   ],
   "planned_workouts": [
     {
+      "id": 140137613,
+      "date": "2026-09-30",
+      "name": "AutoMate - action needed",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
+    },
+    {
       "id": 138562701,
       "date": "2026-10-01",
       "name": "IntervalCoach - 3x6 Resistenza e Cadenza",
@@ -1538,7 +1549,7 @@
     "success": 1,
     "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
+    "bail_no_workout_doc": 1,
     "bail_no_match": 3
   },
   "weekly_summary": {
