@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-02T05:01:11.497591",
+    "last_updated": "2026-10-02T11:07:27.403071",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -33,14 +33,14 @@
     }
   ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 69.0,
-        "delta_pct": null
+        "status": "amber",
+        "value": 58.0,
+        "baseline_7d": 67.4,
+        "delta_pct": -13.9
       },
       "rhr": {
         "status": "green",
@@ -49,17 +49,17 @@
         "delta_bpm": 0.1
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 7.15,
+        "quality": 3
       },
       "acwr": {
         "status": "amber",
         "value": 0.79
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.86
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 1,
+      "green": 3,
+      "amber": 3,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -79,8 +79,19 @@
       "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red.",
+    "modification": {
+      "triggers": [
+        "hrv",
+        "sleep",
+        "acwr"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "reduce",
+        "cap_zone": "Z2"
+      }
+    },
+    "reason": "P2 signal count. 3 amber (hrv, sleep, acwr) >= threshold 3.",
     "alarm_refs": []
   },
   "history": {
@@ -115,8 +126,8 @@
       "ctl": 148.99,
       "atl": 106.98,
       "tsb": 42.01,
-      "ramp_rate": -9.14,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ramp_rate": -5.1,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 312.1,
@@ -154,19 +165,19 @@
     "current_metrics": {
       "weight_kg": 65.0,
       "resting_hr": 45,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 58.0,
+      "sleep_quality": 3,
+      "sleep_hours": 7.15,
+      "sleep_formatted": "7h9m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 69.0,
+    "recovery_index": 0.86,
+    "hrv_baseline_7d": 67.4,
     "rhr_baseline_7d": 44.9,
-    "hrv_baseline_28d": 70.9,
+    "hrv_baseline_28d": 70.5,
     "rhr_baseline_28d": 42.9,
-    "latest_hrv": null,
+    "latest_hrv": 58.0,
     "latest_rhr": 45,
     "acwr": 0.79,
     "acwr_interpretation": "undertraining",
@@ -179,7 +190,7 @@
     "multi_sport_detected": false,
     "strain": 1088.0,
     "stress_tolerance": 7.0,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 8.2,
     "tss_7d_total": 702.0,
     "tss_28d_total": 3563.0,
     "zone_distribution_7d": {
@@ -303,7 +314,7 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "medium",
+      "confidence": "high",
       "reason_codes": [],
       "basis": {
         "stream_1": {
@@ -317,7 +328,7 @@
           "hard_sessions_planned": 2,
           "race_proximity": null,
           "next_week_load": 0.09,
-          "plan_coverage_current_week": 0.4,
+          "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 0.4
         },
         "data_quality": "good",
@@ -351,13 +362,13 @@
     "p_max": 1283,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-02T05:01:11.496776",
+    "calculation_timestamp": "2026-10-02T11:07:27.401961",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 18,
       "activities_28d": 60,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1430,12 +1441,12 @@
       "date": "2026-10-02",
       "weight_kg": null,
       "resting_hr": 45,
-      "hrv_rmssd": null,
+      "hrv_rmssd": 58.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.15,
+      "sleep_formatted": "7h9m",
+      "sleep_quality": 3,
+      "sleep_score": 78.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -1444,6 +1455,17 @@
     }
   ],
   "planned_workouts": [
+    {
+      "id": 140666556,
+      "date": "2026-10-02",
+      "name": "AutoMate - action needed",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
+    },
     {
       "id": 139113469,
       "date": "2026-10-03",
@@ -1494,7 +1516,7 @@
     "success": 1,
     "patternA": 1,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
+    "bail_no_workout_doc": 1,
     "bail_no_match": 3
   },
   "weekly_summary": {
@@ -1502,7 +1524,7 @@
     "total_training_formatted": "14h2m",
     "total_tss": 702,
     "activities_count": 18,
-    "avg_hrv": 69.0,
+    "avg_hrv": 67.4,
     "avg_resting_hr": 44.9
   },
   "race_calendar": {
