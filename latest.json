@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-04T20:03:31.981471",
+    "last_updated": "2026-10-04T23:12:39.588711",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -53,7 +53,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": 29.1
+        "value": 34.7
       }
     },
     "signal_summary": {
@@ -102,10 +102,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 150.09,
-      "atl": 121.02,
-      "tsb": 29.07,
-      "ramp_rate": -5.83,
+      "ctl": 148.89,
+      "atl": 114.23,
+      "tsb": 34.66,
+      "ramp_rate": -7.03,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -309,9 +309,9 @@
           "planned_tss_delta": 0.41,
           "hard_sessions_planned": 1,
           "race_proximity": null,
-          "next_week_load": 0.3,
-          "plan_coverage_current_week": 0.4,
-          "plan_coverage_next_week": 0.8
+          "next_week_load": 0.2,
+          "plan_coverage_current_week": 0.2,
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -346,13 +346,13 @@
     "p_max": 1281,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 74.0,
-    "calculation_timestamp": "2026-10-04T20:03:31.980346",
+    "calculation_timestamp": "2026-10-04T23:12:39.587869",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 18,
       "activities_28d": 64,
-      "planned_workouts_7d": 5,
+      "planned_workouts_7d": 4,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1449,17 +1449,6 @@
   ],
   "planned_workouts": [
     {
-      "id": 141232942,
-      "date": "2026-10-04",
-      "name": "AutoMate - action needed",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
-      "workout_summary": null,
-      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
-    },
-    {
       "id": 139067620,
       "date": "2026-10-04",
       "name": "IntervalCoach - Corsa Lunga Aerobica",
@@ -1505,14 +1494,13 @@
     },
     {
       "id": 141158669,
-      "date": "2026-10-11",
+      "date": "2026-10-13",
       "name": "IntervalCoach - 5x4 Ritmo VO2max",
       "type": "WORKOUT",
       "planned_tss": 80,
       "duration_hours": 1.17,
       "duration_formatted": "1h10m",
-      "workout_summary": "11m | 6m | 5\u00d74m / 3m rec | 4m | 2 \u00d7 7m",
-      "description": "Warmup\n- Ciao massarob! Preparati per il lungo VO2max. 11m Z2 HR\n\nMain Set\n- Endurance 6m Z2 HR\n\n5x\n- VO2max Long 4m Z5 HR\n- Recovery 3m Z2 HR\n\nMain Set\n- VO2max Long 6 4m Z5 HR\n- Endurance 7m Z2 HR\n\nCooldown\n- 7m Z2 HR\n\n[Weekly Plan - Build \u00b7 type:vo2maxLong]"
+      "workout_summary": "11m | 6m | 5\u00d74m / 3m rec | 4m | 2 \u00d7 7m"
     }
   ],
   "workout_summary_stats": {
@@ -1520,7 +1508,7 @@
     "success": 3,
     "patternA": 3,
     "patternB": 0,
-    "bail_no_workout_doc": 1,
+    "bail_no_workout_doc": 0,
     "bail_no_match": 2
   },
   "weekly_summary": {
