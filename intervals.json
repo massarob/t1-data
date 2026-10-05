@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-10-04T23:12:39.588452",
+  "generated_at": "2026-10-05T02:03:12.401474",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i190783913",
-      "date": "2026-09-27",
-      "type": "Ride",
-      "name": "Pedalata mattutina",
-      "interval_summary": [
-        "1x 3m39s 309w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1771,
-          "avg_power": 162,
-          "max_power": 395,
-          "avg_hr": 118,
-          "max_hr": 151,
-          "avg_cadence": 73.90882,
-          "zone": 1,
-          "training_load": 16.88,
-          "decoupling": -19.909304
-        },
-        {
-          "type": "WORK",
-          "label": "219s@309w77rpm",
-          "duration_secs": 219,
-          "avg_power": 309,
-          "max_power": 385,
-          "avg_hr": 158,
-          "max_hr": 164,
-          "avg_cadence": 76.96347,
-          "zone": 4,
-          "training_load": 5.333726,
-          "decoupling": 10.516415
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1652,
-          "avg_power": 88,
-          "max_power": 414,
-          "avg_hr": 107,
-          "max_hr": 158,
-          "avg_cadence": 55.243835,
-          "zone": 1,
-          "training_load": 7.9596915,
-          "decoupling": 15.337861
-        }
-      ]
-    },
     {
       "activity_id": "i191431430",
       "date": "2026-09-28",
@@ -171,71 +123,6 @@
           "zone": 1,
           "training_load": 21.027508,
           "decoupling": 5.8359604
-        }
-      ]
-    },
-    {
-      "activity_id": "i191431417",
-      "date": "2026-09-27",
-      "type": "Ride",
-      "name": "Afternoon Ride",
-      "interval_summary": [
-        "1x 19m53s 195w",
-        "2x 7m2s 329w",
-        "1x 1h5m 152w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1193s@195w67rpm",
-          "duration_secs": 1193,
-          "avg_power": 195,
-          "max_power": 436,
-          "avg_hr": 123,
-          "max_hr": 153,
-          "avg_cadence": 66.88067,
-          "zone": 2,
-          "training_load": 17.953884,
-          "decoupling": -22.119087
-        },
-        {
-          "type": "WORK",
-          "label": "422s@329w80rpm",
-          "duration_secs": 423,
-          "avg_power": 332,
-          "max_power": 494,
-          "avg_hr": 156,
-          "max_hr": 162,
-          "avg_cadence": 79.65958,
-          "zone": 4,
-          "training_load": 11.82132,
-          "decoupling": 12.096319
-        },
-        {
-          "type": "WORK",
-          "label": "422s@329w80rpm",
-          "duration_secs": 420,
-          "avg_power": 325,
-          "max_power": 450,
-          "avg_hr": 160,
-          "max_hr": 166,
-          "avg_cadence": 80.2,
-          "zone": 4,
-          "training_load": 11.596066,
-          "decoupling": 7.599096
-        },
-        {
-          "type": "WORK",
-          "label": "3933s@152w55rpm",
-          "duration_secs": 3933,
-          "avg_power": 152,
-          "max_power": 604,
-          "avg_hr": 117,
-          "max_hr": 171,
-          "avg_cadence": 55.258835,
-          "zone": 1,
-          "training_load": 49.690083,
-          "decoupling": 17.954262
         }
       ]
     },
