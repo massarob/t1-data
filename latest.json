@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-05T02:03:12.401647",
+    "last_updated": "2026-10-05T09:07:46.592693",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -37,29 +37,29 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 66.0,
-        "delta_pct": null
+        "status": "green",
+        "value": 60.0,
+        "baseline_7d": 65.1,
+        "delta_pct": -7.8
       },
       "rhr": {
         "status": "green",
-        "value": 47,
-        "baseline_7d": 44.7,
-        "delta_bpm": 2.3
+        "value": 45,
+        "baseline_7d": 44.4,
+        "delta_bpm": 0.6
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 8.4,
+        "quality": 3
       },
       "acwr": {
         "status": "amber",
         "value": 0.72
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.91
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 1,
+      "green": 4,
+      "amber": 2,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 1 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 4 green, 2 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -115,8 +115,8 @@
       "ctl": 145.38,
       "atl": 99.02,
       "tsb": 46.36,
-      "ramp_rate": -10.77,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ramp_rate": -6.86,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": 311.2,
@@ -153,21 +153,21 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 47,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 45,
+      "hrv": 60.0,
+      "sleep_quality": 3,
+      "sleep_hours": 8.4,
+      "sleep_formatted": "8h24m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 66.0,
-    "rhr_baseline_7d": 44.7,
-    "hrv_baseline_28d": 69.0,
-    "rhr_baseline_28d": 43.4,
-    "latest_hrv": null,
-    "latest_rhr": 47,
+    "recovery_index": 0.91,
+    "hrv_baseline_7d": 65.1,
+    "rhr_baseline_7d": 44.4,
+    "hrv_baseline_28d": 68.7,
+    "rhr_baseline_28d": 43.3,
+    "latest_hrv": 60.0,
+    "latest_rhr": 45,
     "acwr": 0.72,
     "acwr_interpretation": "undertraining",
     "monotony": 1.41,
@@ -179,7 +179,7 @@
     "multi_sport_detected": false,
     "strain": 866.0,
     "stress_tolerance": 6.1,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.7,
     "tss_7d_total": 614.0,
     "tss_28d_total": 3420.0,
     "zone_distribution_7d": {
@@ -315,12 +315,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.2,
-          "hard_sessions_planned": 3,
+          "planned_tss_delta": 0.27,
+          "hard_sessions_planned": 4,
           "race_proximity": null,
-          "next_week_load": 0.09,
-          "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 0.2
+          "next_week_load": null,
+          "plan_coverage_current_week": 1.0,
+          "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -355,13 +355,13 @@
     "p_max": 1279,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-05T02:03:12.400857",
+    "calculation_timestamp": "2026-10-05T09:07:46.591604",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 61,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -1172,13 +1172,13 @@
     {
       "date": "2026-10-05",
       "weight_kg": null,
-      "resting_hr": 47,
-      "hrv_rmssd": null,
+      "resting_hr": 45,
+      "hrv_rmssd": 60.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 8.4,
+      "sleep_formatted": "8h24m",
+      "sleep_quality": 3,
+      "sleep_score": 70.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -1187,6 +1187,17 @@
     }
   ],
   "planned_workouts": [
+    {
+      "id": 141616563,
+      "date": "2026-10-05",
+      "name": "AutoMate - action needed",
+      "type": "NOTE",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description": "You have a new activity waiting for your RPE and Feel rating - reply on WhatsApp to complete it."
+    },
     {
       "id": 139792661,
       "date": "2026-10-06",
@@ -1221,31 +1232,32 @@
       "description": "Warmup\n- Ciao massarob! Sessione VO2max breve 11m Z1 HR\n\nMain Set\n- Endurance 3m Z1 HR\n\n7x\n- Interval 3m Z5 HR\n- Recovery 3m Z1 HR\n\nMain Set\n- Interval 8 3m Z5 HR\n- Endurance 4m Z1 HR\n\nCooldown\n- 4m Z2 HR\n- Ottimo lavoro, riprendi fiato lentamente 3m Z1 HR\n\n[Weekly Plan - Build \u00b7 type:vo2maxShort]"
     },
     {
-      "id": 141158669,
-      "date": "2026-10-13",
-      "name": "IntervalCoach - 5x4 Ritmo VO2max",
+      "id": 141616688,
+      "date": "2026-10-11",
+      "name": "IntervalCoach - Corsa Aerobica Progressiva",
       "type": "WORKOUT",
-      "planned_tss": 80,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
-      "workout_summary": "11m | 6m | 5\u00d74m / 3m rec | 4m | 2 \u00d7 7m"
+      "planned_tss": 58,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Allenamento aerobico progressivo. 11m Z2 HR\n\nMain Set\n- Low Aerobic 38m Z2 HR\n- Upper Aerobic 18m Z2 HR\n\nCooldown\n- 8m Z2 HR\n\n[Weekly Plan - Build \u00b7 type:enduranceProgressive]"
     }
   ],
   "workout_summary_stats": {
     "attempted": 4,
-    "success": 3,
-    "patternA": 3,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
-    "bail_no_workout_doc": 0,
-    "bail_no_match": 1
+    "bail_no_workout_doc": 1,
+    "bail_no_match": 2
   },
   "weekly_summary": {
     "total_training_hours": 12.86,
     "total_training_formatted": "12h51m",
     "total_tss": 614,
     "activities_count": 13,
-    "avg_hrv": 66.0,
-    "avg_resting_hr": 44.7
+    "avg_hrv": 65.1,
+    "avg_resting_hr": 44.4
   },
   "race_calendar": {
     "next_race": null,
