@@ -1,61 +1,9 @@
 {
-  "generated_at": "2026-10-07T21:36:52.928321",
+  "generated_at": "2026-10-08T01:20:41.760357",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i191924562",
-      "date": "2026-09-30",
-      "type": "Ride",
-      "name": "Piancogno Ciclismo su strada",
-      "interval_summary": [
-        "1x 16m54s 214w",
-        "1x 11m59s 315w",
-        "1x 43m5s 103w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1014s@214w79rpm",
-          "duration_secs": 1014,
-          "avg_power": 214,
-          "max_power": 359,
-          "avg_hr": 129,
-          "max_hr": 153,
-          "avg_cadence": 78.58284,
-          "zone": 2,
-          "training_load": 13.92142,
-          "decoupling": -9.58627
-        },
-        {
-          "type": "WORK",
-          "label": "719s@315w80rpm",
-          "duration_secs": 719,
-          "avg_power": 315,
-          "max_power": 455,
-          "avg_hr": 164,
-          "max_hr": 172,
-          "avg_cadence": 80.39916,
-          "zone": 4,
-          "training_load": 18.662931,
-          "decoupling": 7.425004
-        },
-        {
-          "type": "WORK",
-          "label": "2585s@103w55rpm",
-          "duration_secs": 2585,
-          "avg_power": 103,
-          "max_power": 474,
-          "avg_hr": 104,
-          "max_hr": 165,
-          "avg_cadence": 54.629787,
-          "zone": 1,
-          "training_load": 16.046465,
-          "decoupling": -9.588595
-        }
-      ]
-    },
     {
       "activity_id": "i192335053",
       "date": "2026-10-01",
