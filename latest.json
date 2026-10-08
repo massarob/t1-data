@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-08T07:54:08.661414",
+    "last_updated": "2026-10-08T15:25:42.562463",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -377,7 +377,7 @@
     "p_max": 1276,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-08T07:54:08.440328",
+    "calculation_timestamp": "2026-10-08T15:25:42.561408",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1229,7 +1229,7 @@
     },
     {
       "date": "2026-10-08",
-      "weight_kg": null,
+      "weight_kg": 65.0,
       "resting_hr": 48,
       "hrv_rmssd": 48.0,
       "hrv_sdnn": null,
@@ -1238,8 +1238,8 @@
       "sleep_quality": 3,
       "sleep_score": 75.0,
       "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
+      "fatigue": 2,
+      "soreness": 2,
       "avg_sleeping_hr": null,
       "vo2max": null
     }
