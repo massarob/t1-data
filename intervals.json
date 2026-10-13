@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T01:34:22.245418",
+  "generated_at": "2026-10-13T08:29:48.386858",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -559,6 +559,127 @@
           "avg_cadence": 58.0,
           "zone": 1,
           "training_load": 0.0028660342
+        }
+      ]
+    },
+    {
+      "activity_id": "i196692531",
+      "date": "2026-10-13",
+      "type": "VirtualRun",
+      "name": "Corsa virtuale",
+      "interval_summary": [
+        "1x 22m 333w",
+        "1x 1m53s 349w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 86,
+          "avg_power": 292,
+          "max_power": 331,
+          "avg_hr": 97,
+          "max_hr": 105,
+          "avg_cadence": 78.87209,
+          "zone": 4,
+          "training_load": 1.7941059,
+          "decoupling": 2.734701
+        },
+        {
+          "type": "WORK",
+          "label": "1320s@333w81rpm",
+          "duration_secs": 1320,
+          "avg_power": 333,
+          "max_power": 381,
+          "avg_hr": 107,
+          "max_hr": 113,
+          "avg_cadence": 81.0053,
+          "zone": 4,
+          "training_load": 39.70635,
+          "decoupling": 2.465074
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 65,
+          "avg_power": 313,
+          "max_power": 430,
+          "avg_hr": 116,
+          "max_hr": 119,
+          "avg_cadence": 82.16923,
+          "zone": 4,
+          "training_load": 1.8168579,
+          "decoupling": -3.3393536
+        },
+        {
+          "type": "WORK",
+          "label": "113s@349w80rpm",
+          "duration_secs": 113,
+          "avg_power": 349,
+          "max_power": 371,
+          "avg_hr": 113,
+          "max_hr": 116,
+          "avg_cadence": 79.87611,
+          "zone": 5,
+          "training_load": 3.6484985,
+          "decoupling": -0.30975312
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 104,
+          "avg_power": 42,
+          "max_power": 340,
+          "avg_hr": 100,
+          "max_hr": 114,
+          "avg_cadence": 16.48077,
+          "zone": 1,
+          "training_load": 0.53108156,
+          "decoupling": 70.26698
+        }
+      ]
+    },
+    {
+      "activity_id": "i196686450",
+      "date": "2026-10-13",
+      "type": "VirtualRun",
+      "name": "Corsa virtuale",
+      "interval_summary": [
+        "1x 5m24s 330w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 4,
+          "avg_power": 216,
+          "max_power": 295,
+          "avg_hr": 76,
+          "max_hr": 78,
+          "avg_cadence": 79.75,
+          "zone": 2,
+          "decoupling": -1.1831757
+        },
+        {
+          "type": "WORK",
+          "label": "324s@330w79rpm",
+          "duration_secs": 324,
+          "avg_power": 330,
+          "max_power": 376,
+          "avg_hr": 97,
+          "max_hr": 101,
+          "avg_cadence": 78.987656,
+          "zone": 4,
+          "training_load": 9.283447,
+          "decoupling": 7.805611
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 40,
+          "avg_power": 44,
+          "max_power": 305,
+          "avg_hr": 99,
+          "max_hr": 102,
+          "avg_cadence": 38.4,
+          "zone": 1,
+          "training_load": 0.14535156,
+          "decoupling": 38.615387
         }
       ]
     }
