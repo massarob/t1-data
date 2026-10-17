@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T08:36:18.777227",
+  "generated_at": "2026-10-17T12:26:36.098030",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -549,6 +549,73 @@
           "zone": 1,
           "training_load": 0.02297119,
           "decoupling": 56.87507
+        }
+      ]
+    },
+    {
+      "activity_id": "i198242831",
+      "date": "2026-10-17",
+      "type": "Ride",
+      "name": "Mattina Ride - Cadence",
+      "interval_summary": [
+        "1x 51m34s 117bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "3094s@117bpm",
+          "duration_secs": 3094,
+          "avg_hr": 117,
+          "max_hr": 169,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i198245002",
+      "date": "2026-10-17",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo",
+      "interval_summary": [
+        "1x 87s 360w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1373,
+          "avg_power": 187,
+          "max_power": 403,
+          "avg_hr": 120,
+          "max_hr": 163,
+          "avg_cadence": 79.02115,
+          "zone": 2,
+          "training_load": 17.54699,
+          "decoupling": -6.0468206
+        },
+        {
+          "type": "WORK",
+          "label": "87s@360w73rpm",
+          "duration_secs": 87,
+          "avg_power": 360,
+          "max_power": 432,
+          "avg_hr": 165,
+          "max_hr": 168,
+          "avg_cadence": 73.13793,
+          "zone": 5,
+          "training_load": 2.7340288,
+          "decoupling": -7.1221323
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1651,
+          "avg_power": 121,
+          "max_power": 409,
+          "avg_hr": 111,
+          "max_hr": 169,
+          "avg_cadence": 62.84585,
+          "zone": 1,
+          "training_load": 11.367876,
+          "decoupling": 11.927166
         }
       ]
     }
