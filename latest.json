@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-18T09:55:10.469561",
+    "last_updated": "2026-10-18T13:51:37.891124",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -308,7 +308,7 @@
       "phase": "Deload",
       "confidence": "medium",
       "reason_codes": [
-        "PLAN_GAP_NEXT_WEEK"
+        "BUILD_HISTORY_REDUCED_LOAD"
       ],
       "basis": {
         "stream_1": {
@@ -321,9 +321,9 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": null,
-          "next_week_load": null,
+          "next_week_load": 0.51,
           "plan_coverage_current_week": 0.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 0.8
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -335,7 +335,7 @@
     },
     "phase_detected": "Deload",
     "phase_triggers": [
-      "PLAN_GAP_NEXT_WEEK"
+      "BUILD_HISTORY_REDUCED_LOAD"
     ],
     "seasonal_context": "Late Season / Transition",
     "benchmark_indoor": {
@@ -358,7 +358,7 @@
     "p_max": 1263,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-18T09:55:10.277944",
+    "calculation_timestamp": "2026-10-18T13:51:37.890368",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1187,14 +1187,59 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 145709517,
+      "date": "2026-10-20",
+      "name": "IntervalCoach - Ripetute alla soglia",
+      "type": "WORKOUT",
+      "planned_tss": 125,
+      "duration_hours": 1.83,
+      "duration_formatted": "1h50m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob! Ti aspettano ripetute alla soglia 5m 63-67% pace\n- 10m 75-79% pace\n\nMain Set\n- Endurance 19m 76-80% pace\n- Threshold 1 10m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 2 8m 95-99% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 3 6m 96-100% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 4 5m 96-100% pace\n- Jog Recovery 3m 65-71% pace\n- Threshold 5 5m 97-101% pace\n- Endurance 20m 76-80% pace\n\nCooldown\n- 5m 76-80% pace\n- Ottimo lavoro, sciogli le gambe con una corsa facile 5m 63-67% pace\n\n[Weekly Plan - Build \u00b7 type:thresholdRepeats]"
+    },
+    {
+      "id": 145709559,
+      "date": "2026-10-22",
+      "name": "IntervalCoach - Fondo e cadenza",
+      "type": "WORKOUT",
+      "planned_tss": 68,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "14m @198W | 5\u00d76m @231W / 6m rec | 7m @231W | 9m @181W",
+      "description": "Warmup\n- Ciao massarob! Ti aspetta una pedalata di resistenza e cadenza 14m ramp 45-75% 85rpm\n\nMain Set\n5x\n- High Cadence 100rpm 6m 70% 100rpm\n- Low Cadence 70rpm 6m 70% 70rpm\n\nMain Set\n- High Cadence 100rpm 7m 70% 100rpm\n\nCooldown\n- Ottimo lavoro, chiudi con una pedalata leggera 9m ramp 65-45%\n\n\n[Weekly Plan - Build \u00b7 type:enduranceCadence]"
+    },
+    {
+      "id": 145709621,
+      "date": "2026-10-24",
+      "name": "IntervalCoach - Lungo aerobico",
+      "type": "WORKOUT",
+      "planned_tss": 164,
+      "duration_hours": 2.48,
+      "duration_formatted": "2h29m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob, ti aspetta una lunga corsa aerobica! 5m 63-67% pace\n- 5m 74-78% pace\n- 5m 79-83% pace\n\nMain Set\n- Settle In 12m 77-83% pace\n- Steady Aerobic 112m 81-85% pace\n\nCooldown\n- 5m 76-80% pace\n- Ottimo lavoro, defaticati con calma e goditi i progressi 5m 63-67% pace\n\n[Weekly Plan - Build \u00b7 type:longAerobic]"
+    },
+    {
+      "id": 145709650,
+      "date": "2026-10-25",
+      "name": "IntervalCoach - Piramide VO2max",
+      "type": "WORKOUT",
+      "planned_tss": 86,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": null,
+      "description": "Warmup\n- Ciao massarob, oggi ti aspetta una piramide VO2max! 9m ramp 45-75% 85rpm\n- Primer 1 30s 113% 90rpm\n- Primer recovery 30s 55%\n- Primer 2 30s 113% 90rpm\n- Primer recovery 30s 55%\n\nMain Set\n- Endurance 85rpm 13m 65-75% 85rpm\n- VO2max 1min 100rpm 1m 106-120% 100rpm\n- Recovery 1m 55%\n- VO2max 2min 100rpm 2m 106-120% 100rpm\n- Recovery 2m 55%\n- VO2max 3min 100rpm 3m 106-120% 100rpm\n- Recovery 3m 55%\n- VO2max 4min 100rpm 4m 106-120% 100rpm\n- Recovery 4m 55%\n- VO2max 3min 100rpm 3m 106-120% 100rpm\n- Recovery 3m 55%\n- VO2max 2min 100rpm 2m 106-120% 100rpm\n- Recovery 2m 55%\n- VO2max 1min 100rpm 1m 106-120% 100rpm\n- Endurance 85rpm 12m 65-75% 85rpm\n\nCooldown\n- Ottima prova, defaticati con calma! 8m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:vo2maxPyramid]"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 4,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 11.54,
