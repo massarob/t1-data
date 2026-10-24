@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T13:36:52.397388",
+  "generated_at": "2026-10-24T16:59:59.054968",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1050,6 +1050,69 @@
           "zone": 1,
           "training_load": 1.8610346,
           "decoupling": -37.293297
+        }
+      ]
+    },
+    {
+      "activity_id": "i201122897",
+      "date": "2026-10-24",
+      "type": "Ride",
+      "name": "Gara Madda (extra di fine stagione), 5\u00b0 assoluto e 1\u00b0 M4",
+      "interval_summary": [
+        "1x 11m42s 98w",
+        "1x 29s 153w",
+        "1x 28m18s 327w",
+        "1x 47m2s 6w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "702s@98w51rpm",
+          "duration_secs": 702,
+          "avg_power": 98,
+          "max_power": 436,
+          "avg_hr": 113,
+          "max_hr": 144,
+          "avg_cadence": 51.16809,
+          "zone": 1,
+          "training_load": 3.6304133,
+          "decoupling": 22.579815
+        },
+        {
+          "type": "WORK",
+          "label": "29s@153w28rpm",
+          "duration_secs": 29,
+          "avg_power": 153,
+          "max_power": 549,
+          "avg_hr": 105,
+          "max_hr": 127,
+          "avg_cadence": 28.068966,
+          "zone": 1,
+          "training_load": 0.03439241,
+          "decoupling": "-Infinity"
+        },
+        {
+          "type": "WORK",
+          "label": "1698s@327w82rpm",
+          "duration_secs": 1698,
+          "avg_power": 327,
+          "max_power": 760,
+          "avg_hr": 178,
+          "max_hr": 184,
+          "avg_cadence": 81.8351,
+          "zone": 4,
+          "training_load": 48.02814,
+          "decoupling": 9.924512
+        },
+        {
+          "type": "WORK",
+          "label": "2822s@6w6rpm",
+          "duration_secs": 2822,
+          "avg_power": 6,
+          "max_power": 133,
+          "avg_cadence": 5.7716894,
+          "zone": 1,
+          "training_load": 0.8595041
         }
       ]
     }
