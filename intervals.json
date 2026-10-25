@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T13:55:59.250503",
+  "generated_at": "2026-10-25T17:32:55.447594",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1069,6 +1069,84 @@
           "avg_cadence": 65.0,
           "zone": 3,
           "training_load": 0.022033691
+        }
+      ]
+    },
+    {
+      "activity_id": "i201546028",
+      "date": "2026-10-25",
+      "type": "Ride",
+      "name": "Giretto con la Crux",
+      "interval_summary": [
+        "2x 2m26s 319w",
+        "1x 88s 312w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1011,
+          "avg_power": 216,
+          "max_power": 472,
+          "avg_cadence": 74.777885,
+          "zone": 2,
+          "training_load": 16.425123
+        },
+        {
+          "type": "WORK",
+          "label": "146s@319w76rpm",
+          "duration_secs": 142,
+          "avg_power": 326,
+          "max_power": 400,
+          "avg_cadence": 74.78169,
+          "zone": 4,
+          "training_load": 3.5712254
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 16,
+          "avg_power": 259,
+          "max_power": 279,
+          "avg_cadence": 80.4375,
+          "zone": 3,
+          "training_load": 0.36242834
+        },
+        {
+          "type": "WORK",
+          "label": "146s@319w76rpm",
+          "duration_secs": 150,
+          "avg_power": 312,
+          "max_power": 356,
+          "avg_cadence": 77.0,
+          "zone": 4,
+          "training_load": 3.606099
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2236,
+          "avg_power": 133,
+          "max_power": 457,
+          "avg_cadence": 50.781307,
+          "zone": 1,
+          "training_load": 20.891468
+        },
+        {
+          "type": "WORK",
+          "label": "88s@312w68rpm",
+          "duration_secs": 88,
+          "avg_power": 312,
+          "max_power": 348,
+          "avg_cadence": 68.420456,
+          "zone": 4,
+          "training_load": 2.0472279
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1921,
+          "avg_power": 133,
+          "max_power": 423,
+          "avg_cadence": 63.98802,
+          "zone": 1,
+          "training_load": 14.640987
         }
       ]
     }
