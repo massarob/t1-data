@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:42:45.593570",
+  "generated_at": "2026-10-27T18:21:18.621350",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -776,6 +776,58 @@
           "zone": 1,
           "training_load": 15.169183,
           "decoupling": 1.6513567
+        }
+      ]
+    },
+    {
+      "activity_id": "i202354544",
+      "date": "2026-10-27",
+      "type": "Ride",
+      "name": "foliage x zainato",
+      "interval_summary": [
+        "1x 19m40s 241w",
+        "1x 51m44s 272w",
+        "1x 38m35s 34w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1180s@241w84rpm",
+          "duration_secs": 1180,
+          "avg_power": 241,
+          "max_power": 458,
+          "avg_hr": 139,
+          "max_hr": 162,
+          "avg_cadence": 84.43028,
+          "zone": 2,
+          "training_load": 20.173578,
+          "decoupling": -7.0941896
+        },
+        {
+          "type": "WORK",
+          "label": "3104s@272w75rpm",
+          "duration_secs": 3104,
+          "avg_power": 272,
+          "max_power": 377,
+          "avg_hr": 161,
+          "max_hr": 169,
+          "avg_cadence": 75.31089,
+          "zone": 3,
+          "training_load": 60.3128,
+          "decoupling": 6.0377445
+        },
+        {
+          "type": "WORK",
+          "label": "2315s@34w20rpm",
+          "duration_secs": 2315,
+          "avg_power": 34,
+          "max_power": 333,
+          "avg_hr": 93,
+          "max_hr": 156,
+          "avg_cadence": 20.158531,
+          "zone": 1,
+          "training_load": 4.4520154,
+          "decoupling": -180.17523
         }
       ]
     }
