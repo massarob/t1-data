@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-10-28T20:17:32.994084",
+  "generated_at": "2026-10-29T00:14:36.580358",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i200050167",
-      "date": "2026-10-21",
-      "type": "VirtualRide",
-      "name": "Zwift - 40' @LT1",
-      "interval_summary": [
-        "1x 41m8s 311w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 508,
-          "avg_power": 230,
-          "max_power": 374,
-          "avg_hr": 117,
-          "max_hr": 135,
-          "avg_cadence": 91.82087,
-          "zone": 2,
-          "training_load": 6.8547087,
-          "decoupling": -4.0094085
-        },
-        {
-          "type": "WORK",
-          "label": "2468s@311w78rpm",
-          "duration_secs": 2468,
-          "avg_power": 311,
-          "max_power": 403,
-          "avg_hr": 151,
-          "max_hr": 165,
-          "avg_cadence": 78.0782,
-          "zone": 4,
-          "training_load": 61.280735,
-          "decoupling": 6.6975303
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1707,
-          "avg_power": 149,
-          "max_power": 331,
-          "avg_hr": 119,
-          "max_hr": 160,
-          "avg_cadence": 80.830696,
-          "zone": 1,
-          "training_load": 13.031528,
-          "decoupling": -18.24828
-        }
-      ]
-    },
     {
       "activity_id": "i200443375",
       "date": "2026-10-22",
