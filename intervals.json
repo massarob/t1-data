@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T09:01:23.899394",
+  "generated_at": "2026-10-30T15:57:17.941416",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -680,6 +680,67 @@
           "zone": 2,
           "training_load": 31.687778,
           "decoupling": -7.9619923
+        }
+      ]
+    },
+    {
+      "activity_id": "i203590529",
+      "date": "2026-10-30",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 22m24s 175w",
+        "1x 21m44s 301w",
+        "1x 1h26m 114w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1344s@175w72rpm",
+          "duration_secs": 1344,
+          "avg_power": 175,
+          "max_power": 436,
+          "avg_hr": 120,
+          "max_hr": 154,
+          "avg_cadence": 72.404335,
+          "zone": 1,
+          "training_load": 14.12124,
+          "decoupling": -4.9515457
+        },
+        {
+          "type": "WORK",
+          "label": "1304s@301w79rpm",
+          "duration_secs": 1304,
+          "avg_power": 301,
+          "max_power": 495,
+          "avg_hr": 158,
+          "max_hr": 166,
+          "avg_cadence": 79.06748,
+          "zone": 4,
+          "training_load": 30.941895,
+          "decoupling": 5.3715034
+        },
+        {
+          "type": "WORK",
+          "label": "5205s@114w53rpm",
+          "duration_secs": 5205,
+          "avg_power": 114,
+          "max_power": 426,
+          "avg_hr": 105,
+          "max_hr": 165,
+          "avg_cadence": 53.02536,
+          "zone": 1,
+          "training_load": 31.880857,
+          "decoupling": 2.3841555
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3,
+          "avg_hr": 90,
+          "max_hr": 92,
+          "zone": 1,
+          "training_load": 0.002946638,
+          "decoupling": "NaN"
         }
       ]
     }
