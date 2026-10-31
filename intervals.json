@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-10-30T20:39:46.135243",
+  "generated_at": "2026-10-31T00:07:11.669481",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i200804464",
-      "date": "2026-10-23",
-      "type": "VirtualRide",
-      "name": "Zwift",
-      "interval_summary": [
-        "1x 6m33s 297w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3552,
-          "avg_power": 208,
-          "max_power": 342,
-          "avg_hr": 118,
-          "max_hr": 129,
-          "avg_cadence": 86.53501,
-          "zone": 2,
-          "training_load": 39.576298,
-          "decoupling": 2.574923
-        },
-        {
-          "type": "WORK",
-          "label": "393s@297w79rpm",
-          "duration_secs": 393,
-          "avg_power": 297,
-          "max_power": 350,
-          "avg_hr": 145,
-          "max_hr": 152,
-          "avg_cadence": 78.854965,
-          "zone": 3,
-          "training_load": 8.783054,
-          "decoupling": 4.916625
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 285,
-          "avg_power": 130,
-          "max_power": 300,
-          "avg_hr": 122,
-          "max_hr": 151,
-          "avg_cadence": 92.58246,
-          "zone": 1,
-          "training_load": 1.8610346,
-          "decoupling": -37.293297
-        }
-      ]
-    },
     {
       "activity_id": "i201122897",
       "date": "2026-10-24",
