@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T05:47:18.416188",
+  "generated_at": "2026-10-31T11:58:14.122498",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -693,6 +693,68 @@
           "zone": 1,
           "training_load": 0.002946638,
           "decoupling": "NaN"
+        }
+      ]
+    },
+    {
+      "activity_id": "i203863002",
+      "date": "2026-10-31",
+      "type": "VirtualRide",
+      "name": "Zwift - Colorado River Sunrise in Video",
+      "interval_summary": [
+        "1x 1m49s 331w",
+        "1x 52s 409w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 2183,
+          "avg_power": 222,
+          "max_power": 380,
+          "avg_hr": 124,
+          "max_hr": 150,
+          "avg_cadence": 91.36418,
+          "zone": 2,
+          "training_load": 28.946299,
+          "decoupling": -1.0345187
+        },
+        {
+          "type": "WORK",
+          "label": "109s@331w88rpm",
+          "duration_secs": 109,
+          "avg_power": 331,
+          "max_power": 414,
+          "avg_hr": 143,
+          "max_hr": 160,
+          "avg_cadence": 88.0367,
+          "zone": 4,
+          "training_load": 2.900689,
+          "decoupling": 16.375769
+        },
+        {
+          "type": "WORK",
+          "label": "52s@409w85rpm",
+          "duration_secs": 52,
+          "avg_power": 409,
+          "max_power": 493,
+          "avg_hr": 162,
+          "max_hr": 166,
+          "avg_cadence": 84.59615,
+          "zone": 6,
+          "training_load": 1.9865289,
+          "decoupling": -4.880198
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 699,
+          "avg_power": 172,
+          "max_power": 359,
+          "avg_hr": 130,
+          "max_hr": 171,
+          "avg_cadence": 86.50644,
+          "zone": 1,
+          "training_load": 7.2232366,
+          "decoupling": -6.4000783
         }
       ]
     }
