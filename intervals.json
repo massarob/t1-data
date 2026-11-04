@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T06:28:52.202693",
+  "generated_at": "2026-11-04T14:49:28.948472",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1040,6 +1040,25 @@
           "zone": 1,
           "training_load": 9.621819,
           "decoupling": 0.18267821
+        }
+      ]
+    },
+    {
+      "activity_id": "i205645943",
+      "date": "2026-11-04",
+      "type": "Ride",
+      "name": "Breno Ciclismo",
+      "interval_summary": [
+        "1x 1h16m 89bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "4588s@89bpm",
+          "duration_secs": 4588,
+          "avg_hr": 89,
+          "max_hr": 127,
+          "zone": 1
         }
       ]
     }
