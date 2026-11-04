@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T14:49:28.948472",
+  "generated_at": "2026-11-04T21:10:01.954996",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1059,6 +1059,132 @@
           "avg_hr": 89,
           "max_hr": 127,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i205784250",
+      "date": "2026-11-04",
+      "type": "VirtualRide",
+      "name": "Zwift - Arches National Park in Video",
+      "interval_summary": [
+        "1x 13m51s 322w",
+        "1x 1m51s 329w",
+        "1x 80s 314w",
+        "1x 3m44s 317w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 812,
+          "avg_power": 264,
+          "max_power": 466,
+          "avg_hr": 130,
+          "max_hr": 156,
+          "avg_cadence": 87.47783,
+          "zone": 3,
+          "training_load": 14.87631,
+          "decoupling": 13.562914
+        },
+        {
+          "type": "WORK",
+          "label": "831s@322w77rpm",
+          "duration_secs": 831,
+          "avg_power": 322,
+          "max_power": 494,
+          "avg_hr": 154,
+          "max_hr": 167,
+          "avg_cadence": 77.41877,
+          "zone": 4,
+          "training_load": 22.114428,
+          "decoupling": 2.811491
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 588,
+          "avg_power": 210,
+          "max_power": 403,
+          "avg_hr": 132,
+          "max_hr": 163,
+          "avg_cadence": 83.87925,
+          "zone": 2,
+          "training_load": 8.929489,
+          "decoupling": -44.036987
+        },
+        {
+          "type": "WORK",
+          "label": "111s@329w77rpm",
+          "duration_secs": 111,
+          "avg_power": 329,
+          "max_power": 390,
+          "avg_hr": 153,
+          "max_hr": 161,
+          "avg_cadence": 77.23424,
+          "zone": 4,
+          "training_load": 2.9906068,
+          "decoupling": 3.167771
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 75,
+          "avg_power": 305,
+          "max_power": 350,
+          "avg_hr": 156,
+          "max_hr": 160,
+          "avg_cadence": 87.12,
+          "zone": 4,
+          "training_load": 1.8622589,
+          "decoupling": 4.130296
+        },
+        {
+          "type": "WORK",
+          "label": "80s@314w85rpm",
+          "duration_secs": 80,
+          "avg_power": 314,
+          "max_power": 353,
+          "avg_hr": 152,
+          "max_hr": 154,
+          "avg_cadence": 84.65,
+          "zone": 4,
+          "training_load": 1.9610244,
+          "decoupling": -2.3454015
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 31,
+          "avg_power": 292,
+          "max_power": 327,
+          "avg_hr": 154,
+          "max_hr": 156,
+          "avg_cadence": 88.51613,
+          "zone": 3,
+          "training_load": 0.7355818,
+          "decoupling": 2.9969826
+        },
+        {
+          "type": "WORK",
+          "label": "224s@317w78rpm",
+          "duration_secs": 224,
+          "avg_power": 317,
+          "max_power": 376,
+          "avg_hr": 156,
+          "max_hr": 162,
+          "avg_cadence": 78.26339,
+          "zone": 4,
+          "training_load": 5.7779245,
+          "decoupling": 6.071114
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1219,
+          "avg_power": 186,
+          "max_power": 388,
+          "avg_hr": 127,
+          "max_hr": 159,
+          "avg_cadence": 82.010666,
+          "zone": 2,
+          "training_load": 13.974782,
+          "decoupling": 6.3420496
         }
       ]
     }
