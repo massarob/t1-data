@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-08T16:21:56.040075",
+    "last_updated": "2026-11-08T20:42:17.132613",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -352,7 +352,7 @@
     "p_max": 1237,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-08T16:21:56.039263",
+    "calculation_timestamp": "2026-11-08T20:42:17.131590",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -386,7 +386,7 @@
       "avg_temp": 11.427151,
       "weather": null,
       "humidity": null,
-      "wind_speed": 1.2812608,
+      "wind_speed": 1.2824731,
       "work_kj": null,
       "calories": 1204,
       "carbs_used": null,
@@ -762,10 +762,10 @@
       "has_intervals": true
     },
     {
-      "id": "i205121833",
+      "id": "i205112457",
       "date": "2026-11-03T08:55:19",
       "type": "VirtualRun",
-      "name": "Zwift - Lightning Lap Run in Watopia (merged)",
+      "name": "Zwift - Lightning Lap Run in Watopia",
       "duration_hours": 0.76,
       "distance_km": 9.51,
       "tss": null,
@@ -797,10 +797,10 @@
       "has_intervals": false
     },
     {
-      "id": "i205112457",
+      "id": "i205121833",
       "date": "2026-11-03T08:55:19",
       "type": "VirtualRun",
-      "name": "Zwift - Lightning Lap Run in Watopia",
+      "name": "Zwift - Lightning Lap Run in Watopia (merged)",
       "duration_hours": 0.76,
       "distance_km": 9.51,
       "tss": null,
