@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-13T16:45:58.798407",
+    "last_updated": "2026-11-13T22:25:44.855216",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -354,7 +354,7 @@
     "p_max": 1230,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-13T16:45:58.399576",
+    "calculation_timestamp": "2026-11-13T22:25:44.854403",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -954,7 +954,7 @@
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 54.0,
       "vo2max": null
     }
   ],
@@ -993,7 +993,7 @@
       "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 2h5m 65%\n\n8x\n- 5m 70-80% 70-80rpm\n- 3m 55-65% 70-80rpm\n\n- 10m 50%"
     },
     {
-      "id": 155452104,
+      "id": 155543518,
       "date": "2026-11-15",
       "name": "IntervalCoach - Ramp Test",
       "type": "WORKOUT",
