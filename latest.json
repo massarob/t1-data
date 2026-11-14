@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-14T02:38:03.172396",
+    "last_updated": "2026-11-14T09:27:30.397749",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -37,29 +37,29 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 54.7,
-        "delta_pct": null
+        "status": "green",
+        "value": 59.0,
+        "baseline_7d": 55.3,
+        "delta_pct": 6.7
       },
       "rhr": {
         "status": "green",
-        "value": 49,
-        "baseline_7d": 48,
-        "delta_bpm": 1
+        "value": 47,
+        "baseline_7d": 47.7,
+        "delta_bpm": -0.7
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "green",
+        "hours": 7.35,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
         "value": 0.84
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 1.08
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 6,
       "amber": 0,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -165,21 +165,21 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 49,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 47,
+      "hrv": 59.0,
+      "sleep_quality": 2,
+      "sleep_hours": 7.35,
+      "sleep_formatted": "7h21m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 54.7,
-    "rhr_baseline_7d": 48,
+    "recovery_index": 1.08,
+    "hrv_baseline_7d": 55.3,
+    "rhr_baseline_7d": 47.7,
     "hrv_baseline_28d": 57.2,
     "rhr_baseline_28d": 46.8,
-    "latest_hrv": null,
-    "latest_rhr": 49,
+    "latest_hrv": 59.0,
+    "latest_rhr": 47,
     "acwr": 0.84,
     "acwr_interpretation": "optimal",
     "monotony": 1.43,
@@ -191,7 +191,7 @@
     "multi_sport_detected": true,
     "strain": 831.0,
     "stress_tolerance": 5.8,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 5.4,
     "tss_7d_total": 581.0,
     "tss_28d_total": 2778.0,
     "zone_distribution_7d": {
@@ -325,12 +325,12 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.78,
+          "planned_tss_delta": 1.77,
           "hard_sessions_planned": 2,
           "race_proximity": null,
-          "next_week_load": 0.38,
+          "next_week_load": 0.49,
           "plan_coverage_current_week": 0.6,
-          "plan_coverage_next_week": 0.4
+          "plan_coverage_next_week": 0.6
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -363,9 +363,9 @@
     "p_max": 1229,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-14T02:38:03.171582",
+    "calculation_timestamp": "2026-11-14T09:27:30.397096",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 9,
       "activities_28d": 50,
@@ -899,24 +899,35 @@
     {
       "date": "2026-11-14",
       "weight_kg": null,
-      "resting_hr": 49,
-      "hrv_rmssd": null,
+      "resting_hr": 47,
+      "hrv_rmssd": 59.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.35,
+      "sleep_formatted": "7h21m",
+      "sleep_quality": 2,
+      "sleep_score": 80.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 50.0,
       "vo2max": null
     }
   ],
   "planned_workouts": [
     {
-      "id": 155238669,
+      "id": 155594640,
       "date": "2026-11-14",
+      "name": "Chomik \u00b7 Low-cadence force 4\u00d77\u2032",
+      "type": "WORKOUT",
+      "planned_tss": 148,
+      "duration_hours": 3.48,
+      "duration_formatted": "3h29m",
+      "workout_summary": "10m @180W | 2h25m @204W | 4\u00d77m @236W / 4m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 2h25m 65%\n\n4x\n- 7m 70-80% 55-65rpm\n- 4m 58%\n\n- 10m 50%"
+    },
+    {
+      "id": 155594641,
+      "date": "2026-11-15",
       "name": "Chomik \u00b7 Progressive endurance 30\u2032 \u00d7 3",
       "type": "WORKOUT",
       "planned_tss": 78,
@@ -926,18 +937,7 @@
       "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 30m 60-63%\n- 30m 65-68%\n- 30m 70-74%\n- 10m 50%"
     },
     {
-      "id": 155238670,
-      "date": "2026-11-15",
-      "name": "Chomik \u00b7 Climbing LT1 waves 8 \u00d7 5\u2032/3\u2032",
-      "type": "WORKOUT",
-      "planned_tss": 150,
-      "duration_hours": 3.48,
-      "duration_formatted": "3h29m",
-      "workout_summary": "10m @180W | 2h5m @204W | 8\u00d75m @236W / 3m rec | 10m @157W",
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 2h5m 65%\n\n8x\n- 5m 70-80% 70-80rpm\n- 3m 55-65% 70-80rpm\n\n- 10m 50%"
-    },
-    {
-      "id": 155543518,
+      "id": 155668424,
       "date": "2026-11-15",
       "name": "IntervalCoach - Ramp Test",
       "type": "WORKOUT",
@@ -948,15 +948,26 @@
       "description": "Warmup\n- 9m ramp 45-75% 85rpm\n\nMain Set\n- Scalino 52% 90rpm 1m 52% 90rpm\n- Scalino 58% 90rpm 1m 58% 90rpm\n- Scalino 64% 90rpm 1m 64% 90rpm\n- Scalino 70% 90rpm 1m 70% 90rpm\n- Scalino 76% 90rpm 1m 76% 90rpm\n- Scalino 82% 90rpm 1m 82% 90rpm\n- Scalino 88% 90rpm 1m 88% 90rpm\n- Scalino 94% 90rpm 1m 94% 90rpm\n- Scalino 100% 90rpm 1m 100% 90rpm\n- Scalino 106% 90rpm 1m 106% 90rpm\n- Scalino 112% 90rpm 1m 112% 90rpm\n- Scalino 118% 90rpm 1m 118% 90rpm\n- Scalino 124% 90rpm 1m 124% 90rpm\n- Scalino 130% 90rpm 1m 130% 90rpm\n- Scalino 136% 90rpm 1m 136% 90rpm\n- Scalino 142% 90rpm 1m 142% 90rpm\n- Scalino 148% 90rpm 1m 148% 90rpm\n- Scalino 154% 90rpm 1m 154% 90rpm\n- Scalino 160% 90rpm 1m 160% 90rpm\n- Scalino 166% 90rpm 1m 166% 90rpm\n- Scalino 172% 90rpm 1m 172% 90rpm\n- Scalino 178% 90rpm 1m 178% 90rpm\n- Scalino 184% 90rpm 1m 184% 90rpm\n- Scalino 190% 90rpm 1m 190% 90rpm\n- Scalino 196% 90rpm 1m 196% 90rpm\n- Pedalata Leggera 85rpm 10m 45-55% 85rpm\n\nCooldown\n- 6m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:rampTest]"
     },
     {
-      "id": 155238671,
+      "id": 155594642,
       "date": "2026-11-17",
-      "name": "Chomik \u00b7 Two-level sweet spot 2\u00d720\u2032",
+      "name": "Chomik \u00b7 Sweet spot climbing 3\u00d713\u2032 at low cadence",
       "type": "WORKOUT",
-      "planned_tss": 159,
-      "duration_hours": 3.0,
-      "duration_formatted": "3h",
-      "workout_summary": null,
-      "description": "Chomik.cc\n\n- 10m ramp 50-70%\n- 1h50m 65%\n\n2x\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 1m 89-91%\n- 1m 92-94%\n- 5m 55%\n\n- 10m 50%"
+      "planned_tss": 154,
+      "duration_hours": 2.98,
+      "duration_formatted": "2h59m",
+      "workout_summary": "10m @188W | 1h45m @204W | 3\u00d713m @284W / 5m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-70%\n- 1h45m 65%\n\n3x\n- 13m 88-93% 60-70rpm\n- 5m 55%\n\n- 10m 50%"
+    },
+    {
+      "id": 155594643,
+      "date": "2026-11-18",
+      "name": "Chomik \u00b7 Endurance + 7 sprints",
+      "type": "WORKOUT",
+      "planned_tss": 81,
+      "duration_hours": 1.97,
+      "duration_formatted": "1h58m17s",
+      "workout_summary": "10m @180W | 25m @204W | 51m @207W | 7\u00d711s @504W / 3m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 25m 65%\n- 51m 66%\n\n7x\n- 11s 160%\n- 3m 55%\n\n- 10m 50%"
     },
     {
       "id": 154844893,
@@ -971,20 +982,20 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 1,
-    "patternA": 1,
+    "attempted": 6,
+    "success": 3,
+    "patternA": 3,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 11.6,
     "total_training_formatted": "11h36m",
     "total_tss": 581,
     "activities_count": 9,
-    "avg_hrv": 54.7,
-    "avg_resting_hr": 48.0
+    "avg_hrv": 55.3,
+    "avg_resting_hr": 47.7
   },
   "race_calendar": {
     "next_race": null,
