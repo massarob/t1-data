@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-16T06:35:03.473431",
+    "last_updated": "2026-11-16T16:27:50.308233",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -37,29 +37,29 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 54.0,
-        "delta_pct": null
+        "status": "green",
+        "value": 55.0,
+        "baseline_7d": 54.1,
+        "delta_pct": 1.7
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
+        "status": "green",
+        "value": 48,
         "baseline_7d": 47.7,
-        "delta_bpm": null
+        "delta_bpm": 0.3
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 7.58,
+        "quality": 3
       },
       "acwr": {
         "status": "green",
         "value": 1.18
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 1.01
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -154,20 +154,20 @@
     "current_metrics": {
       "weight_kg": 65.0,
       "resting_hr": 48,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "hrv": 55.0,
+      "sleep_quality": 3,
+      "sleep_hours": 7.58,
+      "sleep_formatted": "7h35m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 54.0,
+    "recovery_index": 1.01,
+    "hrv_baseline_7d": 54.1,
     "rhr_baseline_7d": 47.7,
-    "hrv_baseline_28d": 57.6,
-    "rhr_baseline_28d": 46.7,
-    "latest_hrv": null,
-    "latest_rhr": null,
+    "hrv_baseline_28d": 57.5,
+    "rhr_baseline_28d": 46.8,
+    "latest_hrv": 55.0,
+    "latest_rhr": 48,
     "acwr": 1.18,
     "acwr_interpretation": "optimal",
     "monotony": 1.88,
@@ -179,7 +179,7 @@
     "multi_sport_detected": false,
     "strain": 1549.0,
     "stress_tolerance": 8.2,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 8.2,
     "tss_7d_total": 824.0,
     "tss_28d_total": 2804.0,
     "zone_distribution_7d": {
@@ -315,8 +315,8 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.63,
-          "hard_sessions_planned": 4,
+          "planned_tss_delta": 0.73,
+          "hard_sessions_planned": 5,
           "race_proximity": null,
           "next_week_load": null,
           "plan_coverage_current_week": 1.0,
@@ -353,10 +353,10 @@
     "p_max": 1228,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-16T06:35:03.472785",
+    "calculation_timestamp": "2026-11-16T16:27:50.307068",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "hrv_data_points": 7,
+      "rhr_data_points": 7,
       "activities_7d": 8,
       "activities_28d": 49,
       "planned_workouts_7d": 6,
@@ -891,64 +891,64 @@
     {
       "date": "2026-11-16",
       "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
+      "resting_hr": 48,
+      "hrv_rmssd": 55.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 7.58,
+      "sleep_formatted": "7h35m",
+      "sleep_quality": 3,
+      "sleep_score": 64.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 51.0,
       "vo2max": null
     }
   ],
   "planned_workouts": [
     {
-      "id": 156498100,
+      "id": 156574199,
       "date": "2026-11-17",
-      "name": "Chomik \u00b7 Progressive endurance 31\u2032 \u00d7 3",
+      "name": "Chomik \u00b7 Sweet spot climbing 3\u00d713\u2032 at low cadence",
       "type": "WORKOUT",
-      "planned_tss": 80,
-      "duration_hours": 1.88,
-      "duration_formatted": "1h53m",
-      "workout_summary": null,
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 31m 60-63%\n- 31m 65-68%\n- 31m 70-74%\n- 10m 50%"
+      "planned_tss": 132,
+      "duration_hours": 2.48,
+      "duration_formatted": "2h29m",
+      "workout_summary": "10m @188W | 1h15m @204W | 3\u00d713m @284W / 5m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-70%\n- 1h15m 65%\n\n3x\n- 13m 88-93% 60-70rpm\n- 5m 55%\n\n- 10m 50%"
     },
     {
-      "id": 156425239,
+      "id": 156574203,
       "date": "2026-11-18",
       "name": "Chomik \u00b7 Endurance + 7 sprints",
       "type": "WORKOUT",
-      "planned_tss": 73,
-      "duration_hours": 1.8,
-      "duration_formatted": "1h48m17s",
-      "workout_summary": "10m @180W | 15m @204W | 51m @207W | 7\u00d711s @504W / 3m rec | 10m @157W",
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 15m 65%\n- 51m 66%\n\n7x\n- 11s 160%\n- 3m 55%\n\n- 10m 50%"
+      "planned_tss": 81,
+      "duration_hours": 1.97,
+      "duration_formatted": "1h58m17s",
+      "workout_summary": "10m @180W | 25m @204W | 51m @207W | 7\u00d711s @504W / 3m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 25m 65%\n- 51m 66%\n\n7x\n- 11s 160%\n- 3m 55%\n\n- 10m 50%"
     },
     {
-      "id": 156425240,
+      "id": 156574207,
       "date": "2026-11-19",
       "name": "Chomik \u00b7 LT1 waves 8 \u00d7 5\u2032/3\u2032",
       "type": "WORKOUT",
-      "planned_tss": 84,
-      "duration_hours": 1.9,
-      "duration_formatted": "1h54m",
-      "workout_summary": "10m @180W | 30m @204W | 8\u00d75m @236W / 3m rec | 10m @157W",
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 30m 65%\n\n8x\n- 5m 70-80% 85-95rpm\n- 3m 55-65% 85-95rpm\n\n- 10m 50%"
+      "planned_tss": 88,
+      "duration_hours": 1.98,
+      "duration_formatted": "1h59m",
+      "workout_summary": "10m @180W | 35m @204W | 8\u00d75m @236W / 3m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 35m 65%\n\n8x\n- 5m 70-80% 85-95rpm\n- 3m 55-65% 85-95rpm\n\n- 10m 50%"
     },
     {
-      "id": 156498101,
+      "id": 156574211,
       "date": "2026-11-20",
       "name": "Chomik \u00b7 VO\u2082max touch 6\u00d72\u2032",
       "type": "WORKOUT",
-      "planned_tss": 121,
-      "duration_hours": 2.2,
-      "duration_formatted": "2h12m",
-      "workout_summary": "15m @188W | 3\u00d730s @315W / 30s rec | 1h20m @204W | 6\u00d72m @374W / 2m rec | 10m @157W",
-      "description": "Chomik.cc\n\n- 15m ramp 50-70%\n\n3x\n- 30s 100%\n- 30s 50%\n\n- 1h20m 65%\n\n6x\n- 2m 119%\n- 2m 50%\n\n- 10m 50%"
+      "planned_tss": 129,
+      "duration_hours": 2.37,
+      "duration_formatted": "2h22m",
+      "workout_summary": "15m @188W | 3\u00d730s @315W / 30s rec | 1h30m @204W | 6\u00d72m @374W / 2m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 15m ramp 50-70%\n\n3x\n- 30s 100%\n- 30s 50%\n\n- 1h30m 65%\n\n6x\n- 2m 119%\n- 2m 50%\n\n- 10m 50%"
     },
     {
       "id": 155903733,
@@ -964,18 +964,18 @@
   ],
   "workout_summary_stats": {
     "attempted": 5,
-    "success": 3,
-    "patternA": 3,
+    "success": 4,
+    "patternA": 4,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 11.86,
     "total_training_formatted": "11h51m",
     "total_tss": 824,
     "activities_count": 8,
-    "avg_hrv": 54.0,
+    "avg_hrv": 54.1,
     "avg_resting_hr": 47.7
   },
   "race_calendar": {
