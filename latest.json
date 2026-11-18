@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-18T00:47:57.491140",
+    "last_updated": "2026-11-18T08:21:02.483594",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.83"
@@ -37,29 +37,29 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 55.8,
-        "delta_pct": null
+        "status": "green",
+        "value": 65.0,
+        "baseline_7d": 57.1,
+        "delta_pct": 13.8
       },
       "rhr": {
         "status": "green",
-        "value": 44,
-        "baseline_7d": 47.1,
-        "delta_bpm": -3.1
+        "value": 43,
+        "baseline_7d": 47,
+        "delta_bpm": -4
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
-        "quality": null
+        "status": "amber",
+        "hours": 6.75,
+        "quality": 2
       },
       "acwr": {
         "status": "green",
         "value": 1.13
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 1.24
       },
       "tsb": {
         "status": "green",
@@ -67,10 +67,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
-      "unavailable": 3
+      "unavailable": 0
     },
     "phase_context": {
       "phase": "Build",
@@ -80,7 +80,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -159,21 +159,21 @@
     },
     "current_metrics": {
       "weight_kg": 65.0,
-      "resting_hr": 44,
-      "hrv": null,
-      "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null
+      "resting_hr": 43,
+      "hrv": 65.0,
+      "sleep_quality": 2,
+      "sleep_hours": 6.75,
+      "sleep_formatted": "6h45m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 55.8,
-    "rhr_baseline_7d": 47.1,
-    "hrv_baseline_28d": 57.9,
+    "recovery_index": 1.24,
+    "hrv_baseline_7d": 57.1,
+    "rhr_baseline_7d": 47,
+    "hrv_baseline_28d": 58.1,
     "rhr_baseline_28d": 46.6,
-    "latest_hrv": null,
-    "latest_rhr": 44,
+    "latest_hrv": 65.0,
+    "latest_rhr": 43,
     "acwr": 1.13,
     "acwr_interpretation": "optimal",
     "monotony": 1.87,
@@ -185,7 +185,7 @@
     "multi_sport_detected": true,
     "strain": 1528.0,
     "stress_tolerance": 8.2,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.6,
     "tss_7d_total": 817.0,
     "tss_28d_total": 2900.0,
     "zone_distribution_7d": {
@@ -321,7 +321,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.93,
+          "planned_tss_delta": 0.71,
           "hard_sessions_planned": 4,
           "race_proximity": null,
           "next_week_load": null,
@@ -359,9 +359,9 @@
     "p_max": 1229,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-18T00:47:57.259468",
+    "calculation_timestamp": "2026-11-18T08:21:02.482358",
     "data_quality": {
-      "hrv_data_points": 6,
+      "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 9,
       "activities_28d": 50,
@@ -932,13 +932,13 @@
     {
       "date": "2026-11-18",
       "weight_kg": null,
-      "resting_hr": 44,
-      "hrv_rmssd": null,
+      "resting_hr": 43,
+      "hrv_rmssd": 65.0,
       "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_hours": 6.75,
+      "sleep_formatted": "6h45m",
+      "sleep_quality": 2,
+      "sleep_score": 81.0,
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
@@ -948,26 +948,26 @@
   ],
   "planned_workouts": [
     {
-      "id": 156574203,
+      "id": 157467316,
       "date": "2026-11-18",
-      "name": "Chomik \u00b7 Endurance + 7 sprints",
+      "name": "Chomik \u00b7 Endurance with 7 spin-ups",
       "type": "WORKOUT",
-      "planned_tss": 81,
-      "duration_hours": 1.97,
-      "duration_formatted": "1h58m17s",
-      "workout_summary": "10m @180W | 25m @204W | 51m @207W | 7\u00d711s @504W / 3m rec | 10m @157W",
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 25m 65%\n- 51m 66%\n\n7x\n- 11s 160%\n- 3m 55%\n\n- 10m 50%"
+      "planned_tss": 45,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m15s",
+      "workout_summary": "10m @180W | 17m @204W | 7\u00d745s @220W / 4m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 17m 65%\n\n7x\n- 45s 70% 110-120rpm\n- 4m 64%\n\n- 10m 50%"
     },
     {
-      "id": 156574207,
+      "id": 157513106,
       "date": "2026-11-19",
-      "name": "Chomik \u00b7 LT1 waves 8 \u00d7 5\u2032/3\u2032",
+      "name": "Chomik \u00b7 Steady endurance 45\u2032",
       "type": "WORKOUT",
-      "planned_tss": 88,
-      "duration_hours": 1.98,
-      "duration_formatted": "1h59m",
-      "workout_summary": "10m @180W | 35m @204W | 8\u00d75m @236W / 3m rec | 10m @157W",
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 35m 65%\n\n8x\n- 5m 70-80% 85-95rpm\n- 3m 55-65% 85-95rpm\n\n- 10m 50%"
+      "planned_tss": 43,
+      "duration_hours": 1.08,
+      "duration_formatted": "1h5m",
+      "workout_summary": null,
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 45m 66%\n- 10m 50%"
     },
     {
       "id": 156574211,
@@ -981,43 +981,43 @@
       "description": "Chomik.cc\n\n- 15m ramp 50-70%\n\n3x\n- 30s 100%\n- 30s 50%\n\n- 1h30m 65%\n\n6x\n- 2m 119%\n- 2m 50%\n\n- 10m 50%"
     },
     {
-      "id": 157029406,
+      "id": 157467318,
       "date": "2026-11-21",
-      "name": "Chomik \u00b7 Progressive endurance 31\u2032 \u00d7 3",
+      "name": "Chomik \u00b7 Endurance with 6 spin-ups",
       "type": "WORKOUT",
-      "planned_tss": 83,
-      "duration_hours": 1.97,
-      "duration_formatted": "1h58m",
-      "workout_summary": null,
-      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 5m 65%\n- 31m 60-63%\n- 31m 65-68%\n- 31m 70-74%\n- 10m 50%"
+      "planned_tss": 42,
+      "duration_hours": 1.07,
+      "duration_formatted": "1h4m30s",
+      "workout_summary": "10m @180W | 16m @204W | 6\u00d745s @220W / 4m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 16m 65%\n\n6x\n- 45s 70% 110-120rpm\n- 4m 64%\n\n- 10m 50%"
     },
     {
-      "id": 155903733,
+      "id": 157467319,
       "date": "2026-11-22",
-      "name": "IntervalCoach - Fondo Fat Max",
+      "name": "Chomik \u00b7 Climbing LT1 waves 8 \u00d7 5\u2032/3\u2032",
       "type": "WORKOUT",
-      "planned_tss": 72,
-      "duration_hours": 1.75,
-      "duration_formatted": "1h45m",
-      "workout_summary": null,
-      "description": "Warmup\n- 15m ramp 45-75% 85rpm\n\nMain Set\n- Basso 85rpm 27m 63% 85rpm\n- Ambientamento 85rpm 27m 63-68% 85rpm\n- Crociera 88rpm 26m 68% 88rpm\n\nCooldown\n- 10m ramp 65-45%\n\n[Weekly Plan - Build \u00b7 type:enduranceFatMax]"
+      "planned_tss": 88,
+      "duration_hours": 1.98,
+      "duration_formatted": "1h59m",
+      "workout_summary": "10m @180W | 35m @204W | 8\u00d75m @236W / 3m rec | 10m @157W",
+      "description": "Chomik.cc\n\n- 10m ramp 50-65%\n- 35m 65%\n\n8x\n- 5m 70-80% 70-80rpm\n- 3m 55-65% 70-80rpm\n\n- 10m 50%"
     }
   ],
   "workout_summary_stats": {
     "attempted": 5,
-    "success": 3,
-    "patternA": 3,
+    "success": 4,
+    "patternA": 4,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 2
+    "bail_no_match": 1
   },
   "weekly_summary": {
     "total_training_hours": 11.26,
     "total_training_formatted": "11h15m",
     "total_tss": 817,
     "activities_count": 9,
-    "avg_hrv": 55.8,
-    "avg_resting_hr": 47.1
+    "avg_hrv": 57.1,
+    "avg_resting_hr": 47.0
   },
   "race_calendar": {
     "next_race": null,
