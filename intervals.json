@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T12:02:47.313094",
+  "generated_at": "2026-11-20T20:24:56.253192",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1886,6 +1886,113 @@
           "zone": 1,
           "training_load": 70.12002,
           "decoupling": -12.582291
+        }
+      ]
+    },
+    {
+      "activity_id": "i212516742",
+      "date": "2026-11-20",
+      "type": "Ride",
+      "name": "Pedalata pomeridiana",
+      "interval_summary": [
+        "1x 21m47s 166w",
+        "2x 7m17s 321w",
+        "1x 6m28s 17w",
+        "1x 5m31s 19w",
+        "1x 5m28s 317w",
+        "1x 1h27m 161w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1307s@166w76rpm",
+          "duration_secs": 1307,
+          "avg_power": 166,
+          "max_power": 447,
+          "avg_hr": 120,
+          "max_hr": 151,
+          "avg_cadence": 76.15077,
+          "zone": 1,
+          "training_load": 12.496703,
+          "decoupling": 3.5181744
+        },
+        {
+          "type": "WORK",
+          "label": "437s@321w53rpm",
+          "duration_secs": 446,
+          "avg_power": 320,
+          "max_power": 500,
+          "avg_hr": 162,
+          "max_hr": 169,
+          "avg_cadence": 53.109867,
+          "zone": 4,
+          "training_load": 12.945624,
+          "decoupling": 12.003088
+        },
+        {
+          "type": "WORK",
+          "label": "388s@17w9rpm",
+          "duration_secs": 388,
+          "avg_power": 17,
+          "max_power": 323,
+          "avg_hr": 113,
+          "max_hr": 167,
+          "avg_cadence": 8.835052,
+          "zone": 1,
+          "training_load": 0.79960805,
+          "decoupling": 9.737109
+        },
+        {
+          "type": "WORK",
+          "label": "437s@321w53rpm",
+          "duration_secs": 427,
+          "avg_power": 321,
+          "max_power": 471,
+          "avg_hr": 161,
+          "max_hr": 169,
+          "avg_cadence": 51.978924,
+          "zone": 4,
+          "training_load": 12.240643,
+          "decoupling": 14.014183
+        },
+        {
+          "type": "WORK",
+          "label": "331s@19w8rpm",
+          "duration_secs": 331,
+          "avg_power": 19,
+          "max_power": 387,
+          "avg_hr": 113,
+          "max_hr": 167,
+          "avg_cadence": 8.120846,
+          "zone": 1,
+          "training_load": 1.3365202,
+          "decoupling": -57.25326
+        },
+        {
+          "type": "WORK",
+          "label": "328s@317w50rpm",
+          "duration_secs": 328,
+          "avg_power": 317,
+          "max_power": 475,
+          "avg_hr": 159,
+          "max_hr": 169,
+          "avg_cadence": 50.359756,
+          "zone": 4,
+          "training_load": 9.343973,
+          "decoupling": 13.147922
+        },
+        {
+          "type": "WORK",
+          "label": "5232s@161w60rpm",
+          "duration_secs": 5232,
+          "avg_power": 161,
+          "max_power": 480,
+          "avg_hr": 124,
+          "max_hr": 168,
+          "avg_cadence": 60.081806,
+          "zone": 1,
+          "training_load": 66.55815,
+          "decoupling": 3.9214895
         }
       ]
     }
