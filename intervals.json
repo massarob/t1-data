@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T08:48:24.061547",
+  "generated_at": "2026-11-21T16:40:55.904192",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1920,6 +1920,110 @@
           "zone": 1,
           "training_load": 66.55815,
           "decoupling": 3.9214895
+        }
+      ]
+    },
+    {
+      "activity_id": "i212861259",
+      "date": "2026-11-21",
+      "type": "Ride",
+      "name": "Pomeriggio Ride - Cadence",
+      "interval_summary": [
+        "1x 42m44s 153bpm",
+        "1x 12m27s 100bpm",
+        "1x 14m43s 136bpm",
+        "1x 5m44s 152bpm",
+        "1x 93s 151bpm",
+        "1x 1h5m 117bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2564s@153bpm",
+          "duration_secs": 2564,
+          "avg_hr": 153,
+          "max_hr": 167,
+          "zone": 2
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 131,
+          "max_hr": 131,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "747s@100bpm",
+          "duration_secs": 747,
+          "avg_hr": 100,
+          "max_hr": 129,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "883s@136bpm",
+          "duration_secs": 883,
+          "avg_hr": 136,
+          "max_hr": 157,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "344s@152bpm",
+          "duration_secs": 344,
+          "avg_hr": 152,
+          "max_hr": 155,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "93s@151bpm",
+          "duration_secs": 93,
+          "avg_hr": 151,
+          "max_hr": 153,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "3901s@117bpm",
+          "duration_secs": 3901,
+          "avg_hr": 117,
+          "max_hr": 159,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 92,
+          "max_hr": 92,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i212858051",
+      "date": "2026-11-21",
+      "type": "Ride",
+      "name": "Piancogno Ciclismo su strada",
+      "interval_summary": [
+        "1x 2h23m 131bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "8581s@131bpm",
+          "duration_secs": 8581,
+          "avg_hr": 131,
+          "max_hr": 167,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 89,
+          "max_hr": 89,
+          "zone": 1
         }
       ]
     }
