@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T10:28:07.357566",
+  "generated_at": "2026-11-24T20:49:27.402124",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1484,6 +1484,230 @@
           "zone": 1,
           "training_load": 36.583523,
           "decoupling": 9.15372
+        }
+      ]
+    },
+    {
+      "activity_id": "i214184409",
+      "date": "2026-11-24",
+      "type": "VirtualRide",
+      "name": "2di2 Biketerra - Piton de la Fournaise La R\u00e9union | LT1 3x",
+      "interval_summary": [
+        "2x 7m30s 253w",
+        "1x 10m47s 249w",
+        "1x 14m5s 245w",
+        "1x 12m14s 292w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 280,
+          "avg_power": 140,
+          "max_power": 345,
+          "avg_hr": 109,
+          "max_hr": 115,
+          "avg_cadence": 77.652176,
+          "zone": 1,
+          "training_load": 1.0129453
+        },
+        {
+          "type": "WORK",
+          "label": "450s@253w86rpm",
+          "duration_secs": 434,
+          "avg_power": 247,
+          "max_power": 310,
+          "avg_hr": 131,
+          "max_hr": 136,
+          "avg_cadence": 84.13595,
+          "zone": 3,
+          "training_load": 7.352522,
+          "decoupling": 2.5164487
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 32,
+          "avg_power": 257,
+          "max_power": 324,
+          "avg_hr": 136,
+          "max_hr": 139,
+          "avg_cadence": 78.375,
+          "zone": 3,
+          "training_load": 0.56438285,
+          "decoupling": -4.1186523
+        },
+        {
+          "type": "WORK",
+          "label": "647s@249w88rpm",
+          "duration_secs": 647,
+          "avg_power": 249,
+          "max_power": 306,
+          "avg_hr": 132,
+          "max_hr": 142,
+          "avg_cadence": 87.55487,
+          "zone": 3,
+          "training_load": 11.411116,
+          "decoupling": -3.0013192
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 382,
+          "avg_power": 188,
+          "max_power": 350,
+          "avg_hr": 128,
+          "max_hr": 135,
+          "avg_cadence": 85.42813,
+          "zone": 2,
+          "training_load": 3.2743764,
+          "decoupling": 6.563449
+        },
+        {
+          "type": "WORK",
+          "label": "845s@245w78rpm",
+          "duration_secs": 845,
+          "avg_power": 245,
+          "max_power": 247,
+          "avg_hr": 141,
+          "max_hr": 146,
+          "avg_cadence": 77.93373,
+          "zone": 3,
+          "training_load": 14.199245,
+          "decoupling": 1.9830424
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 303,
+          "avg_power": 191,
+          "max_power": 251,
+          "avg_hr": 125,
+          "max_hr": 146,
+          "avg_cadence": 95.551155,
+          "zone": 2,
+          "training_load": 3.2254345,
+          "decoupling": -9.2691145
+        },
+        {
+          "type": "WORK",
+          "label": "450s@253w86rpm",
+          "duration_secs": 466,
+          "avg_power": 258,
+          "max_power": 323,
+          "avg_hr": 130,
+          "max_hr": 137,
+          "avg_cadence": 88.53863,
+          "zone": 3,
+          "training_load": 8.54953,
+          "decoupling": -1.5768512
+        },
+        {
+          "type": "WORK",
+          "label": "734s@292w80rpm",
+          "duration_secs": 734,
+          "avg_power": 292,
+          "max_power": 353,
+          "avg_hr": 142,
+          "max_hr": 149,
+          "avg_cadence": 80.076294,
+          "zone": 4,
+          "training_load": 17.64037,
+          "decoupling": 0.6097112
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 956,
+          "avg_power": 173,
+          "max_power": 277,
+          "avg_hr": 120,
+          "max_hr": 149,
+          "avg_cadence": 96.79603,
+          "zone": 1,
+          "training_load": 8.767817,
+          "decoupling": -8.120657
+        }
+      ]
+    },
+    {
+      "activity_id": "i214140363",
+      "date": "2026-11-24",
+      "type": "VirtualRide",
+      "name": "1di2 Biketerra - \ud83d\udd52Chrono Championship november 2026 - Week 4 - Cruce a Lobatera - Palo Grande",
+      "interval_summary": [
+        "1x 11m10s 348w",
+        "1x 5m37s 341w",
+        "1x 1m41s 375w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_power": 234,
+          "max_power": 234,
+          "avg_hr": 116,
+          "max_hr": 116,
+          "avg_cadence": 83.0,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "670s@348w81rpm",
+          "duration_secs": 670,
+          "avg_power": 348,
+          "max_power": 416,
+          "avg_hr": 157,
+          "max_hr": 163,
+          "avg_cadence": 81.465675,
+          "zone": 5,
+          "training_load": 22.324892,
+          "decoupling": 6.8680434
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 31,
+          "avg_power": 312,
+          "max_power": 360,
+          "avg_hr": 160,
+          "max_hr": 162,
+          "avg_cadence": 94.29032,
+          "zone": 4,
+          "training_load": 0.89422774,
+          "decoupling": 2.8701239
+        },
+        {
+          "type": "WORK",
+          "label": "337s@341w84rpm",
+          "duration_secs": 337,
+          "avg_power": 341,
+          "max_power": 390,
+          "avg_hr": 161,
+          "max_hr": 165,
+          "avg_cadence": 83.623146,
+          "zone": 5,
+          "training_load": 10.905966,
+          "decoupling": 0.78718364
+        },
+        {
+          "type": "WORK",
+          "label": "101s@375w76rpm",
+          "duration_secs": 101,
+          "avg_power": 375,
+          "max_power": 486,
+          "avg_hr": 168,
+          "max_hr": 172,
+          "avg_cadence": 76.09901,
+          "zone": 5,
+          "training_load": 3.9127638,
+          "decoupling": 5.376277
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 22,
+          "avg_power": 185,
+          "max_power": 291,
+          "avg_hr": 170,
+          "max_hr": 171,
+          "avg_cadence": 57.0,
+          "zone": 2,
+          "training_load": 0.55769545,
+          "decoupling": -36.977455
         }
       ]
     }
