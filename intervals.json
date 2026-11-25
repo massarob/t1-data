@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:26:15.969128",
+  "generated_at": "2026-11-25T23:14:40.799869",
   "version": "3.83",
   "scan_hours": 72,
   "retention_days": 7,
@@ -1462,6 +1462,79 @@
           "zone": 2,
           "training_load": 0.55769545,
           "decoupling": -36.977455
+        }
+      ]
+    },
+    {
+      "activity_id": "i214617203",
+      "date": "2026-11-25",
+      "type": "VirtualRide",
+      "name": "Biketerra - Mt Lemmon, Arizona | Sweet Spot 2x25 on a Wednesday",
+      "interval_summary": [
+        "2x 25m 296w"
+      ],
+      "intervals": [
+        {
+          "type": "RECOVERY",
+          "duration_secs": 3546,
+          "avg_power": 229,
+          "max_power": 354,
+          "avg_hr": 130,
+          "max_hr": 141,
+          "avg_cadence": 87.49718,
+          "zone": 2,
+          "training_load": 52.956173,
+          "decoupling": -10.285394
+        },
+        {
+          "type": "WORK",
+          "label": "1500s@296w79rpm",
+          "duration_secs": 1500,
+          "avg_power": 296,
+          "max_power": 358,
+          "avg_hr": 142,
+          "max_hr": 150,
+          "avg_cadence": 79.31133,
+          "zone": 4,
+          "training_load": 36.7918,
+          "decoupling": 1.835283
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 362,
+          "avg_power": 157,
+          "max_power": 290,
+          "avg_hr": 127,
+          "max_hr": 148,
+          "avg_cadence": 95.49724,
+          "zone": 1,
+          "training_load": 2.9633107,
+          "decoupling": -7.224149
+        },
+        {
+          "type": "WORK",
+          "label": "1500s@296w79rpm",
+          "duration_secs": 1499,
+          "avg_power": 296,
+          "max_power": 363,
+          "avg_hr": 147,
+          "max_hr": 156,
+          "avg_cadence": 77.82055,
+          "zone": 4,
+          "training_load": 37.01612,
+          "decoupling": 4.784148
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 320,
+          "avg_power": 185,
+          "max_power": 259,
+          "avg_hr": 130,
+          "max_hr": 155,
+          "avg_cadence": 84.81563,
+          "zone": 2,
+          "training_load": 3.4657683,
+          "decoupling": -11.4236555
         }
       ]
     }
